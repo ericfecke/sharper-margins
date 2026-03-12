@@ -1,0 +1,6 @@
+requests
+rapidfuzz
+pandas
+numpy
+jinja2
+python-dotenv

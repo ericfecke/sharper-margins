@@ -1,0 +1,15 @@
+"""
+ufc_agent.py — UFC SME Agent STUB.
+Model not yet implemented. Returns None probability to skip edge calculation.
+"""
+
+
+def run(context: dict) -> dict:
+    """UFC stub — model under development."""
+    return {
+        "probability": None,
+        "confidence": "stub",
+        "missing_factors": [],
+        "sme_reasoning": "Model not yet implemented",
+        "factor_deltas": {},
+    }

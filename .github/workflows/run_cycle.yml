@@ -1,0 +1,85 @@
+name: Sharper Margins — Daily Run Cycle
+
+on:
+  schedule:
+    # Weekdays 3:00 PM CST = 21:00 UTC
+    - cron: '0 21 * * 1-5'
+    # Weekends 10:00 AM CST = 16:00 UTC
+    - cron: '0 16 * * 0,6'
+  workflow_dispatch:
+    inputs:
+      sport:
+        description: 'Run for a specific sport only (e.g. nba). Leave empty for all.'
+        required: false
+        default: ''
+      include_ufc:
+        description: 'Include UFC (event-driven)'
+        required: false
+        default: 'false'
+        type: boolean
+      dry_run:
+        description: 'Dry run — skip git push'
+        required: false
+        default: 'false'
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  run-cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Write .env from secret
+        run: echo "ODDS_API_KEY=${{ secrets.ODDS_API_KEY }}" > .env
+
+      - name: Run cycle
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.sport }}" ]; then
+            ARGS="$ARGS --sport ${{ github.event.inputs.sport }}"
+          fi
+          if [ "${{ github.event.inputs.include_ufc }}" = "true" ]; then
+            ARGS="$ARGS --include-ufc"
+          fi
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            ARGS="$ARGS --dry-run"
+          fi
+          cd tools && python run_cycle.py $ARGS
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+
+      - name: Push changes
+        if: ${{ github.event.inputs.dry_run != 'true' }}
+        run: |
+          git pull --rebase origin main
+          git add output/dashboard.html output/signals.json
+          if ! git diff --cached --quiet; then
+            NOW=$(date -u "+%Y-%m-%d %H:%M")
+            git commit -m "[${NOW}] Dashboard auto-update"
+            git push origin main
+          else
+            echo "Nothing changed — skip push"
+          fi
