@@ -58,7 +58,7 @@ def render_dashboard(signals: list = None, active_sports: list = None, stub_game
         f.write(html)
 
     total = len(normal_signals) + len(low_conf_signals)
-    print(f"[serve_dashboard] Dashboard rendered: {total} active signals → {DASHBOARD_PATH}")
+    print(f"[serve_dashboard] Dashboard rendered: {total} active signals -> {DASHBOARD_PATH}")
 
 
 def _load_signals() -> list:

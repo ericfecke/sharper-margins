@@ -97,28 +97,26 @@ def run(context: dict) -> dict:
     deltas["recent_form"] = delta_form
 
     # --- Factor 5: Injury impact ---
-    home_inj_score = injury_score(home_injuries, NBA_INJURY_WEIGHTS)
-    away_inj_score = injury_score(away_injuries, NBA_INJURY_WEIGHTS)
+    injuries_available = context.get("injuries_data_available", False)
+    home_inj_score = injury_score(home_injuries or [], NBA_INJURY_WEIGHTS)
+    away_inj_score = injury_score(away_injuries or [], NBA_INJURY_WEIGHTS)
     net_inj = home_inj_score - away_inj_score
     delta_injury = clamp(net_inj, -0.08, 0.0)
-    if not home_injuries and not away_injuries:
+    if not injuries_available:
         missing_factors.append("injury_data")
     deltas["injuries"] = delta_injury
 
-    # --- Factor 6: Net rating matchup ---
-    home_off = parse_stat(home_stats, "offensiveRating", "offRtg", "pointsPerGame")
-    home_def = parse_stat(home_stats, "defensiveRating", "defRtg", "opponentPointsPerGame")
-    away_off = parse_stat(away_stats, "offensiveRating", "offRtg", "pointsPerGame")
-    away_def = parse_stat(away_stats, "defensiveRating", "defRtg", "opponentPointsPerGame")
+    # --- Factor 6: Scoring average differential (proxy for net rating) ---
+    # ESPN provides avgPoints (PPG); use differential as scoring edge signal
+    home_ppg = parse_stat(home_stats, "avgPoints", "offensiveRating", "pointsPerGame")
+    away_ppg = parse_stat(away_stats, "avgPoints", "offensiveRating", "pointsPerGame")
 
-    if home_off is not None and home_def is not None and away_off is not None and away_def is not None:
-        home_net = home_off - home_def
-        away_net = away_off - away_def
-        rating_diff = home_net - away_net
-        delta_rating = clamp(rating_diff * 0.008, -0.05, +0.05)
+    if home_ppg is not None and away_ppg is not None:
+        ppg_diff = home_ppg - away_ppg
+        delta_rating = clamp(ppg_diff * 0.006, -0.05, +0.05)
     else:
         delta_rating = 0.0
-        missing_factors.append("net_rating")
+        missing_factors.append("scoring_stats")
     deltas["net_rating"] = delta_rating
 
     # --- Factor 7: Head-to-head (simplified: use record data if available) ---

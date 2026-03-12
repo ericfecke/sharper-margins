@@ -140,19 +140,20 @@ def run(context: dict) -> dict:
     deltas["home_field"] = delta_home
 
     # --- Factor 5: Injury impact (QB-heavy) ---
-    home_inj_score = _cfb_injury_score(home_injuries)
-    away_inj_score = _cfb_injury_score(away_injuries)
+    injuries_available = context.get("injuries_data_available", False)
+    home_inj_score = _cfb_injury_score(home_injuries or [])
+    away_inj_score = _cfb_injury_score(away_injuries or [])
     net_inj = home_inj_score - away_inj_score
     delta_injury = clamp(net_inj, -0.10, +0.10)
-    if not home_injuries and not away_injuries:
+    if not injuries_available:
         missing_factors.append("injury_data")
     deltas["injuries"] = delta_injury
 
     # --- Factor 6: Scoring margin differential ---
-    home_ppg = parse_stat(home_stats, "pointsPerGame", "scoring")
-    home_papg = parse_stat(home_stats, "pointsAllowedPerGame", "opponentPointsPerGame")
-    away_ppg = parse_stat(away_stats, "pointsPerGame", "scoring")
-    away_papg = parse_stat(away_stats, "pointsAllowedPerGame", "opponentPointsPerGame")
+    home_ppg = parse_stat(home_stats, "avgPoints", "pointsPerGame", "scoring")
+    home_papg = parse_stat(home_stats, "avgPointsAllowed", "pointsAllowedPerGame", "opponentPointsPerGame")
+    away_ppg = parse_stat(away_stats, "avgPoints", "pointsPerGame", "scoring")
+    away_papg = parse_stat(away_stats, "avgPointsAllowed", "pointsAllowedPerGame", "opponentPointsPerGame")
 
     if all(v is not None for v in [home_ppg, home_papg, away_ppg, away_papg]):
         margin_diff = (home_ppg - home_papg) - (away_ppg - away_papg)

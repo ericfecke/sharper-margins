@@ -6,31 +6,656 @@
 <title>Sharper Margins — Edge Dashboard</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0f1117;
+    --bg2: #1a1d27;
+    --bg3: #22263a;
+    --border: #2e3347;
+    --text: #e2e8f0;
+    --text-muted: #94a3b8;
+    --green: #22c55e;
+    --orange: #f97316;
+    --yellow: #eab308;
+    --red: #ef4444;
+    --blue: #3b82f6;
+    --purple: #a855f7;
+    --accent: #6366f1;
+  }
   body {
-    background: #0f1117;
-    color: #e2e8f0;
-    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     font-size: 14px;
+    line-height: 1.5;
     min-height: 100vh;
+  }
+  .header {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
   }
-  .init-state {
+  .header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+  }
+  .header .meta { color: var(--text-muted); font-size: 12px; }
+  .stats-bar {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 24px;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .stat-item { display: flex; align-items: center; gap: 6px; }
+  .stat-label { color: var(--text-muted); font-size: 12px; }
+  .stat-value { font-weight: 600; }
+  .filters {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 24px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter-btn {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.15s;
+  }
+  .filter-btn:hover, .filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: white;
+  }
+  .search-input {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    width: 160px;
+  }
+  .search-input::placeholder { color: var(--text-muted); }
+  .container { padding: 20px 24px; max-width: 1400px; margin: 0 auto; }
+  .section-header {
+    margin: 24px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-header h2 { font-size: 16px; font-weight: 600; }
+  .section-desc { color: var(--text-muted); font-size: 12px; margin-top: 4px; }
+  .low-conf-header h2 { color: var(--yellow); }
+  .signals-table, .history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .signals-table th, .history-table th {
+    background: var(--bg3);
+    color: var(--text-muted);
+    font-weight: 500;
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border);
+    white-space: nowrap;
+  }
+  .sortable { cursor: pointer; user-select: none; }
+  .sortable:hover { color: var(--text); }
+  .signals-table td, .history-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .signal-row { cursor: pointer; transition: background 0.1s; }
+  .signal-row:hover { background: var(--bg3); }
+  .sport-badge {
+    display: inline-block;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+  }
+  .game-cell { max-width: 220px; }
+  .game-time { color: var(--text-muted); font-size: 11px; margin-top: 2px; }
+  .edge-green { color: var(--green); }
+  .edge-orange { color: var(--orange); }
+  .edge-yellow { color: var(--yellow); }
+  .detail-row td { padding: 0; }
+  .detail-panel {
+    background: var(--bg3);
+    border-left: 3px solid var(--accent);
+    padding: 16px 20px;
+    font-size: 13px;
+  }
+  .detail-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+  @media (max-width: 700px) { .detail-grid { grid-template-columns: 1fr; } }
+  .detail-section h4 { font-size: 12px; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .factor-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .factor-item {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 2px 8px;
+    font-size: 11px;
+    font-family: monospace;
+  }
+  .kalshi-confirm { color: var(--green); font-size: 12px; }
+  .kalshi-contra { color: var(--yellow); font-size: 12px; }
+  .kalshi-none { color: var(--text-muted); font-size: 12px; }
+  .missing-factors {
+    color: var(--yellow);
+    font-size: 11px;
+    margin-top: 6px;
+  }
+  code {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 1px 5px;
+    font-family: monospace;
+    font-size: 12px;
+  }
+  .stub-grid {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+  .stub-sport {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 12px 16px;
+    min-width: 200px;
+  }
+  .stub-sport h4 {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+  .stub-sport ul { list-style: none; padding: 0; }
+  .stub-sport li { font-size: 12px; padding: 3px 0; border-bottom: 1px solid var(--border); }
+  .stub-sport li:last-child { border-bottom: none; }
+  .no-games { color: var(--text-muted); font-size: 12px; }
+  .wl-record {
+    display: flex;
+    gap: 16px;
+    margin-top: 6px;
+    font-size: 13px;
+  }
+  .result-win { color: var(--green); font-weight: 600; }
+  .result-loss { color: var(--red); font-weight: 600; }
+  .result-push { color: var(--text-muted); font-weight: 600; }
+  .empty-state {
     text-align: center;
-    padding: 48px;
-    color: #94a3b8;
+    padding: 48px 24px;
+    color: var(--text-muted);
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin: 16px 0;
   }
-  .init-state h1 { color: #6366f1; font-size: 28px; margin-bottom: 16px; letter-spacing: 0.05em; }
-  .init-state p { font-size: 14px; margin-top: 8px; }
+  .hidden { display: none !important; }
 </style>
 </head>
 <body>
-<div class="init-state">
+
+<div class="header">
   <h1>SHARPER MARGINS</h1>
-  <p>Dashboard initializing — first run cycle will populate signals.</p>
-  <p style="margin-top: 16px; font-size: 12px;">Run <code>python tools/run_cycle.py</code> to generate the first report.</p>
+  <div class="meta">Generated: 2026-03-12 20:30 UTC</div>
 </div>
+
+<div class="stats-bar">
+  <div class="stat-item">
+    <span class="stat-label">Active Signals:</span>
+    <span class="stat-value">9</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-label">🟢 20%+:</span>
+    <span class="stat-value edge-green">3</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-label">🟠 15–19%:</span>
+    <span class="stat-value edge-orange">2</span>
+  </div>
+  <div class="stat-item">
+    <span class="stat-label">🟡 10–14%:</span>
+    <span class="stat-value edge-yellow">4</span>
+  </div>
+</div>
+
+<div class="filters" id="filters">
+  <button class="filter-btn active" onclick="filterSport('all', this)">All Sports</button>
+  <button class="filter-btn" onclick="filterSport('NFL', this)">NFL</button>
+  <button class="filter-btn" onclick="filterSport('CFB', this)">CFB</button>
+  <button class="filter-btn" onclick="filterSport('NBA', this)">NBA</button>
+  <button class="filter-btn" onclick="filterSport('MLB', this)">MLB</button>
+  <button class="filter-btn" onclick="filterSport('NHL', this)">NHL</button>
+  <button class="filter-btn" onclick="filterSport('CBB', this)">CBB</button>
+  <span style="color:var(--text-muted); padding: 0 4px;">|</span>
+  <button class="filter-btn active-book" onclick="filterBook('all', this)">All Books</button>
+  <button class="filter-btn" onclick="filterBook('DraftKings', this)">DraftKings</button>
+  <button class="filter-btn" onclick="filterBook('FanDuel', this)">FanDuel</button>
+  <span style="color:var(--text-muted); padding: 0 4px;">|</span>
+  <input class="search-input" type="text" placeholder="Search teams..." oninput="searchSignals(this.value)">
+</div>
+
+<div class="container">
+
+  <div class="section-header">
+    <h2>Active Signals</h2>
+    <p class="section-desc">Edges ≥ 10% — our estimated probability vs vig-adjusted implied. Click row to expand.</p>
+  </div>
+
+  
+
+  
+  <table class="signals-table" id="main-table">
+    <thead><tr>
+      <th>Sport</th>
+      <th>Game</th>
+      <th>Book</th>
+      <th onclick="sortTable('main-table',3)" class="sortable">Edge ▼</th>
+      <th>Our %</th>
+      <th>Implied %</th>
+      <th>Recommendation</th>
+    </tr></thead>
+    <tbody id="main-tbody">
+
+    <tr class="signal-row edge-green" data-sport="NBA" data-book="DraftKings" data-edge="0.2484" onclick="toggleRow(0)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">Philadelphia 76ers @ Detroit Pistons<div class="game-time">Mar 12 11:10 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td><strong class="edge-green">🟢 24.8%</strong></td>
+      <td>36.1%</td>
+      <td>11.3%</td>
+      <td><strong>Philadelphia 76ers ML</strong></td>
+    </tr>
+    <tr id="detail-0" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Win rate edge: home favored (71.88% vs 53.85%); Home court advantage applied</p>
+              
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>-1200</code> | Away: <code>+750</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.072</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.006</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-green" data-sport="NBA" data-book="DraftKings" data-edge="0.2117" onclick="toggleRow(1)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">Dallas Mavericks @ Memphis Grizzlies<div class="game-time">Mar 13 12:10 AM UTC</div></td>
+      <td>DraftKings</td>
+      <td><strong class="edge-green">🟢 21.2%</strong></td>
+      <td>56.7%</td>
+      <td>35.5%</td>
+      <td><strong>Memphis Grizzlies ML</strong></td>
+    </tr>
+    <tr id="detail-1" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home court advantage applied; Injury drag: -0.025</p>
+              
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>+170</code> | Away: <code>-205</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.015</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.025</span><span class="factor-item">net_rating: +0.017</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-orange" data-sport="NBA" data-book="FanDuel" data-edge="0.1629" onclick="toggleRow(2)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">Washington Wizards @ Orlando Magic<div class="game-time">Mar 12 11:10 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td><strong class="edge-orange">🟠 16.3%</strong></td>
+      <td>27.9%</td>
+      <td>11.6%</td>
+      <td><strong>Washington Wizards ML</strong></td>
+    </tr>
+    <tr id="detail-2" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Win rate edge: home favored (56.25% vs 25.00%); Home court advantage applied; Recent form favors home</p>
+              
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>-1150</code> | Away: <code>+730</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.100</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: -0.015</span><span class="factor-item">recent_form: +0.060</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.016</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-orange" data-sport="NBA" data-book="DraftKings" data-edge="0.1507" onclick="toggleRow(3)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">Phoenix Suns @ Indiana Pacers<div class="game-time">Mar 12 11:10 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td><strong class="edge-orange">🟠 15.1%</strong></td>
+      <td>37.9%</td>
+      <td>22.9%</td>
+      <td><strong>Indiana Pacers ML</strong></td>
+    </tr>
+    <tr id="detail-3" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Win rate edge: away favored (23.08% vs 58.46%); Home court advantage applied; Recent form favors away</p>
+              
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>+320</code> | Away: <code>-410</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: -0.100</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: -0.060</span><span class="factor-item">injuries: -0.015</span><span class="factor-item">net_rating: -0.006</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="NBA" data-book="FanDuel" data-edge="0.1434" onclick="toggleRow(4)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">Chicago Bulls @ Los Angeles Lakers<div class="game-time">Mar 13 02:40 AM UTC</div></td>
+      <td>FanDuel</td>
+      <td><strong class="edge-yellow">🟡 14.3%</strong></td>
+      <td>32.8%</td>
+      <td>18.5%</td>
+      <td><strong>Chicago Bulls ML</strong></td>
+    </tr>
+    <tr id="detail-4" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Win rate edge: home favored (61.54% vs 41.54%); Home court advantage applied; Recent form favors home</p>
+              
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>-560</code> | Away: <code>+420</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.080</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.045</span><span class="factor-item">injuries: -0.015</span><span class="factor-item">net_rating: +0.002</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="NBA" data-book="FanDuel" data-edge="0.117" onclick="toggleRow(5)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">Brooklyn Nets @ Atlanta Hawks<div class="game-time">Mar 12 11:40 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td><strong class="edge-yellow">🟡 11.7%</strong></td>
+      <td>23.0%</td>
+      <td>11.3%</td>
+      <td><strong>Brooklyn Nets ML</strong></td>
+    </tr>
+    <tr id="detail-5" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Win rate edge: home favored (52.31% vs 26.15%); Home court advantage applied; Recent form favors home; Net rating advantage: home</p>
+              
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>-1200</code> | Away: <code>+750</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.100</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.060</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.050</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  
+        <div class="section-header low-conf-header">
+          <h2>⚠ Low Confidence Signals</h2>
+          <p class="section-desc">Edge ≥ 10% but missing data — proceed with caution</p>
+        </div>
+        <table class="signals-table" id="low-conf-table">
+          <thead><tr>
+            <th>Sport</th><th>Game</th><th>Book</th>
+            <th onclick="sortTable('low-conf-table',3)" class="sortable">Edge ▼</th>
+            <th>Our %</th><th>Implied %</th><th>Recommendation</th>
+          </tr></thead>
+          <tbody>
+    <tr class="signal-row edge-green" data-sport="NBA" data-book="FanDuel" data-edge="0.2209" onclick="toggleRow(6)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">Dallas Mavericks @ Memphis Grizzlies<div class="game-time">Mar 13 12:10 AM UTC</div></td>
+      <td>FanDuel</td>
+      <td><strong class="edge-green">🟢 22.1%</strong></td>
+      <td>57.5%</td>
+      <td>35.4%</td>
+      <td><strong>Memphis Grizzlies ML</strong></td>
+    </tr>
+    <tr id="detail-6" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home court advantage applied</p>
+              <div class="missing-factors">Missing data: injury_data, net_rating</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>+172</code> | Away: <code>-205</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.015</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="NBA" data-book="DraftKings" data-edge="0.1402" onclick="toggleRow(7)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">Boston Celtics @ Oklahoma City Thunder<div class="game-time">Mar 13 01:40 AM UTC</div></td>
+      <td>DraftKings</td>
+      <td><strong class="edge-yellow">🟡 14.0%</strong></td>
+      <td>44.0%</td>
+      <td>30.0%</td>
+      <td><strong>Boston Celtics ML</strong></td>
+    </tr>
+    <tr id="detail-7" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home court advantage applied</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, injury_data, net_rating</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>-270</code> | Away: <code>+220</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="NBA" data-book="DraftKings" data-edge="0.1036" onclick="toggleRow(8)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">Denver Nuggets @ San Antonio Spurs<div class="game-time">Mar 13 01:10 AM UTC</div></td>
+      <td>DraftKings</td>
+      <td><strong class="edge-yellow">🟡 10.4%</strong></td>
+      <td>44.0%</td>
+      <td>33.6%</td>
+      <td><strong>Denver Nuggets ML</strong></td>
+    </tr>
+    <tr id="detail-8" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home court advantage applied</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, injury_data, net_rating</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>-225</code> | Away: <code>+185</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr></tbody>
+        </table>
+
+  
+
+  
+
+</div>
+
+<script>
+var openRow = null;
+function toggleRow(idx) {
+  var row = document.getElementById('detail-' + idx);
+  if (!row) return;
+  if (openRow !== null && openRow !== idx) {
+    var prev = document.getElementById('detail-' + openRow);
+    if (prev) prev.style.display = 'none';
+  }
+  row.style.display = (row.style.display === 'none') ? 'table-row' : 'none';
+  openRow = (row.style.display === 'none') ? null : idx;
+}
+
+var activeSport = 'all';
+var activeBook = 'all';
+var searchTerm = '';
+
+function filterSport(sport, btn) {
+  activeSport = sport;
+  document.querySelectorAll('.filter-btn').forEach(function(b) {
+    if (b.textContent.replace(/\s/g,'') === sport || (sport === 'all' && b.textContent.trim() === 'All Sports')) {
+      b.classList.add('active');
+    } else if (b.onclick && b.onclick.toString().includes('filterSport')) {
+      b.classList.remove('active');
+    }
+  });
+  applyFilters();
+}
+
+function filterBook(book, btn) {
+  activeBook = book;
+  document.querySelectorAll('.filter-btn').forEach(function(b) {
+    if (b.onclick && b.onclick.toString().includes('filterBook')) {
+      b.classList.toggle('active', b.textContent.trim().replace(' ', '') === book || (book === 'all' && b.textContent.trim() === 'All Books'));
+    }
+  });
+  applyFilters();
+}
+
+function searchSignals(val) {
+  searchTerm = val.toLowerCase();
+  applyFilters();
+}
+
+function applyFilters() {
+  document.querySelectorAll('.signal-row').forEach(function(row) {
+    var sport = row.dataset.sport || '';
+    var book = row.dataset.book || '';
+    var text = row.textContent.toLowerCase();
+    var idx = row.getAttribute('onclick').match(/\d+/);
+    var sportMatch = activeSport === 'all' || sport === activeSport;
+    var bookMatch = activeBook === 'all' || book === activeBook;
+    var searchMatch = !searchTerm || text.includes(searchTerm);
+    var visible = sportMatch && bookMatch && searchMatch;
+    row.style.display = visible ? '' : 'none';
+    if (!visible && idx) {
+      var detail = document.getElementById('detail-' + idx[0]);
+      if (detail) detail.style.display = 'none';
+    }
+  });
+}
+
+function sortTable(tableId, colIdx) {
+  var table = document.getElementById(tableId);
+  if (!table) return;
+  var tbody = table.querySelector('tbody');
+  var rows = Array.from(tbody.querySelectorAll('tr.signal-row'));
+  var details = {};
+  rows.forEach(function(r) {
+    var m = r.getAttribute('onclick').match(/\d+/);
+    if (m) {
+      var d = document.getElementById('detail-' + m[0]);
+      if (d) details[m[0]] = d;
+    }
+  });
+  rows.sort(function(a, b) {
+    var ea = parseFloat(a.dataset.edge) || 0;
+    var eb = parseFloat(b.dataset.edge) || 0;
+    return eb - ea;
+  });
+  rows.forEach(function(r) {
+    tbody.appendChild(r);
+    var m = r.getAttribute('onclick').match(/\d+/);
+    if (m && details[m[0]]) tbody.appendChild(details[m[0]]);
+  });
+}
+</script>
+
 </body>
 </html>

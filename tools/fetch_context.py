@@ -137,15 +137,27 @@ def _build_game_context(sport, base, game, home_team, away_team,
         "commence_time": game["commence_time"],
     }
 
-    # Find ESPN team IDs from records
-    home_rec = _find_team_record(home_team, team_records)
-    away_rec = _find_team_record(away_team, team_records)
+    # Find scoreboard event first (it has team records embedded)
+    event = _find_scoreboard_event(home_team, away_team, scoreboard_events)
+
+    # Extract team records: prefer scoreboard-embedded (always present), fall back to standings
+    home_rec = None
+    away_rec = None
+    if event:
+        home_rec = event.get("home_team_record")
+        away_rec = event.get("away_team_record")
+    # Fill gaps from standings if available
+    if not home_rec or home_rec.get("wins") is None:
+        from_standings = _find_team_record(home_team, team_records)
+        if from_standings:
+            home_rec = from_standings
+    if not away_rec or away_rec.get("wins") is None:
+        from_standings = _find_team_record(away_team, team_records)
+        if from_standings:
+            away_rec = from_standings
 
     ctx["home_record"] = home_rec
     ctx["away_record"] = away_rec
-
-    # Find scoreboard event for this game (home field, venue info)
-    event = _find_scoreboard_event(home_team, away_team, scoreboard_events)
     ctx["scoreboard_event"] = event
 
     if event:
@@ -158,8 +170,11 @@ def _build_game_context(sport, base, game, home_team, away_team,
         ctx["is_home"] = True
 
     # Injuries for each team
-    ctx["home_injuries"] = team_injuries.get(_normalize_team_name(home_team), [])
-    ctx["away_injuries"] = team_injuries.get(_normalize_team_name(away_team), [])
+    # None = endpoint failed (flag missing); [] = healthy (no flag)
+    injuries_available = bool(team_injuries)  # True if injuries endpoint returned data
+    ctx["home_injuries"] = team_injuries.get(_normalize_team_name(home_team), [] if injuries_available else None)
+    ctx["away_injuries"] = team_injuries.get(_normalize_team_name(away_team), [] if injuries_available else None)
+    ctx["injuries_data_available"] = injuries_available
 
     # Fetch per-team stats and schedule if we have team IDs
     home_id = home_rec.get("team_id") if home_rec else None
@@ -222,24 +237,38 @@ def _parse_standings(data: dict | None, sport: str) -> list:
 
 
 def _parse_injuries(data: dict | None) -> dict:
-    """Parse injuries into dict keyed by normalized team name."""
+    """Parse injuries into dict keyed by normalized team name.
+    ESPN injuries endpoint uses entry.displayName as team name (not entry.team.displayName).
+    """
     result = {}
     if not data:
         return result
     try:
-        for injury in data.get("injuries", []):
-            team = injury.get("team", {})
-            team_name = _normalize_team_name(team.get("displayName", ""))
-            items = injury.get("injuries", [])
+        for injury_entry in data.get("injuries", []):
+            # ESPN uses displayName directly on the injury group entry
+            team_name = _normalize_team_name(
+                injury_entry.get("displayName") or
+                (injury_entry.get("team") or {}).get("displayName", "")
+            )
+            if not team_name:
+                continue
+            items = injury_entry.get("injuries", [])
             if team_name not in result:
                 result[team_name] = []
             for item in items:
                 athlete = item.get("athlete", {})
+                # Position: athlete.position.abbreviation
+                pos_obj = athlete.get("position", {})
+                position = pos_obj.get("abbreviation") if isinstance(pos_obj, dict) else None
+                # Status: item.status (string like "Out") or item.type.description
+                status = item.get("status")
+                if not status:
+                    type_obj = item.get("type", {})
+                    status = type_obj.get("description") if isinstance(type_obj, dict) else None
                 result[team_name].append({
                     "name": athlete.get("displayName"),
-                    "position": athlete.get("position", {}).get("abbreviation"),
-                    "status": item.get("status"),
-                    "type": item.get("type"),
+                    "position": position,
+                    "status": status or "",
                 })
     except Exception as e:
         print(f"[fetch_context] Injuries parse error: {e}", file=sys.stderr)
@@ -247,7 +276,7 @@ def _parse_injuries(data: dict | None) -> dict:
 
 
 def _parse_scoreboard(data: dict | None) -> list:
-    """Parse scoreboard events list."""
+    """Parse scoreboard events list. Also extracts team records embedded in competitor objects."""
     if not data:
         return []
     events = []
@@ -258,13 +287,49 @@ def _parse_scoreboard(data: dict | None) -> list:
                 continue
             comp = competitions[0]
             competitors = comp.get("competitors", [])
-            home_team = next((c["team"]["displayName"] for c in competitors if c.get("homeAway") == "home"), None)
-            away_team = next((c["team"]["displayName"] for c in competitors if c.get("homeAway") == "away"), None)
+            home_comp = next((c for c in competitors if c.get("homeAway") == "home"), None)
+            away_comp = next((c for c in competitors if c.get("homeAway") == "away"), None)
+            home_team = home_comp["team"]["displayName"] if home_comp else None
+            away_team = away_comp["team"]["displayName"] if away_comp else None
             venue = comp.get("venue", {})
+
+            def _extract_team_record(comp_obj):
+                if not comp_obj:
+                    return None
+                team = comp_obj.get("team", {})
+                team_id = str(team.get("id", ""))
+                team_name = team.get("displayName", "")
+                team_abbr = team.get("abbreviation", "")
+                wins, losses, games_played = None, None, None
+                # Records are in competitor.records list
+                records = comp_obj.get("records", [])
+                for rec in records:
+                    if rec.get("type") == "total" or rec.get("name") == "overall":
+                        summary = rec.get("summary", "")
+                        if "-" in summary:
+                            parts = summary.split("-")
+                            try:
+                                wins = int(parts[0])
+                                losses = int(parts[1])
+                                games_played = wins + losses
+                            except (ValueError, IndexError):
+                                pass
+                        break
+                return {
+                    "team_id": team_id,
+                    "team_name": team_name,
+                    "team_abbr": team_abbr,
+                    "wins": wins,
+                    "losses": losses,
+                    "games_played": games_played,
+                }
+
             events.append({
                 "id": event.get("id"),
                 "home_team": home_team,
                 "away_team": away_team,
+                "home_team_record": _extract_team_record(home_comp),
+                "away_team_record": _extract_team_record(away_comp),
                 "venue": venue.get("fullName"),
                 "neutral_site": comp.get("neutralSite", False),
                 "weather": comp.get("weather"),
@@ -276,16 +341,27 @@ def _parse_scoreboard(data: dict | None) -> list:
 
 
 def _fetch_team_stats(base: str, team_id: str) -> dict | None:
-    """Fetch team statistics from ESPN."""
+    """Fetch team statistics from ESPN.
+    ESPN stats are at data.results.stats.categories (not data.splits.categories).
+    """
     data = _get(f"{base}/teams/{team_id}/statistics")
     if not data:
         return None
     try:
         stats = {}
-        for split in data.get("splits", {}).get("categories", []):
-            for stat in split.get("stats", []):
-                stats[stat["name"]] = stat.get("value")
-        return stats
+        # Primary path: data.results.stats.categories
+        categories = (
+            data.get("results", {}).get("stats", {}).get("categories")
+            or data.get("splits", {}).get("categories")
+            or []
+        )
+        for cat in categories:
+            for stat in cat.get("stats", []):
+                name = stat.get("name")
+                value = stat.get("value")
+                if name:
+                    stats[name] = value
+        return stats if stats else None
     except Exception as e:
         print(f"[fetch_context] Team stats parse error for {team_id}: {e}", file=sys.stderr)
         return None
