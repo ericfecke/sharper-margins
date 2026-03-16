@@ -234,25 +234,25 @@
 
 <div class="header">
   <h1>SHARPER MARGINS</h1>
-  <div class="meta">Generated: 2026-03-12 20:30 UTC</div>
+  <div class="meta">Generated: 2026-03-16 16:04 UTC</div>
 </div>
 
 <div class="stats-bar">
   <div class="stat-item">
     <span class="stat-label">Active Signals:</span>
-    <span class="stat-value">9</span>
+    <span class="stat-value">0</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟢 20%+:</span>
-    <span class="stat-value edge-green">3</span>
+    <span class="stat-value edge-green">0</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟠 15–19%:</span>
-    <span class="stat-value edge-orange">2</span>
+    <span class="stat-value edge-orange">0</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟡 10–14%:</span>
-    <span class="stat-value edge-yellow">4</span>
+    <span class="stat-value edge-yellow">0</span>
   </div>
 </div>
 
@@ -279,289 +279,11 @@
     <p class="section-desc">Edges ≥ 10% — our estimated probability vs vig-adjusted implied. Click row to expand.</p>
   </div>
 
+  <div class="empty-state"><p>No edges &ge; 10% identified today. Check back after next model run.</p></div>
+
   
 
   
-  <table class="signals-table" id="main-table">
-    <thead><tr>
-      <th>Sport</th>
-      <th>Game</th>
-      <th>Book</th>
-      <th onclick="sortTable('main-table',3)" class="sortable">Edge ▼</th>
-      <th>Our %</th>
-      <th>Implied %</th>
-      <th>Recommendation</th>
-    </tr></thead>
-    <tbody id="main-tbody">
-
-    <tr class="signal-row edge-green" data-sport="NBA" data-book="DraftKings" data-edge="0.2484" onclick="toggleRow(0)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Philadelphia 76ers @ Detroit Pistons<div class="game-time">Mar 12 11:10 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td><strong class="edge-green">🟢 24.8%</strong></td>
-      <td>36.1%</td>
-      <td>11.3%</td>
-      <td><strong>Philadelphia 76ers ML</strong></td>
-    </tr>
-    <tr id="detail-0" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: home favored (71.88% vs 53.85%); Home court advantage applied</p>
-              
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>-1200</code> | Away: <code>+750</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.072</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.006</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-green" data-sport="NBA" data-book="DraftKings" data-edge="0.2117" onclick="toggleRow(1)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Dallas Mavericks @ Memphis Grizzlies<div class="game-time">Mar 13 12:10 AM UTC</div></td>
-      <td>DraftKings</td>
-      <td><strong class="edge-green">🟢 21.2%</strong></td>
-      <td>56.7%</td>
-      <td>35.5%</td>
-      <td><strong>Memphis Grizzlies ML</strong></td>
-    </tr>
-    <tr id="detail-1" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home court advantage applied; Injury drag: -0.025</p>
-              
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>+170</code> | Away: <code>-205</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.015</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.025</span><span class="factor-item">net_rating: +0.017</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-orange" data-sport="NBA" data-book="FanDuel" data-edge="0.1629" onclick="toggleRow(2)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Washington Wizards @ Orlando Magic<div class="game-time">Mar 12 11:10 PM UTC</div></td>
-      <td>FanDuel</td>
-      <td><strong class="edge-orange">🟠 16.3%</strong></td>
-      <td>27.9%</td>
-      <td>11.6%</td>
-      <td><strong>Washington Wizards ML</strong></td>
-    </tr>
-    <tr id="detail-2" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: home favored (56.25% vs 25.00%); Home court advantage applied; Recent form favors home</p>
-              
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>-1150</code> | Away: <code>+730</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.100</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: -0.015</span><span class="factor-item">recent_form: +0.060</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.016</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-orange" data-sport="NBA" data-book="DraftKings" data-edge="0.1507" onclick="toggleRow(3)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Phoenix Suns @ Indiana Pacers<div class="game-time">Mar 12 11:10 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td><strong class="edge-orange">🟠 15.1%</strong></td>
-      <td>37.9%</td>
-      <td>22.9%</td>
-      <td><strong>Indiana Pacers ML</strong></td>
-    </tr>
-    <tr id="detail-3" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: away favored (23.08% vs 58.46%); Home court advantage applied; Recent form favors away</p>
-              
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>+320</code> | Away: <code>-410</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: -0.100</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: -0.060</span><span class="factor-item">injuries: -0.015</span><span class="factor-item">net_rating: -0.006</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="NBA" data-book="FanDuel" data-edge="0.1434" onclick="toggleRow(4)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Chicago Bulls @ Los Angeles Lakers<div class="game-time">Mar 13 02:40 AM UTC</div></td>
-      <td>FanDuel</td>
-      <td><strong class="edge-yellow">🟡 14.3%</strong></td>
-      <td>32.8%</td>
-      <td>18.5%</td>
-      <td><strong>Chicago Bulls ML</strong></td>
-    </tr>
-    <tr id="detail-4" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: home favored (61.54% vs 41.54%); Home court advantage applied; Recent form favors home</p>
-              
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>-560</code> | Away: <code>+420</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.080</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.045</span><span class="factor-item">injuries: -0.015</span><span class="factor-item">net_rating: +0.002</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="NBA" data-book="FanDuel" data-edge="0.117" onclick="toggleRow(5)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Brooklyn Nets @ Atlanta Hawks<div class="game-time">Mar 12 11:40 PM UTC</div></td>
-      <td>FanDuel</td>
-      <td><strong class="edge-yellow">🟡 11.7%</strong></td>
-      <td>23.0%</td>
-      <td>11.3%</td>
-      <td><strong>Brooklyn Nets ML</strong></td>
-    </tr>
-    <tr id="detail-5" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: home favored (52.31% vs 26.15%); Home court advantage applied; Recent form favors home; Net rating advantage: home</p>
-              
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>-1200</code> | Away: <code>+750</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.100</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.060</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.050</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    </tbody>
-  </table>
-
-  
-        <div class="section-header low-conf-header">
-          <h2>⚠ Low Confidence Signals</h2>
-          <p class="section-desc">Edge ≥ 10% but missing data — proceed with caution</p>
-        </div>
-        <table class="signals-table" id="low-conf-table">
-          <thead><tr>
-            <th>Sport</th><th>Game</th><th>Book</th>
-            <th onclick="sortTable('low-conf-table',3)" class="sortable">Edge ▼</th>
-            <th>Our %</th><th>Implied %</th><th>Recommendation</th>
-          </tr></thead>
-          <tbody>
-    <tr class="signal-row edge-green" data-sport="NBA" data-book="FanDuel" data-edge="0.2209" onclick="toggleRow(6)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Dallas Mavericks @ Memphis Grizzlies<div class="game-time">Mar 13 12:10 AM UTC</div></td>
-      <td>FanDuel</td>
-      <td><strong class="edge-green">🟢 22.1%</strong></td>
-      <td>57.5%</td>
-      <td>35.4%</td>
-      <td><strong>Memphis Grizzlies ML</strong></td>
-    </tr>
-    <tr id="detail-6" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home court advantage applied</p>
-              <div class="missing-factors">Missing data: injury_data, net_rating</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>+172</code> | Away: <code>-205</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.015</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="NBA" data-book="DraftKings" data-edge="0.1402" onclick="toggleRow(7)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Boston Celtics @ Oklahoma City Thunder<div class="game-time">Mar 13 01:40 AM UTC</div></td>
-      <td>DraftKings</td>
-      <td><strong class="edge-yellow">🟡 14.0%</strong></td>
-      <td>44.0%</td>
-      <td>30.0%</td>
-      <td><strong>Boston Celtics ML</strong></td>
-    </tr>
-    <tr id="detail-7" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home court advantage applied</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, injury_data, net_rating</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>-270</code> | Away: <code>+220</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="NBA" data-book="DraftKings" data-edge="0.1036" onclick="toggleRow(8)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Denver Nuggets @ San Antonio Spurs<div class="game-time">Mar 13 01:10 AM UTC</div></td>
-      <td>DraftKings</td>
-      <td><strong class="edge-yellow">🟡 10.4%</strong></td>
-      <td>44.0%</td>
-      <td>33.6%</td>
-      <td><strong>Denver Nuggets ML</strong></td>
-    </tr>
-    <tr id="detail-8" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home court advantage applied</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, injury_data, net_rating</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>-225</code> | Away: <code>+185</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr></tbody>
-        </table>
 
   
 

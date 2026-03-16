@@ -281,7 +281,23 @@ def _build_html(generated_at, normal_signals, low_conf_signals, historical, stub
 
     empty_state = ""
     if total_active == 0:
-        empty_state = '<div class="empty-state"><p>No edges ≥ 10% identified today. Check back after next model run.</p></div>'
+        empty_state = '<div class="empty-state"><p>No edges &ge; 10% identified today. Check back after next model run.</p></div>'
+
+    # Build main table outside the big f-string to avoid backslash-in-expression (Python <3.12)
+    if total_active == 0:
+        main_table_html = ""
+    else:
+        main_table_html = (
+            '<table class="signals-table" id="main-table">'
+            '<thead><tr>'
+            '<th>Sport</th><th>Game</th><th>Book</th>'
+            '<th onclick="sortTable(\'main-table\',3)" class="sortable">Edge &#9660;</th>'
+            '<th>Our %</th><th>Implied %</th><th>Recommendation</th>'
+            '</tr></thead>'
+            '<tbody id="main-tbody">'
+            + signal_rows_html +
+            '</tbody></table>'
+        )
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -566,21 +582,7 @@ def _build_html(generated_at, normal_signals, low_conf_signals, historical, stub
 
   {empty_state}
 
-  {"" if total_active == 0 else f'''
-  <table class="signals-table" id="main-table">
-    <thead><tr>
-      <th>Sport</th>
-      <th>Game</th>
-      <th>Book</th>
-      <th onclick="sortTable(\'main-table\',3)" class="sortable">Edge ▼</th>
-      <th>Our %</th>
-      <th>Implied %</th>
-      <th>Recommendation</th>
-    </tr></thead>
-    <tbody id="main-tbody">
-{signal_rows_html}
-    </tbody>
-  </table>'''}
+  {main_table_html}
 
   {low_conf_section}
 
