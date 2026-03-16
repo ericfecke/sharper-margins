@@ -180,9 +180,9 @@ def _git_commit_push(signal_count: int, active_sports: list, dry_run: bool = Fal
         if result.returncode != 0:
             print(f"[run_cycle] git pull warning: {result.stderr}", file=sys.stderr)
 
-        # Stage output files only
+        # Stage dashboard and signals at repo root
         subprocess.run(
-            ["git", "-C", str(ROOT), "add", "output/dashboard.html", "output/signals.json"],
+            ["git", "-C", str(ROOT), "add", "index.html", "signals.json"],
             check=True, capture_output=True
         )
 

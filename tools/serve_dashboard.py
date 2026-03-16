@@ -8,8 +8,8 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-SIGNALS_PATH = Path(__file__).parent.parent / "output" / "signals.json"
-DASHBOARD_PATH = Path(__file__).parent.parent / "output" / "dashboard.html"
+SIGNALS_PATH = Path(__file__).parent.parent / "signals.json"
+DASHBOARD_PATH = Path(__file__).parent.parent / "index.html"
 
 
 def render_dashboard(signals: list = None, active_sports: list = None, stub_games: dict = None) -> None:

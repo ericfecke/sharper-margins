@@ -9,7 +9,7 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-SIGNALS_PATH = Path(__file__).parent.parent / "output" / "signals.json"
+SIGNALS_PATH = Path(__file__).parent.parent / "signals.json"
 
 
 def write_signal(edge_result: dict) -> None:
