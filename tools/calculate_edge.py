@@ -9,6 +9,12 @@ from agent_utils import american_to_implied, remove_vig, clamp
 
 EDGE_THRESHOLD = 0.10
 KALSHI_ALIGNMENT_THRESHOLD = 0.05
+# Minimum vig-adjusted implied probability for a signal to fire.
+# Filters out extreme underdogs (+300 or longer) where the model's
+# probability ceiling (~83%) creates false edges against heavily
+# priced favorites (-400 and beyond). Market pricing on extreme
+# mismatches is almost always correct.
+MIN_SIGNAL_IMPLIED = 0.25
 
 
 def calculate_edge(
@@ -72,6 +78,11 @@ def calculate_edge(
             candidate_rec = f"{away_team} ML"
 
         if candidate_edge < EDGE_THRESHOLD:
+            continue
+
+        # Filter extreme underdogs — model doesn't have enough resolution
+        # to reliably price teams the market has at +300 or longer.
+        if candidate_implied < MIN_SIGNAL_IMPLIED:
             continue
 
         # Kalshi cross-validation

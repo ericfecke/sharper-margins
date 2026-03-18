@@ -68,8 +68,9 @@ def run(context: dict) -> dict:
     deltas["win_rate_diff"] = delta_wr
 
     # --- Factor 2: Home court ---
+    # Modern NBA home court is ~3pp; 6pp was overweighted.
     if not neutral_site:
-        delta_home = +0.06
+        delta_home = +0.03
     else:
         delta_home = 0.0
     deltas["home_court"] = delta_home
