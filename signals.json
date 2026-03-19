@@ -655,7 +655,7 @@
     "home_odds": 134,
     "away_odds": -158,
     "game_id": "3954fca33e068341fbcf893afefbc2e6",
-    "generated_at": "2026-03-18T21:35:36.999733+00:00",
+    "generated_at": "2026-03-19T21:36:07.364710+00:00",
     "result": null
   },
   {
@@ -691,7 +691,37 @@
     "home_odds": -160,
     "away_odds": 131,
     "game_id": "5c8789e78ef558dfaf6b887deacec21c",
-    "generated_at": "2026-03-18T21:35:37.000859+00:00",
+    "generated_at": "2026-03-19T21:36:07.365778+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Milwaukee Bucks @ Utah Jazz",
+    "commence_time": "2026-03-20T01:10:00Z",
+    "book": "DraftKings",
+    "recommendation": "Utah Jazz ML",
+    "our_probability": 0.4418,
+    "implied_probability": 0.3194,
+    "edge": 0.1224,
+    "confidence": "normal",
+    "missing_factors": [],
+    "sme_reasoning": "Win rate edge: away favored (28.99% vs 41.18%); Home court advantage applied; Injury drag: -0.060; Net rating advantage: home",
+    "factor_deltas": {
+      "win_rate_diff": -0.0488,
+      "home_court": 0.03,
+      "rest": -0.015,
+      "recent_form": 0.0,
+      "injuries": -0.06,
+      "net_rating": 0.0355,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 200,
+    "away_odds": -245,
+    "game_id": "c9330059cfdf19891d9b4ecfa62d54c5",
+    "generated_at": "2026-03-19T21:36:01.383568+00:00",
     "result": null
   }
 ]
