@@ -655,7 +655,7 @@
     "home_odds": 134,
     "away_odds": -158,
     "game_id": "3954fca33e068341fbcf893afefbc2e6",
-    "generated_at": "2026-03-20T21:31:06.094129+00:00",
+    "generated_at": "2026-03-21T16:16:03.754461+00:00",
     "result": null
   },
   {
@@ -818,6 +818,42 @@
     "away_odds": -158,
     "game_id": "041a208c3a53186e8bc0983045ab66f7",
     "generated_at": "2026-03-20T21:31:00.177589+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Los Angeles Clippers @ Dallas Mavericks",
+    "commence_time": "2026-03-22T00:45:00Z",
+    "book": "FanDuel",
+    "recommendation": "Dallas Mavericks ML",
+    "our_probability": 0.5,
+    "implied_probability": 0.2914,
+    "edge": 0.2086,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied; Injury drag: -0.030",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.03,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 230,
+    "away_odds": -280,
+    "game_id": "817a30a82900f0db41d5b094f424e33b",
+    "generated_at": "2026-03-21T16:15:55.970494+00:00",
     "result": null
   }
 ]
