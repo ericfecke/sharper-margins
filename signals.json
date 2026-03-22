@@ -628,9 +628,9 @@
     "commence_time": "2026-03-26T20:10:00Z",
     "book": "FanDuel",
     "recommendation": "Cincinnati Reds ML",
-    "our_probability": 0.519,
+    "our_probability": 0.569,
     "implied_probability": 0.411,
-    "edge": 0.108,
+    "edge": 0.158,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -643,7 +643,7 @@
     "factor_deltas": {
       "run_differential": 0.0,
       "recent_form": 0.0,
-      "injuries": -0.026,
+      "injuries": 0.024,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
       "park_factor": 0.015,
@@ -655,7 +655,7 @@
     "home_odds": 134,
     "away_odds": -158,
     "game_id": "3954fca33e068341fbcf893afefbc2e6",
-    "generated_at": "2026-03-21T16:16:03.754461+00:00",
+    "generated_at": "2026-03-22T16:16:00.228485+00:00",
     "result": null
   },
   {
