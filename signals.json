@@ -927,5 +927,38 @@
     "game_id": "a6a0dde319f89b70eb1cf1e004b81fe6",
     "generated_at": "2026-03-24T21:38:36.328830+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cleveland Guardians @ Seattle Mariners",
+    "commence_time": "2026-03-27T02:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "Cleveland Guardians ML",
+    "our_probability": 0.5262,
+    "implied_probability": 0.3726,
+    "edge": 0.1536,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -188,
+    "away_odds": 158,
+    "game_id": "5c8789e78ef558dfaf6b887deacec21c",
+    "generated_at": "2026-03-26T21:32:35.306041+00:00",
+    "result": null
   }
 ]
