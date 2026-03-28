@@ -1116,5 +1116,107 @@
     "game_id": "2262e13c280ca7610f5186dd2c77b23d",
     "generated_at": "2026-03-27T21:35:06.415419+00:00",
     "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "New York Knicks @ Oklahoma City Thunder",
+    "commence_time": "2026-03-29T23:40:00Z",
+    "book": "DraftKings",
+    "recommendation": "New York Knicks ML",
+    "our_probability": 0.475,
+    "implied_probability": 0.2591,
+    "edge": 0.2159,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.005,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -340,
+    "away_odds": 270,
+    "game_id": "f1fe04fb5d59dc4d3b310d56b74a9f2a",
+    "generated_at": "2026-03-28T16:19:56.752642+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Tampa Bay Rays @ St. Louis Cardinals",
+    "commence_time": "2026-03-28T18:15:00Z",
+    "book": "DraftKings",
+    "recommendation": "St. Louis Cardinals ML",
+    "our_probability": 0.614,
+    "implied_probability": 0.5,
+    "edge": 0.114,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.001,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -110,
+    "away_odds": -110,
+    "game_id": "7055a07016cd9cb5636dd11078ce1667",
+    "generated_at": "2026-03-28T16:20:05.210133+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Angels @ Houston Astros",
+    "commence_time": "2026-03-28T23:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "Los Angeles Angels ML",
+    "our_probability": 0.547,
+    "implied_probability": 0.4258,
+    "edge": 0.1212,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -148,
+    "away_odds": 126,
+    "game_id": "2262e13c280ca7610f5186dd2c77b23d",
+    "generated_at": "2026-03-28T16:20:05.211802+00:00",
+    "result": null
   }
 ]
