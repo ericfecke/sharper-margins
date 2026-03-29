@@ -234,7 +234,7 @@
 
 <div class="header">
   <h1>SHARPER MARGINS</h1>
-  <div class="meta">Generated: 2026-03-28 16:20 UTC</div>
+  <div class="meta">Generated: 2026-03-29 16:22 UTC</div>
 </div>
 
 <div class="stats-bar">
@@ -248,11 +248,11 @@
   </div>
   <div class="stat-item">
     <span class="stat-label">🟠 15–19%:</span>
-    <span class="stat-value edge-orange">0</span>
+    <span class="stat-value edge-orange">1</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟡 10–14%:</span>
-    <span class="stat-value edge-yellow">3</span>
+    <span class="stat-value edge-yellow">2</span>
   </div>
 </div>
 
@@ -281,7 +281,63 @@
 
   
 
-  <table class="signals-table" id="main-table"><thead><tr><th>Sport</th><th>Game</th><th>Book</th><th onclick="sortTable('main-table',3)" class="sortable">Edge &#9660;</th><th>Our %</th><th>Implied %</th><th>Recommendation</th></tr></thead><tbody id="main-tbody"></tbody></table>
+  <table class="signals-table" id="main-table"><thead><tr><th>Sport</th><th>Game</th><th>Book</th><th onclick="sortTable('main-table',3)" class="sortable">Edge &#9660;</th><th>Our %</th><th>Implied %</th><th>Recommendation</th></tr></thead><tbody id="main-tbody">
+    <tr class="signal-row edge-orange" data-sport="NBA" data-book="FanDuel" data-edge="0.1578" onclick="toggleRow(0)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">New York Knicks @ Oklahoma City Thunder<div class="game-time">Mar 29 11:40 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td><strong class="edge-orange">🟠 15.8%</strong></td>
+      <td>41.1%</td>
+      <td>25.3%</td>
+      <td><strong>New York Knicks ML</strong></td>
+    </tr>
+    <tr id="detail-0" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Win rate edge: home favored (78.38% vs 64.86%); Home court advantage applied; Recent form favors home</p>
+              
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>-350</code> | Away: <code>+280</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.054</span><span class="factor-item">home_court: +0.030</span><span class="factor-item">rest: -0.030</span><span class="factor-item">recent_form: +0.030</span><span class="factor-item">injuries: -0.005</span><span class="factor-item">net_rating: +0.010</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="NBA" data-book="DraftKings" data-edge="0.1117" onclick="toggleRow(1)">
+      <td><span class="sport-badge">NBA</span></td>
+      <td class="game-cell">Houston Rockets @ New Orleans Pelicans<div class="game-time">Mar 29 11:10 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td><strong class="edge-yellow">🟡 11.2%</strong></td>
+      <td>43.7%</td>
+      <td>32.5%</td>
+      <td><strong>New Orleans Pelicans ML</strong></td>
+    </tr>
+    <tr id="detail-1" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Win rate edge: away favored (33.33% vs 60.27%); Home court advantage applied</p>
+              
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>DK/FD Home: <code>+195</code> | Away: <code>-238</code></p>
+              <span class="kalshi-none">— No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: -0.100</span><span class="factor-item">home_court: +0.030</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: +0.007</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr></tbody></table>
 
   
         <div class="section-header low-conf-header">
@@ -295,7 +351,7 @@
             <th>Our %</th><th>Implied %</th><th>Recommendation</th>
           </tr></thead>
           <tbody>
-    <tr class="signal-row edge-green" data-sport="NBA" data-book="DraftKings" data-edge="0.2159" onclick="toggleRow(0)">
+    <tr class="signal-row edge-green" data-sport="NBA" data-book="DraftKings" data-edge="0.2159" onclick="toggleRow(2)">
       <td><span class="sport-badge">NBA</span></td>
       <td class="game-cell">New York Knicks @ Oklahoma City Thunder<div class="game-time">Mar 29 11:40 PM UTC</div></td>
       <td>DraftKings</td>
@@ -304,7 +360,7 @@
       <td>25.9%</td>
       <td><strong>New York Knicks ML</strong></td>
     </tr>
-    <tr id="detail-0" class="detail-row" style="display:none">
+    <tr id="detail-2" class="detail-row" style="display:none">
       <td colspan="7">
         <div class="detail-panel">
           <div class="detail-grid">
@@ -323,44 +379,16 @@
         </div>
       </td>
     </tr>
-    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="FanDuel" data-edge="0.1212" onclick="toggleRow(1)">
+    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="FanDuel" data-edge="0.1018" onclick="toggleRow(3)">
       <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">Los Angeles Angels @ Houston Astros<div class="game-time">Mar 28 11:10 PM UTC</div></td>
+      <td class="game-cell">Tampa Bay Rays @ St. Louis Cardinals<div class="game-time">Mar 29 06:16 PM UTC</div></td>
       <td>FanDuel</td>
-      <td><strong class="edge-yellow">🟡 12.1%</strong></td>
-      <td>54.7%</td>
-      <td>42.6%</td>
-      <td><strong>Los Angeles Angels ML</strong></td>
-    </tr>
-    <tr id="detail-1" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Starting pitcher advantage: away (ERA/WHIP differential)</p>
-              <div class="missing-factors">Missing data: run_differential, recent_form</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>-148</code> | Away: <code>+126</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: +0.008</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="DraftKings" data-edge="0.114" onclick="toggleRow(2)">
-      <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">Tampa Bay Rays @ St. Louis Cardinals<div class="game-time">Mar 28 06:15 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td><strong class="edge-yellow">🟡 11.4%</strong></td>
-      <td>61.4%</td>
-      <td>50.0%</td>
+      <td><strong class="edge-yellow">🟡 10.2%</strong></td>
+      <td>58.2%</td>
+      <td>48.0%</td>
       <td><strong>St. Louis Cardinals ML</strong></td>
     </tr>
-    <tr id="detail-2" class="detail-row" style="display:none">
+    <tr id="detail-3" class="detail-row" style="display:none">
       <td colspan="7">
         <div class="detail-panel">
           <div class="detail-grid">
@@ -371,39 +399,11 @@
             </div>
             <div class="detail-section">
               <h4>Odds</h4>
-              <p>DK/FD Home: <code>-110</code> | Away: <code>-110</code></p>
+              <p>DK/FD Home: <code>+100</code> | Away: <code>-118</code></p>
               <span class="kalshi-none">— No Kalshi match</span>
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.005</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: -0.001</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="DraftKings" data-edge="0.1136" onclick="toggleRow(3)">
-      <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">Los Angeles Angels @ Houston Astros<div class="game-time">Mar 28 11:10 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td><strong class="edge-yellow">🟡 11.4%</strong></td>
-      <td>54.2%</td>
-      <td>42.8%</td>
-      <td><strong>Los Angeles Angels ML</strong></td>
-    </tr>
-    <tr id="detail-3" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Starting pitcher advantage: away (ERA/WHIP differential)</p>
-              <div class="missing-factors">Missing data: run_differential, recent_form</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>-149</code> | Away: <code>+123</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: +0.008</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr></tbody>
@@ -414,7 +414,7 @@
           <h2>🚧 Model Coming Soon</h2>
           <p class="section-desc">This sport's model is under development. Signals will appear here when ready.</p>
         </div>
-        <div class="stub-grid"><div class="stub-sport"><h4>CBB</h4><ul><li>Iowa Hawkeyes @ Illinois Fighting Illini</li><li>Purdue Boilermakers @ Arizona Wildcats</li><li>Tennessee Volunteers @ Michigan Wolverines</li><li>UConn Huskies @ Duke Blue Devils</li><li>Oklahoma Sooners @ Colorado Buffaloes</li><li>Baylor Bears @ Minnesota Golden Gophers</li><li>Tulsa Golden Hurricane @ New Mexico Lobos</li><li>Stanford Cardinal @ West Virginia Mountaineers</li><li>Illinois St Redbirds @ Auburn Tigers</li><li>Rutgers Scarlet Knights @ Creighton Bluejays</li></ul></div><div class="stub-sport"><h4>NHL</h4><ul><li>Florida Panthers @ New York Islanders</li><li>Ottawa Senators @ Tampa Bay Lightning</li><li>Anaheim Ducks @ Edmonton Oilers</li><li>Minnesota Wild @ Boston Bruins</li><li>New Jersey Devils @ Carolina Hurricanes</li><li>San Jose Sharks @ Columbus Blue Jackets</li><li>Dallas Stars @ Pittsburgh Penguins</li><li>Seattle Kraken @ Buffalo Sabres</li><li>Winnipeg Jets @ Colorado Avalanche</li><li>Montréal Canadiens @ Nashville Predators</li><li>Toronto Maple Leafs @ St Louis Blues</li><li>Philadelphia Flyers @ Detroit Red Wings</li><li>Utah Mammoth @ Los Angeles Kings</li><li>Vancouver Canucks @ Calgary Flames</li><li>Washington Capitals @ Vegas Golden Knights</li><li>Florida Panthers @ New York Rangers</li><li>Boston Bruins @ Columbus Blue Jackets</li><li>Montréal Canadiens @ Carolina Hurricanes</li><li>Nashville Predators @ Tampa Bay Lightning</li><li>Chicago Blackhawks @ New Jersey Devils</li><li>Dallas Stars @ Philadelphia Flyers</li></ul></div></div>
+        <div class="stub-grid"><div class="stub-sport"><h4>CBB</h4><ul><li>Tennessee Volunteers @ Michigan Wolverines</li><li>UConn Huskies @ Duke Blue Devils</li><li>Tulsa Golden Hurricane @ New Mexico Lobos</li><li>Illinois St Redbirds @ Auburn Tigers</li><li>Tennessee Volunteers @ Arizona Wildcats</li><li>Illinois Fighting Illini @ Duke Blue Devils</li><li>Illinois Fighting Illini @ UConn Huskies</li><li>Michigan Wolverines @ Arizona Wildcats</li></ul></div><div class="stub-sport"><h4>NHL</h4><ul><li>Florida Panthers @ New York Rangers</li><li>Boston Bruins @ Columbus Blue Jackets</li><li>Montréal Canadiens @ Carolina Hurricanes</li><li>Nashville Predators @ Tampa Bay Lightning</li><li>Chicago Blackhawks @ New Jersey Devils</li><li>Dallas Stars @ Philadelphia Flyers</li><li>Pittsburgh Penguins @ New York Islanders</li><li>Calgary Flames @ Colorado Avalanche</li><li>Toronto Maple Leafs @ Anaheim Ducks</li><li>St Louis Blues @ San Jose Sharks</li><li>Vancouver Canucks @ Vegas Golden Knights</li></ul></div></div>
 
   
 
