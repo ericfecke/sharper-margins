@@ -1311,5 +1311,197 @@
     "game_id": "7082df2b4cf69fb66b014bcf17e6e2d4",
     "generated_at": "2026-03-29T16:22:01.141751+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Athletics @ Atlanta Braves",
+    "commence_time": "2026-03-30T23:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.653,
+    "implied_probability": 0.5467,
+    "edge": 0.1063,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -132,
+    "away_odds": 112,
+    "game_id": "8cc66b3ce898ffcf08e40f6acbdb82d8",
+    "generated_at": "2026-03-30T21:42:39.510218+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Angels @ Chicago Cubs",
+    "commence_time": "2026-03-30T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Los Angeles Angels ML",
+    "our_probability": 0.5519,
+    "implied_probability": 0.3639,
+    "edge": 0.188,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.025,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -196,
+    "away_odds": 164,
+    "game_id": "cb56684da584f70f8c48dec3ad5bdb7c",
+    "generated_at": "2026-03-30T21:42:39.511905+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Chicago White Sox @ Miami Marlins",
+    "commence_time": "2026-03-31T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.679,
+    "implied_probability": 0.5635,
+    "edge": 0.1155,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -142,
+    "away_odds": 120,
+    "game_id": "c49833eafa15bdd83a074d3229783d86",
+    "generated_at": "2026-03-30T21:42:39.513781+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Cincinnati Reds",
+    "commence_time": "2026-03-31T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Cincinnati Reds ML",
+    "our_probability": 0.6203,
+    "implied_probability": 0.5045,
+    "edge": 0.1158,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential); Park factor: Cincinnati Reds plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": -0.033,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -110,
+    "away_odds": -106,
+    "game_id": "445445096cf76e57c1a9dee969e15995",
+    "generated_at": "2026-03-30T21:42:39.515436+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Angels @ Chicago Cubs",
+    "commence_time": "2026-03-31T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Los Angeles Angels ML",
+    "our_probability": 0.5519,
+    "implied_probability": 0.4417,
+    "edge": 0.1102,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.025,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -138,
+    "away_odds": 118,
+    "game_id": "4f785ad4f8847d0e028769afc44d9942",
+    "generated_at": "2026-03-30T21:42:39.517181+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Tampa Bay Rays @ Milwaukee Brewers",
+    "commence_time": "2026-03-31T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.677,
+    "implied_probability": 0.553,
+    "edge": 0.124,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -134,
+    "away_odds": 116,
+    "game_id": "522613bca37febfdc7fe1b1b858dea09",
+    "generated_at": "2026-03-30T21:42:39.518959+00:00",
+    "result": null
   }
 ]
