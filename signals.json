@@ -1414,9 +1414,9 @@
     "commence_time": "2026-03-31T22:41:00Z",
     "book": "FanDuel",
     "recommendation": "Cincinnati Reds ML",
-    "our_probability": 0.6203,
-    "implied_probability": 0.5045,
-    "edge": 0.1158,
+    "our_probability": 0.6185,
+    "implied_probability": 0.4672,
+    "edge": 0.1513,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -1425,7 +1425,7 @@
     "factor_deltas": {
       "run_differential": 0.0,
       "recent_form": 0.05,
-      "injuries": -0.033,
+      "injuries": -0.045,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
       "park_factor": 0.015,
@@ -1434,10 +1434,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -110,
-    "away_odds": -106,
+    "home_odds": 106,
+    "away_odds": -124,
     "game_id": "445445096cf76e57c1a9dee969e15995",
-    "generated_at": "2026-03-30T21:42:39.515436+00:00",
+    "generated_at": "2026-03-31T21:39:39.293995+00:00",
     "result": null
   },
   {
@@ -1502,6 +1502,170 @@
     "away_odds": 116,
     "game_id": "522613bca37febfdc7fe1b1b858dea09",
     "generated_at": "2026-03-30T21:42:39.518959+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Boston Celtics @ Miami Heat",
+    "commence_time": "2026-04-01T23:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Heat ML",
+    "our_probability": 0.53,
+    "implied_probability": 0.3536,
+    "edge": 0.1764,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 172,
+    "away_odds": -205,
+    "game_id": "5f035331e20684a116344413531bab36",
+    "generated_at": "2026-03-31T21:39:21.071792+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Washington Nationals @ Philadelphia Phillies",
+    "commence_time": "2026-03-31T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.549,
+    "implied_probability": 0.3726,
+    "edge": 0.1764,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -188,
+    "away_odds": 158,
+    "game_id": "484bcc5bc25e0e38e25dcac48903ccea",
+    "generated_at": "2026-03-31T21:39:39.295873+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Tampa Bay Rays @ Milwaukee Brewers",
+    "commence_time": "2026-03-31T23:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.6567,
+    "implied_probability": 0.5321,
+    "edge": 0.1246,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0375,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -126,
+    "away_odds": 104,
+    "game_id": "522613bca37febfdc7fe1b1b858dea09",
+    "generated_at": "2026-03-31T21:39:39.297801+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Cincinnati Reds",
+    "commence_time": "2026-04-01T16:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Cincinnati Reds ML",
+    "our_probability": 0.6185,
+    "implied_probability": 0.4175,
+    "edge": 0.201,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential); Park factor: Cincinnati Reds plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": -0.045,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 129,
+    "away_odds": -156,
+    "game_id": "0ab4430c93f4388372c2e69d5d140069",
+    "generated_at": "2026-03-31T21:39:39.299864+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Boston Red Sox @ Houston Astros",
+    "commence_time": "2026-04-01T18:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Houston Astros ML",
+    "our_probability": 0.5621,
+    "implied_probability": 0.4284,
+    "edge": 0.1337,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 123,
+    "away_odds": -149,
+    "game_id": "7d8eb7e9ca4020fe2b949197c47e54a4",
+    "generated_at": "2026-03-31T21:39:39.301926+00:00",
     "result": null
   }
 ]
