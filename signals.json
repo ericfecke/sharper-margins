@@ -1699,5 +1699,77 @@
     "game_id": "cc33d68ceec04cd9b09a8c631d7574a0",
     "generated_at": "2026-04-01T21:42:08.825035+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Colorado Rockies",
+    "commence_time": "2026-04-03T20:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.56,
+    "implied_probability": 0.3554,
+    "edge": 0.2046,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats; Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 169,
+    "away_odds": -207,
+    "game_id": "dcf384a7692bd7df83a96e49919f2dc0",
+    "generated_at": "2026-04-02T21:38:29.348708+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Seattle Mariners @ Los Angeles Angels",
+    "commence_time": "2026-04-04T01:39:00Z",
+    "book": "DraftKings",
+    "recommendation": "Los Angeles Angels ML",
+    "our_probability": 0.53,
+    "implied_probability": 0.4003,
+    "edge": 0.1297,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 139,
+    "away_odds": -168,
+    "game_id": "c58c47a59e543a1a6aa0202a6ca69a25",
+    "generated_at": "2026-04-02T21:38:29.350797+00:00",
+    "result": null
   }
 ]
