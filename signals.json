@@ -1872,9 +1872,9 @@
     "commence_time": "2026-04-04T23:15:00Z",
     "book": "FanDuel",
     "recommendation": "Cleveland Guardians ML",
-    "our_probability": 0.5725,
-    "implied_probability": 0.4417,
-    "edge": 0.1308,
+    "our_probability": 0.6143,
+    "implied_probability": 0.4493,
+    "edge": 0.165,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -1882,7 +1882,7 @@
     "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": 0.0107,
+      "recent_form": 0.0295,
       "injuries": 0.05,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
@@ -1892,10 +1892,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 118,
-    "away_odds": -138,
+    "home_odds": 114,
+    "away_odds": -134,
     "game_id": "fc7bf2ae162241d571b69f0d343c9788",
-    "generated_at": "2026-04-03T21:35:22.382202+00:00",
+    "generated_at": "2026-04-04T16:21:51.862455+00:00",
     "result": null
   },
   {
@@ -1960,6 +1960,142 @@
     "away_odds": -240,
     "game_id": "2c78d22f888a922842d18ab0938e9db4",
     "generated_at": "2026-04-03T21:35:22.386056+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Orlando Magic @ New Orleans Pelicans",
+    "commence_time": "2026-04-05T23:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "New Orleans Pelicans ML",
+    "our_probability": 0.53,
+    "implied_probability": 0.4258,
+    "edge": 0.1042,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 126,
+    "away_odds": -148,
+    "game_id": "9f54cd277a7d7a9fe0de35d568dfa4af",
+    "generated_at": "2026-04-04T16:21:36.674354+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Los Angeles Lakers @ Dallas Mavericks",
+    "commence_time": "2026-04-05T23:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "Dallas Mavericks ML",
+    "our_probability": 0.5,
+    "implied_probability": 0.2998,
+    "edge": 0.2002,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied; Injury drag: -0.030",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.03,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 220,
+    "away_odds": -270,
+    "game_id": "c6dfafffbada89cc908addd3a1f7748b",
+    "generated_at": "2026-04-04T16:21:36.676560+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Atlanta Braves @ Arizona Diamondbacks",
+    "commence_time": "2026-04-04T23:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.624,
+    "implied_probability": 0.4892,
+    "edge": 0.1348,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": -0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.009,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -115,
+    "away_odds": -105,
+    "game_id": "312f9e53b1d64ed1a38adc48dd3b1ce7",
+    "generated_at": "2026-04-04T16:21:51.864698+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Colorado Rockies",
+    "commence_time": "2026-04-05T00:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.5073,
+    "implied_probability": 0.3252,
+    "edge": 0.1821,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.0429,
+      "injuries": 0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 194,
+    "away_odds": -240,
+    "game_id": "2c78d22f888a922842d18ab0938e9db4",
+    "generated_at": "2026-04-04T16:21:51.867331+00:00",
     "result": null
   }
 ]
