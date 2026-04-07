@@ -2478,9 +2478,9 @@
     "commence_time": "2026-04-07T22:46:00Z",
     "book": "DraftKings",
     "recommendation": "Milwaukee Brewers ML",
-    "our_probability": 0.5886,
-    "implied_probability": 0.4284,
-    "edge": 0.1602,
+    "our_probability": 0.597,
+    "implied_probability": 0.4071,
+    "edge": 0.1899,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -2498,10 +2498,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -149,
-    "away_odds": 123,
+    "home_odds": -163,
+    "away_odds": 135,
     "game_id": "a028589ce492c9027a1dcaf75f436276",
-    "generated_at": "2026-04-06T21:38:27.811000+00:00",
+    "generated_at": "2026-04-07T21:42:35.848495+00:00",
     "result": null
   },
   {
@@ -2570,6 +2570,196 @@
     "away_odds": 158,
     "game_id": "102415b79cd3e2bf336ad8c7792ba6a2",
     "generated_at": "2026-04-06T21:38:27.816342+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Chicago Bulls @ Washington Wizards",
+    "commence_time": "2026-04-07T23:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Wizards ML",
+    "our_probability": 0.44,
+    "implied_probability": 0.331,
+    "edge": 0.109,
+    "confidence": "normal",
+    "missing_factors": [],
+    "sme_reasoning": "Win rate edge: away favored (21.79% vs 37.18%); Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": -0.0615,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.01,
+      "net_rating": -0.0185,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 190,
+    "away_odds": -230,
+    "game_id": "9f4ac4d421b28dcb2764f555eb8a8f0c",
+    "generated_at": "2026-04-07T21:42:13.216761+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Houston Astros @ Colorado Rockies",
+    "commence_time": "2026-04-08T00:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.5652,
+    "implied_probability": 0.3903,
+    "edge": 0.1749,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential); Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 146,
+    "away_odds": -174,
+    "game_id": "a8ff4cf1d716757bfb7db919dd280201",
+    "generated_at": "2026-04-07T21:42:35.851667+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Diego Padres @ Pittsburgh Pirates",
+    "commence_time": "2026-04-08T16:36:00Z",
+    "book": "FanDuel",
+    "recommendation": "Pittsburgh Pirates ML",
+    "our_probability": 0.6103,
+    "implied_probability": 0.4955,
+    "edge": 0.1148,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -106,
+    "away_odds": -110,
+    "game_id": "d52d861ea5ed462b15486ffb7493bbc4",
+    "generated_at": "2026-04-07T21:42:35.854582+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Kansas City Royals @ Cleveland Guardians",
+    "commence_time": "2026-04-08T17:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Cleveland Guardians ML",
+    "our_probability": 0.5713,
+    "implied_probability": 0.463,
+    "edge": 0.1083,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 108,
+    "away_odds": -126,
+    "game_id": "160de2c0d9ab7767e9268364d732e3a3",
+    "generated_at": "2026-04-07T21:42:35.857477+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Milwaukee Brewers @ Boston Red Sox",
+    "commence_time": "2026-04-08T17:36:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.597,
+    "implied_probability": 0.4365,
+    "edge": 0.1605,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": -0.007,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -142,
+    "away_odds": 120,
+    "game_id": "ed3937bc90189b707190e2ab6060520c",
+    "generated_at": "2026-04-07T21:42:35.860384+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Houston Astros @ Colorado Rockies",
+    "commence_time": "2026-04-08T19:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.5652,
+    "implied_probability": 0.4071,
+    "edge": 0.1581,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential); Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 135,
+    "away_odds": -163,
+    "game_id": "00d50aafe35c1d5cd48cc12b8dc26bbb",
+    "generated_at": "2026-04-07T21:42:35.863464+00:00",
     "result": null
   }
 ]
