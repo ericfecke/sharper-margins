@@ -2761,5 +2761,73 @@
     "game_id": "00d50aafe35c1d5cd48cc12b8dc26bbb",
     "generated_at": "2026-04-07T21:42:35.863464+00:00",
     "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Oklahoma City Thunder @ Los Angeles Clippers",
+    "commence_time": "2026-04-09T02:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "Los Angeles Clippers ML",
+    "our_probability": 0.53,
+    "implied_probability": 0.2742,
+    "edge": 0.2558,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 250,
+    "away_odds": -310,
+    "game_id": "68ab4a35de88dba88af31eeb3ba710fb",
+    "generated_at": "2026-04-08T21:41:26.648925+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ Minnesota Twins",
+    "commence_time": "2026-04-08T23:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Minnesota Twins ML",
+    "our_probability": 0.5215,
+    "implied_probability": 0.4175,
+    "edge": 0.104,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": -0.035,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.001,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 129,
+    "away_odds": -156,
+    "game_id": "3905b085d9465ee22fdad2d16362cd7a",
+    "generated_at": "2026-04-08T21:41:37.840954+00:00",
+    "result": null
   }
 ]
