@@ -3220,17 +3220,17 @@
     "commence_time": "2026-04-11T23:16:00Z",
     "book": "FanDuel",
     "recommendation": "St. Louis Cardinals ML",
-    "our_probability": 0.5545,
+    "our_probability": 0.5839,
     "implied_probability": 0.4417,
-    "edge": 0.1128,
+    "edge": 0.1422,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
     ],
-    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": 0.03,
+      "recent_form": 0.045,
       "injuries": 0.012,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
@@ -3243,7 +3243,7 @@
     "home_odds": 118,
     "away_odds": -138,
     "game_id": "8d82bf3147f99fc93e30a28642eb19c1",
-    "generated_at": "2026-04-10T21:38:27.555362+00:00",
+    "generated_at": "2026-04-11T16:23:04.105269+00:00",
     "result": null
   },
   {
@@ -3276,6 +3276,66 @@
     "away_odds": 146,
     "game_id": "5205127abeb3d8f956e9e3201fd85f68",
     "generated_at": "2026-04-10T21:38:27.558764+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Atlanta Hawks @ Miami Heat",
+    "commence_time": "2026-04-12T22:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Heat ML",
+    "our_probability": 0.4779,
+    "implied_probability": 0.3099,
+    "edge": 0.168,
+    "confidence": "normal",
+    "missing_factors": [],
+    "sme_reasoning": "Home court advantage applied; Recent form favors away",
+    "factor_deltas": {
+      "win_rate_diff": -0.0198,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "net_rating": 0.0127,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 210,
+    "away_odds": -255,
+    "game_id": "22dcb3e32847c7eab5774e8927016216",
+    "generated_at": "2026-04-11T16:22:44.041353+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Charlotte Hornets @ New York Knicks",
+    "commence_time": "2026-04-12T22:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "New York Knicks ML",
+    "our_probability": 0.5981,
+    "implied_probability": 0.2825,
+    "edge": 0.3156,
+    "confidence": "normal",
+    "missing_factors": [],
+    "sme_reasoning": "Win rate edge: home favored (65.43% vs 53.09%); Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0494,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "net_rating": 0.0037,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 240,
+    "away_odds": -295,
+    "game_id": "38b10a0526d5b246097a502269bcdf71",
+    "generated_at": "2026-04-11T16:22:44.045248+00:00",
     "result": null
   }
 ]
