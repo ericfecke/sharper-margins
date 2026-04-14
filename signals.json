@@ -3507,7 +3507,7 @@
   {
     "sport": "NBA",
     "game": "Toronto Raptors @ Cleveland Cavaliers",
-    "commence_time": "2026-04-18T17:00:00Z",
+    "commence_time": "2026-04-18T17:10:00Z",
     "book": "FanDuel",
     "recommendation": "Toronto Raptors ML",
     "our_probability": 0.55,
@@ -3537,7 +3537,7 @@
     "home_odds": -340,
     "away_odds": 275,
     "game_id": "2a8e5a45f1bcb477a6f9cbd7739d005e",
-    "generated_at": "2026-04-13T21:51:00.349556+00:00",
+    "generated_at": "2026-04-14T21:52:39.088426+00:00",
     "result": null
   },
   {
@@ -3573,7 +3573,7 @@
     "home_odds": -250,
     "away_odds": 205,
     "game_id": "526f783434e5dabca25ee032d8fee612",
-    "generated_at": "2026-04-13T21:51:00.353206+00:00",
+    "generated_at": "2026-04-14T21:52:39.092342+00:00",
     "result": null
   },
   {
@@ -3738,6 +3738,171 @@
     "away_odds": -124,
     "game_id": "4f93a0b7adae6d305b4095cc30172ed9",
     "generated_at": "2026-04-13T21:51:10.352404+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Miami Heat @ Charlotte Hornets",
+    "commence_time": "2026-04-14T23:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Heat ML",
+    "our_probability": 0.5042,
+    "implied_probability": 0.3222,
+    "edge": 0.182,
+    "confidence": "low",
+    "missing_factors": [
+      "rest_data",
+      "recent_form"
+    ],
+    "sme_reasoning": "Home court advantage applied; Net rating advantage: away",
+    "factor_deltas": {
+      "win_rate_diff": 0.0049,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.01,
+      "net_rating": -0.0291,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -240,
+    "away_odds": 198,
+    "game_id": "25f53495c4044a1d8fb682e3715eb7b3",
+    "generated_at": "2026-04-14T21:52:39.084352+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Atlanta Hawks @ New York Knicks",
+    "commence_time": "2026-04-18T22:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "Atlanta Hawks ML",
+    "our_probability": 0.505,
+    "implied_probability": 0.3589,
+    "edge": 0.1461,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied; Injury drag: -0.035",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.035,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -200,
+    "away_odds": 168,
+    "game_id": "bee2c9ea4bf8df373aa45af7005b583d",
+    "generated_at": "2026-04-14T21:52:39.096235+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Colorado Rockies @ Houston Astros",
+    "commence_time": "2026-04-15T00:10:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.606,
+    "implied_probability": 0.378,
+    "edge": 0.228,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -186,
+    "away_odds": 153,
+    "game_id": "2142bbf2fe04a2b7b7ae829b27222697",
+    "generated_at": "2026-04-14T21:53:08.112586+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Texas Rangers @ Athletics",
+    "commence_time": "2026-04-15T01:40:00Z",
+    "book": "DraftKings",
+    "recommendation": "Athletics ML",
+    "our_probability": 0.57,
+    "implied_probability": 0.4576,
+    "edge": 0.1124,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 109,
+    "away_odds": -131,
+    "game_id": "4f93a0b7adae6d305b4095cc30172ed9",
+    "generated_at": "2026-04-14T21:53:08.116668+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Toronto Blue Jays @ Milwaukee Brewers",
+    "commence_time": "2026-04-15T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.5902,
+    "implied_probability": 0.4672,
+    "edge": 0.123,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 106,
+    "away_odds": -124,
+    "game_id": "e1d1d3bf816d477e6f48db9e600d48bf",
+    "generated_at": "2026-04-14T21:53:08.121083+00:00",
     "result": null
   }
 ]
