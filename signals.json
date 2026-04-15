@@ -3475,8 +3475,8 @@
     "book": "FanDuel",
     "recommendation": "Golden State Warriors ML",
     "our_probability": 0.47,
-    "implied_probability": 0.3536,
-    "edge": 0.1164,
+    "implied_probability": 0.3435,
+    "edge": 0.1265,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -3498,10 +3498,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -205,
-    "away_odds": 172,
+    "home_odds": -215,
+    "away_odds": 180,
     "game_id": "7cfae0891b99865ef7fc9d357b69ca28",
-    "generated_at": "2026-04-13T21:51:00.345730+00:00",
+    "generated_at": "2026-04-15T21:52:37.149373+00:00",
     "result": null
   },
   {
@@ -3537,7 +3537,7 @@
     "home_odds": -340,
     "away_odds": 275,
     "game_id": "2a8e5a45f1bcb477a6f9cbd7739d005e",
-    "generated_at": "2026-04-14T21:52:39.088426+00:00",
+    "generated_at": "2026-04-15T21:52:37.153419+00:00",
     "result": null
   },
   {
@@ -3903,6 +3903,138 @@
     "away_odds": -124,
     "game_id": "e1d1d3bf816d477e6f48db9e600d48bf",
     "generated_at": "2026-04-14T21:53:08.121083+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Houston Rockets @ Los Angeles Lakers",
+    "commence_time": "2026-04-19T00:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "Los Angeles Lakers ML",
+    "our_probability": 0.53,
+    "implied_probability": 0.3435,
+    "edge": 0.1865,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 180,
+    "away_odds": -215,
+    "game_id": "1a9383105929a09e5662227ad45554b8",
+    "generated_at": "2026-04-15T21:52:37.157437+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Washington Nationals @ Pittsburgh Pirates",
+    "commence_time": "2026-04-16T16:36:00Z",
+    "book": "DraftKings",
+    "recommendation": "Pittsburgh Pirates ML",
+    "our_probability": 0.685,
+    "implied_probability": 0.5825,
+    "edge": 0.1025,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -156,
+    "away_odds": 129,
+    "game_id": "74f39156689a078022ede0ab999cd304",
+    "generated_at": "2026-04-15T21:52:53.052001+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Texas Rangers @ Athletics",
+    "commence_time": "2026-04-16T19:06:00Z",
+    "book": "DraftKings",
+    "recommendation": "Athletics ML",
+    "our_probability": 0.5805,
+    "implied_probability": 0.4783,
+    "edge": 0.1022,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 100,
+    "away_odds": -120,
+    "game_id": "1be686414809592c870949866675b3f0",
+    "generated_at": "2026-04-15T21:52:53.056302+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Seattle Mariners @ San Diego Padres",
+    "commence_time": "2026-04-17T00:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "San Diego Padres ML",
+    "our_probability": 0.5871,
+    "implied_probability": 0.4802,
+    "edge": 0.1069,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 100,
+    "away_odds": -118,
+    "game_id": "34fa181a3e06104ac8bb8d652bffbae7",
+    "generated_at": "2026-04-15T21:52:53.060469+00:00",
     "result": null
   }
 ]
