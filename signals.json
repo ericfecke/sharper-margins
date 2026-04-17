@@ -3510,9 +3510,9 @@
     "commence_time": "2026-04-18T17:10:00Z",
     "book": "FanDuel",
     "recommendation": "Toronto Raptors ML",
-    "our_probability": 0.55,
-    "implied_probability": 0.2566,
-    "edge": 0.2934,
+    "our_probability": 0.485,
+    "implied_probability": 0.2528,
+    "edge": 0.2322,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -3521,23 +3521,23 @@
       "recent_form",
       "scoring_stats"
     ],
-    "sme_reasoning": "Home court advantage applied; Injury drag: -0.080",
+    "sme_reasoning": "Home court advantage applied",
     "factor_deltas": {
       "win_rate_diff": 0.0,
       "home_court": 0.03,
       "rest": 0.0,
       "recent_form": 0.0,
-      "injuries": -0.08,
+      "injuries": -0.015,
       "net_rating": 0.0,
       "h2h": 0.0
     },
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -340,
-    "away_odds": 275,
+    "home_odds": -350,
+    "away_odds": 280,
     "game_id": "2a8e5a45f1bcb477a6f9cbd7739d005e",
-    "generated_at": "2026-04-15T21:52:37.153419+00:00",
+    "generated_at": "2026-04-17T21:41:34.947728+00:00",
     "result": null
   },
   {
@@ -3573,7 +3573,7 @@
     "home_odds": -250,
     "away_odds": 205,
     "game_id": "526f783434e5dabca25ee032d8fee612",
-    "generated_at": "2026-04-14T21:52:39.092342+00:00",
+    "generated_at": "2026-04-17T21:41:34.952005+00:00",
     "result": null
   },
   {
@@ -3609,7 +3609,7 @@
     "home_odds": 185,
     "away_odds": -225,
     "game_id": "1a9383105929a09e5662227ad45554b8",
-    "generated_at": "2026-04-16T21:42:56.765137+00:00",
+    "generated_at": "2026-04-17T21:41:34.960589+00:00",
     "result": null
   },
   {
@@ -4044,8 +4044,8 @@
     "book": "DraftKings",
     "recommendation": "Orlando Magic ML",
     "our_probability": 0.5183,
-    "implied_probability": 0.3962,
-    "edge": 0.1221,
+    "implied_probability": 0.417,
+    "edge": 0.1013,
     "confidence": "low",
     "missing_factors": [
       "recent_form"
@@ -4063,10 +4063,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 142,
-    "away_odds": -170,
+    "home_odds": 130,
+    "away_odds": -155,
     "game_id": "fc16dfbe5b438857b93902fa811dd8f6",
-    "generated_at": "2026-04-16T21:42:56.747813+00:00",
+    "generated_at": "2026-04-17T21:41:34.943239+00:00",
     "result": null
   },
   {
@@ -4147,9 +4147,9 @@
     "commence_time": "2026-04-18T22:10:00Z",
     "book": "DraftKings",
     "recommendation": "Atlanta Hawks ML",
-    "our_probability": 0.505,
+    "our_probability": 0.47,
     "implied_probability": 0.3364,
-    "edge": 0.1686,
+    "edge": 0.1336,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -4158,13 +4158,13 @@
       "recent_form",
       "scoring_stats"
     ],
-    "sme_reasoning": "Home court advantage applied; Injury drag: -0.035",
+    "sme_reasoning": "Home court advantage applied",
     "factor_deltas": {
       "win_rate_diff": 0.0,
       "home_court": 0.03,
       "rest": 0.0,
       "recent_form": 0.0,
-      "injuries": -0.035,
+      "injuries": 0.0,
       "net_rating": 0.0,
       "h2h": 0.0
     },
@@ -4174,7 +4174,7 @@
     "home_odds": -225,
     "away_odds": 185,
     "game_id": "bee2c9ea4bf8df373aa45af7005b583d",
-    "generated_at": "2026-04-16T21:42:56.760813+00:00",
+    "generated_at": "2026-04-17T21:41:34.956318+00:00",
     "result": null
   },
   {
@@ -4271,6 +4271,102 @@
     "away_odds": -122,
     "game_id": "34fa181a3e06104ac8bb8d652bffbae7",
     "generated_at": "2026-04-16T21:43:00.106189+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Colorado Rockies",
+    "commence_time": "2026-04-18T00:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.45,
+    "implied_probability": 0.2742,
+    "edge": 0.1758,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential); Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 250,
+    "away_odds": -310,
+    "game_id": "e0edf79975e2cd47e757ea67749e43fd",
+    "generated_at": "2026-04-17T21:42:04.391581+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "St. Louis Cardinals @ Houston Astros",
+    "commence_time": "2026-04-18T23:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "St. Louis Cardinals ML",
+    "our_probability": 0.5683,
+    "implied_probability": 0.4175,
+    "edge": 0.1508,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -156,
+    "away_odds": 129,
+    "game_id": "23317fc37d8b970abb36b16450935fe2",
+    "generated_at": "2026-04-17T21:42:04.396694+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Colorado Rockies",
+    "commence_time": "2026-04-19T00:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.45,
+    "implied_probability": 0.2865,
+    "edge": 0.1635,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential); Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 234,
+    "away_odds": -293,
+    "game_id": "de78c77cca84245548d38b8c40c65391",
+    "generated_at": "2026-04-17T21:42:04.401300+00:00",
     "result": null
   }
 ]
