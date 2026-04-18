@@ -3911,34 +3911,31 @@
     "commence_time": "2026-04-19T00:40:00Z",
     "book": "FanDuel",
     "recommendation": "Los Angeles Lakers ML",
-    "our_probability": 0.53,
-    "implied_probability": 0.3435,
-    "edge": 0.1865,
+    "our_probability": 0.5415,
+    "implied_probability": 0.3536,
+    "edge": 0.1879,
     "confidence": "low",
     "missing_factors": [
-      "home_standings",
-      "away_standings",
       "rest_data",
-      "recent_form",
-      "scoring_stats"
+      "recent_form"
     ],
     "sme_reasoning": "Home court advantage applied",
     "factor_deltas": {
-      "win_rate_diff": 0.0,
+      "win_rate_diff": 0.0049,
       "home_court": 0.03,
       "rest": 0.0,
       "recent_form": 0.0,
       "injuries": 0.0,
-      "net_rating": 0.0,
+      "net_rating": 0.0067,
       "h2h": 0.0
     },
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 180,
-    "away_odds": -215,
+    "home_odds": 172,
+    "away_odds": -205,
     "game_id": "1a9383105929a09e5662227ad45554b8",
-    "generated_at": "2026-04-15T21:52:37.157437+00:00",
+    "generated_at": "2026-04-18T16:25:31.497847+00:00",
     "result": null
   },
   {
@@ -4111,34 +4108,31 @@
     "commence_time": "2026-04-18T19:40:00Z",
     "book": "FanDuel",
     "recommendation": "Minnesota Timberwolves ML",
-    "our_probability": 0.47,
-    "implied_probability": 0.3099,
-    "edge": 0.1601,
+    "our_probability": 0.4262,
+    "implied_probability": 0.2825,
+    "edge": 0.1437,
     "confidence": "low",
     "missing_factors": [
-      "home_standings",
-      "away_standings",
       "rest_data",
-      "recent_form",
-      "scoring_stats"
+      "recent_form"
     ],
-    "sme_reasoning": "Home court advantage applied",
+    "sme_reasoning": "Home court advantage applied; Net rating advantage: home",
     "factor_deltas": {
-      "win_rate_diff": 0.0,
+      "win_rate_diff": 0.0244,
       "home_court": 0.03,
       "rest": 0.0,
       "recent_form": 0.0,
-      "injuries": 0.0,
-      "net_rating": 0.0,
+      "injuries": -0.005,
+      "net_rating": 0.0244,
       "h2h": 0.0
     },
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -255,
-    "away_odds": 210,
+    "home_odds": -295,
+    "away_odds": 240,
     "game_id": "526f783434e5dabca25ee032d8fee612",
-    "generated_at": "2026-04-16T21:42:56.756503+00:00",
+    "generated_at": "2026-04-18T16:25:31.488808+00:00",
     "result": null
   },
   {
@@ -4147,25 +4141,22 @@
     "commence_time": "2026-04-18T22:10:00Z",
     "book": "DraftKings",
     "recommendation": "Atlanta Hawks ML",
-    "our_probability": 0.47,
+    "our_probability": 0.4479,
     "implied_probability": 0.3364,
-    "edge": 0.1336,
+    "edge": 0.1115,
     "confidence": "low",
     "missing_factors": [
-      "home_standings",
-      "away_standings",
       "rest_data",
-      "recent_form",
-      "scoring_stats"
+      "recent_form"
     ],
     "sme_reasoning": "Home court advantage applied",
     "factor_deltas": {
-      "win_rate_diff": 0.0,
+      "win_rate_diff": 0.0341,
       "home_court": 0.03,
       "rest": 0.0,
       "recent_form": 0.0,
       "injuries": 0.0,
-      "net_rating": 0.0,
+      "net_rating": -0.0121,
       "h2h": 0.0
     },
     "kalshi_probability": null,
@@ -4174,7 +4165,7 @@
     "home_odds": -225,
     "away_odds": 185,
     "game_id": "bee2c9ea4bf8df373aa45af7005b583d",
-    "generated_at": "2026-04-17T21:41:34.956318+00:00",
+    "generated_at": "2026-04-18T16:25:31.493322+00:00",
     "result": null
   },
   {
@@ -4343,9 +4334,9 @@
     "commence_time": "2026-04-19T00:11:00Z",
     "book": "DraftKings",
     "recommendation": "Colorado Rockies ML",
-    "our_probability": 0.45,
-    "implied_probability": 0.2865,
-    "edge": 0.1635,
+    "our_probability": 0.436,
+    "implied_probability": 0.278,
+    "edge": 0.158,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -4363,10 +4354,74 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 234,
-    "away_odds": -293,
+    "home_odds": 244,
+    "away_odds": -308,
     "game_id": "de78c77cca84245548d38b8c40c65391",
-    "generated_at": "2026-04-17T21:42:04.401300+00:00",
+    "generated_at": "2026-04-18T16:25:45.250180+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Mets @ Chicago Cubs",
+    "commence_time": "2026-04-18T18:21:00Z",
+    "book": "FanDuel",
+    "recommendation": "Chicago Cubs ML",
+    "our_probability": 0.6281,
+    "implied_probability": 0.5045,
+    "edge": 0.1236,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.027,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -110,
+    "away_odds": -106,
+    "game_id": "2ea66f343279c5bb39b4cb87f04810e7",
+    "generated_at": "2026-04-18T16:25:45.240591+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Atlanta Braves @ Philadelphia Phillies",
+    "commence_time": "2026-04-18T23:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.609,
+    "implied_probability": 0.463,
+    "edge": 0.146,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -126,
+    "away_odds": 108,
+    "game_id": "912d3bf4c4f1b996c5903aa3b6e3bc2a",
+    "generated_at": "2026-04-18T16:25:45.245515+00:00",
     "result": null
   }
 ]
