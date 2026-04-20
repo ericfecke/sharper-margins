@@ -4503,8 +4503,8 @@
     "book": "FanDuel",
     "recommendation": "Los Angeles Lakers ML",
     "our_probability": 0.53,
-    "implied_probability": 0.3817,
-    "edge": 0.1483,
+    "implied_probability": 0.3639,
+    "edge": 0.1661,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -4526,10 +4526,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 152,
-    "away_odds": -180,
+    "home_odds": 164,
+    "away_odds": -196,
     "game_id": "d3d28b764e5099920880de59a45e82cf",
-    "generated_at": "2026-04-19T16:26:05.863481+00:00",
+    "generated_at": "2026-04-20T21:47:55.215852+00:00",
     "result": null
   },
   {
@@ -4658,6 +4658,166 @@
     "away_odds": -102,
     "game_id": "0d7765b227447b5fb746d1178be90177",
     "generated_at": "2026-04-19T16:26:18.020382+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Minnesota Timberwolves @ Denver Nuggets",
+    "commence_time": "2026-04-21T02:40:00Z",
+    "book": "DraftKings",
+    "recommendation": "Minnesota Timberwolves ML",
+    "our_probability": 0.4006,
+    "implied_probability": 0.2905,
+    "edge": 0.1101,
+    "confidence": "low",
+    "missing_factors": [
+      "recent_form"
+    ],
+    "sme_reasoning": "Home court advantage applied; Net rating advantage: home",
+    "factor_deltas": {
+      "win_rate_diff": 0.0244,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.005,
+      "net_rating": 0.05,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -285,
+    "away_odds": 230,
+    "game_id": "a52365fe7f7123df1c4220d9591a6da2",
+    "generated_at": "2026-04-20T21:47:55.211280+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Chicago Cubs",
+    "commence_time": "2026-04-20T23:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Chicago Cubs ML",
+    "our_probability": 0.6464,
+    "implied_probability": 0.5065,
+    "edge": 0.1399,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -113,
+    "away_odds": -107,
+    "game_id": "0d70750c31542bcfe935969cb9ccc66e",
+    "generated_at": "2026-04-20T21:48:11.821810+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Houston Astros @ Cleveland Guardians",
+    "commence_time": "2026-04-21T22:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Cleveland Guardians ML",
+    "our_probability": 0.6535,
+    "implied_probability": 0.5467,
+    "edge": 0.1068,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -132,
+    "away_odds": 112,
+    "game_id": "c3a389932a73d413d0f0e503a36712ea",
+    "generated_at": "2026-04-20T21:48:11.826453+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Baltimore Orioles @ Kansas City Royals",
+    "commence_time": "2026-04-21T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Baltimore Orioles ML",
+    "our_probability": 0.5574,
+    "implied_probability": 0.4455,
+    "edge": 0.1119,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -136,
+    "away_odds": 116,
+    "game_id": "b1a87295d83bffd8d9d702ba76f4b1bd",
+    "generated_at": "2026-04-20T21:48:11.831077+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Chicago Cubs",
+    "commence_time": "2026-04-21T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Chicago Cubs ML",
+    "our_probability": 0.6464,
+    "implied_probability": 0.5198,
+    "edge": 0.1266,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -118,
+    "away_odds": 100,
+    "game_id": "fd082c9fac90847ff16ee7691851778f",
+    "generated_at": "2026-04-20T21:48:11.835541+00:00",
     "result": null
   }
 ]
