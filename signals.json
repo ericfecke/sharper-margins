@@ -5085,7 +5085,7 @@
     "home_odds": 240,
     "away_odds": -298,
     "game_id": "8d8ab21ae69d529ee4bd01fb8ace8276",
-    "generated_at": "2026-04-22T21:51:36.301257+00:00",
+    "generated_at": "2026-04-23T21:45:58.093055+00:00",
     "result": null
   },
   {
@@ -5190,9 +5190,9 @@
     "commence_time": "2026-04-24T00:06:00Z",
     "book": "DraftKings",
     "recommendation": "Pittsburgh Pirates ML",
-    "our_probability": 0.5091,
-    "implied_probability": 0.4071,
-    "edge": 0.102,
+    "our_probability": 0.518,
+    "implied_probability": 0.4175,
+    "edge": 0.1005,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -5210,10 +5210,118 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -163,
-    "away_odds": 135,
+    "home_odds": -156,
+    "away_odds": 129,
     "game_id": "528817a2bf72047f1124e81a7ae55de9",
-    "generated_at": "2026-04-22T21:51:52.717267+00:00",
+    "generated_at": "2026-04-23T21:46:01.283132+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Milwaukee Brewers",
+    "commence_time": "2026-04-24T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.537,
+    "implied_probability": 0.4365,
+    "edge": 0.1005,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 120,
+    "away_odds": -142,
+    "game_id": "0bbbb2fddbaa8b74fdca003a5d074d6f",
+    "generated_at": "2026-04-23T21:46:01.349458+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Yankees @ Houston Astros",
+    "commence_time": "2026-04-25T00:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Houston Astros ML",
+    "our_probability": 0.543,
+    "implied_probability": 0.4417,
+    "edge": 0.1013,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 118,
+    "away_odds": -138,
+    "game_id": "7b000b2feb3413984543d3be6ccd448b",
+    "generated_at": "2026-04-23T21:46:01.537380+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Seattle Mariners @ St. Louis Cardinals",
+    "commence_time": "2026-04-25T00:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "St. Louis Cardinals ML",
+    "our_probability": 0.58,
+    "implied_probability": 0.4284,
+    "edge": 0.1516,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 123,
+    "away_odds": -149,
+    "game_id": "6dfa085cbcdafd48dfe2b4a3ec7d5e04",
+    "generated_at": "2026-04-23T21:46:01.624843+00:00",
     "result": null
   }
 ]
