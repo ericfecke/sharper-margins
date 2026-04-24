@@ -5294,25 +5294,21 @@
     "commence_time": "2026-04-25T00:16:00Z",
     "book": "DraftKings",
     "recommendation": "St. Louis Cardinals ML",
-    "our_probability": 0.58,
+    "our_probability": 0.5844,
     "implied_probability": 0.4284,
-    "edge": 0.1516,
+    "edge": 0.156,
     "confidence": "low",
     "missing_factors": [
-      "home_standings",
-      "away_standings",
-      "starting_pitcher",
-      "run_differential",
-      "recent_form"
+      "run_differential"
     ],
-    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": 0.0,
+      "recent_form": 0.03,
       "injuries": 0.05,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
-      "park_factor": 0.0,
+      "park_factor": -0.001,
       "h2h": 0.0
     },
     "kalshi_probability": null,
@@ -5321,7 +5317,107 @@
     "home_odds": 123,
     "away_odds": -149,
     "game_id": "6dfa085cbcdafd48dfe2b4a3ec7d5e04",
-    "generated_at": "2026-04-23T21:46:01.624843+00:00",
+    "generated_at": "2026-04-24T21:48:59.901203+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Los Angeles Lakers @ Houston Rockets",
+    "commence_time": "2026-04-25T00:10:00Z",
+    "book": "DraftKings",
+    "recommendation": "Los Angeles Lakers ML",
+    "our_probability": 0.5379,
+    "implied_probability": 0.2591,
+    "edge": 0.2788,
+    "confidence": "low",
+    "missing_factors": [
+      "recent_form"
+    ],
+    "sme_reasoning": "Home court advantage applied; Net rating advantage: away",
+    "factor_deltas": {
+      "win_rate_diff": -0.0049,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.015,
+      "net_rating": -0.048,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -340,
+    "away_odds": 270,
+    "game_id": "5000a9f1dd7ba71de7ae6ceef836aa48",
+    "generated_at": "2026-04-24T21:48:34.238945+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Cleveland Cavaliers @ Toronto Raptors",
+    "commence_time": "2026-04-26T17:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "Toronto Raptors ML",
+    "our_probability": 0.52,
+    "implied_probability": 0.411,
+    "edge": 0.109,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.01,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 134,
+    "away_odds": -158,
+    "game_id": "d94d967f8600a3fb8b869f32c31a7357",
+    "generated_at": "2026-04-24T21:48:34.244107+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Atlanta Braves",
+    "commence_time": "2026-04-24T23:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.6962,
+    "implied_probability": 0.5929,
+    "edge": 0.1033,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -163,
+    "away_odds": 135,
+    "game_id": "8a412fa061b10c75d57bc591bf081271",
+    "generated_at": "2026-04-24T21:48:59.895937+00:00",
     "result": null
   }
 ]
