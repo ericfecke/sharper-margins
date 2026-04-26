@@ -5581,5 +5581,133 @@
     "game_id": "4231dc4bed4b8aac32157bce916837c9",
     "generated_at": "2026-04-25T16:28:25.999536+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ Cincinnati Reds",
+    "commence_time": "2026-04-26T17:40:00Z",
+    "book": "DraftKings",
+    "recommendation": "Cincinnati Reds ML",
+    "our_probability": 0.6035,
+    "implied_probability": 0.5,
+    "edge": 0.1035,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Cincinnati Reds plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": -0.04,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -110,
+    "away_odds": -110,
+    "game_id": "4bfe574e7c5269d65b3a9936e5793ada",
+    "generated_at": "2026-04-26T16:29:21.004378+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Colorado Rockies @ New York Mets",
+    "commence_time": "2026-04-26T17:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.5886,
+    "implied_probability": 0.3146,
+    "edge": 0.274,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: New York Mets plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": -0.027,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -250,
+    "away_odds": 205,
+    "game_id": "3b5d0ef6c7e43cabe937c7a9f10067e9",
+    "generated_at": "2026-04-26T16:29:21.010366+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Seattle Mariners @ St. Louis Cardinals",
+    "commence_time": "2026-04-26T18:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "St. Louis Cardinals ML",
+    "our_probability": 0.5586,
+    "implied_probability": 0.4493,
+    "edge": 0.1093,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.001,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 114,
+    "away_odds": -134,
+    "game_id": "70d642527538cc1ee9ace67b17830b01",
+    "generated_at": "2026-04-26T16:29:21.016344+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Colorado Rockies @ New York Mets",
+    "commence_time": "2026-04-26T21:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.5886,
+    "implied_probability": 0.378,
+    "edge": 0.2106,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: New York Mets plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": -0.027,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -186,
+    "away_odds": 153,
+    "game_id": "0ac87629ee3c61883fb75f522f9e964d",
+    "generated_at": "2026-04-26T16:29:21.022353+00:00",
+    "result": null
   }
 ]
