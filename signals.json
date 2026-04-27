@@ -5709,5 +5709,37 @@
     "game_id": "0ac87629ee3c61883fb75f522f9e964d",
     "generated_at": "2026-04-26T16:29:21.022353+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Miami Marlins @ Los Angeles Dodgers",
+    "commence_time": "2026-04-28T02:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.3757,
+    "implied_probability": 0.2742,
+    "edge": 0.1015,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -310,
+    "away_odds": 250,
+    "game_id": "65f2df473a540a92e7f974a290ed36fb",
+    "generated_at": "2026-04-27T21:53:51.662446+00:00",
+    "result": null
   }
 ]
