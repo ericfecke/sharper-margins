@@ -5741,5 +5741,201 @@
     "game_id": "65f2df473a540a92e7f974a290ed36fb",
     "generated_at": "2026-04-27T21:53:51.662446+00:00",
     "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Denver Nuggets @ Minnesota Timberwolves",
+    "commence_time": "2026-05-01T02:00:00Z",
+    "book": "DraftKings",
+    "recommendation": "Minnesota Timberwolves ML",
+    "our_probability": 0.525,
+    "implied_probability": 0.3364,
+    "edge": 0.1886,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.005,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 185,
+    "away_odds": -225,
+    "game_id": "b981ac0f551b6f109cd18fa31de439b4",
+    "generated_at": "2026-04-28T21:58:07.530408+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Francisco Giants @ Philadelphia Phillies",
+    "commence_time": "2026-04-28T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "San Francisco Giants ML",
+    "our_probability": 0.6126,
+    "implied_probability": 0.4175,
+    "edge": 0.1951,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -156,
+    "away_odds": 129,
+    "game_id": "ca628e132f0ee9d811d1967c7062a0a5",
+    "generated_at": "2026-04-28T21:58:31.481628+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Washington Nationals @ New York Mets",
+    "commence_time": "2026-04-28T23:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.4965,
+    "implied_probability": 0.3726,
+    "edge": 0.1239,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential); Park factor: New York Mets plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.028,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -188,
+    "away_odds": 158,
+    "game_id": "fbf763600d3ccdeb10333812e326159f",
+    "generated_at": "2026-04-28T21:58:31.487272+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ Atlanta Braves",
+    "commence_time": "2026-04-28T23:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.6671,
+    "implied_probability": 0.5321,
+    "edge": 0.135,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.015,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -126,
+    "away_odds": 104,
+    "game_id": "6015a24988595d49a325507fa8543243",
+    "generated_at": "2026-04-28T21:58:31.492804+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Francisco Giants @ Philadelphia Phillies",
+    "commence_time": "2026-04-29T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "San Francisco Giants ML",
+    "our_probability": 0.6126,
+    "implied_probability": 0.4455,
+    "edge": 0.1671,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -136,
+    "away_odds": 116,
+    "game_id": "0b82fc67da784ef2d4225438c8e33b6a",
+    "generated_at": "2026-04-28T21:58:31.498791+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ Atlanta Braves",
+    "commence_time": "2026-04-29T23:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.6671,
+    "implied_probability": 0.4284,
+    "edge": 0.2387,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.015,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 123,
+    "away_odds": -149,
+    "game_id": "68d4de1e01d8567e0d2e4a137d4b254b",
+    "generated_at": "2026-04-28T21:58:31.504304+00:00",
+    "result": null
   }
 ]
