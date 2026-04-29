@@ -5745,7 +5745,7 @@
   {
     "sport": "NBA",
     "game": "Denver Nuggets @ Minnesota Timberwolves",
-    "commence_time": "2026-05-01T02:00:00Z",
+    "commence_time": "2026-05-01T01:40:00Z",
     "book": "DraftKings",
     "recommendation": "Minnesota Timberwolves ML",
     "our_probability": 0.525,
@@ -5775,7 +5775,7 @@
     "home_odds": 185,
     "away_odds": -225,
     "game_id": "b981ac0f551b6f109cd18fa31de439b4",
-    "generated_at": "2026-04-28T21:58:07.530408+00:00",
+    "generated_at": "2026-04-29T21:58:48.678557+00:00",
     "result": null
   },
   {
@@ -5912,9 +5912,9 @@
     "commence_time": "2026-04-29T23:16:00Z",
     "book": "DraftKings",
     "recommendation": "Atlanta Braves ML",
-    "our_probability": 0.6671,
+    "our_probability": 0.6748,
     "implied_probability": 0.4284,
-    "edge": 0.2387,
+    "edge": 0.2464,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -5935,7 +5935,71 @@
     "home_odds": 123,
     "away_odds": -149,
     "game_id": "68d4de1e01d8567e0d2e4a137d4b254b",
-    "generated_at": "2026-04-28T21:58:31.504304+00:00",
+    "generated_at": "2026-04-29T21:58:54.808772+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Chicago Cubs @ San Diego Padres",
+    "commence_time": "2026-04-29T20:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "San Diego Padres ML",
+    "our_probability": 0.4943,
+    "implied_probability": 0.3147,
+    "edge": 0.1796,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": -0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 200,
+    "away_odds": -265,
+    "game_id": "dbde00d498a1f217c0ee8968123b069f",
+    "generated_at": "2026-04-29T21:58:54.802448+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ Atlanta Braves",
+    "commence_time": "2026-04-30T16:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.6748,
+    "implied_probability": 0.5,
+    "edge": 0.1748,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.015,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -108,
+    "away_odds": -108,
+    "game_id": "0abd6580f0a4c91cb98db1774d582be8",
+    "generated_at": "2026-04-29T21:58:54.814946+00:00",
     "result": null
   }
 ]
