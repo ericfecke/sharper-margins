@@ -6038,34 +6038,28 @@
     "commence_time": "2026-05-01T23:40:00Z",
     "book": "DraftKings",
     "recommendation": "Toronto Raptors ML",
-    "our_probability": 0.52,
-    "implied_probability": 0.3836,
-    "edge": 0.1364,
-    "confidence": "low",
-    "missing_factors": [
-      "home_standings",
-      "away_standings",
-      "rest_data",
-      "recent_form",
-      "scoring_stats"
-    ],
-    "sme_reasoning": "Home court advantage applied",
+    "our_probability": 0.4583,
+    "implied_probability": 0.3553,
+    "edge": 0.103,
+    "confidence": "normal",
+    "missing_factors": [],
+    "sme_reasoning": "Home court advantage applied; Recent form favors away",
     "factor_deltas": {
-      "win_rate_diff": 0.0,
+      "win_rate_diff": -0.0293,
       "home_court": 0.03,
       "rest": 0.0,
-      "recent_form": 0.0,
+      "recent_form": -0.03,
       "injuries": -0.01,
-      "net_rating": 0.0,
+      "net_rating": -0.0024,
       "h2h": 0.0
     },
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 150,
-    "away_odds": -180,
+    "home_odds": 170,
+    "away_odds": -205,
     "game_id": "d1938a9c13602a661e894f996f2680e8",
-    "generated_at": "2026-04-30T21:56:05.918085+00:00",
+    "generated_at": "2026-05-01T21:53:28.719619+00:00",
     "result": null
   },
   {
@@ -6134,6 +6128,38 @@
     "away_odds": -188,
     "game_id": "6f2e9ec22774fd2d53ca6ed64f1ec7e5",
     "generated_at": "2026-04-30T21:56:08.774409+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ St. Louis Cardinals",
+    "commence_time": "2026-05-02T00:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "St. Louis Cardinals ML",
+    "our_probability": 0.5008,
+    "implied_probability": 0.3917,
+    "edge": 0.1091,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.001,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 144,
+    "away_odds": -175,
+    "game_id": "4331dd522336be02de34b61018be0cc9",
+    "generated_at": "2026-05-01T21:53:48.348760+00:00",
     "result": null
   }
 ]
