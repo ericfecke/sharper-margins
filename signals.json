@@ -6453,5 +6453,197 @@
     "game_id": "8ca3a46477683553d785413b73444311",
     "generated_at": "2026-05-03T16:34:50.616805+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Boston Red Sox @ Detroit Tigers",
+    "commence_time": "2026-05-04T22:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Detroit Tigers ML",
+    "our_probability": 0.5755,
+    "implied_probability": 0.4679,
+    "edge": 0.1076,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 104,
+    "away_odds": -126,
+    "game_id": "42cd2c9d9860ded679366dcdfe136ea7",
+    "generated_at": "2026-05-04T22:01:19.150839+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Chicago White Sox @ Los Angeles Angels",
+    "commence_time": "2026-05-05T01:39:00Z",
+    "book": "DraftKings",
+    "recommendation": "Chicago White Sox ML",
+    "our_probability": 0.5691,
+    "implied_probability": 0.4175,
+    "edge": 0.1516,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -156,
+    "away_odds": 129,
+    "game_id": "e07f1907da5ba8bebef841815c5cd9a1",
+    "generated_at": "2026-05-04T22:01:19.158018+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Toronto Blue Jays @ Tampa Bay Rays",
+    "commence_time": "2026-05-05T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.6325,
+    "implied_probability": 0.5154,
+    "edge": 0.1171,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -116,
+    "away_odds": -102,
+    "game_id": "d0147770323bf6c913a672f31ac49256",
+    "generated_at": "2026-05-04T22:01:19.164912+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Chicago Cubs",
+    "commence_time": "2026-05-05T23:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Chicago Cubs ML",
+    "our_probability": 0.7038,
+    "implied_probability": 0.5929,
+    "edge": 0.1109,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -163,
+    "away_odds": 135,
+    "game_id": "7cdd4e1d6b845aedaf71e33a78a0f164",
+    "generated_at": "2026-05-04T22:01:19.171666+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Mets @ Colorado Rockies",
+    "commence_time": "2026-05-06T00:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.5249,
+    "implied_probability": 0.4003,
+    "edge": 0.1246,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.027,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 139,
+    "away_odds": -168,
+    "game_id": "6a03ee8f26eea9160cbb5d12946cb37c",
+    "generated_at": "2026-05-04T22:01:19.178476+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Atlanta Braves @ Seattle Mariners",
+    "commence_time": "2026-05-06T01:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.5384,
+    "implied_probability": 0.4284,
+    "edge": 0.11,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -149,
+    "away_odds": 123,
+    "game_id": "732ae7d99e94ec771af4f2525709bb66",
+    "generated_at": "2026-05-04T22:01:19.185230+00:00",
+    "result": null
   }
 ]
