@@ -6553,17 +6553,17 @@
   {
     "sport": "MLB",
     "game": "Cincinnati Reds @ Chicago Cubs",
-    "commence_time": "2026-05-05T23:41:00Z",
+    "commence_time": "2026-05-05T23:40:00Z",
     "book": "DraftKings",
     "recommendation": "Chicago Cubs ML",
-    "our_probability": 0.7038,
-    "implied_probability": 0.5929,
-    "edge": 0.1109,
+    "our_probability": 0.709,
+    "implied_probability": 0.5966,
+    "edge": 0.1124,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
     ],
-    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
     "factor_deltas": {
       "run_differential": 0.0,
       "recent_form": 0.045,
@@ -6576,10 +6576,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -163,
-    "away_odds": 135,
+    "home_odds": -166,
+    "away_odds": 137,
     "game_id": "7cdd4e1d6b845aedaf71e33a78a0f164",
-    "generated_at": "2026-05-04T22:01:19.171666+00:00",
+    "generated_at": "2026-05-05T22:00:59.764464+00:00",
     "result": null
   },
   {
@@ -6644,6 +6644,138 @@
     "away_odds": 123,
     "game_id": "732ae7d99e94ec771af4f2525709bb66",
     "generated_at": "2026-05-04T22:01:19.185230+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Philadelphia 76ers @ New York Knicks",
+    "commence_time": "2026-05-06T23:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "Philadelphia 76ers ML",
+    "our_probability": 0.47,
+    "implied_probability": 0.2998,
+    "edge": 0.1702,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -270,
+    "away_odds": 220,
+    "game_id": "d146e10295545e18ac8915a1f5860317",
+    "generated_at": "2026-05-05T22:00:47.657508+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Texas Rangers @ New York Yankees",
+    "commence_time": "2026-05-05T23:06:00Z",
+    "book": "FanDuel",
+    "recommendation": "New York Yankees ML",
+    "our_probability": 0.715,
+    "implied_probability": 0.537,
+    "edge": 0.178,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -126,
+    "away_odds": 108,
+    "game_id": "642027e0dc5d6fe0e383f9c8b6453d6c",
+    "generated_at": "2026-05-05T22:00:59.757638+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Arizona Diamondbacks",
+    "commence_time": "2026-05-06T01:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Pittsburgh Pirates ML",
+    "our_probability": 0.578,
+    "implied_probability": 0.4493,
+    "edge": 0.1287,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": -0.02,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.009,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -134,
+    "away_odds": 114,
+    "game_id": "8ce45c11dc2d0ef2edaaf6ecd5f2b8ff",
+    "generated_at": "2026-05-05T22:00:59.771428+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Chicago Cubs",
+    "commence_time": "2026-05-06T23:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Chicago Cubs ML",
+    "our_probability": 0.709,
+    "implied_probability": 0.5997,
+    "edge": 0.1093,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -168,
+    "away_odds": 139,
+    "game_id": "a524558d8c67f4e0116d63123b26e426",
+    "generated_at": "2026-05-05T22:00:59.778680+00:00",
     "result": null
   }
 ]
