@@ -6777,5 +6777,69 @@
     "game_id": "a524558d8c67f4e0116d63123b26e426",
     "generated_at": "2026-05-05T22:00:59.778680+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Texas Rangers @ New York Yankees",
+    "commence_time": "2026-05-06T23:06:00Z",
+    "book": "FanDuel",
+    "recommendation": "New York Yankees ML",
+    "our_probability": 0.7222,
+    "implied_probability": 0.6097,
+    "edge": 0.1125,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -174,
+    "away_odds": 146,
+    "game_id": "895be7e0cbc697eeffc1f4c9fb60613b",
+    "generated_at": "2026-05-06T21:57:44.232953+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Mets @ Colorado Rockies",
+    "commence_time": "2026-05-07T01:21:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.5188,
+    "implied_probability": 0.4175,
+    "edge": 0.1013,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.027,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 129,
+    "away_odds": -156,
+    "game_id": "3d9ff7b926b247cb73447ca5c7a7428e",
+    "generated_at": "2026-05-06T21:57:44.240056+00:00",
+    "result": null
   }
 ]
