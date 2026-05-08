@@ -7013,5 +7013,69 @@
     "game_id": "3d859a4947ba1d62e82366cdebc59d78",
     "generated_at": "2026-05-07T21:58:16.815454+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Tampa Bay Rays @ Boston Red Sox",
+    "commence_time": "2026-05-08T23:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.5769,
+    "implied_probability": 0.447,
+    "edge": 0.1299,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": -0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -137,
+    "away_odds": 114,
+    "game_id": "739421696ed76f3cffaf12c7db22c763",
+    "generated_at": "2026-05-08T21:59:07.578276+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Tampa Bay Rays @ Boston Red Sox",
+    "commence_time": "2026-05-09T20:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.5769,
+    "implied_probability": 0.4175,
+    "edge": 0.1594,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": -0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -156,
+    "away_odds": 129,
+    "game_id": "a1e4d36a83b260dbab61a4f965b6abea",
+    "generated_at": "2026-05-08T21:59:07.584197+00:00",
+    "result": null
   }
 ]
