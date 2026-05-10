@@ -7207,5 +7207,69 @@
     "game_id": "863ff6f33ea468e7a6bac4be2626648a",
     "generated_at": "2026-05-09T16:38:47.498013+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Tampa Bay Rays @ Boston Red Sox",
+    "commence_time": "2026-05-10T17:36:00Z",
+    "book": "FanDuel",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.5643,
+    "implied_probability": 0.4258,
+    "edge": 0.1385,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": -0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -148,
+    "away_odds": 126,
+    "game_id": "73c2cde50707b32c9767a0a8fbb2e7d2",
+    "generated_at": "2026-05-10T16:39:55.919475+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Colorado Rockies @ Philadelphia Phillies",
+    "commence_time": "2026-05-10T17:36:00Z",
+    "book": "FanDuel",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.4308,
+    "implied_probability": 0.2742,
+    "edge": 0.1566,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -310,
+    "away_odds": 250,
+    "game_id": "6dd9cd4491079d3cedf1f7d3ff85b358",
+    "generated_at": "2026-05-10T16:39:55.926908+00:00",
+    "result": null
   }
 ]
