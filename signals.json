@@ -7271,5 +7271,229 @@
     "game_id": "6dd9cd4491079d3cedf1f7d3ff85b358",
     "generated_at": "2026-05-10T16:39:55.926908+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ New York Mets",
+    "commence_time": "2026-05-12T23:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Detroit Tigers ML",
+    "our_probability": 0.5443,
+    "implied_probability": 0.4258,
+    "edge": 0.1185,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: New York Mets plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": -0.027,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -148,
+    "away_odds": 126,
+    "game_id": "fe40950314ca87c69985e8a1a37c8822",
+    "generated_at": "2026-05-12T22:11:36.119352+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Francisco Giants @ Los Angeles Dodgers",
+    "commence_time": "2026-05-13T02:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "San Francisco Giants ML",
+    "our_probability": 0.4147,
+    "implied_probability": 0.2742,
+    "edge": 0.1405,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -310,
+    "away_odds": 250,
+    "game_id": "a0929cf66d445eec19f118010165e95c",
+    "generated_at": "2026-05-12T22:11:36.127020+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Washington Nationals @ Cincinnati Reds",
+    "commence_time": "2026-05-13T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.527,
+    "implied_probability": 0.411,
+    "edge": 0.116,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Cincinnati Reds plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": -0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -158,
+    "away_odds": 134,
+    "game_id": "4546828df054a4ac1c7634c94b4c7012",
+    "generated_at": "2026-05-12T22:11:36.134408+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Tampa Bay Rays @ Toronto Blue Jays",
+    "commence_time": "2026-05-13T23:08:00Z",
+    "book": "DraftKings",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.5658,
+    "implied_probability": 0.4175,
+    "edge": 0.1483,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -156,
+    "away_odds": 129,
+    "game_id": "70e80bbf99890d3a610a98c21f3a7419",
+    "generated_at": "2026-05-12T22:11:36.141788+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Chicago Cubs @ Atlanta Braves",
+    "commence_time": "2026-05-13T23:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.5889,
+    "implied_probability": 0.4365,
+    "edge": 0.1524,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 120,
+    "away_odds": -142,
+    "game_id": "1ae3a00c8d26de69bd61ddda56e9dba1",
+    "generated_at": "2026-05-12T22:11:36.149179+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Diego Padres @ Milwaukee Brewers",
+    "commence_time": "2026-05-13T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.666,
+    "implied_probability": 0.5467,
+    "edge": 0.1193,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -132,
+    "away_odds": 112,
+    "game_id": "15bc05498c54cf822aedf7434d3a8bc6",
+    "generated_at": "2026-05-12T22:11:36.156513+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Francisco Giants @ Los Angeles Dodgers",
+    "commence_time": "2026-05-14T02:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "San Francisco Giants ML",
+    "our_probability": 0.4147,
+    "implied_probability": 0.3146,
+    "edge": 0.1001,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -250,
+    "away_odds": 205,
+    "game_id": "7018d88c446b88b45928fc75ec91e83c",
+    "generated_at": "2026-05-12T22:11:36.163869+00:00",
+    "result": null
   }
 ]
