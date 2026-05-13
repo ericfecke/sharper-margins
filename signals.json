@@ -7374,9 +7374,9 @@
     "commence_time": "2026-05-13T23:08:00Z",
     "book": "DraftKings",
     "recommendation": "Tampa Bay Rays ML",
-    "our_probability": 0.5658,
-    "implied_probability": 0.4175,
-    "edge": 0.1483,
+    "our_probability": 0.5722,
+    "implied_probability": 0.4273,
+    "edge": 0.1449,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -7394,10 +7394,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -156,
-    "away_odds": 129,
+    "home_odds": -149,
+    "away_odds": 124,
     "game_id": "70e80bbf99890d3a610a98c21f3a7419",
-    "generated_at": "2026-05-12T22:11:36.141788+00:00",
+    "generated_at": "2026-05-13T22:12:14.493654+00:00",
     "result": null
   },
   {
@@ -7406,9 +7406,9 @@
     "commence_time": "2026-05-13T23:16:00Z",
     "book": "FanDuel",
     "recommendation": "Atlanta Braves ML",
-    "our_probability": 0.5889,
-    "implied_probability": 0.4365,
-    "edge": 0.1524,
+    "our_probability": 0.6263,
+    "implied_probability": 0.4455,
+    "edge": 0.1808,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -7416,7 +7416,7 @@
     "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": -0.03,
+      "recent_form": 0.0,
       "injuries": 0.0,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
@@ -7426,10 +7426,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 120,
-    "away_odds": -142,
+    "home_odds": 116,
+    "away_odds": -136,
     "game_id": "1ae3a00c8d26de69bd61ddda56e9dba1",
-    "generated_at": "2026-05-12T22:11:36.149179+00:00",
+    "generated_at": "2026-05-13T22:12:14.501370+00:00",
     "result": null
   },
   {
@@ -7470,9 +7470,9 @@
     "commence_time": "2026-05-14T02:11:00Z",
     "book": "FanDuel",
     "recommendation": "San Francisco Giants ML",
-    "our_probability": 0.4147,
+    "our_probability": 0.4382,
     "implied_probability": 0.3146,
-    "edge": 0.1001,
+    "edge": 0.1236,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -7480,7 +7480,7 @@
     "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": 0.0,
+      "recent_form": -0.015,
       "injuries": 0.0,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
@@ -7493,7 +7493,39 @@
     "home_odds": -250,
     "away_odds": 205,
     "game_id": "7018d88c446b88b45928fc75ec91e83c",
-    "generated_at": "2026-05-12T22:11:36.163869+00:00",
+    "generated_at": "2026-05-13T22:12:14.509161+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Diego Padres @ Milwaukee Brewers",
+    "commence_time": "2026-05-14T17:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.6875,
+    "implied_probability": 0.5545,
+    "edge": 0.133,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -136,
+    "away_odds": 116,
+    "game_id": "679760ad793188b79273efa2408440ac",
+    "generated_at": "2026-05-13T22:12:14.516815+00:00",
     "result": null
   }
 ]
