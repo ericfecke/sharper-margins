@@ -7527,5 +7527,41 @@
     "game_id": "679760ad793188b79273efa2408440ac",
     "generated_at": "2026-05-13T22:12:14.516815+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Arizona Diamondbacks @ Colorado Rockies",
+    "commence_time": "2026-05-16T00:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.575,
+    "implied_probability": 0.4576,
+    "edge": 0.1174,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats; Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.02,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 109,
+    "away_odds": -131,
+    "game_id": "204926b2f2e00788f62385d3af31d828",
+    "generated_at": "2026-05-14T22:11:45.077952+00:00",
+    "result": null
   }
 ]
