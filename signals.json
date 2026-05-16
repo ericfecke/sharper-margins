@@ -7666,14 +7666,14 @@
     "commence_time": "2026-05-16T20:11:00Z",
     "book": "FanDuel",
     "recommendation": "Tampa Bay Rays ML",
-    "our_probability": 0.6733,
-    "implied_probability": 0.537,
-    "edge": 0.1363,
+    "our_probability": 0.6819,
+    "implied_probability": 0.5583,
+    "edge": 0.1236,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
     ],
-    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
     "factor_deltas": {
       "run_differential": 0.0,
       "recent_form": 0.05,
@@ -7686,10 +7686,74 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -126,
-    "away_odds": 108,
+    "home_odds": -138,
+    "away_odds": 118,
     "game_id": "c0881b4a195ada00f7db5d84c6cef8b7",
-    "generated_at": "2026-05-15T21:59:49.264467+00:00",
+    "generated_at": "2026-05-16T16:42:23.896565+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Kansas City Royals @ St. Louis Cardinals",
+    "commence_time": "2026-05-16T18:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "St. Louis Cardinals ML",
+    "our_probability": 0.6184,
+    "implied_probability": 0.5087,
+    "edge": 0.1097,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.001,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -114,
+    "away_odds": -106,
+    "game_id": "f1f5588e7499f45638568bb30db784a3",
+    "generated_at": "2026-05-16T16:42:23.888203+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Boston Red Sox @ Atlanta Braves",
+    "commence_time": "2026-05-16T23:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.6614,
+    "implied_probability": 0.5312,
+    "edge": 0.1301,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -125,
+    "away_odds": 104,
+    "game_id": "ca5e359ff82548cecbaa7a8695e9fbf0",
+    "generated_at": "2026-05-16T16:42:23.904894+00:00",
     "result": null
   }
 ]
