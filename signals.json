@@ -7755,5 +7755,37 @@
     "game_id": "ca5e359ff82548cecbaa7a8695e9fbf0",
     "generated_at": "2026-05-16T16:42:23.904894+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Kansas City Royals @ St. Louis Cardinals",
+    "commence_time": "2026-05-17T18:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "St. Louis Cardinals ML",
+    "our_probability": 0.6299,
+    "implied_probability": 0.5248,
+    "edge": 0.1051,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.001,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -122,
+    "away_odds": 101,
+    "game_id": "202f16f2a36544c76cedfaacc4e45ada",
+    "generated_at": "2026-05-17T16:43:08.983162+00:00",
+    "result": null
   }
 ]
