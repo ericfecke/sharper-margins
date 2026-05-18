@@ -7787,5 +7787,197 @@
     "game_id": "202f16f2a36544c76cedfaacc4e45ada",
     "generated_at": "2026-05-17T16:43:08.983162+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Baltimore Orioles @ Tampa Bay Rays",
+    "commence_time": "2026-05-18T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.6856,
+    "implied_probability": 0.5635,
+    "edge": 0.1221,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -142,
+    "away_odds": 120,
+    "game_id": "5d7782b4079153d44f30c8b3b9ccf495",
+    "generated_at": "2026-05-18T22:03:18.939350+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Philadelphia Phillies",
+    "commence_time": "2026-05-18T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Philadelphia Phillies ML",
+    "our_probability": 0.6564,
+    "implied_probability": 0.5154,
+    "edge": 0.141,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -116,
+    "away_odds": -102,
+    "game_id": "0659b2fd47b200a2c0fe612b8a32e5b1",
+    "generated_at": "2026-05-18T22:03:18.947302+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cleveland Guardians @ Detroit Tigers",
+    "commence_time": "2026-05-18T23:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Cleveland Guardians ML",
+    "our_probability": 0.5579,
+    "implied_probability": 0.4087,
+    "edge": 0.1492,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -162,
+    "away_odds": 134,
+    "game_id": "6990aa317792d95bc36b258c5662a9b4",
+    "generated_at": "2026-05-18T22:03:18.955301+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Chicago White Sox @ Seattle Mariners",
+    "commence_time": "2026-05-19T01:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Chicago White Sox ML",
+    "our_probability": 0.5081,
+    "implied_probability": 0.4071,
+    "edge": 0.101,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -163,
+    "away_odds": 135,
+    "game_id": "14c70bb665938baff9719079a82cbb93",
+    "generated_at": "2026-05-18T22:03:18.963401+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Baltimore Orioles @ Tampa Bay Rays",
+    "commence_time": "2026-05-19T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.6856,
+    "implied_probability": 0.5154,
+    "edge": 0.1702,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -116,
+    "away_odds": -102,
+    "game_id": "c974a8cecb0d3237e2c78f1920c5eaf3",
+    "generated_at": "2026-05-18T22:03:18.971379+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Athletics @ Los Angeles Angels",
+    "commence_time": "2026-05-20T01:39:00Z",
+    "book": "DraftKings",
+    "recommendation": "Athletics ML",
+    "our_probability": 0.6146,
+    "implied_probability": 0.4576,
+    "edge": 0.157,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -131,
+    "away_odds": 109,
+    "game_id": "36672faae36a4b8104686a4a2068f311",
+    "generated_at": "2026-05-18T22:03:18.985818+00:00",
+    "result": null
   }
 ]
