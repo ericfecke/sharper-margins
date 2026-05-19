@@ -7922,9 +7922,9 @@
     "commence_time": "2026-05-19T22:41:00Z",
     "book": "FanDuel",
     "recommendation": "Tampa Bay Rays ML",
-    "our_probability": 0.6856,
-    "implied_probability": 0.5154,
-    "edge": 0.1702,
+    "our_probability": 0.6963,
+    "implied_probability": 0.5045,
+    "edge": 0.1918,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -7942,10 +7942,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -116,
-    "away_odds": -102,
+    "home_odds": -110,
+    "away_odds": -106,
     "game_id": "c974a8cecb0d3237e2c78f1920c5eaf3",
-    "generated_at": "2026-05-18T22:03:18.971379+00:00",
+    "generated_at": "2026-05-19T22:16:36.110006+00:00",
     "result": null
   },
   {
@@ -7978,6 +7978,138 @@
     "away_odds": 109,
     "game_id": "36672faae36a4b8104686a4a2068f311",
     "generated_at": "2026-05-18T22:03:18.985818+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "San Antonio Spurs @ Oklahoma City Thunder",
+    "commence_time": "2026-05-21T00:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "San Antonio Spurs ML",
+    "our_probability": 0.485,
+    "implied_probability": 0.3222,
+    "edge": 0.1628,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.015,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -240,
+    "away_odds": 198,
+    "game_id": "51176769d0f89d3e39adc8e90922f84d",
+    "generated_at": "2026-05-19T22:16:25.990220+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Philadelphia Phillies",
+    "commence_time": "2026-05-19T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Philadelphia Phillies ML",
+    "our_probability": 0.6671,
+    "implied_probability": 0.5545,
+    "edge": 0.1126,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -136,
+    "away_odds": 116,
+    "game_id": "54706a0490ebce80c512adf788e6b1d2",
+    "generated_at": "2026-05-19T22:16:36.118092+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Baltimore Orioles @ Tampa Bay Rays",
+    "commence_time": "2026-05-20T17:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.6963,
+    "implied_probability": 0.5174,
+    "edge": 0.1789,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -118,
+    "away_odds": -102,
+    "game_id": "7da6a18b316119afbe4c2a58d5c2cbce",
+    "generated_at": "2026-05-19T22:16:36.126568+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ San Diego Padres",
+    "commence_time": "2026-05-21T00:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "San Diego Padres ML",
+    "our_probability": 0.5313,
+    "implied_probability": 0.4003,
+    "edge": 0.131,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": -0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 139,
+    "away_odds": -168,
+    "game_id": "eb71b24bcac6134977abdc1add17dd0a",
+    "generated_at": "2026-05-19T22:16:36.134870+00:00",
     "result": null
   }
 ]
