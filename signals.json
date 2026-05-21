@@ -8208,9 +8208,9 @@
     "commence_time": "2026-05-22T01:39:00Z",
     "book": "FanDuel",
     "recommendation": "Athletics ML",
-    "our_probability": 0.6029,
+    "our_probability": 0.6075,
     "implied_probability": 0.4846,
-    "edge": 0.1183,
+    "edge": 0.1229,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -8231,7 +8231,7 @@
     "home_odds": -116,
     "away_odds": -102,
     "game_id": "ad313997692fb82ede49e0b3e0c17525",
-    "generated_at": "2026-05-20T22:23:59.909367+00:00",
+    "generated_at": "2026-05-21T22:19:07.302573+00:00",
     "result": null
   }
 ]
