@@ -8233,5 +8233,165 @@
     "game_id": "ad313997692fb82ede49e0b3e0c17525",
     "generated_at": "2026-05-21T22:19:07.302573+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cleveland Guardians @ Philadelphia Phillies",
+    "commence_time": "2026-05-22T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Cleveland Guardians ML",
+    "our_probability": 0.515,
+    "implied_probability": 0.378,
+    "edge": 0.137,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -186,
+    "away_odds": 153,
+    "game_id": "ea533201c1219a43e8c91415af4065b2",
+    "generated_at": "2026-05-22T22:07:59.489862+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Washington Nationals @ Atlanta Braves",
+    "commence_time": "2026-05-22T23:15:00Z",
+    "book": "FanDuel",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.7426,
+    "implied_probability": 0.6274,
+    "edge": 0.1152,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -188,
+    "away_odds": 158,
+    "game_id": "7299c6da7b62235dd67f58484e58a33b",
+    "generated_at": "2026-05-22T22:07:59.497811+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Milwaukee Brewers",
+    "commence_time": "2026-05-22T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.6032,
+    "implied_probability": 0.5,
+    "edge": 0.1032,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -108,
+    "away_odds": -108,
+    "game_id": "0fec3ff922e35049f5bbc3e899ce1cef",
+    "generated_at": "2026-05-22T22:07:59.505568+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cleveland Guardians @ Philadelphia Phillies",
+    "commence_time": "2026-05-23T20:06:00Z",
+    "book": "FanDuel",
+    "recommendation": "Cleveland Guardians ML",
+    "our_probability": 0.515,
+    "implied_probability": 0.3536,
+    "edge": 0.1614,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -205,
+    "away_odds": 172,
+    "game_id": "bb14f988c4cc921c1b5286bf757183f6",
+    "generated_at": "2026-05-22T22:07:59.513557+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Milwaukee Brewers",
+    "commence_time": "2026-05-23T23:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.6032,
+    "implied_probability": 0.463,
+    "edge": 0.1402,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 108,
+    "away_odds": -126,
+    "game_id": "e8edd4604077b2fc638f1b2e3db08545",
+    "generated_at": "2026-05-22T22:07:59.521435+00:00",
+    "result": null
   }
 ]
