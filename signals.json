@@ -8393,5 +8393,131 @@
     "game_id": "e8edd4604077b2fc638f1b2e3db08545",
     "generated_at": "2026-05-22T22:07:59.521435+00:00",
     "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "New York Knicks @ Cleveland Cavaliers",
+    "commence_time": "2026-05-24T00:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "New York Knicks ML",
+    "our_probability": 0.5849,
+    "implied_probability": 0.4493,
+    "edge": 0.1356,
+    "confidence": "normal",
+    "missing_factors": [],
+    "sme_reasoning": "Home court advantage applied; Recent form favors away; Net rating advantage: away",
+    "factor_deltas": {
+      "win_rate_diff": -0.0049,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": -0.06,
+      "injuries": 0.0,
+      "net_rating": -0.05,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -134,
+    "away_odds": 114,
+    "game_id": "4247d31ac7706ebe455b8f221c9e4184",
+    "generated_at": "2026-05-23T16:45:22.361314+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Toronto Blue Jays",
+    "commence_time": "2026-05-23T19:08:00Z",
+    "book": "DraftKings",
+    "recommendation": "Toronto Blue Jays ML",
+    "our_probability": 0.5459,
+    "implied_probability": 0.4168,
+    "edge": 0.1291,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 129,
+    "away_odds": -157,
+    "game_id": "1d419a4245a0f02f79282579190123f2",
+    "generated_at": "2026-05-23T16:45:29.405385+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cleveland Guardians @ Philadelphia Phillies",
+    "commence_time": "2026-05-23T20:06:00Z",
+    "book": "DraftKings",
+    "recommendation": "Cleveland Guardians ML",
+    "our_probability": 0.5352,
+    "implied_probability": 0.3762,
+    "edge": 0.159,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -188,
+    "away_odds": 154,
+    "game_id": "bb14f988c4cc921c1b5286bf757183f6",
+    "generated_at": "2026-05-23T16:45:29.413994+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Washington Nationals @ Atlanta Braves",
+    "commence_time": "2026-05-23T20:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.7612,
+    "implied_probability": 0.5997,
+    "edge": 0.1615,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -168,
+    "away_odds": 139,
+    "game_id": "8d35e402aab765eeda746ea98f694dc6",
+    "generated_at": "2026-05-23T16:45:29.422301+00:00",
+    "result": null
   }
 ]
