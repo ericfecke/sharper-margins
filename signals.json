@@ -8519,5 +8519,131 @@
     "game_id": "8d35e402aab765eeda746ea98f694dc6",
     "generated_at": "2026-05-23T16:45:29.422301+00:00",
     "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Oklahoma City Thunder @ San Antonio Spurs",
+    "commence_time": "2026-05-25T00:10:00Z",
+    "book": "DraftKings",
+    "recommendation": "Oklahoma City Thunder ML",
+    "our_probability": 0.5521,
+    "implied_probability": 0.4279,
+    "edge": 0.1242,
+    "confidence": "normal",
+    "missing_factors": [],
+    "sme_reasoning": "Home court advantage applied; Recent form favors away; Net rating advantage: away",
+    "factor_deltas": {
+      "win_rate_diff": -0.0098,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "net_rating": -0.0273,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -148,
+    "away_odds": 124,
+    "game_id": "74cd3b630383a2e3eff3afd92006ebb3",
+    "generated_at": "2026-05-24T16:48:46.060745+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Toronto Blue Jays",
+    "commence_time": "2026-05-24T16:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Toronto Blue Jays ML",
+    "our_probability": 0.5739,
+    "implied_probability": 0.3774,
+    "edge": 0.1965,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 150,
+    "away_odds": -194,
+    "game_id": "f70aa43669ed4dd4d5fa56bbe2964822",
+    "generated_at": "2026-05-24T16:49:01.522454+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Milwaukee Brewers",
+    "commence_time": "2026-05-24T18:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.5707,
+    "implied_probability": 0.4273,
+    "edge": 0.1434,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 124,
+    "away_odds": -149,
+    "game_id": "30932455872c68aa6d63646b48a38fc5",
+    "generated_at": "2026-05-24T16:49:01.531365+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Washington Nationals @ Atlanta Braves",
+    "commence_time": "2026-05-24T20:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.7371,
+    "implied_probability": 0.5929,
+    "edge": 0.1442,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -163,
+    "away_odds": 135,
+    "game_id": "00df9acbb37e0b01ff82cec41f4c57b8",
+    "generated_at": "2026-05-24T16:49:01.540003+00:00",
+    "result": null
   }
 ]
