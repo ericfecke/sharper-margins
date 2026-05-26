@@ -8645,5 +8645,105 @@
     "game_id": "00df9acbb37e0b01ff82cec41f4c57b8",
     "generated_at": "2026-05-24T16:49:01.540003+00:00",
     "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "New York Knicks @ Oklahoma City Thunder",
+    "commence_time": "2026-06-04T00:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "New York Knicks ML",
+    "our_probability": 0.5,
+    "implied_probability": 0.3222,
+    "edge": 0.1778,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied; Injury drag: -0.030",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.03,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -240,
+    "away_odds": 198,
+    "game_id": "27f8823f01243e8857b317dec213f14c",
+    "generated_at": "2026-05-26T22:19:08.502575+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Arizona Diamondbacks @ San Francisco Giants",
+    "commence_time": "2026-05-27T01:46:00Z",
+    "book": "DraftKings",
+    "recommendation": "Arizona Diamondbacks ML",
+    "our_probability": 0.5937,
+    "implied_probability": 0.4826,
+    "edge": 0.1111,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: San Francisco Giants plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.02,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -118,
+    "away_odds": -102,
+    "game_id": "178bf0e15a0e6812cdf47d0523e51ac7",
+    "generated_at": "2026-05-26T22:19:21.103563+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ San Diego Padres",
+    "commence_time": "2026-05-27T20:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "San Diego Padres ML",
+    "our_probability": 0.5222,
+    "implied_probability": 0.4175,
+    "edge": 0.1047,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 129,
+    "away_odds": -156,
+    "game_id": "37259b2bbe7415ecdf587502c33a932d",
+    "generated_at": "2026-05-26T22:19:21.112596+00:00",
+    "result": null
   }
 ]
