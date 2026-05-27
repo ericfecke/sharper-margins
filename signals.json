@@ -8653,8 +8653,8 @@
     "book": "FanDuel",
     "recommendation": "New York Knicks ML",
     "our_probability": 0.5,
-    "implied_probability": 0.3222,
-    "edge": 0.1778,
+    "implied_probability": 0.3146,
+    "edge": 0.1854,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -8676,10 +8676,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -240,
-    "away_odds": 198,
+    "home_odds": -250,
+    "away_odds": 205,
     "game_id": "27f8823f01243e8857b317dec213f14c",
-    "generated_at": "2026-05-26T22:19:08.502575+00:00",
+    "generated_at": "2026-05-27T22:40:37.933888+00:00",
     "result": null
   },
   {
@@ -8744,6 +8744,36 @@
     "away_odds": -156,
     "game_id": "37259b2bbe7415ecdf587502c33a932d",
     "generated_at": "2026-05-26T22:19:21.112596+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Oklahoma City Thunder @ San Antonio Spurs",
+    "commence_time": "2026-05-29T00:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "Oklahoma City Thunder ML",
+    "our_probability": 0.5278,
+    "implied_probability": 0.411,
+    "edge": 0.1168,
+    "confidence": "normal",
+    "missing_factors": [],
+    "sme_reasoning": "Home court advantage applied; Recent form favors away",
+    "factor_deltas": {
+      "win_rate_diff": -0.0098,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "net_rating": -0.0181,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -158,
+    "away_odds": 134,
+    "game_id": "78fd894a8789f5fd7f2318cc85b2fc44",
+    "generated_at": "2026-05-27T22:40:37.924450+00:00",
     "result": null
   }
 ]
