@@ -4,17 +4,23 @@ Sport-agnostic edge calculation with vig removal and Kalshi cross-validation.
 Receives SME output + odds object. Returns edge result or None if no edge.
 """
 
-import sys
-from agent_utils import american_to_implied, remove_vig, clamp
+import logging
 
-EDGE_THRESHOLD = 0.10
-KALSHI_ALIGNMENT_THRESHOLD = 0.05
-# Minimum vig-adjusted implied probability for a signal to fire.
-# Filters out extreme underdogs (+300 or longer) where the model's
-# probability ceiling (~83%) creates false edges against heavily
-# priced favorites (-400 and beyond). Market pricing on extreme
-# mismatches is almost always correct.
-MIN_SIGNAL_IMPLIED = 0.25
+from agent_utils import american_to_implied, remove_vig, clamp
+from config import EDGE_THRESHOLD, KALSHI_ALIGNMENT_THRESHOLD, MIN_SIGNAL_IMPLIED
+
+logger = logging.getLogger(__name__)
+
+# Map Odds API sport keys to display labels
+_SPORT_KEY_LABELS = {
+    "americanfootball_nfl":   "NFL",
+    "americanfootball_ncaaf": "CFB",
+    "basketball_nba":         "NBA",
+    "basketball_ncaab":       "CBB",
+    "baseball_mlb":           "MLB",
+    "icehockey_nhl":          "NHL",
+    "mma_mixed_martial_arts": "UFC",
+}
 
 
 def calculate_edge(
@@ -63,8 +69,9 @@ def calculate_edge(
         edge_home = our_prob - implied_home
         edge_away = (1.0 - our_prob) - implied_away
 
-        # Find the strongest edge
-        if abs(edge_home) >= abs(edge_away):
+        # Pick the largest *positive* edge. Comparing by value (not abs) prevents
+        # a wrong-direction edge (e.g. -0.15) from beating a real edge (+0.10).
+        if edge_home >= edge_away:
             candidate_edge = edge_home
             candidate_team = home_team
             candidate_implied = implied_home
@@ -102,8 +109,9 @@ def calculate_edge(
                 else:
                     kalshi_alignment = "contradicts"
 
+        sport_key = game.get("sport_key", "")
         result = {
-            "sport": game.get("sport_key", "").split("_")[0].upper(),
+            "sport": _SPORT_KEY_LABELS.get(sport_key, sport_key.split("_")[-1].upper()),
             "game": f"{away_team} @ {home_team}",
             "commence_time": game.get("commence_time", ""),
             "book": _format_book(book),

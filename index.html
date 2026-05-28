@@ -234,21 +234,25 @@
 
 <div class="header">
   <h1>SHARPER MARGINS</h1>
-  <div class="meta">Generated: 2026-03-17 21:38 UTC</div>
+  <div class="meta">
+    <span id="gen-time" data-iso="2026-05-28T01:14:16.365012+00:00">Generated: 2026-05-28 01:14 UTC</span>
+    &nbsp;
+    <button class="filter-btn" onclick="exportCSV()" style="font-size:11px;padding:3px 10px">Export CSV</button>
+  </div>
 </div>
 
 <div class="stats-bar">
   <div class="stat-item">
     <span class="stat-label">Active Signals:</span>
-    <span class="stat-value">3</span>
+    <span class="stat-value">0</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟢 20%+:</span>
-    <span class="stat-value edge-green">2</span>
+    <span class="stat-value edge-green">0</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟠 15–19%:</span>
-    <span class="stat-value edge-orange">1</span>
+    <span class="stat-value edge-orange">0</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟡 10–14%:</span>
@@ -258,12 +262,7 @@
 
 <div class="filters" id="filters">
   <button class="filter-btn active" onclick="filterSport('all', this)">All Sports</button>
-  <button class="filter-btn" onclick="filterSport('NFL', this)">NFL</button>
-  <button class="filter-btn" onclick="filterSport('CFB', this)">CFB</button>
-  <button class="filter-btn" onclick="filterSport('NBA', this)">NBA</button>
-  <button class="filter-btn" onclick="filterSport('MLB', this)">MLB</button>
-  <button class="filter-btn" onclick="filterSport('NHL', this)">NHL</button>
-  <button class="filter-btn" onclick="filterSport('CBB', this)">CBB</button>
+
   <span style="color:var(--text-muted); padding: 0 4px;">|</span>
   <button class="filter-btn active-book" onclick="filterBook('all', this)">All Books</button>
   <button class="filter-btn" onclick="filterBook('DraftKings', this)">DraftKings</button>
@@ -279,120 +278,34 @@
     <p class="section-desc">Edges ≥ 10% — our estimated probability vs vig-adjusted implied. Click row to expand.</p>
   </div>
 
-  
-
-  <table class="signals-table" id="main-table"><thead><tr><th>Sport</th><th>Game</th><th>Book</th><th onclick="sortTable('main-table',3)" class="sortable">Edge &#9660;</th><th>Our %</th><th>Implied %</th><th>Recommendation</th></tr></thead><tbody id="main-tbody">
-    <tr class="signal-row edge-green" data-sport="NBA" data-book="FanDuel" data-edge="0.2269" onclick="toggleRow(0)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">San Antonio Spurs @ Sacramento Kings<div class="game-time">Mar 18 03:10 AM UTC</div></td>
-      <td>FanDuel</td>
-      <td><strong class="edge-green">🟢 22.7%</strong></td>
-      <td>35.7%</td>
-      <td>13.0%</td>
-      <td><strong>Sacramento Kings ML</strong></td>
-    </tr>
-    <tr id="detail-0" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: away favored (26.09% vs 73.53%); Home court advantage applied; Recent form favors away; Injury drag: -0.025; Net rating advantage: away</p>
-              
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>+640</code> | Away: <code>-950</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: -0.100</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.015</span><span class="factor-item">recent_form: -0.045</span><span class="factor-item">injuries: -0.025</span><span class="factor-item">net_rating: -0.048</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-green" data-sport="NBA" data-book="DraftKings" data-edge="0.2204" onclick="toggleRow(1)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Detroit Pistons @ Washington Wizards<div class="game-time">Mar 17 11:10 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td><strong class="edge-green">🟢 22.0%</strong></td>
-      <td>30.8%</td>
-      <td>8.8%</td>
-      <td><strong>Washington Wizards ML</strong></td>
-    </tr>
-    <tr id="detail-1" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: away favored (23.88% vs 71.64%); Home court advantage applied; Recent form favors away; Injury drag: -0.050; Net rating advantage: away</p>
-              
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>+1000</code> | Away: <code>-1800</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: -0.100</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: -0.015</span><span class="factor-item">recent_form: -0.060</span><span class="factor-item">injuries: -0.050</span><span class="factor-item">net_rating: -0.027</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-orange" data-sport="NBA" data-book="FanDuel" data-edge="0.1952" onclick="toggleRow(2)">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">Cleveland Cavaliers @ Milwaukee Bucks<div class="game-time">Mar 18 12:10 AM UTC</div></td>
-      <td>FanDuel</td>
-      <td><strong class="edge-orange">🟠 19.5%</strong></td>
-      <td>39.4%</td>
-      <td>19.8%</td>
-      <td><strong>Milwaukee Bucks ML</strong></td>
-    </tr>
-    <tr id="detail-2" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: away favored (41.79% vs 60.29%); Home court advantage applied; Recent form favors away; Net rating advantage: away</p>
-              
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>DK/FD Home: <code>+385</code> | Away: <code>-500</code></p>
-              <span class="kalshi-none">— No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: -0.074</span><span class="factor-item">home_court: +0.060</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: -0.045</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">net_rating: -0.048</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr></tbody></table>
+  <div class="empty-state"><p>No edges &ge; 10% identified today. Check back after next model run.</p></div>
 
   
 
   
-        <div class="section-header">
-          <h2>🚧 Model Coming Soon</h2>
-          <p class="section-desc">This sport's model is under development. Signals will appear here when ready.</p>
-        </div>
-        <div class="stub-grid"><div class="stub-sport"><h4>CBB</h4><ul><li>Liberty Flames @ George Mason Patriots</li><li>UMBC Retrievers @ Howard Bison</li><li>UNC Wilmington Seahawks @ Yale Bulldogs</li><li>Wyoming Cowboys @ Wichita St Shockers</li><li>Davidson Wildcats @ Oklahoma St Cowboys</li><li>Stephen F. Austin Lumberjacks @ Tulsa Golden Hurricane</li><li>NC State Wolfpack @ Texas Longhorns</li><li>South Alabama Jaguars @ Auburn Tigers</li><li>St. Thomas (MN) Tommies @ Seattle Redhawks</li><li>UNLV Rebels @ UC Irvine Anteaters</li><li>Prairie View Panthers @ Lehigh Mountain Hawks</li><li>Navy Midshipmen @ Wake Forest Demon Deacons</li><li>GW Revolutionaries @ Utah Valley Wolverines</li><li>Kent State Golden Flashes @ Illinois St Redbirds</li><li>Dayton Flyers @ Bradley Braves</li><li>Sam Houston St Bearkats @ New Mexico Lobos</li><li>Miami (OH) RedHawks @ SMU Mustangs</li><li>Murray St Racers @ Nevada Wolf Pack</li><li>UIC Flames @ California Golden Bears</li><li>Saint Joseph's Hawks @ Colorado St Rams</li><li>TCU Horned Frogs @ Ohio State Buckeyes</li><li>Troy Trojans @ Nebraska Cornhuskers</li><li>South Florida Bulls @ Louisville Cardinals</li><li>High Point Panthers @ Wisconsin Badgers</li><li>Siena Saints @ Duke Blue Devils</li><li>McNeese Cowboys @ Vanderbilt Commodores</li><li>North Dakota St Bison @ Michigan St Spartans</li><li>Hawai'i Rainbow Warriors @ Arkansas Razorbacks</li><li>VCU Rams @ North Carolina Tar Heels</li><li>Texas A&M Aggies @ Saint Mary's Gaels</li><li>Pennsylvania Quakers @ Illinois Fighting Illini</li><li>Saint Louis Billikens @ Georgia Bulldogs</li><li>Kennesaw St Owls @ Gonzaga Bulldogs</li><li>Idaho Vandals @ Houston Cougars</li><li>Santa Clara Broncos @ Kentucky Wildcats</li><li>Akron Zips @ Texas Tech Red Raiders</li><li>LIU Sharks @ Arizona Wildcats</li><li>Wright St Raiders @ Virginia Cavaliers</li><li>Tennessee St Tigers @ Iowa State Cyclones</li><li>Hofstra Pride @ Alabama Crimson Tide</li><li>Utah State Aggies @ Villanova Wildcats</li><li>Iowa Hawkeyes @ Clemson Tigers</li><li>Northern Iowa Panthers @ St. John's Red Storm</li><li>UCF Knights @ UCLA Bruins</li><li>Queens University Royals @ Purdue Boilermakers</li><li>Cal Baptist Lancers @ Kansas Jayhawks</li><li>Furman Paladins @ UConn Huskies</li><li>Missouri Tigers @ Miami Hurricanes</li></ul></div><div class="stub-sport"><h4>NHL</h4><ul><li>Boston Bruins @ Montréal Canadiens</li><li>Carolina Hurricanes @ Columbus Blue Jackets</li><li>New York Islanders @ Toronto Maple Leafs</li><li>Minnesota Wild @ Chicago Blackhawks</li><li>Nashville Predators @ Winnipeg Jets</li><li>San Jose Sharks @ Edmonton Oilers</li><li>Buffalo Sabres @ Vegas Golden Knights</li><li>Florida Panthers @ Vancouver Canucks</li><li>Tampa Bay Lightning @ Seattle Kraken</li><li>Pittsburgh Penguins @ Carolina Hurricanes</li><li>New Jersey Devils @ New York Rangers</li><li>Ottawa Senators @ Washington Capitals</li><li>St Louis Blues @ Calgary Flames</li><li>Dallas Stars @ Colorado Avalanche</li><li>Philadelphia Flyers @ Anaheim Ducks</li></ul></div></div>
+
+  
 
   
 
 </div>
 
 <script>
-var openRow = null;
-function toggleRow(idx) {
-  var row = document.getElementById('detail-' + idx);
-  if (!row) return;
-  if (openRow !== null && openRow !== idx) {
-    var prev = document.getElementById('detail-' + openRow);
+// --- Row expand/collapse ---
+var openSigId = null;
+function toggleRow(sigId) {
+  if (openSigId !== null && openSigId !== sigId) {
+    var prev = document.getElementById('detail-' + openSigId);
     if (prev) prev.style.display = 'none';
   }
-  row.style.display = (row.style.display === 'none') ? 'table-row' : 'none';
-  openRow = (row.style.display === 'none') ? null : idx;
+  var row = document.getElementById('detail-' + sigId);
+  if (!row) return;
+  var showing = row.style.display !== 'none';
+  row.style.display = showing ? 'none' : 'table-row';
+  openSigId = showing ? null : sigId;
 }
 
+// --- Filtering ---
 var activeSport = 'all';
 var activeBook = 'all';
 var searchTerm = '';
@@ -400,10 +313,8 @@ var searchTerm = '';
 function filterSport(sport, btn) {
   activeSport = sport;
   document.querySelectorAll('.filter-btn').forEach(function(b) {
-    if (b.textContent.replace(/\s/g,'') === sport || (sport === 'all' && b.textContent.trim() === 'All Sports')) {
-      b.classList.add('active');
-    } else if (b.onclick && b.onclick.toString().includes('filterSport')) {
-      b.classList.remove('active');
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').includes('filterSport')) {
+      b.classList.toggle('active', b.textContent.trim() === sport || (sport === 'all' && b.textContent.trim() === 'All Sports'));
     }
   });
   applyFilters();
@@ -412,8 +323,8 @@ function filterSport(sport, btn) {
 function filterBook(book, btn) {
   activeBook = book;
   document.querySelectorAll('.filter-btn').forEach(function(b) {
-    if (b.onclick && b.onclick.toString().includes('filterBook')) {
-      b.classList.toggle('active', b.textContent.trim().replace(' ', '') === book || (book === 'all' && b.textContent.trim() === 'All Books'));
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').includes('filterBook')) {
+      b.classList.toggle('active', b.textContent.trim() === book || (book === 'all' && b.textContent.trim() === 'All Books'));
     }
   });
   applyFilters();
@@ -429,43 +340,124 @@ function applyFilters() {
     var sport = row.dataset.sport || '';
     var book = row.dataset.book || '';
     var text = row.textContent.toLowerCase();
-    var idx = row.getAttribute('onclick').match(/\d+/);
+    var sigId = row.dataset.sigid;
     var sportMatch = activeSport === 'all' || sport === activeSport;
     var bookMatch = activeBook === 'all' || book === activeBook;
     var searchMatch = !searchTerm || text.includes(searchTerm);
     var visible = sportMatch && bookMatch && searchMatch;
     row.style.display = visible ? '' : 'none';
-    if (!visible && idx) {
-      var detail = document.getElementById('detail-' + idx[0]);
+    if (!visible && sigId) {
+      var detail = document.getElementById('detail-' + sigId);
       if (detail) detail.style.display = 'none';
     }
   });
 }
 
+// --- Sorting ---
+var sortState = {};
 function sortTable(tableId, colIdx) {
   var table = document.getElementById(tableId);
   if (!table) return;
+  var key = tableId + '-' + colIdx;
+  sortState[key] = sortState[key] === 'desc' ? 'asc' : 'desc';
+  var asc = sortState[key] === 'asc';
+
   var tbody = table.querySelector('tbody');
-  var rows = Array.from(tbody.querySelectorAll('tr.signal-row'));
-  var details = {};
-  rows.forEach(function(r) {
-    var m = r.getAttribute('onclick').match(/\d+/);
-    if (m) {
-      var d = document.getElementById('detail-' + m[0]);
-      if (d) details[m[0]] = d;
+  var signalRows = Array.from(tbody.querySelectorAll('tr.signal-row'));
+
+  // Build sigId -> detail row map before reordering
+  var detailMap = {};
+  signalRows.forEach(function(r) {
+    var sid = r.dataset.sigid;
+    if (sid) {
+      var d = document.getElementById('detail-' + sid);
+      if (d) detailMap[sid] = d;
     }
   });
-  rows.sort(function(a, b) {
-    var ea = parseFloat(a.dataset.edge) || 0;
-    var eb = parseFloat(b.dataset.edge) || 0;
-    return eb - ea;
+
+  signalRows.sort(function(a, b) {
+    var ca = a.querySelectorAll('td')[colIdx];
+    var cb = b.querySelectorAll('td')[colIdx];
+    var va = ca ? (ca.dataset.sortval !== undefined ? parseFloat(ca.dataset.sortval) : ca.textContent.trim()) : '';
+    var vb = cb ? (cb.dataset.sortval !== undefined ? parseFloat(cb.dataset.sortval) : cb.textContent.trim()) : '';
+    if (typeof va === 'number' && typeof vb === 'number') {
+      return asc ? va - vb : vb - va;
+    }
+    return asc ? String(va).localeCompare(String(vb)) : String(vb).localeCompare(String(va));
   });
-  rows.forEach(function(r) {
+
+  signalRows.forEach(function(r) {
     tbody.appendChild(r);
-    var m = r.getAttribute('onclick').match(/\d+/);
-    if (m && details[m[0]]) tbody.appendChild(details[m[0]]);
+    var sid = r.dataset.sigid;
+    if (sid && detailMap[sid]) tbody.appendChild(detailMap[sid]);
   });
 }
+
+// --- History load-more ---
+var historyPage = 0;
+function loadMoreHistory() {
+  historyPage++;
+  var pageSize = 50;
+  document.querySelectorAll('.history-entry').forEach(function(r) {
+    var p = parseInt(r.dataset.page || '0');
+    if (p <= historyPage) r.style.display = '';
+  });
+  var remaining = document.querySelectorAll('.history-entry[style="display: none;"]').length;
+  var btn = document.getElementById('load-more-btn');
+  if (btn) {
+    if (remaining === 0) btn.style.display = 'none';
+    else btn.textContent = 'Load more (' + remaining + ' remaining)';
+  }
+}
+
+// --- CSV export ---
+function exportCSV() {
+  var rows = [['Sport','Game','Book','Edge','Our %','Implied %','Recommendation']];
+  document.querySelectorAll('.signal-row').forEach(function(r) {
+    if (r.style.display === 'none') return;
+    var cells = r.querySelectorAll('td');
+    if (cells.length < 7) return;
+    var edge = cells[3].dataset.sortval || cells[3].textContent.trim();
+    rows.push([
+      '"' + (cells[0].textContent.trim().replace(/"/g,'""')) + '"',
+      '"' + (cells[1].textContent.trim().replace(/"/g,'""')) + '"',
+      '"' + (cells[2].textContent.trim().replace(/"/g,'""')) + '"',
+      '"' + edge + '"',
+      '"' + (cells[4].textContent.trim().replace(/"/g,'""')) + '"',
+      '"' + (cells[5].textContent.trim().replace(/"/g,'""')) + '"',
+      '"' + (cells[6].textContent.trim().replace(/"/g,'""')) + '"',
+    ]);
+  });
+  var csv = rows.map(function(r) { return r.join(','); }).join('\n');
+  var blob = new Blob([csv], {type: 'text/csv'});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'sharper-margins-signals.csv';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+
+// --- Relative time ---
+function updateRelativeTime() {
+  var el = document.getElementById('gen-time');
+  if (!el) return;
+  var iso = el.dataset.iso;
+  if (!iso) return;
+  var diff = Math.floor((Date.now() - new Date(iso)) / 60000);
+  var label = diff < 1 ? 'just now' : diff < 60 ? diff + 'm ago' : Math.floor(diff / 60) + 'h ago';
+  el.title = 'Generated: ' + iso;
+  el.textContent = 'Updated ' + label;
+}
+
+// --- Init ---
+document.addEventListener('DOMContentLoaded', function() {
+  // Hide history rows past page 0
+  document.querySelectorAll('.history-entry').forEach(function(r) {
+    if (parseInt(r.dataset.page || '0') > 0) r.style.display = 'none';
+  });
+  updateRelativeTime();
+  setInterval(updateRelativeTime, 60000);
+});
 </script>
 
 </body>

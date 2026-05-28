@@ -62,6 +62,21 @@ def _get_tz_offset(team_name: str) -> int:
     return 2  # Default to Central
 
 
+def _sos_adjusted_winrate(wins, games, full_confidence_at: int, opponent_win_rates: list) -> float:
+    """Win rate regressed toward .500, with strength-of-schedule adjustment applied first."""
+    if wins is None or games is None or games == 0:
+        return 0.500
+    raw = wins / games
+    if opponent_win_rates:
+        opp_avg = sum(opponent_win_rates) / len(opponent_win_rates)
+        sos_adj = (opp_avg - 0.500) * 0.15
+    else:
+        sos_adj = 0.0
+    adjusted_raw = max(0.0, min(1.0, raw + sos_adj))
+    confidence = min(games / full_confidence_at, 1.0)
+    return (confidence * adjusted_raw) + ((1 - confidence) * 0.500)
+
+
 def _get_conference_tier(team_name: str, stats: dict) -> int:
     """Get conference tier for a team. Default to 3 if unknown."""
     conf = (stats or {}).get("conference", "")
@@ -106,8 +121,12 @@ def run(context: dict) -> dict:
     if away_wins is None:
         missing_factors.append("away_standings")
 
-    home_wr = adjusted_winrate(home_wins, home_games, FULL_CONFIDENCE_GAMES)
-    away_wr = adjusted_winrate(away_wins, away_games, FULL_CONFIDENCE_GAMES)
+    # SOS adjustment uses opponent win rates from schedule context when available.
+    # Falls back to plain regression when the data isn't present (sos_adj = 0).
+    home_opp_wrs = context.get("home_opponent_win_rates") or []
+    away_opp_wrs = context.get("away_opponent_win_rates") or []
+    home_wr = _sos_adjusted_winrate(home_wins, home_games, FULL_CONFIDENCE_GAMES, home_opp_wrs)
+    away_wr = _sos_adjusted_winrate(away_wins, away_games, FULL_CONFIDENCE_GAMES, away_opp_wrs)
 
     # --- Factor 1: Conference tier differential ---
     home_tier = _get_conference_tier(home_team, home_stats)
@@ -183,14 +202,12 @@ def run(context: dict) -> dict:
         rest_diff = home_rest - away_rest
         delta_rest = clamp(rest_diff * 0.008, -0.03, +0.03)
 
-    # Travel penalty: away team crosses 2+ time zones
+    # Travel penalty: away team crossing 2+ time zones benefits home team
     away_tz = _get_tz_offset(away_team)
     home_tz = _get_tz_offset(home_team)
     tz_diff = abs(away_tz - home_tz)
-    travel_penalty = -0.02 if (not neutral_site and tz_diff >= 2) else 0.0
-    # travel penalty hurts away team → home team benefits
-    delta_travel = -travel_penalty  # positive for home if penalty applies
-    deltas["rest_travel"] = delta_rest + (-travel_penalty)
+    travel_bonus = 0.02 if (not neutral_site and tz_diff >= 2) else 0.0
+    deltas["rest_travel"] = delta_rest + travel_bonus
 
     # --- Factor 9: Head-to-head ---
     h2h_data = context.get("h2h")
@@ -215,8 +232,8 @@ def run(context: dict) -> dict:
         reasoning_parts.append("Home field advantage (college: +7%)")
     if delta_injury < -0.03:
         reasoning_parts.append(f"Injury drag: {delta_injury:+.3f}")
-    if travel_penalty:
-        reasoning_parts.append(f"Away team travel penalty (2+ TZ crossing)")
+    if travel_bonus > 0:
+        reasoning_parts.append("Away team travel penalty (2+ TZ crossing) — home benefits")
     if not reasoning_parts:
         reasoning_parts.append("Teams evenly matched across modeled factors")
 

@@ -5,11 +5,14 @@ All other entries accumulate.
 """
 
 import json
-import sys
+import logging
 from datetime import datetime, timezone
 from pathlib import Path
 
+from config import ACTIVE_SIGNAL_HOURS
+
 SIGNALS_PATH = Path(__file__).parent.parent / "signals.json"
+logger = logging.getLogger(__name__)
 
 
 def write_signal(edge_result: dict) -> None:
@@ -28,7 +31,8 @@ def write_signal(edge_result: dict) -> None:
                 signals = json.load(f)
             if not isinstance(signals, list):
                 signals = []
-        except (json.JSONDecodeError, IOError):
+        except (json.JSONDecodeError, IOError) as e:
+            logger.warning("signals.json could not be read — starting fresh: %s", e)
             signals = []
     else:
         signals = []
@@ -64,7 +68,38 @@ def write_signal(edge_result: dict) -> None:
         json.dump(signals, f, indent=2)
 
     action = "updated" if updated else "added"
-    print(f"[write_signal] Signal {action}: {edge_result.get('recommendation')} | edge={edge_result.get('edge'):.2%}")
+    logger.info("Signal %s: %s | edge=%.2f%%", action, edge_result.get("recommendation"), edge_result.get("edge", 0) * 100)
+
+
+def update_result(game_id: str, book: str, result: str) -> bool:
+    """
+    Mark a signal as W, L, or P after the game completes.
+
+    Args:
+        game_id: The Odds API game ID.
+        book: Bookmaker display name (e.g. "DraftKings").
+        result: "W", "L", or "P".
+
+    Returns:
+        True if a matching signal was found and updated, False otherwise.
+    """
+    if result not in ("W", "L", "P"):
+        logger.error("Invalid result value: %s", result)
+        return False
+
+    signals = load_signals()
+    signal_key = f"{game_id}_{book}"
+    for sig in signals:
+        existing_key = f"{sig.get('game_id', '')}_{sig.get('book', '')}"
+        if existing_key == signal_key:
+            sig["result"] = result
+            with open(SIGNALS_PATH, "w") as f:
+                json.dump(signals, f, indent=2)
+            logger.info("Result updated: %s %s → %s", sig.get("recommendation"), book, result)
+            return True
+
+    logger.warning("No signal found for game_id=%s book=%s", game_id, book)
+    return False
 
 
 def load_signals() -> list:
@@ -92,9 +127,9 @@ def get_active_signals(signals: list) -> list:
             commence = datetime.fromisoformat(sig.get("commence_time", "").replace("Z", "+00:00"))
         except Exception:
             continue
-        # Include games within last 6 hours (in progress) or future
+        # Include games within the active window (in progress) or future
         hours_ago = (now - commence).total_seconds() / 3600
-        if hours_ago < 6:
+        if hours_ago < ACTIVE_SIGNAL_HOURS:
             active.append(sig)
     return active
 
