@@ -3,10 +3,11 @@ check_season.py — Determine which sports are currently in season.
 Returns a list of active sport keys based on today's date.
 """
 
+import calendar
 from datetime import date
 
 SEASON_WINDOWS = {
-    "nfl":  [(9, 1), (2, 28)],   # Sep–Feb
+    "nfl":  [(9, 1), (2, 29)],   # Sep–Feb (29 = end of Feb, clamped to 28 in non-leap years)
     "cfb":  [(8, 1), (1, 31)],   # Aug–Jan
     "nba":  [(10, 1), (6, 30)],  # Oct–Jun
     "cbb":  [(11, 1), (4, 30)],  # Nov–Apr
@@ -20,8 +21,12 @@ def _in_window(today: date, start: tuple, end: tuple) -> bool:
     """Check if today falls in a season window that may wrap across year boundary."""
     start_month, start_day = start
     end_month, end_day = end
+    # Clamp end_day to the actual number of days in end_month for today's year,
+    # so (2, 29) works correctly in both leap and non-leap years.
+    max_end_day = calendar.monthrange(today.year, end_month)[1]
+    end_day_safe = min(end_day, max_end_day)
     start_date = date(today.year, start_month, start_day)
-    end_date = date(today.year, end_month, end_day)
+    end_date = date(today.year, end_month, end_day_safe)
 
     if start_date <= end_date:
         return start_date <= today <= end_date

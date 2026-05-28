@@ -168,10 +168,14 @@ def run(context: dict) -> dict:
         missing_factors.append("scoring_margin")
     deltas["scoring_margin"] = delta_margin
 
-    # --- Factor 7: Weather compression ---
+    # --- Factor 7 & 8: Weather and divisional compression ---
+    # Both factors compress the probability toward 0.500. Capture the
+    # running probability *once* before either factor so neither influences
+    # the direction of the other (avoids implicit dict-ordering dependency).
+    prob_before_compression = 0.500 + sum(deltas.values())
+
     weather = scoreboard.get("weather") or {}
     indoor = scoreboard.get("indoor", False)
-    running_prob = 0.500 + sum(deltas.values())
 
     if not indoor and weather:
         wind_mph = weather.get("windSpeed", 0) or 0
@@ -188,21 +192,13 @@ def run(context: dict) -> dict:
         if temp_f < 32:
             compression += 0.010
 
-        if running_prob > 0.500:
-            delta_weather = -compression
-        else:
-            delta_weather = +compression
+        delta_weather = -compression if prob_before_compression > 0.500 else +compression
     else:
         delta_weather = 0.0
     deltas["weather"] = delta_weather
 
-    # --- Factor 8: Divisional compression ---
-    running_prob2 = 0.500 + sum(deltas.values())
     if same_division(home_team, away_team):
-        if running_prob2 > 0.500:
-            delta_div = -0.02
-        else:
-            delta_div = +0.02
+        delta_div = -0.02 if prob_before_compression > 0.500 else +0.02
     else:
         delta_div = 0.0
     deltas["divisional"] = delta_div

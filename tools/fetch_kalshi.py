@@ -5,16 +5,49 @@ Caches to .tmp/kalshi_{sport}_{date}.json.
 """
 
 import json
-import sys
+import logging
 from datetime import date
 from pathlib import Path
 
 import requests
 from rapidfuzz import fuzz, process
 
+from config import FUZZY_THRESHOLD
+
 TMP_DIR = Path(__file__).parent.parent / ".tmp"
 KALSHI_BASE = "https://api.elections.kalshi.com/trade-api/v2"
-FUZZY_THRESHOLD = 80
+logger = logging.getLogger(__name__)
+
+# Common abbreviation → full team name (lowercase) for fuzzy matching.
+# Kalshi titles often use short codes that differ from full names in the odds feed.
+_TEAM_ABBR = {
+    # NBA
+    "lal": "los angeles lakers", "lac": "los angeles clippers", "gsw": "golden state warriors",
+    "bos": "boston celtics", "nyk": "new york knicks", "bkn": "brooklyn nets",
+    "phi": "philadelphia 76ers", "atl": "atlanta hawks", "chi": "chicago bulls",
+    "cle": "cleveland cavaliers", "det": "detroit pistons", "ind": "indiana pacers",
+    "mil": "milwaukee bucks", "tor": "toronto raptors", "cha": "charlotte hornets",
+    "mia": "miami heat", "orl": "orlando magic", "was": "washington wizards",
+    "den": "denver nuggets", "min": "minnesota timberwolves", "okc": "oklahoma city thunder",
+    "por": "portland trail blazers", "uta": "utah jazz", "sac": "sacramento kings",
+    "phx": "phoenix suns", "dal": "dallas mavericks", "hou": "houston rockets",
+    "mem": "memphis grizzlies", "nop": "new orleans pelicans", "sas": "san antonio spurs",
+    # NFL
+    "ne": "new england patriots", "nyg": "new york giants", "nyj": "new york jets",
+    "kc": "kansas city chiefs", "sf": "san francisco 49ers", "gb": "green bay packers",
+    "tb": "tampa bay buccaneers", "lac_nfl": "los angeles chargers", "lar": "los angeles rams",
+    "no": "new orleans saints", "pit": "pittsburgh steelers", "bal": "baltimore ravens",
+    # MLB
+    "nyy": "new york yankees", "nym": "new york mets", "bos_mlb": "boston red sox",
+    "lad": "los angeles dodgers", "sf_mlb": "san francisco giants",
+    "chc": "chicago cubs", "cws": "chicago white sox", "stl": "st. louis cardinals",
+    "hou_mlb": "houston astros", "atl_mlb": "atlanta braves",
+    # NHL
+    "nyr": "new york rangers", "nyi": "new york islanders", "njd": "new jersey devils",
+    "tor_nhl": "toronto maple leafs", "mtl": "montreal canadiens", "bos_nhl": "boston bruins",
+    "chi_nhl": "chicago blackhawks", "det_nhl": "detroit red wings",
+    "pit_nhl": "pittsburgh penguins", "phi_nhl": "philadelphia flyers",
+}
 
 
 def fetch_kalshi(sport: str, games: list, today: date = None, force: bool = False) -> dict:
@@ -84,11 +117,17 @@ def _fetch_markets(sport: str) -> list:
             subtitle = m.get("subtitle", "")
             if series_tag.lower() in title.lower() or series_tag.lower() in subtitle.lower():
                 markets.append(m)
-        print(f"[fetch_kalshi] {sport.upper()}: {len(markets)} relevant markets found")
+        logger.info("%s: %d relevant markets found", sport.upper(), len(markets))
     except Exception as e:
-        print(f"[fetch_kalshi] Failed to fetch markets for {sport}: {e}", file=sys.stderr)
+        logger.error("Failed to fetch markets for %s: %s", sport, e)
 
     return markets
+
+
+def _expand_name(name: str) -> str:
+    """Expand a short team abbreviation to its full lowercase name if known."""
+    key = name.lower().strip()
+    return _TEAM_ABBR.get(key, key)
 
 
 def _match_game_to_market(home: str, away: str, markets: list) -> dict:
@@ -96,15 +135,22 @@ def _match_game_to_market(home: str, away: str, markets: list) -> dict:
     if not markets:
         return {"kalshi_probability": None, "kalshi_match": False, "kalshi_market_title": None}
 
-    game_str = f"{away} vs {home}"
     market_titles = [m.get("title", "") + " " + m.get("subtitle", "") for m in markets]
 
-    match_result = process.extractOne(
-        game_str,
-        market_titles,
-        scorer=fuzz.token_set_ratio,
-        score_cutoff=FUZZY_THRESHOLD,
-    )
+    # Try with expanded (full) team names first, fall back to raw names
+    for home_str, away_str in [
+        (_expand_name(home), _expand_name(away)),
+        (home.lower(), away.lower()),
+    ]:
+        game_str = f"{away_str} vs {home_str}"
+        match_result = process.extractOne(
+            game_str,
+            market_titles,
+            scorer=fuzz.token_set_ratio,
+            score_cutoff=FUZZY_THRESHOLD,
+        )
+        if match_result:
+            break
 
     if not match_result:
         return {"kalshi_probability": None, "kalshi_match": False, "kalshi_market_title": None}
@@ -112,7 +158,6 @@ def _match_game_to_market(home: str, away: str, markets: list) -> dict:
     matched_title, score, idx = match_result
     market = markets[idx]
 
-    # Extract home team win probability from yes/no market
     prob = _extract_probability(market, home)
 
     return {

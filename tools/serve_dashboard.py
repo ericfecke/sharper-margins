@@ -4,12 +4,15 @@ Self-contained HTML. No CDN dependencies. Dark background. Client-side JS sortin
 """
 
 import json
-import sys
+import logging
 from datetime import datetime, timezone
 from pathlib import Path
 
+from config import ACTIVE_SIGNAL_HOURS, HISTORY_PAGE_SIZE
+
 SIGNALS_PATH = Path(__file__).parent.parent / "signals.json"
 DASHBOARD_PATH = Path(__file__).parent.parent / "index.html"
+logger = logging.getLogger(__name__)
 
 
 def render_dashboard(signals: list = None, active_sports: list = None, stub_games: dict = None) -> None:
@@ -46,6 +49,7 @@ def render_dashboard(signals: list = None, active_sports: list = None, stub_game
 
     html = _build_html(
         generated_at=generated_at,
+        now_iso=now.isoformat(),
         normal_signals=normal_signals,
         low_conf_signals=low_conf_signals,
         historical=historical,
@@ -58,7 +62,7 @@ def render_dashboard(signals: list = None, active_sports: list = None, stub_game
         f.write(html)
 
     total = len(normal_signals) + len(low_conf_signals)
-    print(f"[serve_dashboard] Dashboard rendered: {total} active signals -> {DASHBOARD_PATH}")
+    logger.info("Dashboard rendered: %d active signals -> %s", total, DASHBOARD_PATH)
 
 
 def _load_signals() -> list:
@@ -78,7 +82,7 @@ def _get_active_signals(signals: list, now: datetime) -> list:
         try:
             commence = datetime.fromisoformat(sig.get("commence_time", "").replace("Z", "+00:00"))
             hours_ago = (now - commence).total_seconds() / 3600
-            if hours_ago < 6:
+            if hours_ago < ACTIVE_SIGNAL_HOURS:
                 active.append(sig)
         except Exception:
             pass
@@ -117,7 +121,7 @@ def _format_odds(odds: int | float | None) -> str:
     return str(int(odds))
 
 
-def _signal_row_html(sig: dict, idx: int) -> str:
+def _signal_row_html(sig: dict) -> str:
     edge = sig.get("edge", 0)
     color_class = _edge_color_class(edge)
     emoji = _edge_emoji(edge)
@@ -128,7 +132,6 @@ def _signal_row_html(sig: dict, idx: int) -> str:
     our_pct = f"{sig.get('our_probability', 0):.1%}"
     implied_pct = f"{sig.get('implied_probability', 0):.1%}"
     edge_pct = f"{edge:.1%}"
-    confidence = sig.get("confidence", "normal")
     commence = _format_commence(sig.get("commence_time", ""))
     reasoning = sig.get("sme_reasoning", "")
     missing = sig.get("missing_factors", [])
@@ -138,13 +141,17 @@ def _signal_row_html(sig: dict, idx: int) -> str:
     away_odds = _format_odds(sig.get("away_odds"))
     factors = sig.get("factor_deltas", {})
 
+    # Stable ID based on game + book — survives filter/sort reorders
+    raw_id = f"{sig.get('game_id', game)}_{book}"
+    sig_id = raw_id.replace(" ", "_").replace("/", "_")
+
     kalshi_html = ""
     if kalshi_align == "confirms":
-        kalshi_html = f'<span class="kalshi-confirm">✓ Kalshi confirms ({kalshi_prob:.1%})</span>' if kalshi_prob else '<span class="kalshi-confirm">✓ Kalshi confirms</span>'
+        kalshi_html = f'<span class="kalshi-confirm">&#10003; Kalshi confirms ({kalshi_prob:.1%})</span>' if kalshi_prob else '<span class="kalshi-confirm">&#10003; Kalshi confirms</span>'
     elif kalshi_align == "contradicts":
-        kalshi_html = f'<span class="kalshi-contra">⚠ Kalshi contradicts ({kalshi_prob:.1%})</span>' if kalshi_prob else '<span class="kalshi-contra">⚠ Kalshi contradicts</span>'
+        kalshi_html = f'<span class="kalshi-contra">&#9888; Kalshi contradicts ({kalshi_prob:.1%})</span>' if kalshi_prob else '<span class="kalshi-contra">&#9888; Kalshi contradicts</span>'
     else:
-        kalshi_html = '<span class="kalshi-none">— No Kalshi match</span>'
+        kalshi_html = '<span class="kalshi-none">&mdash; No Kalshi match</span>'
 
     missing_html = ""
     if missing:
@@ -159,16 +166,16 @@ def _signal_row_html(sig: dict, idx: int) -> str:
         factors_html = f'<div class="factor-grid">{"".join(factor_items)}</div>'
 
     return f"""
-    <tr class="signal-row {color_class}" data-sport="{sport}" data-book="{book}" data-edge="{edge}" onclick="toggleRow({idx})">
+    <tr class="signal-row {color_class}" data-sport="{sport}" data-book="{book}" data-edge="{edge}" data-sigid="{sig_id}" onclick="toggleRow('{sig_id}')">
       <td><span class="sport-badge">{sport}</span></td>
       <td class="game-cell">{game}<div class="game-time">{commence}</div></td>
       <td>{book}</td>
-      <td><strong class="{color_class}">{emoji} {edge_pct}</strong></td>
+      <td data-sortval="{edge}"><strong class="{color_class}">{emoji} {edge_pct}</strong></td>
       <td>{our_pct}</td>
       <td>{implied_pct}</td>
       <td><strong>{rec}</strong></td>
     </tr>
-    <tr id="detail-{idx}" class="detail-row" style="display:none">
+    <tr id="detail-{sig_id}" class="detail-row" style="display:none">
       <td colspan="7">
         <div class="detail-panel">
           <div class="detail-grid">
@@ -179,7 +186,7 @@ def _signal_row_html(sig: dict, idx: int) -> str:
             </div>
             <div class="detail-section">
               <h4>Odds</h4>
-              <p>DK/FD Home: <code>{home_odds}</code> | Away: <code>{away_odds}</code></p>
+              <p>Home: <code>{home_odds}</code> | Away: <code>{away_odds}</code></p>
               {kalshi_html}
             </div>
           </div>
@@ -189,39 +196,36 @@ def _signal_row_html(sig: dict, idx: int) -> str:
     </tr>"""
 
 
-def _history_row_html(sig: dict) -> str:
+def _history_row_inner_html(sig: dict) -> str:
+    """Return <td> cells for a history row (the <tr> wrapper is added by the caller)."""
     result = sig.get("result", "—")
     result_class = {"W": "result-win", "L": "result-loss", "P": "result-push"}.get(result, "")
     edge = sig.get("edge", 0)
-    return f"""
-    <tr>
-      <td><span class="sport-badge">{sig.get('sport','')}</span></td>
-      <td>{sig.get('game','')}</td>
-      <td>{sig.get('recommendation','')}</td>
-      <td>{edge:.1%}</td>
-      <td>{sig.get('book','')}</td>
-      <td><span class="{result_class}">{result or '—'}</span></td>
-    </tr>"""
+    return (
+        f'<td><span class="sport-badge">{sig.get("sport","")}</span></td>'
+        f'<td>{sig.get("game","")}</td>'
+        f'<td>{sig.get("recommendation","")}</td>'
+        f'<td>{edge:.1%}</td>'
+        f'<td>{sig.get("book","")}</td>'
+        f'<td><span class="{result_class}">{result or "—"}</span></td>'
+    )
 
 
-def _build_html(generated_at, normal_signals, low_conf_signals, historical, stub_sports, stub_games) -> str:
+def _build_html(generated_at, now_iso, normal_signals, low_conf_signals, historical, stub_sports, stub_games) -> str:
     total_active = len(normal_signals) + len(low_conf_signals)
     green_count = sum(1 for s in normal_signals + low_conf_signals if s.get("edge", 0) >= 0.20)
     orange_count = sum(1 for s in normal_signals + low_conf_signals if 0.15 <= s.get("edge", 0) < 0.20)
     yellow_count = sum(1 for s in normal_signals + low_conf_signals if 0.10 <= s.get("edge", 0) < 0.15)
 
     signal_rows_html = ""
-    row_idx = 0
     for sig in normal_signals:
-        signal_rows_html += _signal_row_html(sig, row_idx)
-        row_idx += 1
+        signal_rows_html += _signal_row_html(sig)
 
     low_conf_section = ""
     if low_conf_signals:
         lc_rows = ""
         for sig in low_conf_signals:
-            lc_rows += _signal_row_html(sig, row_idx)
-            row_idx += 1
+            lc_rows += _signal_row_html(sig)
         low_conf_section = f"""
         <div class="section-header low-conf-header">
           <h2>⚠ Low Confidence Signals</h2>
@@ -253,18 +257,27 @@ def _build_html(generated_at, normal_signals, low_conf_signals, historical, stub
         </div>
         <div class="stub-grid">{stub_items}</div>"""
 
-    history_rows = "".join(_history_row_html(s) for s in historical[:50])
+    history_rows_html = ""
+    for page_idx, sig in enumerate(historical):
+        page_num = page_idx // HISTORY_PAGE_SIZE
+        history_rows_html += f'<tr class="history-entry" data-page="{page_num}">{_history_row_inner_html(sig)}</tr>'
+
     history_section = ""
     if historical:
-        # Calculate W/L stats
         w = sum(1 for s in historical if s.get("result") == "W")
         l = sum(1 for s in historical if s.get("result") == "L")
         p = sum(1 for s in historical if s.get("result") == "P")
         total = w + l + p
         win_rate = f"{w/total:.1%}" if total > 0 else "—"
+        total_pages = max(1, (len(historical) + HISTORY_PAGE_SIZE - 1) // HISTORY_PAGE_SIZE)
+        load_more_btn = (
+            f'<button class="filter-btn" id="load-more-btn" onclick="loadMoreHistory()" style="margin-top:10px">'
+            f'Load more ({len(historical) - HISTORY_PAGE_SIZE} remaining)</button>'
+            if len(historical) > HISTORY_PAGE_SIZE else ""
+        )
         history_section = f"""
         <div class="section-header">
-          <h2>📊 Signal History</h2>
+          <h2>Signal History</h2>
           <div class="wl-record">
             <span class="result-win">W: {w}</span>
             <span class="result-loss">L: {l}</span>
@@ -272,16 +285,27 @@ def _build_html(generated_at, normal_signals, low_conf_signals, historical, stub
             <span>Win Rate: {win_rate}</span>
           </div>
         </div>
-        <table class="history-table">
+        <table class="history-table" id="history-table">
           <thead><tr>
             <th>Sport</th><th>Game</th><th>Pick</th><th>Edge</th><th>Book</th><th>Result</th>
           </tr></thead>
-          <tbody>{history_rows}</tbody>
-        </table>"""
+          <tbody id="history-tbody">{history_rows_html}</tbody>
+        </table>
+        {load_more_btn}"""
 
     empty_state = ""
     if total_active == 0:
         empty_state = '<div class="empty-state"><p>No edges &ge; 10% identified today. Check back after next model run.</p></div>'
+
+    # Dynamic sport filter buttons — derived from signals actually present
+    present_sports = sorted({
+        s.get("sport", "").upper()
+        for s in normal_signals + low_conf_signals
+        if s.get("sport")
+    })
+    sport_buttons = '<button class="filter-btn active" onclick="filterSport(\'all\', this)">All Sports</button>\n'
+    for label in present_sports:
+        sport_buttons += f'  <button class="filter-btn" onclick="filterSport(\'{label}\', this)">{label}</button>\n'
 
     # Build main table outside the big f-string to avoid backslash-in-expression (Python <3.12)
     if total_active == 0:
@@ -535,7 +559,11 @@ def _build_html(generated_at, normal_signals, low_conf_signals, historical, stub
 
 <div class="header">
   <h1>SHARPER MARGINS</h1>
-  <div class="meta">Generated: {generated_at}</div>
+  <div class="meta">
+    <span id="gen-time" data-iso="{now_iso}">Generated: {generated_at}</span>
+    &nbsp;
+    <button class="filter-btn" onclick="exportCSV()" style="font-size:11px;padding:3px 10px">Export CSV</button>
+  </div>
 </div>
 
 <div class="stats-bar">
@@ -558,13 +586,7 @@ def _build_html(generated_at, normal_signals, low_conf_signals, historical, stub
 </div>
 
 <div class="filters" id="filters">
-  <button class="filter-btn active" onclick="filterSport('all', this)">All Sports</button>
-  <button class="filter-btn" onclick="filterSport('NFL', this)">NFL</button>
-  <button class="filter-btn" onclick="filterSport('CFB', this)">CFB</button>
-  <button class="filter-btn" onclick="filterSport('NBA', this)">NBA</button>
-  <button class="filter-btn" onclick="filterSport('MLB', this)">MLB</button>
-  <button class="filter-btn" onclick="filterSport('NHL', this)">NHL</button>
-  <button class="filter-btn" onclick="filterSport('CBB', this)">CBB</button>
+  {sport_buttons}
   <span style="color:var(--text-muted); padding: 0 4px;">|</span>
   <button class="filter-btn active-book" onclick="filterBook('all', this)">All Books</button>
   <button class="filter-btn" onclick="filterBook('DraftKings', this)">DraftKings</button>
@@ -593,18 +615,21 @@ def _build_html(generated_at, normal_signals, low_conf_signals, historical, stub
 </div>
 
 <script>
-var openRow = null;
-function toggleRow(idx) {{
-  var row = document.getElementById('detail-' + idx);
-  if (!row) return;
-  if (openRow !== null && openRow !== idx) {{
-    var prev = document.getElementById('detail-' + openRow);
+// --- Row expand/collapse ---
+var openSigId = null;
+function toggleRow(sigId) {{
+  if (openSigId !== null && openSigId !== sigId) {{
+    var prev = document.getElementById('detail-' + openSigId);
     if (prev) prev.style.display = 'none';
   }}
-  row.style.display = (row.style.display === 'none') ? 'table-row' : 'none';
-  openRow = (row.style.display === 'none') ? null : idx;
+  var row = document.getElementById('detail-' + sigId);
+  if (!row) return;
+  var showing = row.style.display !== 'none';
+  row.style.display = showing ? 'none' : 'table-row';
+  openSigId = showing ? null : sigId;
 }}
 
+// --- Filtering ---
 var activeSport = 'all';
 var activeBook = 'all';
 var searchTerm = '';
@@ -612,10 +637,8 @@ var searchTerm = '';
 function filterSport(sport, btn) {{
   activeSport = sport;
   document.querySelectorAll('.filter-btn').forEach(function(b) {{
-    if (b.textContent.replace(/\\s/g,'') === sport || (sport === 'all' && b.textContent.trim() === 'All Sports')) {{
-      b.classList.add('active');
-    }} else if (b.onclick && b.onclick.toString().includes('filterSport')) {{
-      b.classList.remove('active');
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').includes('filterSport')) {{
+      b.classList.toggle('active', b.textContent.trim() === sport || (sport === 'all' && b.textContent.trim() === 'All Sports'));
     }}
   }});
   applyFilters();
@@ -624,8 +647,8 @@ function filterSport(sport, btn) {{
 function filterBook(book, btn) {{
   activeBook = book;
   document.querySelectorAll('.filter-btn').forEach(function(b) {{
-    if (b.onclick && b.onclick.toString().includes('filterBook')) {{
-      b.classList.toggle('active', b.textContent.trim().replace(' ', '') === book || (book === 'all' && b.textContent.trim() === 'All Books'));
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').includes('filterBook')) {{
+      b.classList.toggle('active', b.textContent.trim() === book || (book === 'all' && b.textContent.trim() === 'All Books'));
     }}
   }});
   applyFilters();
@@ -641,43 +664,124 @@ function applyFilters() {{
     var sport = row.dataset.sport || '';
     var book = row.dataset.book || '';
     var text = row.textContent.toLowerCase();
-    var idx = row.getAttribute('onclick').match(/\\d+/);
+    var sigId = row.dataset.sigid;
     var sportMatch = activeSport === 'all' || sport === activeSport;
     var bookMatch = activeBook === 'all' || book === activeBook;
     var searchMatch = !searchTerm || text.includes(searchTerm);
     var visible = sportMatch && bookMatch && searchMatch;
     row.style.display = visible ? '' : 'none';
-    if (!visible && idx) {{
-      var detail = document.getElementById('detail-' + idx[0]);
+    if (!visible && sigId) {{
+      var detail = document.getElementById('detail-' + sigId);
       if (detail) detail.style.display = 'none';
     }}
   }});
 }}
 
+// --- Sorting ---
+var sortState = {{}};
 function sortTable(tableId, colIdx) {{
   var table = document.getElementById(tableId);
   if (!table) return;
+  var key = tableId + '-' + colIdx;
+  sortState[key] = sortState[key] === 'desc' ? 'asc' : 'desc';
+  var asc = sortState[key] === 'asc';
+
   var tbody = table.querySelector('tbody');
-  var rows = Array.from(tbody.querySelectorAll('tr.signal-row'));
-  var details = {{}};
-  rows.forEach(function(r) {{
-    var m = r.getAttribute('onclick').match(/\\d+/);
-    if (m) {{
-      var d = document.getElementById('detail-' + m[0]);
-      if (d) details[m[0]] = d;
+  var signalRows = Array.from(tbody.querySelectorAll('tr.signal-row'));
+
+  // Build sigId -> detail row map before reordering
+  var detailMap = {{}};
+  signalRows.forEach(function(r) {{
+    var sid = r.dataset.sigid;
+    if (sid) {{
+      var d = document.getElementById('detail-' + sid);
+      if (d) detailMap[sid] = d;
     }}
   }});
-  rows.sort(function(a, b) {{
-    var ea = parseFloat(a.dataset.edge) || 0;
-    var eb = parseFloat(b.dataset.edge) || 0;
-    return eb - ea;
+
+  signalRows.sort(function(a, b) {{
+    var ca = a.querySelectorAll('td')[colIdx];
+    var cb = b.querySelectorAll('td')[colIdx];
+    var va = ca ? (ca.dataset.sortval !== undefined ? parseFloat(ca.dataset.sortval) : ca.textContent.trim()) : '';
+    var vb = cb ? (cb.dataset.sortval !== undefined ? parseFloat(cb.dataset.sortval) : cb.textContent.trim()) : '';
+    if (typeof va === 'number' && typeof vb === 'number') {{
+      return asc ? va - vb : vb - va;
+    }}
+    return asc ? String(va).localeCompare(String(vb)) : String(vb).localeCompare(String(va));
   }});
-  rows.forEach(function(r) {{
+
+  signalRows.forEach(function(r) {{
     tbody.appendChild(r);
-    var m = r.getAttribute('onclick').match(/\\d+/);
-    if (m && details[m[0]]) tbody.appendChild(details[m[0]]);
+    var sid = r.dataset.sigid;
+    if (sid && detailMap[sid]) tbody.appendChild(detailMap[sid]);
   }});
 }}
+
+// --- History load-more ---
+var historyPage = 0;
+function loadMoreHistory() {{
+  historyPage++;
+  var pageSize = {HISTORY_PAGE_SIZE};
+  document.querySelectorAll('.history-entry').forEach(function(r) {{
+    var p = parseInt(r.dataset.page || '0');
+    if (p <= historyPage) r.style.display = '';
+  }});
+  var remaining = document.querySelectorAll('.history-entry[style="display: none;"]').length;
+  var btn = document.getElementById('load-more-btn');
+  if (btn) {{
+    if (remaining === 0) btn.style.display = 'none';
+    else btn.textContent = 'Load more (' + remaining + ' remaining)';
+  }}
+}}
+
+// --- CSV export ---
+function exportCSV() {{
+  var rows = [['Sport','Game','Book','Edge','Our %','Implied %','Recommendation']];
+  document.querySelectorAll('.signal-row').forEach(function(r) {{
+    if (r.style.display === 'none') return;
+    var cells = r.querySelectorAll('td');
+    if (cells.length < 7) return;
+    var edge = cells[3].dataset.sortval || cells[3].textContent.trim();
+    rows.push([
+      '"' + (cells[0].textContent.trim().replace(/"/g,'""')) + '"',
+      '"' + (cells[1].textContent.trim().replace(/"/g,'""')) + '"',
+      '"' + (cells[2].textContent.trim().replace(/"/g,'""')) + '"',
+      '"' + edge + '"',
+      '"' + (cells[4].textContent.trim().replace(/"/g,'""')) + '"',
+      '"' + (cells[5].textContent.trim().replace(/"/g,'""')) + '"',
+      '"' + (cells[6].textContent.trim().replace(/"/g,'""')) + '"',
+    ]);
+  }});
+  var csv = rows.map(function(r) {{ return r.join(','); }}).join('\\n');
+  var blob = new Blob([csv], {{type: 'text/csv'}});
+  var a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'sharper-margins-signals.csv';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}}
+
+// --- Relative time ---
+function updateRelativeTime() {{
+  var el = document.getElementById('gen-time');
+  if (!el) return;
+  var iso = el.dataset.iso;
+  if (!iso) return;
+  var diff = Math.floor((Date.now() - new Date(iso)) / 60000);
+  var label = diff < 1 ? 'just now' : diff < 60 ? diff + 'm ago' : Math.floor(diff / 60) + 'h ago';
+  el.title = 'Generated: ' + iso;
+  el.textContent = 'Updated ' + label;
+}}
+
+// --- Init ---
+document.addEventListener('DOMContentLoaded', function() {{
+  // Hide history rows past page 0
+  document.querySelectorAll('.history-entry').forEach(function(r) {{
+    if (parseInt(r.dataset.page || '0') > 0) r.style.display = 'none';
+  }});
+  updateRelativeTime();
+  setInterval(updateRelativeTime, 60000);
+}});
 </script>
 
 </body>

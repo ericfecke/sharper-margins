@@ -4,15 +4,19 @@ Caches results to .tmp/odds_{sport}_{date}.json. One pull per sport per day.
 """
 
 import json
+import logging
 import os
-import sys
+import time
 from datetime import date
 from pathlib import Path
 
 import requests
 from dotenv import load_dotenv
 
+from config import FETCH_MAX_RETRIES, FETCH_RETRY_BACKOFF
+
 load_dotenv()
+logger = logging.getLogger(__name__)
 
 ODDS_API_KEY = os.getenv("ODDS_API_KEY")
 BASE_URL = "https://api.the-odds-api.com/v4/sports"
@@ -55,12 +59,12 @@ def fetch_odds(sport: str, today: date = None, force: bool = False) -> list:
             return json.load(f)
 
     if not ODDS_API_KEY:
-        print(f"[fetch_odds] ERROR: ODDS_API_KEY not set in .env", file=sys.stderr)
+        logger.error("ODDS_API_KEY not set in .env")
         return []
 
     odds_sport = SPORT_MAP.get(sport)
     if not odds_sport:
-        print(f"[fetch_odds] Unknown sport: {sport}", file=sys.stderr)
+        logger.error("Unknown sport: %s", sport)
         return []
 
     url = f"{BASE_URL}/{odds_sport}/odds"
@@ -72,32 +76,49 @@ def fetch_odds(sport: str, today: date = None, force: bool = False) -> list:
         "oddsFormat": "american",
     }
 
-    try:
-        resp = requests.get(url, params=params, timeout=15)
-        resp.raise_for_status()
-        games = resp.json()
-        print(f"[fetch_odds] {sport.upper()}: fetched {len(games)} games")
+    for attempt in range(FETCH_MAX_RETRIES):
+        try:
+            resp = requests.get(url, params=params, timeout=15)
 
-        # Log remaining API credits
-        remaining = resp.headers.get("x-requests-remaining", "?")
-        used = resp.headers.get("x-requests-used", "?")
-        print(f"[fetch_odds] API credits — used: {used}, remaining: {remaining}")
+            if resp.status_code == 429:
+                retry_after = int(resp.headers.get("Retry-After", FETCH_RETRY_BACKOFF[attempt]))
+                logger.warning("Rate limited (429) for %s — retrying in %ds", sport.upper(), retry_after)
+                time.sleep(retry_after)
+                continue
 
-        # Normalize to internal format
-        normalized = [_normalize_game(g) for g in games]
-        normalized = [g for g in normalized if g]  # drop nulls
+            resp.raise_for_status()
+            games = resp.json()
+            logger.info("%s: fetched %d games", sport.upper(), len(games))
 
-        with open(cache_path, "w") as f:
-            json.dump(normalized, f, indent=2)
+            remaining = resp.headers.get("x-requests-remaining", "?")
+            used = resp.headers.get("x-requests-used", "?")
+            logger.info("API credits — used: %s, remaining: %s", used, remaining)
+            if remaining != "?" and int(remaining) < 50:
+                logger.warning("Odds API credits running low: %s remaining", remaining)
 
-        return normalized
+            normalized = [_normalize_game(g) for g in games]
+            dropped = sum(1 for g in normalized if g is None)
+            normalized = [g for g in normalized if g]
+            if dropped:
+                logger.warning("%s: dropped %d malformed game(s) during normalization", sport.upper(), dropped)
 
-    except requests.exceptions.HTTPError as e:
-        print(f"[fetch_odds] HTTP error for {sport}: {e}", file=sys.stderr)
-        return []
-    except requests.exceptions.RequestException as e:
-        print(f"[fetch_odds] Request failed for {sport}: {e}", file=sys.stderr)
-        return []
+            with open(cache_path, "w") as f:
+                json.dump(normalized, f, indent=2)
+
+            return normalized
+
+        except requests.exceptions.HTTPError as e:
+            logger.error("HTTP error for %s (attempt %d/%d): %s", sport, attempt + 1, FETCH_MAX_RETRIES, e)
+        except requests.exceptions.RequestException as e:
+            logger.error("Request failed for %s (attempt %d/%d): %s", sport, attempt + 1, FETCH_MAX_RETRIES, e)
+
+        if attempt < FETCH_MAX_RETRIES - 1:
+            sleep_s = FETCH_RETRY_BACKOFF[attempt] if attempt < len(FETCH_RETRY_BACKOFF) else FETCH_RETRY_BACKOFF[-1]
+            logger.info("Retrying %s in %ds...", sport.upper(), sleep_s)
+            time.sleep(sleep_s)
+
+    logger.error("All %d attempts failed for %s", FETCH_MAX_RETRIES, sport.upper())
+    return []
 
 
 def _normalize_game(game: dict) -> dict | None:
@@ -136,7 +157,7 @@ def _normalize_game(game: dict) -> dict | None:
             "odds": odds_by_book,
         }
     except (KeyError, TypeError) as e:
-        print(f"[fetch_odds] Failed to normalize game: {e}", file=sys.stderr)
+        logger.warning("Failed to normalize game: %s", e)
         return None
 
 

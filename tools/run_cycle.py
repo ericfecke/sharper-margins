@@ -20,6 +20,8 @@ CLI flags:
 
 import argparse
 import importlib
+import logging
+import os
 import subprocess
 import sys
 from datetime import date, datetime, timezone
@@ -32,9 +34,17 @@ from check_season import check_season
 from fetch_odds import fetch_odds
 from fetch_kalshi import fetch_kalshi
 from fetch_context import fetch_context
+from fetch_results import update_results
 from calculate_edge import calculate_edge
 from write_signal import write_signal, load_signals
 from serve_dashboard import render_dashboard
+
+logging.basicConfig(
+    level=getattr(logging, os.getenv("LOG_LEVEL", "INFO").upper(), logging.INFO),
+    format="%(asctime)s [%(name)s] %(levelname)s: %(message)s",
+    datefmt="%H:%M:%S",
+)
+logger = logging.getLogger(__name__)
 
 ROOT = Path(__file__).parent.parent
 
@@ -64,16 +74,20 @@ def main():
     print(f"  SHARPER MARGINS — Run Cycle {today.isoformat()}")
     print(f"{'='*60}\n")
 
+    # Step 0: Backfill results for any completed games
+    logger.info("Checking for completed game results...")
+    update_results()
+
     # Step 1: Determine active sports
     if args.sport:
         active_sports = [args.sport.lower()]
-        print(f"[run_cycle] Sport override: {active_sports}")
+        logger.info("Sport override: %s", active_sports)
     else:
         active_sports = check_season(today=today, include_ufc=args.include_ufc)
-        print(f"[run_cycle] Active sports: {active_sports}")
+        logger.info("Active sports: %s", active_sports)
 
     if not active_sports:
-        print("[run_cycle] No active sports today. Rendering empty dashboard.")
+        logger.info("No active sports today. Rendering empty dashboard.")
         render_dashboard(signals=load_signals(), active_sports=[])
         _git_commit_push(0, [], dry_run=args.dry_run)
         return
@@ -87,10 +101,10 @@ def main():
         # Step 2: Fetch odds
         games = fetch_odds(sport, today=today, force=args.force)
         if not games:
-            print(f"[run_cycle] No games found for {sport.upper()} — skipping")
+            logger.info("No games found for %s — skipping", sport.upper())
             continue
 
-        print(f"[run_cycle] {len(games)} games found")
+        logger.info("%d games found for %s", len(games), sport.upper())
 
         # Collect stub sport games for dashboard display
         if sport in STUB_SPORTS:
@@ -111,7 +125,7 @@ def main():
         try:
             agent = importlib.import_module(agent_module_name)
         except ImportError as e:
-            print(f"[run_cycle] Failed to import {agent_module_name}: {e}", file=sys.stderr)
+            logger.error("Failed to import %s: %s", agent_module_name, e)
             continue
 
         # Process each game
@@ -129,28 +143,26 @@ def main():
             try:
                 sme_result = agent.run(game_ctx)
             except Exception as e:
-                print(f"[run_cycle] Agent error for {game_id}: {e}", file=sys.stderr)
+                logger.error("Agent error for %s: %s", game_id, e)
                 continue
 
             if sme_result.get("probability") is None:
-                # Stub — skip edge calculation
-                continue
+                continue  # Stub — skip edge calculation
 
             kalshi_match = kalshi_data.get(game_id)
 
             # Step 6: Calculate edge
             edge_result = calculate_edge(sme_result, game, kalshi_match)
             if edge_result:
-                # Inject sport label properly
                 edge_result["sport"] = sport.upper()
                 write_signal(edge_result)
                 signals_fired += 1
-                print(f"[run_cycle] SIGNAL: {edge_result['recommendation']} | edge={edge_result['edge']:.1%} | {edge_result['confidence']}")
+                logger.info("SIGNAL: %s | edge=%.1f%% | %s", edge_result["recommendation"], edge_result["edge"] * 100, edge_result["confidence"])
             else:
                 prob = sme_result.get("probability", 0)
-                print(f"[run_cycle] No edge: {game['away_team']} @ {game['home_team']} (our_prob={prob:.2%})")
+                logger.debug("No edge: %s @ %s (our_prob=%.2f%%)", game["away_team"], game["home_team"], prob * 100)
 
-    print(f"\n[run_cycle] Cycle complete: {signals_fired} signal(s) fired")
+    logger.info("Cycle complete: %d signal(s) fired", signals_fired)
 
     # Step 7: Render dashboard
     all_signals = load_signals()
@@ -178,7 +190,7 @@ def _git_commit_push(signal_count: int, active_sports: list, dry_run: bool = Fal
             capture_output=True, text=True
         )
         if result.returncode != 0:
-            print(f"[run_cycle] git pull warning: {result.stderr}", file=sys.stderr)
+            logger.warning("git pull warning: %s", result.stderr.strip())
 
         # Stage dashboard and signals at repo root
         subprocess.run(
@@ -192,7 +204,7 @@ def _git_commit_push(signal_count: int, active_sports: list, dry_run: bool = Fal
             capture_output=True, text=True
         )
         if not status.stdout.strip():
-            print("[run_cycle] Nothing to commit — dashboard unchanged")
+            logger.info("Nothing to commit — dashboard unchanged")
             return
 
         subprocess.run(
@@ -205,12 +217,10 @@ def _git_commit_push(signal_count: int, active_sports: list, dry_run: bool = Fal
             check=True, capture_output=True
         )
 
-        print(f"[run_cycle] Committed and pushed: {commit_msg}")
+        logger.info("Committed and pushed: %s", commit_msg)
 
     except subprocess.CalledProcessError as e:
-        print(f"[run_cycle] Git error: {e}", file=sys.stderr)
-        print(f"[run_cycle] stdout: {e.stdout}", file=sys.stderr)
-        print(f"[run_cycle] stderr: {e.stderr}", file=sys.stderr)
+        logger.error("Git error: %s\nstdout: %s\nstderr: %s", e, e.stdout, e.stderr)
 
 
 if __name__ == "__main__":

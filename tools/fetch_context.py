@@ -5,11 +5,19 @@ Caches to .tmp/context_{sport}_{date}.json. One pull per sport per day.
 """
 
 import json
+import logging
 import sys
 from datetime import date, datetime
 from pathlib import Path
 
 import requests
+
+logger = logging.getLogger(__name__)
+
+# In-memory caches (keyed by (base_url, team_id)) so that teams appearing in
+# multiple games on the same day are only fetched once per run.
+_TEAM_STATS_CACHE: dict = {}
+_TEAM_SCHEDULE_CACHE: dict = {}
 
 TMP_DIR = Path(__file__).parent.parent / ".tmp"
 ESPN_BASE = "https://site.api.espn.com/apis/site/v2/sports"
@@ -60,7 +68,7 @@ def fetch_context(sport: str, games: list, today: date = None, force: bool = Fal
             return json.load(f)
 
     if sport not in SPORT_ESPN_PATH:
-        print(f"[fetch_context] Unknown sport: {sport}", file=sys.stderr)
+        logger.error("Unknown sport: %s", sport)
         return {}
 
     context = _build_context(sport, games, today)
@@ -80,7 +88,7 @@ def _get(url: str, params: dict = None) -> dict | None:
         resp.raise_for_status()
         return resp.json()
     except Exception as e:
-        print(f"[fetch_context] GET failed {url}: {e}", file=sys.stderr)
+        logger.error("GET failed %s: %s", url, e)
         return None
 
 
@@ -89,7 +97,7 @@ def _build_context(sport: str, games: list, today: date) -> dict:
     sport_cat, league = SPORT_ESPN_PATH[sport]
     base = f"{ESPN_BASE}/{sport_cat}/{league}"
 
-    print(f"[fetch_context] Fetching ESPN data for {sport.upper()}...")
+    logger.info("Fetching ESPN data for %s...", sport.upper())
 
     # Pull shared data once
     standings_data = _get(f"{base}/standings")
@@ -122,7 +130,7 @@ def _build_context(sport: str, games: list, today: date) -> dict:
         )
         context[game_id] = ctx
 
-    print(f"[fetch_context] {sport.upper()}: context built for {len(context)} games")
+    logger.info("%s: context built for %d games", sport.upper(), len(context))
     return context
 
 
@@ -194,6 +202,11 @@ def _build_game_context(sport, base, game, home_team, away_team,
         ctx["away_stats"] = None
         ctx["away_schedule"] = None
 
+    # CFB-specific: provide opponent win rates for SOS adjustment
+    if sport == "cfb":
+        ctx["home_opponent_win_rates"] = _extract_opp_win_rates(ctx.get("home_schedule"))
+        ctx["away_opponent_win_rates"] = _extract_opp_win_rates(ctx.get("away_schedule"))
+
     return ctx
 
 
@@ -232,7 +245,7 @@ def _parse_standings(data: dict | None, sport: str) -> list:
                     _walk(child)
         _walk(data)
     except Exception as e:
-        print(f"[fetch_context] Standings parse error: {e}", file=sys.stderr)
+        logger.error("Standings parse error: %s", e)
     return teams
 
 
@@ -271,7 +284,7 @@ def _parse_injuries(data: dict | None) -> dict:
                     "status": status or "",
                 })
     except Exception as e:
-        print(f"[fetch_context] Injuries parse error: {e}", file=sys.stderr)
+        logger.error("Injuries parse error: %s", e)
     return result
 
 
@@ -336,71 +349,110 @@ def _parse_scoreboard(data: dict | None) -> list:
                 "indoor": venue.get("indoor", False),
             })
     except Exception as e:
-        print(f"[fetch_context] Scoreboard parse error: {e}", file=sys.stderr)
+        logger.error("Scoreboard parse error: %s", e)
     return events
 
 
 def _fetch_team_stats(base: str, team_id: str) -> dict | None:
-    """Fetch team statistics from ESPN.
+    """Fetch team statistics from ESPN (cached per team per run).
     ESPN stats are at data.results.stats.categories (not data.splits.categories).
     """
+    cache_key = (base, team_id, "stats")
+    if cache_key in _TEAM_STATS_CACHE:
+        return _TEAM_STATS_CACHE[cache_key]
+
     data = _get(f"{base}/teams/{team_id}/statistics")
-    if not data:
-        return None
-    try:
-        stats = {}
-        # Primary path: data.results.stats.categories
-        categories = (
-            data.get("results", {}).get("stats", {}).get("categories")
-            or data.get("splits", {}).get("categories")
-            or []
-        )
-        for cat in categories:
-            for stat in cat.get("stats", []):
-                name = stat.get("name")
-                value = stat.get("value")
-                if name:
-                    stats[name] = value
-        return stats if stats else None
-    except Exception as e:
-        print(f"[fetch_context] Team stats parse error for {team_id}: {e}", file=sys.stderr)
-        return None
+    result = None
+    if data:
+        try:
+            stats = {}
+            categories = (
+                data.get("results", {}).get("stats", {}).get("categories")
+                or data.get("splits", {}).get("categories")
+                or []
+            )
+            for cat in categories:
+                for stat in cat.get("stats", []):
+                    name = stat.get("name")
+                    value = stat.get("value")
+                    if name:
+                        stats[name] = value
+            result = stats if stats else None
+        except Exception as e:
+            logger.error("Team stats parse error for %s: %s", team_id, e)
+
+    _TEAM_STATS_CACHE[cache_key] = result
+    return result
 
 
 def _fetch_team_schedule(base: str, team_id: str, today: date) -> list | None:
-    """Fetch recent team schedule from ESPN."""
+    """Fetch recent team schedule from ESPN (cached per team per run)."""
+    cache_key = (base, team_id, "schedule", today.isoformat())
+    if cache_key in _TEAM_SCHEDULE_CACHE:
+        return _TEAM_SCHEDULE_CACHE[cache_key]
+
     data = _get(f"{base}/teams/{team_id}/schedule")
-    if not data:
-        return None
-    try:
-        games = []
-        for event in data.get("events", []):
-            game_date_str = event.get("date", "")
+    result = None
+    if data:
+        try:
+            games = []
+            for event in data.get("events", []):
+                game_date_str = event.get("date", "")
+                try:
+                    game_date = datetime.fromisoformat(game_date_str.replace("Z", "+00:00")).date()
+                except Exception:
+                    continue
+                if game_date > today:
+                    continue
+                competitions = event.get("competitions", [])
+                if not competitions:
+                    continue
+                comp = competitions[0]
+                competitors = comp.get("competitors", [])
+                result_obj = next((c for c in competitors if str(c.get("team", {}).get("id")) == str(team_id)), None)
+                opp = next((c for c in competitors if str(c.get("team", {}).get("id")) != str(team_id)), None)
+                opp_record = opp.get("records", []) if opp else []
+                opp_win_rate = None
+                for rec in opp_record:
+                    if rec.get("type") == "total" or rec.get("name") == "overall":
+                        summary = rec.get("summary", "")
+                        if "-" in summary:
+                            parts = summary.split("-")
+                            try:
+                                w, l = int(parts[0]), int(parts[1])
+                                gp = w + l
+                                opp_win_rate = w / gp if gp > 0 else None
+                            except (ValueError, IndexError):
+                                pass
+                        break
+                games.append({
+                    "date": game_date.isoformat(),
+                    "home_away": result_obj.get("homeAway") if result_obj else None,
+                    "score": result_obj.get("score") if result_obj else None,
+                    "opp_score": opp.get("score") if opp else None,
+                    "winner": result_obj.get("winner") if result_obj else None,
+                    "opp_name": opp.get("team", {}).get("displayName") if opp else None,
+                    "opp_win_rate": opp_win_rate,
+                })
+            result = sorted(games, key=lambda g: g["date"])
+        except Exception as e:
+            logger.error("Schedule parse error for %s: %s", team_id, e)
+
+    _TEAM_SCHEDULE_CACHE[cache_key] = result
+    return result
+
+
+def _extract_opp_win_rates(schedule: list) -> list:
+    """Extract opponent win rates from a schedule list (for CFB SOS adjustment)."""
+    rates = []
+    for game in (schedule or []):
+        opp_wr = game.get("opp_win_rate")
+        if opp_wr is not None:
             try:
-                game_date = datetime.fromisoformat(game_date_str.replace("Z", "+00:00")).date()
-            except Exception:
-                continue
-            if game_date > today:
-                continue  # Future games
-            competitions = event.get("competitions", [])
-            if not competitions:
-                continue
-            comp = competitions[0]
-            competitors = comp.get("competitors", [])
-            result_obj = next((c for c in competitors if str(c.get("team", {}).get("id")) == str(team_id)), None)
-            opp = next((c for c in competitors if str(c.get("team", {}).get("id")) != str(team_id)), None)
-            games.append({
-                "date": game_date.isoformat(),
-                "home_away": result_obj.get("homeAway") if result_obj else None,
-                "score": result_obj.get("score") if result_obj else None,
-                "opp_score": opp.get("score") if opp else None,
-                "winner": result_obj.get("winner") if result_obj else None,
-                "opp_name": opp.get("team", {}).get("displayName") if opp else None,
-            })
-        return sorted(games, key=lambda g: g["date"])
-    except Exception as e:
-        print(f"[fetch_context] Schedule parse error for {team_id}: {e}", file=sys.stderr)
-        return None
+                rates.append(float(opp_wr))
+            except (TypeError, ValueError):
+                pass
+    return rates
 
 
 def _find_team_record(team_name: str, records: list) -> dict | None:
