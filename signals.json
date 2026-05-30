@@ -8809,7 +8809,7 @@
     "home_odds": -230,
     "away_odds": 190,
     "game_id": "27f8823f01243e8857b317dec213f14c",
-    "generated_at": "2026-05-29T22:37:17.205613+00:00",
+    "generated_at": "2026-05-30T16:49:44.977281+00:00",
     "result": null
   },
   {
@@ -8954,9 +8954,9 @@
     "commence_time": "2026-05-30T20:06:00Z",
     "book": "FanDuel",
     "recommendation": "Washington Nationals ML",
-    "our_probability": 0.5834,
-    "implied_probability": 0.4417,
-    "edge": 0.1417,
+    "our_probability": 0.5795,
+    "implied_probability": 0.4573,
+    "edge": 0.1222,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -8974,10 +8974,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 118,
-    "away_odds": -138,
+    "home_odds": 110,
+    "away_odds": -130,
     "game_id": "adde69ed429a06ae4ecc9bd2fed0984b",
-    "generated_at": "2026-05-29T22:37:24.538467+00:00",
+    "generated_at": "2026-05-30T16:49:51.576330+00:00",
     "result": null
   },
   {
@@ -9018,9 +9018,9 @@
     "commence_time": "2026-05-30T23:16:00Z",
     "book": "DraftKings",
     "recommendation": "St. Louis Cardinals ML",
-    "our_probability": 0.5591,
-    "implied_probability": 0.4489,
-    "edge": 0.1102,
+    "our_probability": 0.5641,
+    "implied_probability": 0.4509,
+    "edge": 0.1132,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -9038,10 +9038,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 113,
-    "away_odds": -136,
+    "home_odds": 112,
+    "away_odds": -135,
     "game_id": "2611e27228d544fecc9bd38fe032e568",
-    "generated_at": "2026-05-29T22:37:24.564216+00:00",
+    "generated_at": "2026-05-30T16:49:51.585684+00:00",
     "result": null
   },
   {
@@ -9074,6 +9074,38 @@
     "away_odds": 136,
     "game_id": "92ca4d6ea5ebab8f636d967c1efb0fbc",
     "generated_at": "2026-05-29T22:37:24.585333+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Los Angeles Dodgers",
+    "commence_time": "2026-05-31T02:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Los Angeles Dodgers ML",
+    "our_probability": 0.6683,
+    "implied_probability": 0.5333,
+    "edge": 0.135,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": -0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -126,
+    "away_odds": 105,
+    "game_id": "af2ba278de4989977f4bea35a317ab65",
+    "generated_at": "2026-05-30T16:49:51.595032+00:00",
     "result": null
   }
 ]
