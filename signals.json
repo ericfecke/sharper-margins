@@ -9107,5 +9107,131 @@
     "game_id": "af2ba278de4989977f4bea35a317ab65",
     "generated_at": "2026-05-30T16:49:51.595032+00:00",
     "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "New York Knicks @ San Antonio Spurs",
+    "commence_time": "2026-06-04T00:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "New York Knicks ML",
+    "our_probability": 0.559,
+    "implied_probability": 0.3614,
+    "edge": 0.1976,
+    "confidence": "normal",
+    "missing_factors": [],
+    "sme_reasoning": "Win rate edge: home favored (75.61% vs 64.63%); Home court advantage applied; Recent form favors away; Net rating advantage: away",
+    "factor_deltas": {
+      "win_rate_diff": 0.0439,
+      "home_court": 0.03,
+      "rest": -0.04,
+      "recent_form": -0.06,
+      "injuries": -0.005,
+      "net_rating": -0.0279,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -198,
+    "away_odds": 166,
+    "game_id": "1aae688472781f1a1aaf3efdb38e884b",
+    "generated_at": "2026-05-31T16:53:05.823974+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Toronto Blue Jays @ Baltimore Orioles",
+    "commence_time": "2026-05-31T16:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Toronto Blue Jays ML",
+    "our_probability": 0.5317,
+    "implied_probability": 0.3187,
+    "edge": 0.213,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -260,
+    "away_odds": 196,
+    "game_id": "7ce8052d582c63369d747ada9789999a",
+    "generated_at": "2026-05-31T16:53:14.258605+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Diego Padres @ Washington Nationals",
+    "commence_time": "2026-05-31T17:36:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.6009,
+    "implied_probability": 0.4846,
+    "edge": 0.1163,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -102,
+    "away_odds": -116,
+    "game_id": "a8456ab9e0bb66a215e97973838e0a7e",
+    "generated_at": "2026-05-31T16:53:14.267804+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Miami Marlins @ New York Mets",
+    "commence_time": "2026-05-31T17:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.508,
+    "implied_probability": 0.4035,
+    "edge": 0.1045,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: New York Mets plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -164,
+    "away_odds": 138,
+    "game_id": "2777b2345a6c8d7177d741ef3e01b6c6",
+    "generated_at": "2026-05-31T16:53:14.276888+00:00",
+    "result": null
   }
 ]
