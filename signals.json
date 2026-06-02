@@ -9111,12 +9111,12 @@
   {
     "sport": "NBA",
     "game": "New York Knicks @ San Antonio Spurs",
-    "commence_time": "2026-06-04T00:40:00Z",
+    "commence_time": "2026-06-04T00:30:00Z",
     "book": "FanDuel",
     "recommendation": "New York Knicks ML",
     "our_probability": 0.559,
-    "implied_probability": 0.3614,
-    "edge": 0.1976,
+    "implied_probability": 0.3726,
+    "edge": 0.1864,
     "confidence": "normal",
     "missing_factors": [],
     "sme_reasoning": "Win rate edge: home favored (75.61% vs 64.63%); Home court advantage applied; Recent form favors away; Net rating advantage: away",
@@ -9132,10 +9132,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -198,
-    "away_odds": 166,
+    "home_odds": -188,
+    "away_odds": 158,
     "game_id": "1aae688472781f1a1aaf3efdb38e884b",
-    "generated_at": "2026-05-31T16:53:05.823974+00:00",
+    "generated_at": "2026-06-02T23:02:40.205682+00:00",
     "result": null
   },
   {
@@ -9426,6 +9426,198 @@
     "away_odds": 179,
     "game_id": "286c7b1ca015708320800e8f2a9bf4de",
     "generated_at": "2026-06-01T23:01:50.644192+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Baltimore Orioles @ Boston Red Sox",
+    "commence_time": "2026-06-02T22:47:13Z",
+    "book": "FanDuel",
+    "recommendation": "Baltimore Orioles ML",
+    "our_probability": 0.5288,
+    "implied_probability": 0.342,
+    "edge": 0.1868,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": -0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -230,
+    "away_odds": 176,
+    "game_id": "0aecf375a07f34755e00a1ba7fb63c16",
+    "generated_at": "2026-06-02T23:02:45.831651+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Toronto Blue Jays @ Atlanta Braves",
+    "commence_time": "2026-06-02T23:15:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.6307,
+    "implied_probability": 0.5183,
+    "edge": 0.1124,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -119,
+    "away_odds": -102,
+    "game_id": "d151ae8d551dafc26e657e34d0b4cff3",
+    "generated_at": "2026-06-02T23:02:45.841508+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Chicago White Sox @ Minnesota Twins",
+    "commence_time": "2026-06-03T17:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Chicago White Sox ML",
+    "our_probability": 0.517,
+    "implied_probability": 0.4143,
+    "edge": 0.1027,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.001,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -156,
+    "away_odds": 132,
+    "game_id": "bee59a7dbd5441cad240f0571973b255",
+    "generated_at": "2026-06-02T23:02:45.851532+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Baltimore Orioles @ Boston Red Sox",
+    "commence_time": "2026-06-03T22:46:00Z",
+    "book": "DraftKings",
+    "recommendation": "Baltimore Orioles ML",
+    "our_probability": 0.5288,
+    "implied_probability": 0.4175,
+    "edge": 0.1113,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": -0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -156,
+    "away_odds": 129,
+    "game_id": "3ca053166f16be8d40c5adfe1a2bd8aa",
+    "generated_at": "2026-06-02T23:02:45.861319+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Francisco Giants @ Milwaukee Brewers",
+    "commence_time": "2026-06-03T23:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.6988,
+    "implied_probability": 0.5635,
+    "edge": 0.1353,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -142,
+    "away_odds": 120,
+    "game_id": "2b93a316b12e1dddfcb752bed7aa43d6",
+    "generated_at": "2026-06-02T23:02:45.871146+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Arizona Diamondbacks",
+    "commence_time": "2026-06-04T01:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Arizona Diamondbacks ML",
+    "our_probability": 0.5075,
+    "implied_probability": 0.3589,
+    "edge": 0.1486,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.009,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 168,
+    "away_odds": -200,
+    "game_id": "f8b638ebe3a01e645658b4699fd18198",
+    "generated_at": "2026-06-02T23:02:45.880996+00:00",
     "result": null
   }
 ]
