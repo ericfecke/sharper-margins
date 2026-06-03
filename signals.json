@@ -9135,7 +9135,7 @@
     "home_odds": -188,
     "away_odds": 158,
     "game_id": "1aae688472781f1a1aaf3efdb38e884b",
-    "generated_at": "2026-06-02T23:02:40.205682+00:00",
+    "generated_at": "2026-06-03T23:05:23.391637+00:00",
     "result": null
   },
   {
@@ -9559,12 +9559,12 @@
   {
     "sport": "MLB",
     "game": "San Francisco Giants @ Milwaukee Brewers",
-    "commence_time": "2026-06-03T23:40:00Z",
+    "commence_time": "2026-06-03T23:41:00Z",
     "book": "FanDuel",
     "recommendation": "Milwaukee Brewers ML",
-    "our_probability": 0.6988,
-    "implied_probability": 0.5635,
-    "edge": 0.1353,
+    "our_probability": 0.7043,
+    "implied_probability": 0.5467,
+    "edge": 0.1576,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -9582,10 +9582,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -142,
-    "away_odds": 120,
+    "home_odds": -132,
+    "away_odds": 112,
     "game_id": "2b93a316b12e1dddfcb752bed7aa43d6",
-    "generated_at": "2026-06-02T23:02:45.871146+00:00",
+    "generated_at": "2026-06-03T23:05:33.020636+00:00",
     "result": null
   },
   {
@@ -9594,9 +9594,9 @@
     "commence_time": "2026-06-04T01:41:00Z",
     "book": "FanDuel",
     "recommendation": "Arizona Diamondbacks ML",
-    "our_probability": 0.5075,
-    "implied_probability": 0.3589,
-    "edge": 0.1486,
+    "our_probability": 0.4881,
+    "implied_probability": 0.3485,
+    "edge": 0.1396,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -9604,7 +9604,7 @@
     "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": -0.015,
+      "recent_form": -0.03,
       "injuries": 0.01,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
@@ -9614,10 +9614,74 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 168,
-    "away_odds": -200,
+    "home_odds": 176,
+    "away_odds": -210,
     "game_id": "f8b638ebe3a01e645658b4699fd18198",
-    "generated_at": "2026-06-02T23:02:45.880996+00:00",
+    "generated_at": "2026-06-03T23:05:33.030739+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Baltimore Orioles @ Boston Red Sox",
+    "commence_time": "2026-06-03T22:46:00Z",
+    "book": "FanDuel",
+    "recommendation": "Baltimore Orioles ML",
+    "our_probability": 0.5391,
+    "implied_probability": 0.2771,
+    "edge": 0.262,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": -0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -330,
+    "away_odds": 240,
+    "game_id": "3ca053166f16be8d40c5adfe1a2bd8aa",
+    "generated_at": "2026-06-03T23:05:33.010691+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Francisco Giants @ Milwaukee Brewers",
+    "commence_time": "2026-06-04T18:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.7043,
+    "implied_probability": 0.589,
+    "edge": 0.1153,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -158,
+    "away_odds": 134,
+    "game_id": "21eff9bb5b8451ea2abb9e638ed600e3",
+    "generated_at": "2026-06-03T23:05:33.040480+00:00",
     "result": null
   }
 ]
