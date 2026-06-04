@@ -9683,5 +9683,71 @@
     "game_id": "21eff9bb5b8451ea2abb9e638ed600e3",
     "generated_at": "2026-06-03T23:05:33.040480+00:00",
     "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "New York Knicks @ San Antonio Spurs",
+    "commence_time": "2026-06-06T00:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "New York Knicks ML",
+    "our_probability": 0.5194,
+    "implied_probability": 0.3265,
+    "edge": 0.1929,
+    "confidence": "normal",
+    "missing_factors": [],
+    "sme_reasoning": "Win rate edge: home favored (75.61% vs 64.63%); Home court advantage applied; Recent form favors away; Net rating advantage: away",
+    "factor_deltas": {
+      "win_rate_diff": 0.0439,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": -0.06,
+      "injuries": -0.005,
+      "net_rating": -0.0283,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -235,
+    "away_odds": 194,
+    "game_id": "2852e944f8ef0bc3eba79f883b9101ba",
+    "generated_at": "2026-06-04T22:21:21.951647+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Milwaukee Brewers @ Colorado Rockies",
+    "commence_time": "2026-06-06T00:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.555,
+    "implied_probability": 0.4175,
+    "edge": 0.1375,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats; Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 129,
+    "away_odds": -156,
+    "game_id": "eb17640885894253c1069e2e9233ea65",
+    "generated_at": "2026-06-04T22:21:27.663794+00:00",
+    "result": null
   }
 ]
