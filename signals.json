@@ -9820,8 +9820,8 @@
     "commence_time": "2026-06-06T23:36:00Z",
     "book": "DraftKings",
     "recommendation": "New York Yankees ML",
-    "our_probability": 0.6515,
-    "implied_probability": 0.5511,
+    "our_probability": 0.6156,
+    "implied_probability": 0.5152,
     "edge": 0.1004,
     "confidence": "low",
     "missing_factors": [
@@ -9830,7 +9830,7 @@
     "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": 0.045,
+      "recent_form": 0.015,
       "injuries": 0.012,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
@@ -9840,10 +9840,42 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -136,
-    "away_odds": 113,
+    "home_odds": -117,
+    "away_odds": -103,
     "game_id": "5b241f4b94bf0db775608f15ddea4fc2",
-    "generated_at": "2026-06-05T22:14:32.915815+00:00",
+    "generated_at": "2026-06-06T16:56:28.649584+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Atlanta Braves",
+    "commence_time": "2026-06-06T20:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.6507,
+    "implied_probability": 0.5055,
+    "edge": 0.1452,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -112,
+    "away_odds": -107,
+    "game_id": "aaa4e34cd89fc75466e96cf44f14850e",
+    "generated_at": "2026-06-06T16:56:28.639496+00:00",
     "result": null
   }
 ]

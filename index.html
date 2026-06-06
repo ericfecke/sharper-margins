@@ -235,7 +235,7 @@
 <div class="header">
   <h1>SHARPER MARGINS</h1>
   <div class="meta">
-    <span id="gen-time" data-iso="2026-06-05T22:14:33.395582+00:00">Generated: 2026-06-05 22:14 UTC</span>
+    <span id="gen-time" data-iso="2026-06-06T16:56:29.683675+00:00">Generated: 2026-06-06 16:56 UTC</span>
     &nbsp;
     <button class="filter-btn" onclick="exportCSV()" style="font-size:11px;padding:3px 10px">Export CSV</button>
   </div>
@@ -244,11 +244,11 @@
 <div class="stats-bar">
   <div class="stat-item">
     <span class="stat-label">Active Signals:</span>
-    <span class="stat-value">5</span>
+    <span class="stat-value">3</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟢 20%+:</span>
-    <span class="stat-value edge-green">1</span>
+    <span class="stat-value edge-green">0</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟠 15–19%:</span>
@@ -256,14 +256,13 @@
   </div>
   <div class="stat-item">
     <span class="stat-label">🟡 10–14%:</span>
-    <span class="stat-value edge-yellow">4</span>
+    <span class="stat-value edge-yellow">3</span>
   </div>
 </div>
 
 <div class="filters" id="filters">
   <button class="filter-btn active" onclick="filterSport('all', this)">All Sports</button>
   <button class="filter-btn" onclick="filterSport('MLB', this)">MLB</button>
-  <button class="filter-btn" onclick="filterSport('NBA', this)">NBA</button>
 
   <span style="color:var(--text-muted); padding: 0 4px;">|</span>
   <button class="filter-btn active-book" onclick="filterBook('all', this)">All Books</button>
@@ -282,35 +281,7 @@
 
   
 
-  <table class="signals-table" id="main-table"><thead><tr><th>Sport</th><th>Game</th><th>Book</th><th onclick="sortTable('main-table',3)" class="sortable">Edge &#9660;</th><th>Our %</th><th>Implied %</th><th>Recommendation</th></tr></thead><tbody id="main-tbody">
-    <tr class="signal-row edge-green" data-sport="NBA" data-book="FanDuel" data-edge="0.2" data-sigid="2852e944f8ef0bc3eba79f883b9101ba_FanDuel" onclick="toggleRow('2852e944f8ef0bc3eba79f883b9101ba_FanDuel')">
-      <td><span class="sport-badge">NBA</span></td>
-      <td class="game-cell">New York Knicks @ San Antonio Spurs<div class="game-time">Jun 06 12:40 AM UTC</div></td>
-      <td>FanDuel</td>
-      <td data-sortval="0.2"><strong class="edge-green">🟢 20.0%</strong></td>
-      <td>51.9%</td>
-      <td>31.9%</td>
-      <td><strong>New York Knicks ML</strong></td>
-    </tr>
-    <tr id="detail-2852e944f8ef0bc3eba79f883b9101ba_FanDuel" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: home favored (75.61% vs 64.63%); Home court advantage applied; Recent form favors away; Net rating advantage: away</p>
-              
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>-245</code> | Away: <code>+200</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.044</span><span class="factor-item">home_court: +0.030</span><span class="factor-item">rest: +0.000</span><span class="factor-item">recent_form: -0.060</span><span class="factor-item">injuries: -0.005</span><span class="factor-item">net_rating: -0.028</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr></tbody></table>
+  <table class="signals-table" id="main-table"><thead><tr><th>Sport</th><th>Game</th><th>Book</th><th onclick="sortTable('main-table',3)" class="sortable">Edge &#9660;</th><th>Our %</th><th>Implied %</th><th>Recommendation</th></tr></thead><tbody id="main-tbody"></tbody></table>
 
   
         <div class="section-header low-conf-header">
@@ -324,59 +295,31 @@
             <th>Our %</th><th>Implied %</th><th>Recommendation</th>
           </tr></thead>
           <tbody>
-    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="DraftKings" data-edge="0.1375" data-sigid="eb17640885894253c1069e2e9233ea65_DraftKings" onclick="toggleRow('eb17640885894253c1069e2e9233ea65_DraftKings')">
+    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="DraftKings" data-edge="0.1452" data-sigid="aaa4e34cd89fc75466e96cf44f14850e_DraftKings" onclick="toggleRow('aaa4e34cd89fc75466e96cf44f14850e_DraftKings')">
       <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">Milwaukee Brewers @ Colorado Rockies<div class="game-time">Jun 06 12:41 AM UTC</div></td>
+      <td class="game-cell">Pittsburgh Pirates @ Atlanta Braves<div class="game-time">Jun 06 08:11 PM UTC</div></td>
       <td>DraftKings</td>
-      <td data-sortval="0.1375"><strong class="edge-yellow">🟡 13.8%</strong></td>
-      <td>55.5%</td>
-      <td>41.8%</td>
-      <td><strong>Colorado Rockies ML</strong></td>
+      <td data-sortval="0.1452"><strong class="edge-yellow">🟡 14.5%</strong></td>
+      <td>65.1%</td>
+      <td>50.5%</td>
+      <td><strong>Atlanta Braves ML</strong></td>
     </tr>
-    <tr id="detail-eb17640885894253c1069e2e9233ea65_DraftKings" class="detail-row" style="display:none">
+    <tr id="detail-aaa4e34cd89fc75466e96cf44f14850e_DraftKings" class="detail-row" style="display:none">
       <td colspan="7">
         <div class="detail-panel">
           <div class="detail-grid">
             <div class="detail-section">
               <h4>Analysis</h4>
-              <p>Starting pitchers unknown — model reduced to team stats; Park factor: Colorado Rockies plays in hitter-friendly venue</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, starting_pitcher, run_differential, recent_form</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+129</code> | Away: <code>-156</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: +0.025</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="FanDuel" data-edge="0.1013" data-sigid="b84d12d6466a2f541ef74605bc5f53c6_FanDuel" onclick="toggleRow('b84d12d6466a2f541ef74605bc5f53c6_FanDuel')">
-      <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">New York Mets @ San Diego Padres<div class="game-time">Jun 06 01:41 AM UTC</div></td>
-      <td>FanDuel</td>
-      <td data-sortval="0.1013"><strong class="edge-yellow">🟡 10.1%</strong></td>
-      <td>56.4%</td>
-      <td>46.3%</td>
-      <td><strong>New York Mets ML</strong></td>
-    </tr>
-    <tr id="detail-b84d12d6466a2f541ef74605bc5f53c6_FanDuel" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Balanced matchup — no dominant edge identified</p>
+              <p>Starting pitcher advantage: home (ERA/WHIP differential)</p>
               <div class="missing-factors">Missing data: run_differential</div>
             </div>
             <div class="detail-section">
               <h4>Odds</h4>
-              <p>Home: <code>-126</code> | Away: <code>+108</code></p>
+              <p>Home: <code>-112</code> | Away: <code>-107</code></p>
               <span class="kalshi-none">&mdash; No Kalshi match</span>
             </div>
           </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: -0.050</span><span class="factor-item">injuries: -0.045</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: -0.008</span><span class="factor-item">h2h: +0.000</span></div>
+          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.015</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: -0.007</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -413,8 +356,8 @@
       <td class="game-cell">Boston Red Sox @ New York Yankees<div class="game-time">Jun 06 11:36 PM UTC</div></td>
       <td>DraftKings</td>
       <td data-sortval="0.1004"><strong class="edge-yellow">🟡 10.0%</strong></td>
-      <td>65.1%</td>
-      <td>55.1%</td>
+      <td>61.6%</td>
+      <td>51.5%</td>
       <td><strong>New York Yankees ML</strong></td>
     </tr>
     <tr id="detail-5b241f4b94bf0db775608f15ddea4fc2_DraftKings" class="detail-row" style="display:none">
@@ -428,11 +371,11 @@
             </div>
             <div class="detail-section">
               <h4>Odds</h4>
-              <p>Home: <code>-136</code> | Away: <code>+113</code></p>
+              <p>Home: <code>-117</code> | Away: <code>-103</code></p>
               <span class="kalshi-none">&mdash; No Kalshi match</span>
             </div>
           </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.045</span><span class="factor-item">injuries: +0.012</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: -0.003</span><span class="factor-item">h2h: +0.000</span></div>
+          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.015</span><span class="factor-item">injuries: +0.012</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: -0.003</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr></tbody>
