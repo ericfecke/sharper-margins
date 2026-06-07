@@ -9877,5 +9877,37 @@
     "game_id": "aaa4e34cd89fc75466e96cf44f14850e",
     "generated_at": "2026-06-06T16:56:28.639496+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Seattle Mariners @ Detroit Tigers",
+    "commence_time": "2026-06-07T17:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Seattle Mariners ML",
+    "our_probability": 0.5827,
+    "implied_probability": 0.4687,
+    "edge": 0.114,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -125,
+    "away_odds": 104,
+    "game_id": "738208242f58cba159d52d334814af73",
+    "generated_at": "2026-06-07T17:02:24.071031+00:00",
+    "result": null
   }
 ]
