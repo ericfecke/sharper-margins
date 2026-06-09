@@ -10049,5 +10049,101 @@
     "game_id": "3b917225da82c6c937c963aa47187645",
     "generated_at": "2026-06-08T22:26:56.271331+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Boston Red Sox @ Tampa Bay Rays",
+    "commence_time": "2026-06-09T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.5894,
+    "implied_probability": 0.4715,
+    "edge": 0.1179,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 104,
+    "away_odds": -122,
+    "game_id": "b227664a56bdeff1970b8f4a2b3073fe",
+    "generated_at": "2026-06-09T22:23:45.027285+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ San Diego Padres",
+    "commence_time": "2026-06-10T01:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "San Diego Padres ML",
+    "our_probability": 0.5797,
+    "implied_probability": 0.4489,
+    "edge": 0.1308,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 113,
+    "away_odds": -136,
+    "game_id": "e2d199125ede80ca2e35bc0c0669f294",
+    "generated_at": "2026-06-09T22:23:45.035643+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Pittsburgh Pirates",
+    "commence_time": "2026-06-10T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Pittsburgh Pirates ML",
+    "our_probability": 0.5019,
+    "implied_probability": 0.3691,
+    "edge": 0.1328,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 159,
+    "away_odds": -194,
+    "game_id": "375d31006805a62964445dd208379b2b",
+    "generated_at": "2026-06-09T22:23:45.043788+00:00",
+    "result": null
   }
 ]
