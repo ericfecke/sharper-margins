@@ -10145,5 +10145,69 @@
     "game_id": "375d31006805a62964445dd208379b2b",
     "generated_at": "2026-06-09T22:23:45.043788+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Washington Nationals @ San Francisco Giants",
+    "commence_time": "2026-06-10T19:46:00Z",
+    "book": "FanDuel",
+    "recommendation": "San Francisco Giants ML",
+    "our_probability": 0.4462,
+    "implied_probability": 0.342,
+    "edge": 0.1042,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: San Francisco Giants plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.02,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 176,
+    "away_odds": -230,
+    "game_id": "c36bdb8231822ee0f1da32b6be40b9b0",
+    "generated_at": "2026-06-10T22:50:51.900560+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Arizona Diamondbacks @ Miami Marlins",
+    "commence_time": "2026-06-10T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.5558,
+    "implied_probability": 0.4138,
+    "edge": 0.142,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 128,
+    "away_odds": -164,
+    "game_id": "5b5ca06821ecfe2cbf46026575ed9263",
+    "generated_at": "2026-06-10T22:50:51.911417+00:00",
+    "result": null
   }
 ]
