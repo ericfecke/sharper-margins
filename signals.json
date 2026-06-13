@@ -10217,8 +10217,8 @@
     "book": "FanDuel",
     "recommendation": "New York Knicks ML",
     "our_probability": 0.513,
-    "implied_probability": 0.3614,
-    "edge": 0.1516,
+    "implied_probability": 0.3536,
+    "edge": 0.1594,
     "confidence": "normal",
     "missing_factors": [],
     "sme_reasoning": "Win rate edge: home favored (75.61% vs 64.63%); Home court advantage applied; Recent form favors away; Net rating advantage: away",
@@ -10234,10 +10234,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -198,
-    "away_odds": 166,
+    "home_odds": -205,
+    "away_odds": 172,
     "game_id": "6cc5c3b9cfcb1d94bed9f3ca972b3114",
-    "generated_at": "2026-06-12T22:24:41.287280+00:00",
+    "generated_at": "2026-06-13T17:06:35.717749+00:00",
     "result": null
   },
   {
@@ -10474,6 +10474,38 @@
     "away_odds": -207,
     "game_id": "13a2225a2fcc3ccd5362b1f8f663c1f1",
     "generated_at": "2026-06-12T22:24:58.292222+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Chicago White Sox",
+    "commence_time": "2026-06-13T20:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "Chicago White Sox ML",
+    "our_probability": 0.5314,
+    "implied_probability": 0.3536,
+    "edge": 0.1778,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 172,
+    "away_odds": -205,
+    "game_id": "13a2225a2fcc3ccd5362b1f8f663c1f1",
+    "generated_at": "2026-06-13T17:06:40.536157+00:00",
     "result": null
   }
 ]
