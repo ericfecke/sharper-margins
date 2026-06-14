@@ -10507,5 +10507,133 @@
     "game_id": "13a2225a2fcc3ccd5362b1f8f663c1f1",
     "generated_at": "2026-06-13T17:06:40.536157+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Miami Marlins @ Pittsburgh Pirates",
+    "commence_time": "2026-06-14T16:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "Pittsburgh Pirates ML",
+    "our_probability": 0.4836,
+    "implied_probability": 0.3643,
+    "edge": 0.1193,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 158,
+    "away_odds": -209,
+    "game_id": "5db8a5b07bca4c3b2486bb503bbe96fc",
+    "generated_at": "2026-06-14T17:06:08.580182+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Chicago White Sox",
+    "commence_time": "2026-06-14T18:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Chicago White Sox ML",
+    "our_probability": 0.5096,
+    "implied_probability": 0.357,
+    "edge": 0.1526,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 168,
+    "away_odds": -205,
+    "game_id": "4d2b32d9bdd8f67c8d10a76487b12397",
+    "generated_at": "2026-06-14T17:06:08.591287+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Milwaukee Brewers",
+    "commence_time": "2026-06-14T18:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.5955,
+    "implied_probability": 0.4573,
+    "edge": 0.1382,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 110,
+    "away_odds": -130,
+    "game_id": "5026a58f0ac7fd00f17b808c1c1f7c1f",
+    "generated_at": "2026-06-14T17:06:08.601994+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Chicago Cubs @ San Francisco Giants",
+    "commence_time": "2026-06-14T19:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Chicago Cubs ML",
+    "our_probability": 0.5571,
+    "implied_probability": 0.4417,
+    "edge": 0.1154,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: San Francisco Giants plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.02,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -138,
+    "away_odds": 118,
+    "game_id": "69adbbbdb66c7af4b714b9edccc840af",
+    "generated_at": "2026-06-14T17:06:08.612716+00:00",
+    "result": null
   }
 ]
