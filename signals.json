@@ -10635,5 +10635,133 @@
     "game_id": "69adbbbdb66c7af4b714b9edccc840af",
     "generated_at": "2026-06-14T17:06:08.612716+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Miami Marlins @ Philadelphia Phillies",
+    "commence_time": "2026-06-15T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.4836,
+    "implied_probability": 0.3658,
+    "edge": 0.1178,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -205,
+    "away_odds": 158,
+    "game_id": "87cc10ad1f5377b838eb240a510a0f9f",
+    "generated_at": "2026-06-15T23:02:46.204431+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Mets @ Cincinnati Reds",
+    "commence_time": "2026-06-15T23:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "New York Mets ML",
+    "our_probability": 0.5933,
+    "implied_probability": 0.4455,
+    "edge": 0.1478,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential); Park factor: Cincinnati Reds plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": -0.045,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -136,
+    "away_odds": 116,
+    "game_id": "6b47a66c52d27dacd1c7bbcd808713c1",
+    "generated_at": "2026-06-15T23:02:46.215100+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Diego Padres @ St. Louis Cardinals",
+    "commence_time": "2026-06-16T23:46:00Z",
+    "book": "DraftKings",
+    "recommendation": "St. Louis Cardinals ML",
+    "our_probability": 0.6261,
+    "implied_probability": 0.5108,
+    "edge": 0.1153,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.001,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -115,
+    "away_odds": -105,
+    "game_id": "700e234cf77980647981a64907dc17d8",
+    "generated_at": "2026-06-15T23:02:46.226123+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ Houston Astros",
+    "commence_time": "2026-06-17T00:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Detroit Tigers ML",
+    "our_probability": 0.5332,
+    "implied_probability": 0.4258,
+    "edge": 0.1074,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -148,
+    "away_odds": 126,
+    "game_id": "c589af707f2d0a0ec73c57d02ee85011",
+    "generated_at": "2026-06-15T23:02:46.236689+00:00",
+    "result": null
   }
 ]
