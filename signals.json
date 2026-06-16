@@ -10706,9 +10706,9 @@
     "commence_time": "2026-06-16T23:46:00Z",
     "book": "DraftKings",
     "recommendation": "St. Louis Cardinals ML",
-    "our_probability": 0.6261,
-    "implied_probability": 0.5108,
-    "edge": 0.1153,
+    "our_probability": 0.6312,
+    "implied_probability": 0.5087,
+    "edge": 0.1225,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -10726,10 +10726,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -115,
-    "away_odds": -105,
+    "home_odds": -114,
+    "away_odds": -106,
     "game_id": "700e234cf77980647981a64907dc17d8",
-    "generated_at": "2026-06-15T23:02:46.226123+00:00",
+    "generated_at": "2026-06-16T22:52:43.992708+00:00",
     "result": null
   },
   {
@@ -10762,6 +10762,102 @@
     "away_odds": 126,
     "game_id": "c589af707f2d0a0ec73c57d02ee85011",
     "generated_at": "2026-06-15T23:02:46.236689+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Miami Marlins @ Philadelphia Phillies",
+    "commence_time": "2026-06-16T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.462,
+    "implied_probability": 0.3378,
+    "edge": 0.1242,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -239,
+    "away_odds": 178,
+    "game_id": "551b1013a4b92bb548f0b5287c15e7d1",
+    "generated_at": "2026-06-16T22:52:43.981905+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ Houston Astros",
+    "commence_time": "2026-06-17T00:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Detroit Tigers ML",
+    "our_probability": 0.538,
+    "implied_probability": 0.3855,
+    "edge": 0.1525,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -180,
+    "away_odds": 148,
+    "game_id": "c589af707f2d0a0ec73c57d02ee85011",
+    "generated_at": "2026-06-16T22:52:44.003410+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cleveland Guardians @ Milwaukee Brewers",
+    "commence_time": "2026-06-17T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.6386,
+    "implied_probability": 0.5198,
+    "edge": 0.1188,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -118,
+    "away_odds": 100,
+    "game_id": "4d8279537f3ea7c4d1d53160da26d2c6",
+    "generated_at": "2026-06-16T22:52:44.014429+00:00",
     "result": null
   }
 ]
