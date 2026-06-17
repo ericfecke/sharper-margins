@@ -10859,5 +10859,69 @@
     "game_id": "4d8279537f3ea7c4d1d53160da26d2c6",
     "generated_at": "2026-06-16T22:52:44.014429+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cleveland Guardians @ Milwaukee Brewers",
+    "commence_time": "2026-06-17T23:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.6617,
+    "implied_probability": 0.5321,
+    "edge": 0.1296,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -126,
+    "away_odds": 104,
+    "game_id": "4d8279537f3ea7c4d1d53160da26d2c6",
+    "generated_at": "2026-06-17T22:45:13.215000+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cleveland Guardians @ Milwaukee Brewers",
+    "commence_time": "2026-06-18T18:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.6617,
+    "implied_probability": 0.5511,
+    "edge": 0.1106,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -136,
+    "away_odds": 113,
+    "game_id": "872e319f5c105d18457014bc855cdc85",
+    "generated_at": "2026-06-17T22:45:13.226313+00:00",
+    "result": null
   }
 ]
