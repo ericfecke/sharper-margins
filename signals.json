@@ -10994,22 +10994,18 @@
     "commence_time": "2026-06-19T22:41:00Z",
     "book": "FanDuel",
     "recommendation": "Chicago White Sox ML",
-    "our_probability": 0.48,
-    "implied_probability": 0.3222,
-    "edge": 0.1578,
+    "our_probability": 0.5306,
+    "implied_probability": 0.3485,
+    "edge": 0.1821,
     "confidence": "low",
     "missing_factors": [
-      "home_standings",
-      "away_standings",
-      "starting_pitcher",
-      "run_differential",
-      "recent_form"
+      "run_differential"
     ],
-    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": 0.0,
-      "injuries": -0.01,
+      "recent_form": -0.03,
+      "injuries": 0.0,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
       "park_factor": 0.0,
@@ -11018,10 +11014,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -240,
-    "away_odds": 198,
+    "home_odds": -210,
+    "away_odds": 176,
     "game_id": "2969ea2e73c33f58b97b82fe562cf617",
-    "generated_at": "2026-06-18T22:55:46.255830+00:00",
+    "generated_at": "2026-06-19T22:03:47.688159+00:00",
     "result": null
   },
   {
@@ -11130,6 +11126,70 @@
     "away_odds": 159,
     "game_id": "150da5f2fa6db9e963e0b56fc2863769",
     "generated_at": "2026-06-18T22:55:46.289536+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Milwaukee Brewers @ Atlanta Braves",
+    "commence_time": "2026-06-19T23:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.5595,
+    "implied_probability": 0.3874,
+    "edge": 0.1721,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 148,
+    "away_odds": -176,
+    "game_id": "2bbd4e284d32261d81b8ebd0263116c3",
+    "generated_at": "2026-06-19T22:03:47.699693+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ New York Yankees",
+    "commence_time": "2026-06-20T17:36:00Z",
+    "book": "FanDuel",
+    "recommendation": "New York Yankees ML",
+    "our_probability": 0.7302,
+    "implied_probability": 0.622,
+    "edge": 0.1082,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -184,
+    "away_odds": 154,
+    "game_id": "f34c6b3b5d4542734f725cdbf1200188",
+    "generated_at": "2026-06-19T22:03:47.711357+00:00",
     "result": null
   }
 ]
