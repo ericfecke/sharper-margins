@@ -11191,5 +11191,37 @@
     "game_id": "f34c6b3b5d4542734f725cdbf1200188",
     "generated_at": "2026-06-19T22:03:47.711357+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Colorado Rockies",
+    "commence_time": "2026-06-21T01:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.4666,
+    "implied_probability": 0.3441,
+    "edge": 0.1225,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential); Park factor: Colorado Rockies plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.025,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 178,
+    "away_odds": -218,
+    "game_id": "4bb2c510f37ac3221423f6fe96d81822",
+    "generated_at": "2026-06-20T17:12:44.070009+00:00",
+    "result": null
   }
 ]
