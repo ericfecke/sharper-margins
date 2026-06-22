@@ -11287,5 +11287,37 @@
     "game_id": "52936746b7bd1b536bb6d7d2bb159424",
     "generated_at": "2026-06-21T17:15:10.306360+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Washington Nationals",
+    "commence_time": "2026-06-23T22:46:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.5082,
+    "implied_probability": 0.3903,
+    "edge": 0.1179,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 146,
+    "away_odds": -174,
+    "game_id": "c905209c213ea7ae9708b815df0db1bc",
+    "generated_at": "2026-06-22T22:47:32.947899+00:00",
+    "result": null
   }
 ]
