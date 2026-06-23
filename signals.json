@@ -11319,5 +11319,101 @@
     "game_id": "c905209c213ea7ae9708b815df0db1bc",
     "generated_at": "2026-06-22T22:47:32.947899+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Washington Nationals",
+    "commence_time": "2026-06-23T22:46:00Z",
+    "book": "DraftKings",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.5431,
+    "implied_probability": 0.3917,
+    "edge": 0.1514,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 144,
+    "away_odds": -175,
+    "game_id": "c905209c213ea7ae9708b815df0db1bc",
+    "generated_at": "2026-06-23T22:13:10.762262+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Minnesota Twins",
+    "commence_time": "2026-06-23T23:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Minnesota Twins ML",
+    "our_probability": 0.4978,
+    "implied_probability": 0.384,
+    "edge": 0.1138,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.001,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 149,
+    "away_odds": -181,
+    "game_id": "3984bf07976050590dd9101fcfda8a0d",
+    "generated_at": "2026-06-23T22:13:10.774077+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Texas Rangers @ Miami Marlins",
+    "commence_time": "2026-06-24T16:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.6057,
+    "implied_probability": 0.463,
+    "edge": 0.1427,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 108,
+    "away_odds": -126,
+    "game_id": "6493d60c5df2964d50009d111534865e",
+    "generated_at": "2026-06-23T22:13:10.785733+00:00",
+    "result": null
   }
 ]
