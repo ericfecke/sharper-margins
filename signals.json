@@ -11415,5 +11415,73 @@
     "game_id": "6493d60c5df2964d50009d111534865e",
     "generated_at": "2026-06-23T22:13:10.785733+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Washington Nationals",
+    "commence_time": "2026-06-25T22:46:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.523,
+    "implied_probability": 0.3752,
+    "edge": 0.1478,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.01,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 156,
+    "away_odds": -186,
+    "game_id": "c35d300c49e37e20f594b68819c65af4",
+    "generated_at": "2026-06-24T22:17:22.408828+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Yankees @ Boston Red Sox",
+    "commence_time": "2026-06-25T23:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Boston Red Sox ML",
+    "our_probability": 0.523,
+    "implied_probability": 0.4143,
+    "edge": 0.1087,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.012,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 132,
+    "away_odds": -156,
+    "game_id": "e72272fad7813989b91104d828e36032",
+    "generated_at": "2026-06-24T22:17:22.420228+00:00",
+    "result": null
   }
 ]
