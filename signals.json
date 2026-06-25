@@ -11422,9 +11422,9 @@
     "commence_time": "2026-06-25T22:46:00Z",
     "book": "FanDuel",
     "recommendation": "Washington Nationals ML",
-    "our_probability": 0.523,
-    "implied_probability": 0.3752,
-    "edge": 0.1478,
+    "our_probability": 0.4954,
+    "implied_probability": 0.3817,
+    "edge": 0.1137,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -11432,8 +11432,8 @@
     "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": 0.0,
-      "injuries": 0.01,
+      "recent_form": -0.015,
+      "injuries": 0.0,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
       "park_factor": -0.004,
@@ -11442,10 +11442,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 156,
-    "away_odds": -186,
+    "home_odds": 152,
+    "away_odds": -180,
     "game_id": "c35d300c49e37e20f594b68819c65af4",
-    "generated_at": "2026-06-24T22:17:22.408828+00:00",
+    "generated_at": "2026-06-25T22:21:08.637056+00:00",
     "result": null
   },
   {
@@ -11482,6 +11482,42 @@
     "away_odds": -156,
     "game_id": "e72272fad7813989b91104d828e36032",
     "generated_at": "2026-06-24T22:17:22.420228+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Chicago Cubs @ Milwaukee Brewers",
+    "commence_time": "2026-06-26T23:46:00Z",
+    "book": "FanDuel",
+    "recommendation": "Chicago Cubs ML",
+    "our_probability": 0.463,
+    "implied_probability": 0.3053,
+    "edge": 0.1577,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -260,
+    "away_odds": 215,
+    "game_id": "f2bbab66ff28ba66910103ce8596b5bc",
+    "generated_at": "2026-06-25T22:21:08.648789+00:00",
     "result": null
   }
 ]
