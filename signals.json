@@ -11519,5 +11519,133 @@
     "game_id": "f2bbab66ff28ba66910103ce8596b5bc",
     "generated_at": "2026-06-25T22:21:08.648789+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Pittsburgh Pirates",
+    "commence_time": "2026-06-27T20:06:00Z",
+    "book": "FanDuel",
+    "recommendation": "Pittsburgh Pirates ML",
+    "our_probability": 0.6141,
+    "implied_probability": 0.4846,
+    "edge": 0.1295,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -102,
+    "away_odds": -116,
+    "game_id": "c73f7e009a24ba950b1c14bd5ff5c6eb",
+    "generated_at": "2026-06-26T22:13:00.378211+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ New York Mets",
+    "commence_time": "2026-06-27T20:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Philadelphia Phillies ML",
+    "our_probability": 0.5808,
+    "implied_probability": 0.4455,
+    "edge": 0.1353,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: New York Mets plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": -0.005,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -136,
+    "away_odds": 116,
+    "game_id": "a9053f2c12e493fb5e1510825201e2eb",
+    "generated_at": "2026-06-26T22:13:00.389711+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Seattle Mariners @ Cleveland Guardians",
+    "commence_time": "2026-06-27T23:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Cleveland Guardians ML",
+    "our_probability": 0.5306,
+    "implied_probability": 0.4258,
+    "edge": 0.1048,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 126,
+    "away_odds": -148,
+    "game_id": "243470e60481212c287f04aa121cb220",
+    "generated_at": "2026-06-26T22:13:00.401225+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ San Diego Padres",
+    "commence_time": "2026-06-28T00:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "San Diego Padres ML",
+    "our_probability": 0.4655,
+    "implied_probability": 0.3536,
+    "edge": 0.1119,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": -0.04,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 172,
+    "away_odds": -205,
+    "game_id": "27ffbf76753088bb73149d66116d30b5",
+    "generated_at": "2026-06-26T22:13:00.412794+00:00",
+    "result": null
   }
 ]
