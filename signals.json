@@ -11679,5 +11679,69 @@
     "game_id": "27ffbf76753088bb73149d66116d30b5",
     "generated_at": "2026-06-27T16:53:00.535583+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Milwaukee Brewers",
+    "commence_time": "2026-06-29T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.7011,
+    "implied_probability": 0.5545,
+    "edge": 0.1466,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -136,
+    "away_odds": 116,
+    "game_id": "67d21f1e1c41537ef5b58b9abb1ff742",
+    "generated_at": "2026-06-29T22:08:05.942129+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Angels @ Seattle Mariners",
+    "commence_time": "2026-06-30T01:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Los Angeles Angels ML",
+    "our_probability": 0.4787,
+    "implied_probability": 0.3485,
+    "edge": 0.1302,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -210,
+    "away_odds": 176,
+    "game_id": "0ce57b4f423d4bee56a8b4b941856426",
+    "generated_at": "2026-06-29T22:08:05.954001+00:00",
+    "result": null
   }
 ]
