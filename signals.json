@@ -11743,5 +11743,133 @@
     "game_id": "0ce57b4f423d4bee56a8b4b941856426",
     "generated_at": "2026-06-29T22:08:05.954001+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Milwaukee Brewers",
+    "commence_time": "2026-06-30T23:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.719,
+    "implied_probability": 0.6068,
+    "edge": 0.1122,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -172,
+    "away_odds": 144,
+    "game_id": "1d26cb2e8c25cee366cca30f7ae6428a",
+    "generated_at": "2026-06-30T22:14:55.539473+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Angels @ Seattle Mariners",
+    "commence_time": "2026-07-01T01:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Los Angeles Angels ML",
+    "our_probability": 0.4752,
+    "implied_probability": 0.3704,
+    "edge": 0.1048,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -193,
+    "away_odds": 158,
+    "game_id": "835944b5efc736fb06b73068a981fde5",
+    "generated_at": "2026-06-30T22:14:55.551618+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Diego Padres @ Chicago Cubs",
+    "commence_time": "2026-07-01T18:21:00Z",
+    "book": "FanDuel",
+    "recommendation": "Chicago Cubs ML",
+    "our_probability": 0.6468,
+    "implied_probability": 0.5285,
+    "edge": 0.1183,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -122,
+    "away_odds": 104,
+    "game_id": "51cf948cf7f0602d670ed6a922636887",
+    "generated_at": "2026-06-30T22:14:55.563592+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Milwaukee Brewers",
+    "commence_time": "2026-07-02T00:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.719,
+    "implied_probability": 0.589,
+    "edge": 0.13,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -158,
+    "away_odds": 134,
+    "game_id": "155102fc6ca2d46399a620f515ffe2b3",
+    "generated_at": "2026-06-30T22:14:55.575446+00:00",
+    "result": null
   }
 ]
