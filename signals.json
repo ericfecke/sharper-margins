@@ -11871,5 +11871,105 @@
     "game_id": "155102fc6ca2d46399a620f515ffe2b3",
     "generated_at": "2026-06-30T22:14:55.575446+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Milwaukee Brewers",
+    "commence_time": "2026-07-02T00:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.738,
+    "implied_probability": 0.5919,
+    "edge": 0.1461,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -163,
+    "away_odds": 134,
+    "game_id": "155102fc6ca2d46399a620f515ffe2b3",
+    "generated_at": "2026-07-01T22:17:14.833312+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Milwaukee Brewers",
+    "commence_time": "2026-07-02T18:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.738,
+    "implied_probability": 0.6301,
+    "edge": 0.1079,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -190,
+    "away_odds": 160,
+    "game_id": "2bbaa286b732c0af8947d273e164f15e",
+    "generated_at": "2026-07-01T22:17:14.845506+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Angels @ Seattle Mariners",
+    "commence_time": "2026-07-03T01:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Los Angeles Angels ML",
+    "our_probability": 0.476,
+    "implied_probability": 0.3485,
+    "edge": 0.1275,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -210,
+    "away_odds": 176,
+    "game_id": "283444f773ee82cae9a5977e9266baac",
+    "generated_at": "2026-07-01T22:17:14.857781+00:00",
+    "result": null
   }
 ]
