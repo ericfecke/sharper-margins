@@ -11971,5 +11971,73 @@
     "game_id": "283444f773ee82cae9a5977e9266baac",
     "generated_at": "2026-07-01T22:17:14.857781+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Angels @ Seattle Mariners",
+    "commence_time": "2026-07-03T01:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Los Angeles Angels ML",
+    "our_probability": 0.4555,
+    "implied_probability": 0.3438,
+    "edge": 0.1117,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -219,
+    "away_odds": 178,
+    "game_id": "283444f773ee82cae9a5977e9266baac",
+    "generated_at": "2026-07-02T22:05:55.567847+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Milwaukee Brewers @ Arizona Diamondbacks",
+    "commence_time": "2026-07-04T01:46:00Z",
+    "book": "DraftKings",
+    "recommendation": "Arizona Diamondbacks ML",
+    "our_probability": 0.521,
+    "implied_probability": 0.3967,
+    "edge": 0.1243,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.009,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 141,
+    "away_odds": -171,
+    "game_id": "bb4dc431a7347100e9781696b2bcf256",
+    "generated_at": "2026-07-02T22:05:55.580080+00:00",
+    "result": null
   }
 ]
