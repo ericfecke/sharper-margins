@@ -12203,5 +12203,37 @@
     "game_id": "478dd82a6850dc38220b29a31ad54938",
     "generated_at": "2026-07-03T22:04:13.468217+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ Texas Rangers",
+    "commence_time": "2026-07-04T20:06:00Z",
+    "book": "FanDuel",
+    "recommendation": "Texas Rangers ML",
+    "our_probability": 0.5853,
+    "implied_probability": 0.4758,
+    "edge": 0.1095,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Texas Rangers plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.01,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 102,
+    "away_odds": -120,
+    "game_id": "ec4b853359310a5bcf7395eeb51dc121",
+    "generated_at": "2026-07-04T16:49:54.506853+00:00",
+    "result": null
   }
 ]
