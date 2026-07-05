@@ -12235,5 +12235,69 @@
     "game_id": "ec4b853359310a5bcf7395eeb51dc121",
     "generated_at": "2026-07-04T16:49:54.506853+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Mets @ Atlanta Braves",
+    "commence_time": "2026-07-05T17:30:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.627,
+    "implied_probability": 0.4848,
+    "edge": 0.1422,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -103,
+    "away_odds": -117,
+    "game_id": "6f0fa1db67e69c8f534003061fdedee9",
+    "generated_at": "2026-07-05T16:51:48.608303+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ Texas Rangers",
+    "commence_time": "2026-07-05T19:31:00Z",
+    "book": "FanDuel",
+    "recommendation": "Texas Rangers ML",
+    "our_probability": 0.5667,
+    "implied_probability": 0.463,
+    "edge": 0.1037,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Texas Rangers plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.01,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 108,
+    "away_odds": -126,
+    "game_id": "12eaa8dfb716d6ed545a6e1fed88cc2a",
+    "generated_at": "2026-07-05T16:51:48.621403+00:00",
+    "result": null
   }
 ]
