@@ -12299,5 +12299,105 @@
     "game_id": "12eaa8dfb716d6ed545a6e1fed88cc2a",
     "generated_at": "2026-07-05T16:51:48.621403+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Yankees @ Tampa Bay Rays",
+    "commence_time": "2026-07-06T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.6147,
+    "implied_probability": 0.4617,
+    "edge": 0.153,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 107,
+    "away_odds": -129,
+    "game_id": "8708f0b1ad493caa280c8d963be2dc0b",
+    "generated_at": "2026-07-06T22:13:11.603557+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Arizona Diamondbacks @ San Diego Padres",
+    "commence_time": "2026-07-07T01:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Arizona Diamondbacks ML",
+    "our_probability": 0.5598,
+    "implied_probability": 0.4588,
+    "edge": 0.101,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": -0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -131,
+    "away_odds": 108,
+    "game_id": "d1ba74caa5492c9e300650c9ba7bebab",
+    "generated_at": "2026-07-06T22:13:11.616717+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Athletics @ Detroit Tigers",
+    "commence_time": "2026-07-07T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Athletics ML",
+    "our_probability": 0.47,
+    "implied_probability": 0.3691,
+    "edge": 0.1009,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -194,
+    "away_odds": 159,
+    "game_id": "c892fb37a2662fa901742b27c6b7f205",
+    "generated_at": "2026-07-06T22:13:11.629355+00:00",
+    "result": null
   }
 ]
