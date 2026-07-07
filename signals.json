@@ -12399,5 +12399,133 @@
     "game_id": "c892fb37a2662fa901742b27c6b7f205",
     "generated_at": "2026-07-06T22:13:11.629355+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Cincinnati Reds",
+    "commence_time": "2026-07-07T23:10:00Z",
+    "book": "FanDuel",
+    "recommendation": "Cincinnati Reds ML",
+    "our_probability": 0.4981,
+    "implied_probability": 0.3973,
+    "edge": 0.1008,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Cincinnati Reds plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 142,
+    "away_odds": -168,
+    "game_id": "7b7ae2c411b9b8122144d502c0bd1757",
+    "generated_at": "2026-07-07T22:10:41.017692+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Arizona Diamondbacks @ San Diego Padres",
+    "commence_time": "2026-07-08T01:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Arizona Diamondbacks ML",
+    "our_probability": 0.5804,
+    "implied_probability": 0.4752,
+    "edge": 0.1052,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": -0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -122,
+    "away_odds": 101,
+    "game_id": "622a46f12d0dc3b057125b0b59f00507",
+    "generated_at": "2026-07-07T22:10:41.031095+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Seattle Mariners @ Miami Marlins",
+    "commence_time": "2026-07-08T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.5432,
+    "implied_probability": 0.4417,
+    "edge": 0.1015,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 118,
+    "away_odds": -138,
+    "game_id": "ee87ced2d6a2acedec0ca6c9d37dde8c",
+    "generated_at": "2026-07-07T22:10:41.044870+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Arizona Diamondbacks @ San Diego Padres",
+    "commence_time": "2026-07-09T02:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Arizona Diamondbacks ML",
+    "our_probability": 0.5804,
+    "implied_probability": 0.4175,
+    "edge": 0.1629,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": -0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -156,
+    "away_odds": 129,
+    "game_id": "8c0695707371420ef6b1cf89c2d1b262",
+    "generated_at": "2026-07-07T22:10:41.058176+00:00",
+    "result": null
   }
 ]
