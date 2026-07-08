@@ -12502,9 +12502,9 @@
     "commence_time": "2026-07-09T02:11:00Z",
     "book": "DraftKings",
     "recommendation": "Arizona Diamondbacks ML",
-    "our_probability": 0.5804,
-    "implied_probability": 0.4175,
-    "edge": 0.1629,
+    "our_probability": 0.561,
+    "implied_probability": 0.4362,
+    "edge": 0.1248,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -12512,7 +12512,7 @@
     "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": -0.045,
+      "recent_form": -0.03,
       "injuries": -0.05,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
@@ -12522,10 +12522,74 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -156,
-    "away_odds": 129,
+    "home_odds": -144,
+    "away_odds": 119,
     "game_id": "8c0695707371420ef6b1cf89c2d1b262",
-    "generated_at": "2026-07-07T22:10:41.058176+00:00",
+    "generated_at": "2026-07-08T22:05:08.092918+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Kansas City Royals @ New York Mets",
+    "commence_time": "2026-07-08T23:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Kansas City Royals ML",
+    "our_probability": 0.5129,
+    "implied_probability": 0.3639,
+    "edge": 0.149,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: New York Mets plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -196,
+    "away_odds": 164,
+    "game_id": "fa2f6fc2aee410abafe5d685acfde5f3",
+    "generated_at": "2026-07-08T22:05:08.082786+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Seattle Mariners @ Miami Marlins",
+    "commence_time": "2026-07-09T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.5458,
+    "implied_probability": 0.4284,
+    "edge": 0.1174,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 123,
+    "away_odds": -149,
+    "game_id": "83cf12bed561626b784721179f647eb2",
+    "generated_at": "2026-07-08T22:05:08.105084+00:00",
     "result": null
   }
 ]
