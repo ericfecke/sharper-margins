@@ -12591,5 +12591,109 @@
     "game_id": "83cf12bed561626b784721179f647eb2",
     "generated_at": "2026-07-08T22:05:08.105084+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Seattle Mariners @ Miami Marlins",
+    "commence_time": "2026-07-09T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.5643,
+    "implied_probability": 0.4573,
+    "edge": 0.107,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 110,
+    "away_odds": -130,
+    "game_id": "83cf12bed561626b784721179f647eb2",
+    "generated_at": "2026-07-09T22:27:05.576118+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Yankees @ Washington Nationals",
+    "commence_time": "2026-07-10T22:46:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.53,
+    "implied_probability": 0.4066,
+    "edge": 0.1234,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 136,
+    "away_odds": -162,
+    "game_id": "250b0373676b10f51ed1c59c93714245",
+    "generated_at": "2026-07-09T22:27:05.589152+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Atlanta Braves @ St. Louis Cardinals",
+    "commence_time": "2026-07-11T00:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "St. Louis Cardinals ML",
+    "our_probability": 0.53,
+    "implied_probability": 0.4003,
+    "edge": 0.1297,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 139,
+    "away_odds": -168,
+    "game_id": "2ac65fed3f431f0601c2e788aee18cab",
+    "generated_at": "2026-07-09T22:27:05.601597+00:00",
+    "result": null
   }
 ]
