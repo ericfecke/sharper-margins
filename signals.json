@@ -12858,14 +12858,46 @@
     "commence_time": "2026-07-11T22:11:00Z",
     "book": "FanDuel",
     "recommendation": "Detroit Tigers ML",
-    "our_probability": 0.5759,
-    "implied_probability": 0.4293,
-    "edge": 0.1466,
+    "our_probability": 0.5862,
+    "implied_probability": 0.4365,
+    "edge": 0.1497,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
     ],
     "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 120,
+    "away_odds": -142,
+    "game_id": "ba8bc57255560c92ff44bf4ac63a4fd9",
+    "generated_at": "2026-07-11T16:39:44.529428+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Athletics @ Chicago White Sox",
+    "commence_time": "2026-07-11T18:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Chicago White Sox ML",
+    "our_probability": 0.6166,
+    "implied_probability": 0.5152,
+    "edge": 0.1014,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
     "factor_deltas": {
       "run_differential": 0.0,
       "recent_form": 0.045,
@@ -12878,10 +12910,106 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 124,
-    "away_odds": -146,
-    "game_id": "ba8bc57255560c92ff44bf4ac63a4fd9",
-    "generated_at": "2026-07-10T22:02:22.468602+00:00",
+    "home_odds": -117,
+    "away_odds": -103,
+    "game_id": "8ec769ee362e5e0e25ac93ee886cdfd4",
+    "generated_at": "2026-07-11T16:39:44.476278+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Yankees @ Washington Nationals",
+    "commence_time": "2026-07-11T20:05:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.4987,
+    "implied_probability": 0.3614,
+    "edge": 0.1373,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 166,
+    "away_odds": -198,
+    "game_id": "93986de15fc102a4875daaf7e6250f9e",
+    "generated_at": "2026-07-11T16:39:44.489701+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Colorado Rockies @ San Francisco Giants",
+    "commence_time": "2026-07-11T20:06:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.5315,
+    "implied_probability": 0.4273,
+    "edge": 0.1042,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential); Park factor: San Francisco Giants plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.02,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -149,
+    "away_odds": 124,
+    "game_id": "def5adac76d2258bb7ff1a427e09f8a8",
+    "generated_at": "2026-07-11T16:39:44.502876+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Boston Red Sox @ New York Mets",
+    "commence_time": "2026-07-11T20:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Boston Red Sox ML",
+    "our_probability": 0.5911,
+    "implied_probability": 0.411,
+    "edge": 0.1801,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: New York Mets plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -158,
+    "away_odds": 134,
+    "game_id": "ff676cfabd491a806f9fad9a93924adb",
+    "generated_at": "2026-07-11T16:39:44.516202+00:00",
     "result": null
   }
 ]
