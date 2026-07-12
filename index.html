@@ -235,7 +235,7 @@
 <div class="header">
   <h1>SHARPER MARGINS</h1>
   <div class="meta">
-    <span id="gen-time" data-iso="2026-07-11T16:39:44.543121+00:00">Generated: 2026-07-11 16:39 UTC</span>
+    <span id="gen-time" data-iso="2026-07-12T16:41:50.871915+00:00">Generated: 2026-07-12 16:41 UTC</span>
     &nbsp;
     <button class="filter-btn" onclick="exportCSV()" style="font-size:11px;padding:3px 10px">Export CSV</button>
   </div>
@@ -244,7 +244,7 @@
 <div class="stats-bar">
   <div class="stat-item">
     <span class="stat-label">Active Signals:</span>
-    <span class="stat-value">7</span>
+    <span class="stat-value">0</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟢 20%+:</span>
@@ -252,17 +252,16 @@
   </div>
   <div class="stat-item">
     <span class="stat-label">🟠 15–19%:</span>
-    <span class="stat-value edge-orange">2</span>
+    <span class="stat-value edge-orange">0</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟡 10–14%:</span>
-    <span class="stat-value edge-yellow">5</span>
+    <span class="stat-value edge-yellow">0</span>
   </div>
 </div>
 
 <div class="filters" id="filters">
   <button class="filter-btn active" onclick="filterSport('all', this)">All Sports</button>
-  <button class="filter-btn" onclick="filterSport('MLB', this)">MLB</button>
 
   <span style="color:var(--text-muted); padding: 0 4px;">|</span>
   <button class="filter-btn active-book" onclick="filterBook('all', this)">All Books</button>
@@ -279,219 +278,11 @@
     <p class="section-desc">Edges ≥ 10% — our estimated probability vs vig-adjusted implied. Click row to expand.</p>
   </div>
 
-  
-
-  <table class="signals-table" id="main-table"><thead><tr><th>Sport</th><th>Game</th><th>Book</th><th onclick="sortTable('main-table',3)" class="sortable">Edge &#9660;</th><th>Our %</th><th>Implied %</th><th>Recommendation</th></tr></thead><tbody id="main-tbody"></tbody></table>
+  <div class="empty-state"><p>No edges &ge; 10% identified today. Check back after next model run.</p></div>
 
   
-        <div class="section-header low-conf-header">
-          <h2>⚠ Low Confidence Signals</h2>
-          <p class="section-desc">Edge ≥ 10% but missing data — proceed with caution</p>
-        </div>
-        <table class="signals-table" id="low-conf-table">
-          <thead><tr>
-            <th>Sport</th><th>Game</th><th>Book</th>
-            <th onclick="sortTable('low-conf-table',3)" class="sortable">Edge ▼</th>
-            <th>Our %</th><th>Implied %</th><th>Recommendation</th>
-          </tr></thead>
-          <tbody>
-    <tr class="signal-row edge-orange" data-sport="MLB" data-book="FanDuel" data-edge="0.1801" data-sigid="ff676cfabd491a806f9fad9a93924adb_FanDuel" onclick="toggleRow('ff676cfabd491a806f9fad9a93924adb_FanDuel')">
-      <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">Boston Red Sox @ New York Mets<div class="game-time">Jul 11 08:11 PM UTC</div></td>
-      <td>FanDuel</td>
-      <td data-sortval="0.1801"><strong class="edge-orange">🟠 18.0%</strong></td>
-      <td>59.1%</td>
-      <td>41.1%</td>
-      <td><strong>Boston Red Sox ML</strong></td>
-    </tr>
-    <tr id="detail-ff676cfabd491a806f9fad9a93924adb_FanDuel" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Park factor: New York Mets plays in pitcher-friendly venue</p>
-              <div class="missing-factors">Missing data: run_differential</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>-158</code> | Away: <code>+134</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: -0.045</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: -0.015</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-orange" data-sport="MLB" data-book="DraftKings" data-edge="0.1681" data-sigid="93986de15fc102a4875daaf7e6250f9e_DraftKings" onclick="toggleRow('93986de15fc102a4875daaf7e6250f9e_DraftKings')">
-      <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">New York Yankees @ Washington Nationals<div class="game-time">Jul 11 08:06 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.1681"><strong class="edge-orange">🟠 16.8%</strong></td>
-      <td>53.2%</td>
-      <td>36.4%</td>
-      <td><strong>Washington Nationals ML</strong></td>
-    </tr>
-    <tr id="detail-93986de15fc102a4875daaf7e6250f9e_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Starting pitcher advantage: away (ERA/WHIP differential)</p>
-              <div class="missing-factors">Missing data: run_differential</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+163</code> | Away: <code>-199</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.045</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: -0.004</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="FanDuel" data-edge="0.1497" data-sigid="ba8bc57255560c92ff44bf4ac63a4fd9_FanDuel" onclick="toggleRow('ba8bc57255560c92ff44bf4ac63a4fd9_FanDuel')">
-      <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">Philadelphia Phillies @ Detroit Tigers<div class="game-time">Jul 11 10:11 PM UTC</div></td>
-      <td>FanDuel</td>
-      <td data-sortval="0.1497"><strong class="edge-yellow">🟡 15.0%</strong></td>
-      <td>58.6%</td>
-      <td>43.6%</td>
-      <td><strong>Detroit Tigers ML</strong></td>
-    </tr>
-    <tr id="detail-ba8bc57255560c92ff44bf4ac63a4fd9_FanDuel" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Balanced matchup — no dominant edge identified</p>
-              <div class="missing-factors">Missing data: run_differential</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+120</code> | Away: <code>-142</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.050</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="FanDuel" data-edge="0.1373" data-sigid="93986de15fc102a4875daaf7e6250f9e_FanDuel" onclick="toggleRow('93986de15fc102a4875daaf7e6250f9e_FanDuel')">
-      <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">New York Yankees @ Washington Nationals<div class="game-time">Jul 11 08:05 PM UTC</div></td>
-      <td>FanDuel</td>
-      <td data-sortval="0.1373"><strong class="edge-yellow">🟡 13.7%</strong></td>
-      <td>49.9%</td>
-      <td>36.1%</td>
-      <td><strong>Washington Nationals ML</strong></td>
-    </tr>
-    <tr id="detail-93986de15fc102a4875daaf7e6250f9e_FanDuel" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Starting pitcher advantage: away (ERA/WHIP differential)</p>
-              <div class="missing-factors">Missing data: run_differential</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+166</code> | Away: <code>-198</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.015</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: -0.004</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="FanDuel" data-edge="0.1253" data-sigid="8ec769ee362e5e0e25ac93ee886cdfd4_FanDuel" onclick="toggleRow('8ec769ee362e5e0e25ac93ee886cdfd4_FanDuel')">
-      <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">Athletics @ Chicago White Sox<div class="game-time">Jul 11 06:11 PM UTC</div></td>
-      <td>FanDuel</td>
-      <td data-sortval="0.1253"><strong class="edge-yellow">🟡 12.5%</strong></td>
-      <td>61.0%</td>
-      <td>48.5%</td>
-      <td><strong>Chicago White Sox ML</strong></td>
-    </tr>
-    <tr id="detail-8ec769ee362e5e0e25ac93ee886cdfd4_FanDuel" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Starting pitcher advantage: home (ERA/WHIP differential)</p>
-              <div class="missing-factors">Missing data: run_differential</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>-102</code> | Away: <code>-116</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.045</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="DraftKings" data-edge="0.1042" data-sigid="def5adac76d2258bb7ff1a427e09f8a8_DraftKings" onclick="toggleRow('def5adac76d2258bb7ff1a427e09f8a8_DraftKings')">
-      <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">Colorado Rockies @ San Francisco Giants<div class="game-time">Jul 11 08:06 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.1042"><strong class="edge-yellow">🟡 10.4%</strong></td>
-      <td>53.1%</td>
-      <td>42.7%</td>
-      <td><strong>Colorado Rockies ML</strong></td>
-    </tr>
-    <tr id="detail-def5adac76d2258bb7ff1a427e09f8a8_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Starting pitcher advantage: home (ERA/WHIP differential); Park factor: San Francisco Giants plays in pitcher-friendly venue</p>
-              <div class="missing-factors">Missing data: run_differential</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>-149</code> | Away: <code>+124</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: -0.030</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: -0.020</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="DraftKings" data-edge="0.1014" data-sigid="8ec769ee362e5e0e25ac93ee886cdfd4_DraftKings" onclick="toggleRow('8ec769ee362e5e0e25ac93ee886cdfd4_DraftKings')">
-      <td><span class="sport-badge">MLB</span></td>
-      <td class="game-cell">Athletics @ Chicago White Sox<div class="game-time">Jul 11 06:11 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.1014"><strong class="edge-yellow">🟡 10.1%</strong></td>
-      <td>61.7%</td>
-      <td>51.5%</td>
-      <td><strong>Chicago White Sox ML</strong></td>
-    </tr>
-    <tr id="detail-8ec769ee362e5e0e25ac93ee886cdfd4_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Starting pitcher advantage: home (ERA/WHIP differential)</p>
-              <div class="missing-factors">Missing data: run_differential</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>-117</code> | Away: <code>-103</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.045</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr></tbody>
-        </table>
+
+  
 
   
 
