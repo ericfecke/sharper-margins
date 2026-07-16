@@ -13011,5 +13011,41 @@
     "game_id": "ff676cfabd491a806f9fad9a93924adb",
     "generated_at": "2026-07-11T16:39:44.516202+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Texas Rangers @ Atlanta Braves",
+    "commence_time": "2026-07-17T23:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Texas Rangers ML",
+    "our_probability": 0.477,
+    "implied_probability": 0.3435,
+    "edge": 0.1335,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -215,
+    "away_odds": 180,
+    "game_id": "218dcb584dbeb2e0c6f3ec5b029b0521",
+    "generated_at": "2026-07-16T22:03:14.644124+00:00",
+    "result": null
   }
 ]
