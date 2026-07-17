@@ -13047,5 +13047,69 @@
     "game_id": "218dcb584dbeb2e0c6f3ec5b029b0521",
     "generated_at": "2026-07-16T22:03:14.644124+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Detroit Tigers @ Los Angeles Angels",
+    "commence_time": "2026-07-18T01:39:00Z",
+    "book": "FanDuel",
+    "recommendation": "Detroit Tigers ML",
+    "our_probability": 0.6151,
+    "implied_probability": 0.4955,
+    "edge": 0.1196,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -110,
+    "away_odds": -106,
+    "game_id": "e047c3dd3d688fead07d77b8b32852af",
+    "generated_at": "2026-07-17T21:53:49.041241+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Washington Nationals @ Athletics",
+    "commence_time": "2026-07-19T02:06:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.5664,
+    "implied_probability": 0.4573,
+    "edge": 0.1091,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -130,
+    "away_odds": 110,
+    "game_id": "ded1e582d76a9362d25395cef8921336",
+    "generated_at": "2026-07-17T21:53:49.054555+00:00",
+    "result": null
   }
 ]
