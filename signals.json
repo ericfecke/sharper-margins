@@ -13111,5 +13111,101 @@
     "game_id": "ded1e582d76a9362d25395cef8921336",
     "generated_at": "2026-07-17T21:53:49.054555+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Mets @ Philadelphia Phillies",
+    "commence_time": "2026-07-19T17:36:00Z",
+    "book": "FanDuel",
+    "recommendation": "Philadelphia Phillies ML",
+    "our_probability": 0.5658,
+    "implied_probability": 0.4573,
+    "edge": 0.1085,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 110,
+    "away_odds": -130,
+    "game_id": "8a4b2213ce7fa7861c687739dfcc3495",
+    "generated_at": "2026-07-19T16:41:16.482844+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Francisco Giants @ Seattle Mariners",
+    "commence_time": "2026-07-19T20:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "San Francisco Giants ML",
+    "our_probability": 0.4666,
+    "implied_probability": 0.357,
+    "edge": 0.1096,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -205,
+    "away_odds": 168,
+    "game_id": "c8b354ecaeecae905553e7f5e96e993d",
+    "generated_at": "2026-07-19T16:41:16.496506+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ New York Yankees",
+    "commence_time": "2026-07-19T23:21:00Z",
+    "book": "DraftKings",
+    "recommendation": "New York Yankees ML",
+    "our_probability": 0.5586,
+    "implied_probability": 0.4576,
+    "edge": 0.101,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 109,
+    "away_odds": -131,
+    "game_id": "e7ba65ff4e90d9960a0619d266c10ff5",
+    "generated_at": "2026-07-19T16:41:16.514686+00:00",
+    "result": null
   }
 ]
