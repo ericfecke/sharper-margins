@@ -13239,5 +13239,105 @@
     "game_id": "aac7942aa7683280dcbfe7dcfc16d44e",
     "generated_at": "2026-07-21T22:03:02.139611+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "St. Louis Cardinals @ Los Angeles Angels",
+    "commence_time": "2026-07-22T20:08:00Z",
+    "book": "DraftKings",
+    "recommendation": "Los Angeles Angels ML",
+    "our_probability": 0.4762,
+    "implied_probability": 0.2985,
+    "edge": 0.1777,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 215,
+    "away_odds": -294,
+    "game_id": "9121395092ebe73ce8eaba439dc5be34",
+    "generated_at": "2026-07-22T22:03:02.815547+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "San Diego Padres @ Atlanta Braves",
+    "commence_time": "2026-07-22T23:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.6469,
+    "implied_probability": 0.5098,
+    "edge": 0.1371,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -114,
+    "away_odds": -105,
+    "game_id": "573a8d20a4ce1b6795f2e3ac8d30cae0",
+    "generated_at": "2026-07-22T22:03:02.824290+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Kansas City Royals @ Detroit Tigers",
+    "commence_time": "2026-07-23T22:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Kansas City Royals ML",
+    "our_probability": 0.47,
+    "implied_probability": 0.3614,
+    "edge": 0.1086,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -198,
+    "away_odds": 166,
+    "game_id": "38d3052ec454022a14314b324e0ff5f3",
+    "generated_at": "2026-07-22T22:03:02.832777+00:00",
+    "result": null
   }
 ]
