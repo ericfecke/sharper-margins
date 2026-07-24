@@ -13341,22 +13341,18 @@
     "game": "Colorado Rockies @ Milwaukee Brewers",
     "commence_time": "2026-07-24T20:11:00Z",
     "book": "DraftKings",
-    "recommendation": "Colorado Rockies ML",
-    "our_probability": 0.463,
-    "implied_probability": 0.3209,
-    "edge": 0.1421,
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.7148,
+    "implied_probability": 0.2532,
+    "edge": 0.4616,
     "confidence": "low",
     "missing_factors": [
-      "home_standings",
-      "away_standings",
-      "starting_pitcher",
-      "run_differential",
-      "recent_form"
+      "run_differential"
     ],
-    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": 0.0,
+      "recent_form": 0.045,
       "injuries": 0.0,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
@@ -13366,10 +13362,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -245,
-    "away_odds": 198,
+    "home_odds": 271,
+    "away_odds": -388,
     "game_id": "d7f4b3c3080d3f6612a4be54f7e0f798",
-    "generated_at": "2026-07-23T22:03:07.137205+00:00",
+    "generated_at": "2026-07-24T22:04:12.389011+00:00",
     "result": null
   },
   {
@@ -13378,9 +13374,9 @@
     "commence_time": "2026-07-24T22:41:00Z",
     "book": "FanDuel",
     "recommendation": "Kansas City Royals ML",
-    "our_probability": 0.4268,
-    "implied_probability": 0.2864,
-    "edge": 0.1404,
+    "our_probability": 0.4242,
+    "implied_probability": 0.2956,
+    "edge": 0.1286,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -13398,10 +13394,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -290,
-    "away_odds": 235,
+    "home_odds": -275,
+    "away_odds": 225,
     "game_id": "74d637de5babda95c445e8cf11c32a15",
-    "generated_at": "2026-07-23T22:03:07.226568+00:00",
+    "generated_at": "2026-07-24T22:04:12.397891+00:00",
     "result": null
   },
   {
@@ -13438,6 +13434,70 @@
     "away_odds": -156,
     "game_id": "cee011b0978086fc2ebee48d455d495e",
     "generated_at": "2026-07-23T22:03:07.243684+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Angels @ San Francisco Giants",
+    "commence_time": "2026-07-25T02:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Los Angeles Angels ML",
+    "our_probability": 0.5301,
+    "implied_probability": 0.4066,
+    "edge": 0.1235,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: San Francisco Giants plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.02,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -162,
+    "away_odds": 136,
+    "game_id": "2192276baf2c4e8e5358e9905c801e2f",
+    "generated_at": "2026-07-24T22:04:12.409518+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Toronto Blue Jays @ Boston Red Sox",
+    "commence_time": "2026-07-25T20:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Boston Red Sox ML",
+    "our_probability": 0.6119,
+    "implied_probability": 0.5045,
+    "edge": 0.1074,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -110,
+    "away_odds": -106,
+    "game_id": "e7cd26360ce2edd30f37cdfc01391fd5",
+    "generated_at": "2026-07-24T22:04:12.425391+00:00",
     "result": null
   }
 ]
