@@ -13499,5 +13499,69 @@
     "game_id": "e7cd26360ce2edd30f37cdfc01391fd5",
     "generated_at": "2026-07-24T22:04:12.425391+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Arizona Diamondbacks @ Washington Nationals",
+    "commence_time": "2026-07-25T20:06:00Z",
+    "book": "DraftKings",
+    "recommendation": "Arizona Diamondbacks ML",
+    "our_probability": 0.5434,
+    "implied_probability": 0.4362,
+    "edge": 0.1072,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -144,
+    "away_odds": 119,
+    "game_id": "4d0a3e98e89c319342e1597db85fdb41",
+    "generated_at": "2026-07-25T16:42:17.423421+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Toronto Blue Jays @ Boston Red Sox",
+    "commence_time": "2026-07-25T20:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Boston Red Sox ML",
+    "our_probability": 0.6149,
+    "implied_probability": 0.4978,
+    "edge": 0.1171,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -109,
+    "away_odds": -111,
+    "game_id": "e7cd26360ce2edd30f37cdfc01391fd5",
+    "generated_at": "2026-07-25T16:42:17.437783+00:00",
+    "result": null
   }
 ]
