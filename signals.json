@@ -13563,5 +13563,69 @@
     "game_id": "e7cd26360ce2edd30f37cdfc01391fd5",
     "generated_at": "2026-07-25T16:42:17.437783+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cleveland Guardians @ Tampa Bay Rays",
+    "commence_time": "2026-07-26T16:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Tampa Bay Rays ML",
+    "our_probability": 0.5858,
+    "implied_probability": 0.4761,
+    "edge": 0.1097,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -102,
+    "away_odds": -125,
+    "game_id": "d651270eb53d061fc93a471f11c2f53d",
+    "generated_at": "2026-07-26T16:43:12.921797+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Yankees @ Philadelphia Phillies",
+    "commence_time": "2026-07-26T23:21:00Z",
+    "book": "DraftKings",
+    "recommendation": "New York Yankees ML",
+    "our_probability": 0.5214,
+    "implied_probability": 0.3695,
+    "edge": 0.1519,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: away (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -193,
+    "away_odds": 159,
+    "game_id": "210e6566d3641ee245e8a099a1679244",
+    "generated_at": "2026-07-26T16:43:12.935813+00:00",
+    "result": null
   }
 ]
