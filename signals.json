@@ -13627,5 +13627,73 @@
     "game_id": "210e6566d3641ee245e8a099a1679244",
     "generated_at": "2026-07-26T16:43:12.935813+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Miami Marlins",
+    "commence_time": "2026-07-27T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Miami Marlins ML",
+    "our_probability": 0.4769,
+    "implied_probability": 0.3582,
+    "edge": 0.1187,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 167,
+    "away_odds": -204,
+    "game_id": "11fd3db49ab86a1ca24414fd4f9c4af6",
+    "generated_at": "2026-07-27T22:06:30.481374+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Colorado Rockies @ San Diego Padres",
+    "commence_time": "2026-07-29T01:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.52,
+    "implied_probability": 0.3776,
+    "edge": 0.1424,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": -0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -187,
+    "away_odds": 153,
+    "game_id": "f829a782d542dc9d3eb459cddb29492c",
+    "generated_at": "2026-07-27T22:06:30.495918+00:00",
+    "result": null
   }
 ]
