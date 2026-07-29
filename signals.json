@@ -13787,5 +13787,69 @@
     "game_id": "8550a2048d2b7f67231d7180079f8ddd",
     "generated_at": "2026-07-28T22:04:03.128244+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cleveland Guardians @ Cincinnati Reds",
+    "commence_time": "2026-07-29T23:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Cincinnati Reds ML",
+    "our_probability": 0.5515,
+    "implied_probability": 0.4444,
+    "edge": 0.1071,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Cincinnati Reds plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 115,
+    "away_odds": -139,
+    "game_id": "d3a738dccfb8833e757d8dbc4caead9d",
+    "generated_at": "2026-07-29T22:01:06.267046+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Kansas City Royals @ Minnesota Twins",
+    "commence_time": "2026-07-29T23:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Kansas City Royals ML",
+    "our_probability": 0.4774,
+    "implied_probability": 0.3558,
+    "edge": 0.1216,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.001,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -206,
+    "away_odds": 169,
+    "game_id": "8550a2048d2b7f67231d7180079f8ddd",
+    "generated_at": "2026-07-29T22:01:06.280831+00:00",
+    "result": null
   }
 ]
