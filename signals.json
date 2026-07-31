@@ -13923,5 +13923,229 @@
     "game_id": "0b314c94b53dbed0719087c29b520ace",
     "generated_at": "2026-07-30T22:04:47.224017+00:00",
     "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Cincinnati Reds",
+    "commence_time": "2026-07-31T22:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Cincinnati Reds ML",
+    "our_probability": 0.5696,
+    "implied_probability": 0.4658,
+    "edge": 0.1038,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Cincinnati Reds plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 105,
+    "away_odds": -127,
+    "game_id": "3ee3bc4062aa650bb871ebbc705fe19e",
+    "generated_at": "2026-07-31T22:05:18.754612+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "St. Louis Cardinals @ Toronto Blue Jays",
+    "commence_time": "2026-07-31T23:08:00Z",
+    "book": "FanDuel",
+    "recommendation": "St. Louis Cardinals ML",
+    "our_probability": 0.4725,
+    "implied_probability": 0.3637,
+    "edge": 0.1088,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -184,
+    "away_odds": 170,
+    "game_id": "ea0ee6a34b3c09534e603775fb85d6e6",
+    "generated_at": "2026-07-31T22:05:18.768441+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Minnesota Twins @ Seattle Mariners",
+    "commence_time": "2026-08-01T02:11:00Z",
+    "book": "FanDuel",
+    "recommendation": "Minnesota Twins ML",
+    "our_probability": 0.4999,
+    "implied_probability": 0.3959,
+    "edge": 0.104,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -160,
+    "away_odds": 148,
+    "game_id": "0b314c94b53dbed0719087c29b520ace",
+    "generated_at": "2026-07-31T22:05:18.782668+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Minnesota Twins @ Seattle Mariners",
+    "commence_time": "2026-08-01T20:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Minnesota Twins ML",
+    "our_probability": 0.4999,
+    "implied_probability": 0.3937,
+    "edge": 0.1062,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -173,
+    "away_odds": 143,
+    "game_id": "2dba5e88d89d78ac32b8892ae2214bb9",
+    "generated_at": "2026-07-31T22:05:18.796797+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Cincinnati Reds",
+    "commence_time": "2026-08-01T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Cincinnati Reds ML",
+    "our_probability": 0.5696,
+    "implied_probability": 0.4679,
+    "edge": 0.1017,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Park factor: Cincinnati Reds plays in hitter-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.015,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 104,
+    "away_odds": -126,
+    "game_id": "4cf22ff99815959994e2c4f8662d97bf",
+    "generated_at": "2026-07-31T22:05:18.810606+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Philadelphia Phillies @ Baltimore Orioles",
+    "commence_time": "2026-08-01T23:06:00Z",
+    "book": "DraftKings",
+    "recommendation": "Baltimore Orioles ML",
+    "our_probability": 0.5722,
+    "implied_probability": 0.4388,
+    "edge": 0.1334,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.003,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 118,
+    "away_odds": -142,
+    "game_id": "8ad8229352651cf1b573f9ee834b57ac",
+    "generated_at": "2026-07-31T22:05:18.824464+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Texas Rangers @ Houston Astros",
+    "commence_time": "2026-08-01T23:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Houston Astros ML",
+    "our_probability": 0.5671,
+    "implied_probability": 0.4576,
+    "edge": 0.1095,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.008,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 109,
+    "away_odds": -131,
+    "game_id": "dae6d7e042dc64a28ea484408927af8c",
+    "generated_at": "2026-07-31T22:05:18.838313+00:00",
+    "result": null
   }
 ]
