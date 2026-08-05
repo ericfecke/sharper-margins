@@ -14219,7 +14219,7 @@
     "home_odds": -315,
     "away_odds": 250,
     "game_id": "b9d8d9eeb4afdebe9f91de7f8253eb07",
-    "generated_at": "2026-08-04T22:11:53.257178+00:00",
+    "generated_at": "2026-08-05T22:12:27.999906+00:00",
     "result": null
   },
   {
@@ -14256,7 +14256,7 @@
     "home_odds": -330,
     "away_odds": 260,
     "game_id": "7fd4a16a262295143f08276821b259a4",
-    "generated_at": "2026-08-04T22:11:53.272003+00:00",
+    "generated_at": "2026-08-05T22:12:28.011343+00:00",
     "result": null
   },
   {
@@ -14330,7 +14330,7 @@
     "home_odds": -238,
     "away_odds": 195,
     "game_id": "ad4b1c809d35ea03f513ccb45746e998",
-    "generated_at": "2026-08-04T22:11:53.303149+00:00",
+    "generated_at": "2026-08-05T22:12:28.034717+00:00",
     "result": null
   },
   {
@@ -14404,7 +14404,7 @@
     "home_odds": -280,
     "away_odds": 225,
     "game_id": "9e750af965ce9f276f4280686d4dba35",
-    "generated_at": "2026-08-04T22:11:53.333547+00:00",
+    "generated_at": "2026-08-05T22:12:28.058100+00:00",
     "result": null
   },
   {
@@ -14443,7 +14443,7 @@
     "home_odds": 110,
     "away_odds": -132,
     "game_id": "df569f05eeee15a5fdf95bd5ce086d6d",
-    "generated_at": "2026-08-04T22:11:53.349381+00:00",
+    "generated_at": "2026-08-05T22:12:28.070511+00:00",
     "result": null
   },
   {
@@ -14480,7 +14480,7 @@
     "home_odds": 126,
     "away_odds": -152,
     "game_id": "63efb66a308ba1892fb100b7341a76d8",
-    "generated_at": "2026-08-04T22:11:53.364166+00:00",
+    "generated_at": "2026-08-05T22:12:28.082114+00:00",
     "result": null
   },
   {
@@ -14490,8 +14490,8 @@
     "book": "DraftKings",
     "recommendation": "Louisville Cardinals ML",
     "our_probability": 0.5,
-    "implied_probability": 0.2998,
-    "edge": 0.2002,
+    "implied_probability": 0.3042,
+    "edge": 0.1958,
     "confidence": "low",
     "missing_factors": [
       "ap_rankings",
@@ -14514,10 +14514,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -270,
-    "away_odds": 220,
+    "home_odds": -265,
+    "away_odds": 215,
     "game_id": "4f0e1900bdc8d12bf0cc91ae291c104e",
-    "generated_at": "2026-08-04T22:11:53.378938+00:00",
+    "generated_at": "2026-08-05T22:12:28.093646+00:00",
     "result": null
   },
   {
@@ -14554,7 +14554,7 @@
     "home_odds": 110,
     "away_odds": -130,
     "game_id": "a570687d47661da4982cfd885cdb4a44",
-    "generated_at": "2026-08-04T22:11:53.393698+00:00",
+    "generated_at": "2026-08-05T22:12:28.105137+00:00",
     "result": null
   },
   {
@@ -14593,7 +14593,7 @@
     "home_odds": 195,
     "away_odds": -238,
     "game_id": "912c15dcb8dd09eacabdcb80673d9d72",
-    "generated_at": "2026-08-04T22:11:53.408452+00:00",
+    "generated_at": "2026-08-05T22:12:28.116457+00:00",
     "result": null
   },
   {
@@ -14632,7 +14632,7 @@
     "home_odds": -320,
     "away_odds": 255,
     "game_id": "c12cd73c4077a0265acec205a572c2ec",
-    "generated_at": "2026-08-04T22:11:53.423251+00:00",
+    "generated_at": "2026-08-05T22:12:28.127859+00:00",
     "result": null
   },
   {
@@ -14671,7 +14671,7 @@
     "home_odds": 195,
     "away_odds": -238,
     "game_id": "83516ad7ba3e8ef9f90498cfcaf10eb5",
-    "generated_at": "2026-08-04T22:11:53.438151+00:00",
+    "generated_at": "2026-08-05T22:12:28.139597+00:00",
     "result": null
   },
   {
@@ -14710,7 +14710,7 @@
     "home_odds": 210,
     "away_odds": -258,
     "game_id": "69b1a0ff5fb2c67c6627b5c8cf8368cb",
-    "generated_at": "2026-08-04T22:11:53.452712+00:00",
+    "generated_at": "2026-08-05T22:12:28.150910+00:00",
     "result": null
   },
   {
@@ -14749,7 +14749,7 @@
     "home_odds": 122,
     "away_odds": -146,
     "game_id": "59f8c98dee8ce77cc17c5b4958e4f325",
-    "generated_at": "2026-08-04T22:11:53.467670+00:00",
+    "generated_at": "2026-08-05T22:12:28.162588+00:00",
     "result": null
   },
   {
@@ -14788,7 +14788,7 @@
     "home_odds": -235,
     "away_odds": 190,
     "game_id": "4aac00e6cc06b8905659f911419540d2",
-    "generated_at": "2026-08-04T22:11:53.482644+00:00",
+    "generated_at": "2026-08-05T22:12:28.174304+00:00",
     "result": null
   },
   {
@@ -15241,6 +15241,181 @@
     "away_odds": 104,
     "game_id": "34a753d38dc147edbd4974784d1746a0",
     "generated_at": "2026-08-04T22:12:10.086896+00:00",
+    "result": null
+  },
+  {
+    "sport": "CFB",
+    "game": "North Carolina Tar Heels @ TCU Horned Frogs",
+    "commence_time": "2026-08-29T16:00:00Z",
+    "book": "DraftKings",
+    "recommendation": "North Carolina Tar Heels ML",
+    "our_probability": 0.5,
+    "implied_probability": 0.2742,
+    "edge": 0.2258,
+    "confidence": "low",
+    "missing_factors": [
+      "ap_rankings",
+      "scoring_margin",
+      "recent_form",
+      "rest_data"
+    ],
+    "sme_reasoning": "Teams evenly matched across modeled factors",
+    "factor_deltas": {
+      "conference_tier": 0.0,
+      "win_rate_diff": 0.0,
+      "ap_ranking": 0.0,
+      "home_field": 0.0,
+      "injuries": 0.0,
+      "scoring_margin": 0.0,
+      "recent_form": 0.0,
+      "rest_travel": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -310,
+    "away_odds": 250,
+    "game_id": "2c288580da16e12d35355f2548721be6",
+    "generated_at": "2026-08-05T22:12:27.988287+00:00",
+    "result": null
+  },
+  {
+    "sport": "CFB",
+    "game": "Colorado Buffaloes @ Georgia Tech Yellow Jackets",
+    "commence_time": "2026-09-04T00:00:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Buffaloes ML",
+    "our_probability": 0.43,
+    "implied_probability": 0.2864,
+    "edge": 0.1436,
+    "confidence": "low",
+    "missing_factors": [
+      "ap_rankings",
+      "scoring_margin",
+      "recent_form",
+      "rest_data"
+    ],
+    "sme_reasoning": "Home field advantage (college: +7%)",
+    "factor_deltas": {
+      "conference_tier": 0.0,
+      "win_rate_diff": 0.0,
+      "ap_ranking": 0.0,
+      "home_field": 0.07,
+      "injuries": 0.0,
+      "scoring_margin": 0.0,
+      "recent_form": 0.0,
+      "rest_travel": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -290,
+    "away_odds": 235,
+    "game_id": "1d6daad1c93bf7e5ae16be1db12e27d5",
+    "generated_at": "2026-08-05T22:12:28.022979+00:00",
+    "result": null
+  },
+  {
+    "sport": "CFB",
+    "game": "Baylor Bears @ Auburn Tigers",
+    "commence_time": "2026-09-05T19:30:00Z",
+    "book": "DraftKings",
+    "recommendation": "Baylor Bears ML",
+    "our_probability": 0.5,
+    "implied_probability": 0.2864,
+    "edge": 0.2136,
+    "confidence": "low",
+    "missing_factors": [
+      "ap_rankings",
+      "scoring_margin",
+      "recent_form",
+      "rest_data"
+    ],
+    "sme_reasoning": "Teams evenly matched across modeled factors",
+    "factor_deltas": {
+      "conference_tier": 0.0,
+      "win_rate_diff": 0.0,
+      "ap_ranking": 0.0,
+      "home_field": 0.0,
+      "injuries": 0.0,
+      "scoring_margin": 0.0,
+      "recent_form": 0.0,
+      "rest_travel": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -290,
+    "away_odds": 235,
+    "game_id": "525909f6be5e505d076a97eb097528eb",
+    "generated_at": "2026-08-05T22:12:28.046580+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Pittsburgh Pirates @ Milwaukee Brewers",
+    "commence_time": "2026-08-05T23:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "Milwaukee Brewers ML",
+    "our_probability": 0.6549,
+    "implied_probability": 0.5423,
+    "edge": 0.1126,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -124,
+    "away_odds": 114,
+    "game_id": "34a753d38dc147edbd4974784d1746a0",
+    "generated_at": "2026-08-05T22:12:33.131120+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Washington Nationals @ Philadelphia Phillies",
+    "commence_time": "2026-08-06T22:06:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.3814,
+    "implied_probability": 0.2598,
+    "edge": 0.1216,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.045,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -335,
+    "away_odds": 270,
+    "game_id": "e5bd0415f3218955de3af0edaea0e987",
+    "generated_at": "2026-08-05T22:12:33.143005+00:00",
     "result": null
   }
 ]
