@@ -14219,7 +14219,7 @@
     "home_odds": -315,
     "away_odds": 250,
     "game_id": "b9d8d9eeb4afdebe9f91de7f8253eb07",
-    "generated_at": "2026-08-05T22:12:27.999906+00:00",
+    "generated_at": "2026-08-07T01:00:41.434530+00:00",
     "result": null
   },
   {
@@ -14256,7 +14256,7 @@
     "home_odds": -330,
     "away_odds": 260,
     "game_id": "7fd4a16a262295143f08276821b259a4",
-    "generated_at": "2026-08-05T22:12:28.011343+00:00",
+    "generated_at": "2026-08-07T01:00:41.449870+00:00",
     "result": null
   },
   {
@@ -14330,7 +14330,7 @@
     "home_odds": -238,
     "away_odds": 195,
     "game_id": "ad4b1c809d35ea03f513ccb45746e998",
-    "generated_at": "2026-08-05T22:12:28.034717+00:00",
+    "generated_at": "2026-08-07T01:00:41.480994+00:00",
     "result": null
   },
   {
@@ -14340,8 +14340,8 @@
     "book": "FanDuel",
     "recommendation": "Baylor Bears ML",
     "our_probability": 0.5,
-    "implied_probability": 0.2905,
-    "edge": 0.2095,
+    "implied_probability": 0.2817,
+    "edge": 0.2183,
     "confidence": "low",
     "missing_factors": [
       "ap_rankings",
@@ -14364,10 +14364,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -285,
-    "away_odds": 230,
+    "home_odds": -300,
+    "away_odds": 240,
     "game_id": "525909f6be5e505d076a97eb097528eb",
-    "generated_at": "2026-08-04T22:11:53.318481+00:00",
+    "generated_at": "2026-08-07T01:00:41.496862+00:00",
     "result": null
   },
   {
@@ -14404,7 +14404,7 @@
     "home_odds": -280,
     "away_odds": 225,
     "game_id": "9e750af965ce9f276f4280686d4dba35",
-    "generated_at": "2026-08-05T22:12:28.058100+00:00",
+    "generated_at": "2026-08-07T01:00:41.512060+00:00",
     "result": null
   },
   {
@@ -14443,7 +14443,7 @@
     "home_odds": 110,
     "away_odds": -132,
     "game_id": "df569f05eeee15a5fdf95bd5ce086d6d",
-    "generated_at": "2026-08-05T22:12:28.070511+00:00",
+    "generated_at": "2026-08-07T01:00:41.528673+00:00",
     "result": null
   },
   {
@@ -14480,7 +14480,7 @@
     "home_odds": 126,
     "away_odds": -152,
     "game_id": "63efb66a308ba1892fb100b7341a76d8",
-    "generated_at": "2026-08-05T22:12:28.082114+00:00",
+    "generated_at": "2026-08-07T01:00:41.543989+00:00",
     "result": null
   },
   {
@@ -14517,7 +14517,7 @@
     "home_odds": -265,
     "away_odds": 215,
     "game_id": "4f0e1900bdc8d12bf0cc91ae291c104e",
-    "generated_at": "2026-08-05T22:12:28.093646+00:00",
+    "generated_at": "2026-08-07T01:00:41.559184+00:00",
     "result": null
   },
   {
@@ -14554,7 +14554,7 @@
     "home_odds": 110,
     "away_odds": -130,
     "game_id": "a570687d47661da4982cfd885cdb4a44",
-    "generated_at": "2026-08-05T22:12:28.105137+00:00",
+    "generated_at": "2026-08-07T01:00:41.574337+00:00",
     "result": null
   },
   {
@@ -14593,7 +14593,7 @@
     "home_odds": 195,
     "away_odds": -238,
     "game_id": "912c15dcb8dd09eacabdcb80673d9d72",
-    "generated_at": "2026-08-05T22:12:28.116457+00:00",
+    "generated_at": "2026-08-07T01:00:41.589463+00:00",
     "result": null
   },
   {
@@ -14632,7 +14632,7 @@
     "home_odds": -320,
     "away_odds": 255,
     "game_id": "c12cd73c4077a0265acec205a572c2ec",
-    "generated_at": "2026-08-05T22:12:28.127859+00:00",
+    "generated_at": "2026-08-07T01:00:41.604765+00:00",
     "result": null
   },
   {
@@ -14671,7 +14671,7 @@
     "home_odds": 195,
     "away_odds": -238,
     "game_id": "83516ad7ba3e8ef9f90498cfcaf10eb5",
-    "generated_at": "2026-08-05T22:12:28.139597+00:00",
+    "generated_at": "2026-08-07T01:00:41.620230+00:00",
     "result": null
   },
   {
@@ -14710,7 +14710,7 @@
     "home_odds": 210,
     "away_odds": -258,
     "game_id": "69b1a0ff5fb2c67c6627b5c8cf8368cb",
-    "generated_at": "2026-08-05T22:12:28.150910+00:00",
+    "generated_at": "2026-08-07T01:00:41.635262+00:00",
     "result": null
   },
   {
@@ -14749,7 +14749,7 @@
     "home_odds": 122,
     "away_odds": -146,
     "game_id": "59f8c98dee8ce77cc17c5b4958e4f325",
-    "generated_at": "2026-08-05T22:12:28.162588+00:00",
+    "generated_at": "2026-08-07T01:00:41.650546+00:00",
     "result": null
   },
   {
@@ -14788,7 +14788,7 @@
     "home_odds": -235,
     "away_odds": 190,
     "game_id": "4aac00e6cc06b8905659f911419540d2",
-    "generated_at": "2026-08-05T22:12:28.174304+00:00",
+    "generated_at": "2026-08-07T01:00:41.665954+00:00",
     "result": null
   },
   {
@@ -15277,7 +15277,7 @@
     "home_odds": -310,
     "away_odds": 250,
     "game_id": "2c288580da16e12d35355f2548721be6",
-    "generated_at": "2026-08-05T22:12:27.988287+00:00",
+    "generated_at": "2026-08-07T01:00:41.418330+00:00",
     "result": null
   },
   {
@@ -15314,7 +15314,7 @@
     "home_odds": -290,
     "away_odds": 235,
     "game_id": "1d6daad1c93bf7e5ae16be1db12e27d5",
-    "generated_at": "2026-08-05T22:12:28.022979+00:00",
+    "generated_at": "2026-08-07T01:00:41.465426+00:00",
     "result": null
   },
   {
@@ -15416,6 +15416,178 @@
     "away_odds": 270,
     "game_id": "e5bd0415f3218955de3af0edaea0e987",
     "generated_at": "2026-08-05T22:12:33.143005+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Chicago White Sox @ Boston Red Sox",
+    "commence_time": "2026-08-06T23:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Boston Red Sox ML",
+    "our_probability": 0.6285,
+    "implied_probability": 0.3441,
+    "edge": 0.2844,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 181,
+    "away_odds": -211,
+    "game_id": "ea84587619219eda157528a5519fdb38",
+    "generated_at": "2026-08-07T01:00:43.829218+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Minnesota Twins @ Kansas City Royals",
+    "commence_time": "2026-08-06T23:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Minnesota Twins ML",
+    "our_probability": 0.4654,
+    "implied_probability": 0.282,
+    "edge": 0.1834,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.05,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -288,
+    "away_odds": 243,
+    "game_id": "7ccb6905d278343fbef656a8d2664d89",
+    "generated_at": "2026-08-07T01:00:43.844694+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Toronto Blue Jays @ Philadelphia Phillies",
+    "commence_time": "2026-08-07T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Toronto Blue Jays ML",
+    "our_probability": 0.464,
+    "implied_probability": 0.3379,
+    "edge": 0.1261,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.006,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -225,
+    "away_odds": 183,
+    "game_id": "de2d6836db4bc97363ff6663002a1226",
+    "generated_at": "2026-08-07T01:00:43.859907+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Athletics @ Boston Red Sox",
+    "commence_time": "2026-08-07T23:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "Athletics ML",
+    "our_probability": 0.465,
+    "implied_probability": 0.3058,
+    "edge": 0.1592,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.005,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -264,
+    "away_odds": 213,
+    "game_id": "91a75ec8bd4cdcae338a3b513e0ad681",
+    "generated_at": "2026-08-07T01:00:43.875099+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Arizona Diamondbacks",
+    "commence_time": "2026-08-08T01:41:00Z",
+    "book": "FanDuel",
+    "recommendation": "Arizona Diamondbacks ML",
+    "our_probability": 0.521,
+    "implied_probability": 0.4004,
+    "edge": 0.1206,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.009,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 140,
+    "away_odds": -166,
+    "game_id": "172896c446374bbfc3ef6b2d3edeb595",
+    "generated_at": "2026-08-07T01:00:43.890433+00:00",
     "result": null
   }
 ]
