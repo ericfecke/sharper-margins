@@ -14182,7 +14182,7 @@
     "home_odds": -310,
     "away_odds": 245,
     "game_id": "2c288580da16e12d35355f2548721be6",
-    "generated_at": "2026-08-10T21:40:27.028670+00:00",
+    "generated_at": "2026-08-11T21:46:41.741110+00:00",
     "result": null
   },
   {
@@ -14219,7 +14219,7 @@
     "home_odds": -315,
     "away_odds": 250,
     "game_id": "b9d8d9eeb4afdebe9f91de7f8253eb07",
-    "generated_at": "2026-08-10T21:40:27.044180+00:00",
+    "generated_at": "2026-08-11T21:46:41.752902+00:00",
     "result": null
   },
   {
@@ -14256,7 +14256,7 @@
     "home_odds": -320,
     "away_odds": 255,
     "game_id": "7fd4a16a262295143f08276821b259a4",
-    "generated_at": "2026-08-10T21:40:27.059674+00:00",
+    "generated_at": "2026-08-11T21:46:41.764446+00:00",
     "result": null
   },
   {
@@ -14367,7 +14367,7 @@
     "home_odds": -295,
     "away_odds": 235,
     "game_id": "525909f6be5e505d076a97eb097528eb",
-    "generated_at": "2026-08-10T21:40:27.107841+00:00",
+    "generated_at": "2026-08-11T21:46:41.800086+00:00",
     "result": null
   },
   {
@@ -14404,7 +14404,7 @@
     "home_odds": -280,
     "away_odds": 225,
     "game_id": "9e750af965ce9f276f4280686d4dba35",
-    "generated_at": "2026-08-10T21:40:27.123246+00:00",
+    "generated_at": "2026-08-11T21:46:41.811598+00:00",
     "result": null
   },
   {
@@ -14414,8 +14414,8 @@
     "book": "FanDuel",
     "recommendation": "Hawaii Rainbow Warriors ML",
     "our_probability": 0.57,
-    "implied_probability": 0.4315,
-    "edge": 0.1385,
+    "implied_probability": 0.4232,
+    "edge": 0.1468,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -14440,10 +14440,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 122,
-    "away_odds": -146,
+    "home_odds": 126,
+    "away_odds": -152,
     "game_id": "df569f05eeee15a5fdf95bd5ce086d6d",
-    "generated_at": "2026-08-10T21:40:27.155216+00:00",
+    "generated_at": "2026-08-11T21:46:41.835652+00:00",
     "result": null
   },
   {
@@ -14480,7 +14480,7 @@
     "home_odds": 118,
     "away_odds": -142,
     "game_id": "63efb66a308ba1892fb100b7341a76d8",
-    "generated_at": "2026-08-10T21:40:27.170810+00:00",
+    "generated_at": "2026-08-11T21:46:41.860188+00:00",
     "result": null
   },
   {
@@ -14632,7 +14632,7 @@
     "home_odds": -320,
     "away_odds": 255,
     "game_id": "c12cd73c4077a0265acec205a572c2ec",
-    "generated_at": "2026-08-10T21:40:27.218016+00:00",
+    "generated_at": "2026-08-11T21:46:41.974635+00:00",
     "result": null
   },
   {
@@ -14749,7 +14749,7 @@
     "home_odds": 122,
     "away_odds": -146,
     "game_id": "59f8c98dee8ce77cc17c5b4958e4f325",
-    "generated_at": "2026-08-10T21:40:27.249421+00:00",
+    "generated_at": "2026-08-11T21:46:41.997544+00:00",
     "result": null
   },
   {
@@ -15287,8 +15287,8 @@
     "book": "DraftKings",
     "recommendation": "Colorado Buffaloes ML",
     "our_probability": 0.43,
-    "implied_probability": 0.295,
-    "edge": 0.135,
+    "implied_probability": 0.2998,
+    "edge": 0.1302,
     "confidence": "low",
     "missing_factors": [
       "ap_rankings",
@@ -15311,10 +15311,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -278,
-    "away_odds": 225,
+    "home_odds": -270,
+    "away_odds": 220,
     "game_id": "1d6daad1c93bf7e5ae16be1db12e27d5",
-    "generated_at": "2026-08-10T21:40:27.075583+00:00",
+    "generated_at": "2026-08-11T21:46:41.776289+00:00",
     "result": null
   },
   {
@@ -15917,7 +15917,7 @@
     "home_odds": -240,
     "away_odds": 195,
     "game_id": "ad4b1c809d35ea03f513ccb45746e998",
-    "generated_at": "2026-08-10T21:40:27.091841+00:00",
+    "generated_at": "2026-08-11T21:46:41.788124+00:00",
     "result": null
   },
   {
@@ -15927,8 +15927,8 @@
     "book": "DraftKings",
     "recommendation": "Tulane Green Wave ML",
     "our_probability": 0.43,
-    "implied_probability": 0.2522,
-    "edge": 0.1778,
+    "implied_probability": 0.2559,
+    "edge": 0.1741,
     "confidence": "low",
     "missing_factors": [
       "ap_rankings",
@@ -15951,10 +15951,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -355,
-    "away_odds": 280,
+    "home_odds": -345,
+    "away_odds": 275,
     "game_id": "8154373235ce2adf76b37ecd334601fc",
-    "generated_at": "2026-08-10T21:40:27.138707+00:00",
+    "generated_at": "2026-08-11T21:46:41.823419+00:00",
     "result": null
   },
   {
@@ -15991,7 +15991,7 @@
     "home_odds": -250,
     "away_odds": 202,
     "game_id": "4f0e1900bdc8d12bf0cc91ae291c104e",
-    "generated_at": "2026-08-10T21:40:27.186298+00:00",
+    "generated_at": "2026-08-11T21:46:41.871668+00:00",
     "result": null
   },
   {
@@ -16030,7 +16030,7 @@
     "home_odds": 190,
     "away_odds": -235,
     "game_id": "912c15dcb8dd09eacabdcb80673d9d72",
-    "generated_at": "2026-08-10T21:40:27.201833+00:00",
+    "generated_at": "2026-08-11T21:46:41.884822+00:00",
     "result": null
   },
   {
@@ -16069,7 +16069,7 @@
     "home_odds": 188,
     "away_odds": -230,
     "game_id": "82b83ec87fc2be5faa2e9f26ac50edef",
-    "generated_at": "2026-08-10T21:40:27.233870+00:00",
+    "generated_at": "2026-08-11T21:46:41.986144+00:00",
     "result": null
   },
   {
@@ -16142,9 +16142,9 @@
     "commence_time": "2026-08-11T23:46:00Z",
     "book": "DraftKings",
     "recommendation": "St. Louis Cardinals ML",
-    "our_probability": 0.5149,
-    "implied_probability": 0.3967,
-    "edge": 0.1182,
+    "our_probability": 0.498,
+    "implied_probability": 0.3928,
+    "edge": 0.1052,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -16152,7 +16152,7 @@
     "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": -0.015,
+      "recent_form": -0.03,
       "injuries": 0.0,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
@@ -16162,10 +16162,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 141,
-    "away_odds": -171,
+    "home_odds": 150,
+    "away_odds": -162,
     "game_id": "fc1d0b97ed35a31e5f1f60df77f6b377",
-    "generated_at": "2026-08-10T21:40:31.852229+00:00",
+    "generated_at": "2026-08-11T21:47:06.672764+00:00",
     "result": null
   },
   {
@@ -16174,9 +16174,9 @@
     "commence_time": "2026-08-12T02:11:00Z",
     "book": "DraftKings",
     "recommendation": "Kansas City Royals ML",
-    "our_probability": 0.4017,
-    "implied_probability": 0.2952,
-    "edge": 0.1065,
+    "our_probability": 0.3998,
+    "implied_probability": 0.2817,
+    "edge": 0.1181,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -16194,10 +16194,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -280,
-    "away_odds": 224,
+    "home_odds": -271,
+    "away_odds": 249,
     "game_id": "2e165d36c5dd97967e8e9d1e53290d71",
-    "generated_at": "2026-08-10T21:40:31.868262+00:00",
+    "generated_at": "2026-08-11T21:47:06.684678+00:00",
     "result": null
   }
 ]
