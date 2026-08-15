@@ -14182,7 +14182,7 @@
     "home_odds": -330,
     "away_odds": 260,
     "game_id": "2c288580da16e12d35355f2548721be6",
-    "generated_at": "2026-08-14T21:24:21.210953+00:00",
+    "generated_at": "2026-08-15T16:10:07.592926+00:00",
     "result": null
   },
   {
@@ -14229,8 +14229,8 @@
     "book": "FanDuel",
     "recommendation": "Sacramento State Hornets ML",
     "our_probability": 0.43,
-    "implied_probability": 0.2699,
-    "edge": 0.1601,
+    "implied_probability": 0.2658,
+    "edge": 0.1642,
     "confidence": "low",
     "missing_factors": [
       "ap_rankings",
@@ -14253,10 +14253,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -320,
-    "away_odds": 255,
+    "home_odds": -330,
+    "away_odds": 260,
     "game_id": "7fd4a16a262295143f08276821b259a4",
-    "generated_at": "2026-08-14T21:24:21.241104+00:00",
+    "generated_at": "2026-08-15T16:10:07.621466+00:00",
     "result": null
   },
   {
@@ -14367,7 +14367,7 @@
     "home_odds": -295,
     "away_odds": 235,
     "game_id": "525909f6be5e505d076a97eb097528eb",
-    "generated_at": "2026-08-14T21:24:21.287547+00:00",
+    "generated_at": "2026-08-15T16:10:07.651003+00:00",
     "result": null
   },
   {
@@ -14404,7 +14404,7 @@
     "home_odds": -280,
     "away_odds": 225,
     "game_id": "9e750af965ce9f276f4280686d4dba35",
-    "generated_at": "2026-08-14T21:24:21.302565+00:00",
+    "generated_at": "2026-08-15T16:10:07.665115+00:00",
     "result": null
   },
   {
@@ -14443,7 +14443,7 @@
     "home_odds": 126,
     "away_odds": -152,
     "game_id": "df569f05eeee15a5fdf95bd5ce086d6d",
-    "generated_at": "2026-08-14T21:24:21.333247+00:00",
+    "generated_at": "2026-08-15T16:10:07.694404+00:00",
     "result": null
   },
   {
@@ -14480,7 +14480,7 @@
     "home_odds": 118,
     "away_odds": -142,
     "game_id": "63efb66a308ba1892fb100b7341a76d8",
-    "generated_at": "2026-08-14T21:24:21.348081+00:00",
+    "generated_at": "2026-08-15T16:10:07.714290+00:00",
     "result": null
   },
   {
@@ -14632,7 +14632,7 @@
     "home_odds": -320,
     "away_odds": 255,
     "game_id": "c12cd73c4077a0265acec205a572c2ec",
-    "generated_at": "2026-08-14T21:24:21.408097+00:00",
+    "generated_at": "2026-08-15T16:10:07.770949+00:00",
     "result": null
   },
   {
@@ -14749,7 +14749,7 @@
     "home_odds": 122,
     "away_odds": -146,
     "game_id": "59f8c98dee8ce77cc17c5b4958e4f325",
-    "generated_at": "2026-08-14T21:24:21.438080+00:00",
+    "generated_at": "2026-08-15T16:10:07.799171+00:00",
     "result": null
   },
   {
@@ -15314,7 +15314,7 @@
     "home_odds": -270,
     "away_odds": 220,
     "game_id": "1d6daad1c93bf7e5ae16be1db12e27d5",
-    "generated_at": "2026-08-14T21:24:21.256533+00:00",
+    "generated_at": "2026-08-15T16:10:07.635908+00:00",
     "result": null
   },
   {
@@ -15954,7 +15954,7 @@
     "home_odds": -345,
     "away_odds": 275,
     "game_id": "8154373235ce2adf76b37ecd334601fc",
-    "generated_at": "2026-08-14T21:24:21.317461+00:00",
+    "generated_at": "2026-08-15T16:10:07.679363+00:00",
     "result": null
   },
   {
@@ -15991,7 +15991,7 @@
     "home_odds": -250,
     "away_odds": 202,
     "game_id": "4f0e1900bdc8d12bf0cc91ae291c104e",
-    "generated_at": "2026-08-14T21:24:21.362874+00:00",
+    "generated_at": "2026-08-15T16:10:07.728463+00:00",
     "result": null
   },
   {
@@ -16030,7 +16030,7 @@
     "home_odds": 190,
     "away_odds": -235,
     "game_id": "912c15dcb8dd09eacabdcb80673d9d72",
-    "generated_at": "2026-08-14T21:24:21.393190+00:00",
+    "generated_at": "2026-08-15T16:10:07.756809+00:00",
     "result": null
   },
   {
@@ -16069,7 +16069,7 @@
     "home_odds": 188,
     "away_odds": -230,
     "game_id": "82b83ec87fc2be5faa2e9f26ac50edef",
-    "generated_at": "2026-08-14T21:24:21.423047+00:00",
+    "generated_at": "2026-08-15T16:10:07.785149+00:00",
     "result": null
   },
   {
@@ -16234,7 +16234,7 @@
     "home_odds": -270,
     "away_odds": 220,
     "game_id": "b9d8d9eeb4afdebe9f91de7f8253eb07",
-    "generated_at": "2026-08-14T21:24:21.226217+00:00",
+    "generated_at": "2026-08-15T16:10:07.607208+00:00",
     "result": null
   },
   {
@@ -16399,7 +16399,7 @@
     "home_odds": 106,
     "away_odds": -128,
     "game_id": "a570687d47661da4982cfd885cdb4a44",
-    "generated_at": "2026-08-14T21:24:21.378003+00:00",
+    "generated_at": "2026-08-15T16:10:07.742671+00:00",
     "result": null
   },
   {
@@ -16580,9 +16580,9 @@
     "commence_time": "2026-08-15T23:15:00Z",
     "book": "FanDuel",
     "recommendation": "Los Angeles Dodgers ML",
-    "our_probability": 0.5418,
-    "implied_probability": 0.4365,
-    "edge": 0.1053,
+    "our_probability": 0.5741,
+    "implied_probability": 0.4497,
+    "edge": 0.1244,
     "confidence": "low",
     "missing_factors": [
       "run_differential"
@@ -16590,7 +16590,7 @@
     "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
     "factor_deltas": {
       "run_differential": 0.0,
-      "recent_form": -0.03,
+      "recent_form": 0.0,
       "injuries": 0.0,
       "bullpen_fatigue": 0.0,
       "home_field": 0.03,
@@ -16600,10 +16600,74 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 120,
-    "away_odds": -142,
+    "home_odds": 118,
+    "away_odds": -128,
     "game_id": "70b9a39a05a83f14d55b30a01b17396f",
-    "generated_at": "2026-08-14T21:24:31.636252+00:00",
+    "generated_at": "2026-08-15T16:10:25.456298+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "New York Yankees @ Toronto Blue Jays",
+    "commence_time": "2026-08-15T19:08:00Z",
+    "book": "FanDuel",
+    "recommendation": "Toronto Blue Jays ML",
+    "our_probability": 0.5297,
+    "implied_probability": 0.3782,
+    "edge": 0.1515,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.03,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.002,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 160,
+    "away_odds": -172,
+    "game_id": "dbbb481a063336e996454ea669238bf7",
+    "generated_at": "2026-08-15T16:10:25.423207+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Colorado Rockies @ San Francisco Giants",
+    "commence_time": "2026-08-15T20:06:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.5132,
+    "implied_probability": 0.3919,
+    "edge": 0.1213,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential); Park factor: San Francisco Giants plays in pitcher-friendly venue",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.02,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -162,
+    "away_odds": 151,
+    "game_id": "a9d5955568a03f0891eda9aba40a95f6",
+    "generated_at": "2026-08-15T16:10:25.437323+00:00",
     "result": null
   }
 ]
