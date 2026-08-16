@@ -14182,7 +14182,7 @@
     "home_odds": -330,
     "away_odds": 260,
     "game_id": "2c288580da16e12d35355f2548721be6",
-    "generated_at": "2026-08-15T16:10:07.592926+00:00",
+    "generated_at": "2026-08-16T16:10:04.274319+00:00",
     "result": null
   },
   {
@@ -14256,7 +14256,7 @@
     "home_odds": -330,
     "away_odds": 260,
     "game_id": "7fd4a16a262295143f08276821b259a4",
-    "generated_at": "2026-08-15T16:10:07.621466+00:00",
+    "generated_at": "2026-08-16T16:10:04.308173+00:00",
     "result": null
   },
   {
@@ -14303,8 +14303,8 @@
     "book": "DraftKings",
     "recommendation": "Liberty Flames ML",
     "our_probability": 0.43,
-    "implied_probability": 0.325,
-    "edge": 0.105,
+    "implied_probability": 0.3194,
+    "edge": 0.1106,
     "confidence": "low",
     "missing_factors": [
       "ap_rankings",
@@ -14327,10 +14327,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -238,
-    "away_odds": 195,
+    "home_odds": -245,
+    "away_odds": 200,
     "game_id": "ad4b1c809d35ea03f513ccb45746e998",
-    "generated_at": "2026-08-09T16:19:33.738755+00:00",
+    "generated_at": "2026-08-16T16:10:04.342202+00:00",
     "result": null
   },
   {
@@ -14367,7 +14367,7 @@
     "home_odds": -295,
     "away_odds": 235,
     "game_id": "525909f6be5e505d076a97eb097528eb",
-    "generated_at": "2026-08-15T16:10:07.651003+00:00",
+    "generated_at": "2026-08-16T16:10:04.359503+00:00",
     "result": null
   },
   {
@@ -14404,13 +14404,13 @@
     "home_odds": -280,
     "away_odds": 225,
     "game_id": "9e750af965ce9f276f4280686d4dba35",
-    "generated_at": "2026-08-15T16:10:07.665115+00:00",
+    "generated_at": "2026-08-16T16:10:04.376407+00:00",
     "result": null
   },
   {
     "sport": "CFB",
     "game": "UNLV Rebels @ Hawaii Rainbow Warriors",
-    "commence_time": "2026-09-06T01:00:00Z",
+    "commence_time": "2026-09-06T02:00:00Z",
     "book": "FanDuel",
     "recommendation": "Hawaii Rainbow Warriors ML",
     "our_probability": 0.57,
@@ -14443,7 +14443,7 @@
     "home_odds": 126,
     "away_odds": -152,
     "game_id": "df569f05eeee15a5fdf95bd5ce086d6d",
-    "generated_at": "2026-08-15T16:10:07.694404+00:00",
+    "generated_at": "2026-08-16T16:10:04.416720+00:00",
     "result": null
   },
   {
@@ -14480,7 +14480,7 @@
     "home_odds": 118,
     "away_odds": -142,
     "game_id": "63efb66a308ba1892fb100b7341a76d8",
-    "generated_at": "2026-08-15T16:10:07.714290+00:00",
+    "generated_at": "2026-08-16T16:10:04.433847+00:00",
     "result": null
   },
   {
@@ -14632,7 +14632,7 @@
     "home_odds": -320,
     "away_odds": 255,
     "game_id": "c12cd73c4077a0265acec205a572c2ec",
-    "generated_at": "2026-08-15T16:10:07.770949+00:00",
+    "generated_at": "2026-08-16T16:10:04.501197+00:00",
     "result": null
   },
   {
@@ -14749,7 +14749,7 @@
     "home_odds": 122,
     "away_odds": -146,
     "game_id": "59f8c98dee8ce77cc17c5b4958e4f325",
-    "generated_at": "2026-08-15T16:10:07.799171+00:00",
+    "generated_at": "2026-08-16T16:10:04.535223+00:00",
     "result": null
   },
   {
@@ -15314,7 +15314,7 @@
     "home_odds": -270,
     "away_odds": 220,
     "game_id": "1d6daad1c93bf7e5ae16be1db12e27d5",
-    "generated_at": "2026-08-15T16:10:07.635908+00:00",
+    "generated_at": "2026-08-16T16:10:04.325159+00:00",
     "result": null
   },
   {
@@ -15954,7 +15954,7 @@
     "home_odds": -345,
     "away_odds": 275,
     "game_id": "8154373235ce2adf76b37ecd334601fc",
-    "generated_at": "2026-08-15T16:10:07.679363+00:00",
+    "generated_at": "2026-08-16T16:10:04.393006+00:00",
     "result": null
   },
   {
@@ -15991,7 +15991,7 @@
     "home_odds": -250,
     "away_odds": 202,
     "game_id": "4f0e1900bdc8d12bf0cc91ae291c104e",
-    "generated_at": "2026-08-15T16:10:07.728463+00:00",
+    "generated_at": "2026-08-16T16:10:04.450816+00:00",
     "result": null
   },
   {
@@ -16030,7 +16030,7 @@
     "home_odds": 190,
     "away_odds": -235,
     "game_id": "912c15dcb8dd09eacabdcb80673d9d72",
-    "generated_at": "2026-08-15T16:10:07.756809+00:00",
+    "generated_at": "2026-08-16T16:10:04.484497+00:00",
     "result": null
   },
   {
@@ -16069,7 +16069,7 @@
     "home_odds": 188,
     "away_odds": -230,
     "game_id": "82b83ec87fc2be5faa2e9f26ac50edef",
-    "generated_at": "2026-08-15T16:10:07.785149+00:00",
+    "generated_at": "2026-08-16T16:10:04.518242+00:00",
     "result": null
   },
   {
@@ -16234,7 +16234,7 @@
     "home_odds": -270,
     "away_odds": 220,
     "game_id": "b9d8d9eeb4afdebe9f91de7f8253eb07",
-    "generated_at": "2026-08-15T16:10:07.607208+00:00",
+    "generated_at": "2026-08-16T16:10:04.291313+00:00",
     "result": null
   },
   {
@@ -16399,7 +16399,7 @@
     "home_odds": 106,
     "away_odds": -128,
     "game_id": "a570687d47661da4982cfd885cdb4a44",
-    "generated_at": "2026-08-15T16:10:07.742671+00:00",
+    "generated_at": "2026-08-16T16:10:04.467790+00:00",
     "result": null
   },
   {
