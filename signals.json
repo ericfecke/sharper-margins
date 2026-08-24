@@ -14184,7 +14184,7 @@
     "home_odds": -330,
     "away_odds": 260,
     "game_id": "2c288580da16e12d35355f2548721be6",
-    "generated_at": "2026-08-23T16:10:33.036377+00:00",
+    "generated_at": "2026-08-24T21:27:50.951592+00:00",
     "result": null
   },
   {
@@ -14194,10 +14194,12 @@
     "book": "FanDuel",
     "recommendation": "Jacksonville State Gamecocks ML",
     "our_probability": 0.43,
-    "implied_probability": 0.2735,
-    "edge": 0.1565,
+    "implied_probability": 0.3087,
+    "edge": 0.1213,
     "confidence": "low",
     "missing_factors": [
+      "home_standings",
+      "away_standings",
       "ap_rankings",
       "scoring_margin",
       "recent_form",
@@ -14218,10 +14220,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -315,
-    "away_odds": 250,
+    "home_odds": -260,
+    "away_odds": 210,
     "game_id": "b9d8d9eeb4afdebe9f91de7f8253eb07",
-    "generated_at": "2026-08-11T21:46:41.752902+00:00",
+    "generated_at": "2026-08-24T21:27:50.969102+00:00",
     "result": null
   },
   {
@@ -14336,7 +14338,7 @@
     "home_odds": -245,
     "away_odds": 200,
     "game_id": "ad4b1c809d35ea03f513ccb45746e998",
-    "generated_at": "2026-08-23T16:10:33.085142+00:00",
+    "generated_at": "2026-08-24T21:27:51.021796+00:00",
     "result": null
   },
   {
@@ -14375,7 +14377,7 @@
     "home_odds": -295,
     "away_odds": 235,
     "game_id": "525909f6be5e505d076a97eb097528eb",
-    "generated_at": "2026-08-23T16:10:33.096376+00:00",
+    "generated_at": "2026-08-24T21:27:51.039581+00:00",
     "result": null
   },
   {
@@ -14453,7 +14455,7 @@
     "home_odds": 126,
     "away_odds": -152,
     "game_id": "df569f05eeee15a5fdf95bd5ce086d6d",
-    "generated_at": "2026-08-23T16:10:33.147627+00:00",
+    "generated_at": "2026-08-24T21:27:51.093065+00:00",
     "result": null
   },
   {
@@ -14492,7 +14494,7 @@
     "home_odds": 115,
     "away_odds": -138,
     "game_id": "63efb66a308ba1892fb100b7341a76d8",
-    "generated_at": "2026-08-23T16:10:33.158539+00:00",
+    "generated_at": "2026-08-24T21:27:51.110589+00:00",
     "result": null
   },
   {
@@ -14644,7 +14646,7 @@
     "home_odds": -320,
     "away_odds": 255,
     "game_id": "c12cd73c4077a0265acec205a572c2ec",
-    "generated_at": "2026-08-23T16:10:33.345955+00:00",
+    "generated_at": "2026-08-24T21:27:51.179609+00:00",
     "result": null
   },
   {
@@ -14761,7 +14763,7 @@
     "home_odds": 122,
     "away_odds": -146,
     "game_id": "59f8c98dee8ce77cc17c5b4958e4f325",
-    "generated_at": "2026-08-23T16:10:33.368067+00:00",
+    "generated_at": "2026-08-24T21:27:51.214632+00:00",
     "result": null
   },
   {
@@ -15330,7 +15332,7 @@
     "home_odds": -250,
     "away_odds": 205,
     "game_id": "1d6daad1c93bf7e5ae16be1db12e27d5",
-    "generated_at": "2026-08-23T16:10:33.073824+00:00",
+    "generated_at": "2026-08-24T21:27:51.003947+00:00",
     "result": null
   },
   {
@@ -15972,7 +15974,7 @@
     "home_odds": -345,
     "away_odds": 275,
     "game_id": "8154373235ce2adf76b37ecd334601fc",
-    "generated_at": "2026-08-23T16:10:33.135924+00:00",
+    "generated_at": "2026-08-24T21:27:51.074436+00:00",
     "result": null
   },
   {
@@ -16009,7 +16011,7 @@
     "home_odds": -250,
     "away_odds": 202,
     "game_id": "4f0e1900bdc8d12bf0cc91ae291c104e",
-    "generated_at": "2026-08-23T16:10:33.169403+00:00",
+    "generated_at": "2026-08-24T21:27:51.127927+00:00",
     "result": null
   },
   {
@@ -16048,7 +16050,7 @@
     "home_odds": 190,
     "away_odds": -235,
     "game_id": "912c15dcb8dd09eacabdcb80673d9d72",
-    "generated_at": "2026-08-23T16:10:33.190993+00:00",
+    "generated_at": "2026-08-24T21:27:51.162143+00:00",
     "result": null
   },
   {
@@ -16058,8 +16060,8 @@
     "book": "FanDuel",
     "recommendation": "Oklahoma Sooners ML",
     "our_probability": 0.57,
-    "implied_probability": 0.3325,
-    "edge": 0.2375,
+    "implied_probability": 0.3419,
+    "edge": 0.2281,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -16084,10 +16086,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 188,
-    "away_odds": -230,
+    "home_odds": 180,
+    "away_odds": -220,
     "game_id": "82b83ec87fc2be5faa2e9f26ac50edef",
-    "generated_at": "2026-08-23T16:10:33.357189+00:00",
+    "generated_at": "2026-08-24T21:27:51.197457+00:00",
     "result": null
   },
   {
@@ -16419,7 +16421,7 @@
     "home_odds": 114,
     "away_odds": -137,
     "game_id": "a570687d47661da4982cfd885cdb4a44",
-    "generated_at": "2026-08-23T16:10:33.180150+00:00",
+    "generated_at": "2026-08-24T21:27:51.145057+00:00",
     "result": null
   },
   {
@@ -16886,7 +16888,7 @@
     "home_odds": -355,
     "away_odds": 280,
     "game_id": "7fd4a16a262295143f08276821b259a4",
-    "generated_at": "2026-08-23T16:10:33.062553+00:00",
+    "generated_at": "2026-08-24T21:27:50.986423+00:00",
     "result": null
   },
   {
@@ -17181,7 +17183,7 @@
     "home_odds": -310,
     "away_odds": 250,
     "game_id": "9e750af965ce9f276f4280686d4dba35",
-    "generated_at": "2026-08-23T16:10:33.111786+00:00",
+    "generated_at": "2026-08-24T21:27:51.056738+00:00",
     "result": null
   },
   {
@@ -17414,6 +17416,142 @@
     "away_odds": 104,
     "game_id": "bda345f597a8317d5812e066bfdd364a",
     "generated_at": "2026-08-23T16:10:45.786231+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Colorado Rockies @ Washington Nationals",
+    "commence_time": "2026-08-24T22:46:00Z",
+    "book": "FanDuel",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.4795,
+    "implied_probability": 0.3512,
+    "edge": 0.1283,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Starting pitcher advantage: home (ERA/WHIP differential)",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.004,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -194,
+    "away_odds": 180,
+    "game_id": "e3da176886eb60e63e5b0017a5f213bc",
+    "generated_at": "2026-08-24T21:27:59.736824+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Chicago Cubs @ Arizona Diamondbacks",
+    "commence_time": "2026-08-25T01:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "Arizona Diamondbacks ML",
+    "our_probability": 0.5467,
+    "implied_probability": 0.4328,
+    "edge": 0.1139,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.015,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.009,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 126,
+    "away_odds": -138,
+    "game_id": "c5a5e268823c62f5cdee679faf9b778c",
+    "generated_at": "2026-08-24T21:27:59.754399+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Milwaukee Brewers @ New York Mets",
+    "commence_time": "2026-08-25T23:11:00Z",
+    "book": "DraftKings",
+    "recommendation": "New York Mets ML",
+    "our_probability": 0.53,
+    "implied_probability": 0.4018,
+    "edge": 0.1282,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 138,
+    "away_odds": -167,
+    "game_id": "5adabe1a546de0ad6f64e2789b2b8f8d",
+    "generated_at": "2026-08-24T21:27:59.771861+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Atlanta Braves",
+    "commence_time": "2026-08-25T23:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.523,
+    "implied_probability": 0.4087,
+    "edge": 0.1143,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 134,
+    "away_odds": -162,
+    "game_id": "d7bed76714eb2b887f979d5156f6863c",
+    "generated_at": "2026-08-24T21:27:59.788626+00:00",
     "result": null
   }
 ]
