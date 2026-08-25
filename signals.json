@@ -14184,7 +14184,7 @@
     "home_odds": -330,
     "away_odds": 260,
     "game_id": "2c288580da16e12d35355f2548721be6",
-    "generated_at": "2026-08-24T21:27:50.951592+00:00",
+    "generated_at": "2026-08-25T21:27:12.405031+00:00",
     "result": null
   },
   {
@@ -14194,8 +14194,8 @@
     "book": "FanDuel",
     "recommendation": "Jacksonville State Gamecocks ML",
     "our_probability": 0.43,
-    "implied_probability": 0.3087,
-    "edge": 0.1213,
+    "implied_probability": 0.2905,
+    "edge": 0.1395,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -14220,10 +14220,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -260,
-    "away_odds": 210,
+    "home_odds": -285,
+    "away_odds": 230,
     "game_id": "b9d8d9eeb4afdebe9f91de7f8253eb07",
-    "generated_at": "2026-08-24T21:27:50.969102+00:00",
+    "generated_at": "2026-08-25T21:27:12.427764+00:00",
     "result": null
   },
   {
@@ -14338,7 +14338,7 @@
     "home_odds": -245,
     "away_odds": 200,
     "game_id": "ad4b1c809d35ea03f513ccb45746e998",
-    "generated_at": "2026-08-24T21:27:51.021796+00:00",
+    "generated_at": "2026-08-25T21:27:12.465383+00:00",
     "result": null
   },
   {
@@ -14455,7 +14455,7 @@
     "home_odds": 126,
     "away_odds": -152,
     "game_id": "df569f05eeee15a5fdf95bd5ce086d6d",
-    "generated_at": "2026-08-24T21:27:51.093065+00:00",
+    "generated_at": "2026-08-25T21:27:12.521532+00:00",
     "result": null
   },
   {
@@ -14494,7 +14494,7 @@
     "home_odds": 115,
     "away_odds": -138,
     "game_id": "63efb66a308ba1892fb100b7341a76d8",
-    "generated_at": "2026-08-24T21:27:51.110589+00:00",
+    "generated_at": "2026-08-25T21:27:12.539250+00:00",
     "result": null
   },
   {
@@ -14646,7 +14646,7 @@
     "home_odds": -320,
     "away_odds": 255,
     "game_id": "c12cd73c4077a0265acec205a572c2ec",
-    "generated_at": "2026-08-24T21:27:51.179609+00:00",
+    "generated_at": "2026-08-25T21:27:12.611091+00:00",
     "result": null
   },
   {
@@ -14763,7 +14763,7 @@
     "home_odds": 122,
     "away_odds": -146,
     "game_id": "59f8c98dee8ce77cc17c5b4958e4f325",
-    "generated_at": "2026-08-24T21:27:51.214632+00:00",
+    "generated_at": "2026-08-25T21:27:12.646288+00:00",
     "result": null
   },
   {
@@ -15332,7 +15332,7 @@
     "home_odds": -250,
     "away_odds": 205,
     "game_id": "1d6daad1c93bf7e5ae16be1db12e27d5",
-    "generated_at": "2026-08-24T21:27:51.003947+00:00",
+    "generated_at": "2026-08-25T21:27:12.446518+00:00",
     "result": null
   },
   {
@@ -15341,22 +15341,24 @@
     "commence_time": "2026-09-05T19:30:00Z",
     "book": "DraftKings",
     "recommendation": "Baylor Bears ML",
-    "our_probability": 0.5,
-    "implied_probability": 0.2864,
-    "edge": 0.2136,
+    "our_probability": 0.43,
+    "implied_probability": 0.282,
+    "edge": 0.148,
     "confidence": "low",
     "missing_factors": [
+      "home_standings",
+      "away_standings",
       "ap_rankings",
       "scoring_margin",
       "recent_form",
       "rest_data"
     ],
-    "sme_reasoning": "Teams evenly matched across modeled factors",
+    "sme_reasoning": "Home field advantage (college: +7%)",
     "factor_deltas": {
       "conference_tier": 0.0,
       "win_rate_diff": 0.0,
       "ap_ranking": 0.0,
-      "home_field": 0.0,
+      "home_field": 0.07,
       "injuries": 0.0,
       "scoring_margin": 0.0,
       "recent_form": 0.0,
@@ -15366,10 +15368,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -290,
-    "away_odds": 235,
+    "home_odds": -298,
+    "away_odds": 240,
     "game_id": "525909f6be5e505d076a97eb097528eb",
-    "generated_at": "2026-08-05T22:12:28.046580+00:00",
+    "generated_at": "2026-08-25T21:27:12.484214+00:00",
     "result": null
   },
   {
@@ -16011,7 +16013,7 @@
     "home_odds": -250,
     "away_odds": 202,
     "game_id": "4f0e1900bdc8d12bf0cc91ae291c104e",
-    "generated_at": "2026-08-24T21:27:51.127927+00:00",
+    "generated_at": "2026-08-25T21:27:12.558344+00:00",
     "result": null
   },
   {
@@ -16050,7 +16052,7 @@
     "home_odds": 190,
     "away_odds": -235,
     "game_id": "912c15dcb8dd09eacabdcb80673d9d72",
-    "generated_at": "2026-08-24T21:27:51.162143+00:00",
+    "generated_at": "2026-08-25T21:27:12.593623+00:00",
     "result": null
   },
   {
@@ -16089,7 +16091,7 @@
     "home_odds": 180,
     "away_odds": -220,
     "game_id": "82b83ec87fc2be5faa2e9f26ac50edef",
-    "generated_at": "2026-08-24T21:27:51.197457+00:00",
+    "generated_at": "2026-08-25T21:27:12.628853+00:00",
     "result": null
   },
   {
@@ -16421,7 +16423,7 @@
     "home_odds": 114,
     "away_odds": -137,
     "game_id": "a570687d47661da4982cfd885cdb4a44",
-    "generated_at": "2026-08-24T21:27:51.145057+00:00",
+    "generated_at": "2026-08-25T21:27:12.576106+00:00",
     "result": null
   },
   {
@@ -17183,7 +17185,7 @@
     "home_odds": -310,
     "away_odds": 250,
     "game_id": "9e750af965ce9f276f4280686d4dba35",
-    "generated_at": "2026-08-24T21:27:51.056738+00:00",
+    "generated_at": "2026-08-25T21:27:12.502319+00:00",
     "result": null
   },
   {
@@ -17552,6 +17554,38 @@
     "away_odds": -162,
     "game_id": "d7bed76714eb2b887f979d5156f6863c",
     "generated_at": "2026-08-24T21:27:59.788626+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Atlanta Braves",
+    "commence_time": "2026-08-25T23:16:00Z",
+    "book": "FanDuel",
+    "recommendation": "Atlanta Braves ML",
+    "our_probability": 0.5133,
+    "implied_probability": 0.4132,
+    "edge": 0.1001,
+    "confidence": "low",
+    "missing_factors": [
+      "run_differential"
+    ],
+    "sme_reasoning": "Balanced matchup \u2014 no dominant edge identified",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": -0.05,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 138,
+    "away_odds": -148,
+    "game_id": "d7bed76714eb2b887f979d5156f6863c",
+    "generated_at": "2026-08-25T21:27:19.891130+00:00",
     "result": null
   }
 ]
