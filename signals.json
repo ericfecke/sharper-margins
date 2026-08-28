@@ -14194,8 +14194,8 @@
     "book": "FanDuel",
     "recommendation": "Jacksonville State Gamecocks ML",
     "our_probability": 0.43,
-    "implied_probability": 0.2905,
-    "edge": 0.1395,
+    "implied_probability": 0.2946,
+    "edge": 0.1354,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -14220,10 +14220,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -285,
-    "away_odds": 230,
+    "home_odds": -280,
+    "away_odds": 225,
     "game_id": "b9d8d9eeb4afdebe9f91de7f8253eb07",
-    "generated_at": "2026-08-27T00:29:06.160260+00:00",
+    "generated_at": "2026-08-28T05:07:31.608219+00:00",
     "result": null
   },
   {
@@ -14428,8 +14428,8 @@
     "book": "FanDuel",
     "recommendation": "Hawaii Rainbow Warriors ML",
     "our_probability": 0.57,
-    "implied_probability": 0.4232,
-    "edge": 0.1468,
+    "implied_probability": 0.4255,
+    "edge": 0.1445,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -14454,10 +14454,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 126,
-    "away_odds": -152,
+    "home_odds": 125,
+    "away_odds": -150,
     "game_id": "df569f05eeee15a5fdf95bd5ce086d6d",
-    "generated_at": "2026-08-27T00:29:06.271978+00:00",
+    "generated_at": "2026-08-28T05:07:31.740630+00:00",
     "result": null
   },
   {
@@ -14496,7 +14496,7 @@
     "home_odds": 115,
     "away_odds": -138,
     "game_id": "63efb66a308ba1892fb100b7341a76d8",
-    "generated_at": "2026-08-27T00:29:06.301261+00:00",
+    "generated_at": "2026-08-28T05:07:31.777630+00:00",
     "result": null
   },
   {
@@ -14648,7 +14648,7 @@
     "home_odds": -320,
     "away_odds": 255,
     "game_id": "c12cd73c4077a0265acec205a572c2ec",
-    "generated_at": "2026-08-27T00:29:06.356888+00:00",
+    "generated_at": "2026-08-28T05:07:31.851668+00:00",
     "result": null
   },
   {
@@ -14765,7 +14765,7 @@
     "home_odds": 122,
     "away_odds": -146,
     "game_id": "59f8c98dee8ce77cc17c5b4958e4f325",
-    "generated_at": "2026-08-27T00:29:06.384266+00:00",
+    "generated_at": "2026-08-28T05:07:31.888785+00:00",
     "result": null
   },
   {
@@ -15266,8 +15266,8 @@
     "book": "DraftKings",
     "recommendation": "North Carolina Tar Heels ML",
     "our_probability": 0.43,
-    "implied_probability": 0.2665,
-    "edge": 0.1635,
+    "implied_probability": 0.2591,
+    "edge": 0.1709,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -15292,10 +15292,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -325,
-    "away_odds": 260,
+    "home_odds": -340,
+    "away_odds": 270,
     "game_id": "2c288580da16e12d35355f2548721be6",
-    "generated_at": "2026-08-22T16:09:16.324601+00:00",
+    "generated_at": "2026-08-28T05:07:31.589320+00:00",
     "result": null
   },
   {
@@ -15305,8 +15305,8 @@
     "book": "DraftKings",
     "recommendation": "Colorado Buffaloes ML",
     "our_probability": 0.43,
-    "implied_probability": 0.3146,
-    "edge": 0.1154,
+    "implied_probability": 0.3092,
+    "edge": 0.1208,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -15331,10 +15331,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -250,
-    "away_odds": 205,
+    "home_odds": -258,
+    "away_odds": 210,
     "game_id": "1d6daad1c93bf7e5ae16be1db12e27d5",
-    "generated_at": "2026-08-25T21:27:12.446518+00:00",
+    "generated_at": "2026-08-28T05:07:31.627145+00:00",
     "result": null
   },
   {
@@ -15373,7 +15373,7 @@
     "home_odds": -298,
     "away_odds": 240,
     "game_id": "525909f6be5e505d076a97eb097528eb",
-    "generated_at": "2026-08-27T00:29:06.202378+00:00",
+    "generated_at": "2026-08-28T05:07:31.665471+00:00",
     "result": null
   },
   {
@@ -15779,8 +15779,8 @@
     "book": "FanDuel",
     "recommendation": "Tulane Green Wave ML",
     "our_probability": 0.43,
-    "implied_probability": 0.2553,
-    "edge": 0.1747,
+    "implied_probability": 0.2516,
+    "edge": 0.1784,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -15805,10 +15805,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -350,
-    "away_odds": 275,
+    "home_odds": -360,
+    "away_odds": 280,
     "game_id": "8154373235ce2adf76b37ecd334601fc",
-    "generated_at": "2026-08-27T00:29:06.229512+00:00",
+    "generated_at": "2026-08-28T05:07:31.702622+00:00",
     "result": null
   },
   {
@@ -15914,10 +15914,12 @@
     "book": "FanDuel",
     "recommendation": "Liberty Flames ML",
     "our_probability": 0.43,
-    "implied_probability": 0.3244,
-    "edge": 0.1056,
+    "implied_probability": 0.3087,
+    "edge": 0.1213,
     "confidence": "low",
     "missing_factors": [
+      "home_standings",
+      "away_standings",
       "ap_rankings",
       "scoring_margin",
       "recent_form",
@@ -15938,10 +15940,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -240,
-    "away_odds": 195,
+    "home_odds": -260,
+    "away_odds": 210,
     "game_id": "ad4b1c809d35ea03f513ccb45746e998",
-    "generated_at": "2026-08-14T21:24:21.271929+00:00",
+    "generated_at": "2026-08-28T05:07:31.646059+00:00",
     "result": null
   },
   {
@@ -16017,7 +16019,7 @@
     "home_odds": -250,
     "away_odds": 202,
     "game_id": "4f0e1900bdc8d12bf0cc91ae291c104e",
-    "generated_at": "2026-08-27T00:29:06.315404+00:00",
+    "generated_at": "2026-08-28T05:07:31.796231+00:00",
     "result": null
   },
   {
@@ -16056,7 +16058,7 @@
     "home_odds": 190,
     "away_odds": -235,
     "game_id": "912c15dcb8dd09eacabdcb80673d9d72",
-    "generated_at": "2026-08-27T00:29:06.343440+00:00",
+    "generated_at": "2026-08-28T05:07:31.833194+00:00",
     "result": null
   },
   {
@@ -16095,7 +16097,7 @@
     "home_odds": 180,
     "away_odds": -220,
     "game_id": "82b83ec87fc2be5faa2e9f26ac50edef",
-    "generated_at": "2026-08-27T00:29:06.370628+00:00",
+    "generated_at": "2026-08-28T05:07:31.870272+00:00",
     "result": null
   },
   {
@@ -16400,8 +16402,8 @@
     "book": "FanDuel",
     "recommendation": "Florida State Seminoles ML",
     "our_probability": 0.57,
-    "implied_probability": 0.4425,
-    "edge": 0.1275,
+    "implied_probability": 0.4315,
+    "edge": 0.1385,
     "confidence": "low",
     "missing_factors": [
       "ap_rankings",
@@ -16424,10 +16426,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 116,
-    "away_odds": -140,
+    "home_odds": 122,
+    "away_odds": -146,
     "game_id": "a570687d47661da4982cfd885cdb4a44",
-    "generated_at": "2026-08-27T00:29:06.329608+00:00",
+    "generated_at": "2026-08-28T05:07:31.814566+00:00",
     "result": null
   },
   {
@@ -17189,7 +17191,7 @@
     "home_odds": -310,
     "away_odds": 250,
     "game_id": "9e750af965ce9f276f4280686d4dba35",
-    "generated_at": "2026-08-27T00:29:06.216075+00:00",
+    "generated_at": "2026-08-28T05:07:31.684058+00:00",
     "result": null
   },
   {
@@ -17628,7 +17630,7 @@
     "home_odds": -330,
     "away_odds": 260,
     "game_id": "57c73afe255c44ef3e19b52dc9557ea8",
-    "generated_at": "2026-08-27T00:29:06.243639+00:00",
+    "generated_at": "2026-08-28T05:07:31.721351+00:00",
     "result": null
   },
   {
@@ -17667,7 +17669,7 @@
     "home_odds": 104,
     "away_odds": -125,
     "game_id": "1bb9e45b6e7ed1200104ed018eff9093",
-    "generated_at": "2026-08-27T00:29:06.286322+00:00",
+    "generated_at": "2026-08-28T05:07:31.759126+00:00",
     "result": null
   },
   {
@@ -17732,6 +17734,150 @@
     "away_odds": -220,
     "game_id": "4f28746c8d3ba89a48ef42722f1bbc9c",
     "generated_at": "2026-08-27T00:29:11.429002+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Cincinnati Reds @ Chicago Cubs",
+    "commence_time": "2026-08-28T18:21:00Z",
+    "book": "DraftKings",
+    "recommendation": "Cincinnati Reds ML",
+    "our_probability": 0.47,
+    "implied_probability": 0.3636,
+    "edge": 0.1064,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -199,
+    "away_odds": 163,
+    "game_id": "a6d63d072ba391db5be1a628a064656c",
+    "generated_at": "2026-08-28T05:07:32.574674+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Los Angeles Dodgers @ Detroit Tigers",
+    "commence_time": "2026-08-28T22:41:00Z",
+    "book": "DraftKings",
+    "recommendation": "Detroit Tigers ML",
+    "our_probability": 0.53,
+    "implied_probability": 0.3401,
+    "edge": 0.1899,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 181,
+    "away_odds": -223,
+    "game_id": "bb28f14c5f48561498ab3fabd1ebf47b",
+    "generated_at": "2026-08-28T05:07:32.593266+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Miami Marlins @ Washington Nationals",
+    "commence_time": "2026-08-28T22:46:00Z",
+    "book": "FanDuel",
+    "recommendation": "Washington Nationals ML",
+    "our_probability": 0.53,
+    "implied_probability": 0.4143,
+    "edge": 0.1157,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 132,
+    "away_odds": -156,
+    "game_id": "1d34c8ba40aec1ca9cadb1ff7ef37e42",
+    "generated_at": "2026-08-28T05:07:32.611957+00:00",
+    "result": null
+  },
+  {
+    "sport": "MLB",
+    "game": "Colorado Rockies @ Atlanta Braves",
+    "commence_time": "2026-08-28T23:16:00Z",
+    "book": "DraftKings",
+    "recommendation": "Colorado Rockies ML",
+    "our_probability": 0.477,
+    "implied_probability": 0.3265,
+    "edge": 0.1505,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "starting_pitcher",
+      "run_differential",
+      "recent_form"
+    ],
+    "sme_reasoning": "Starting pitchers unknown \u2014 model reduced to team stats",
+    "factor_deltas": {
+      "run_differential": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "bullpen_fatigue": 0.0,
+      "home_field": 0.03,
+      "park_factor": -0.007,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -238,
+    "away_odds": 193,
+    "game_id": "6e66851b93b3cdcc4578b23ae9b93d6d",
+    "generated_at": "2026-08-28T05:07:32.630544+00:00",
     "result": null
   }
 ]
