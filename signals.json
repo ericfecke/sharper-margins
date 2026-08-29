@@ -14155,8 +14155,8 @@
     "book": "FanDuel",
     "recommendation": "North Carolina Tar Heels ML",
     "our_probability": 0.43,
-    "implied_probability": 0.2658,
-    "edge": 0.1642,
+    "implied_probability": 0.2528,
+    "edge": 0.1772,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -14181,10 +14181,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -330,
-    "away_odds": 260,
+    "home_odds": -350,
+    "away_odds": 280,
     "game_id": "2c288580da16e12d35355f2548721be6",
-    "generated_at": "2026-08-25T21:27:12.405031+00:00",
+    "generated_at": "2026-08-29T03:05:06.612119+00:00",
     "result": null
   },
   {
@@ -14301,7 +14301,7 @@
     "home_odds": -255,
     "away_odds": 205,
     "game_id": "1d6daad1c93bf7e5ae16be1db12e27d5",
-    "generated_at": "2026-08-27T00:29:06.174557+00:00",
+    "generated_at": "2026-08-29T03:05:06.884252+00:00",
     "result": null
   },
   {
@@ -14457,7 +14457,7 @@
     "home_odds": 125,
     "away_odds": -150,
     "game_id": "df569f05eeee15a5fdf95bd5ce086d6d",
-    "generated_at": "2026-08-28T05:07:31.740630+00:00",
+    "generated_at": "2026-08-29T03:05:06.993216+00:00",
     "result": null
   },
   {
@@ -14496,7 +14496,7 @@
     "home_odds": 115,
     "away_odds": -138,
     "game_id": "63efb66a308ba1892fb100b7341a76d8",
-    "generated_at": "2026-08-28T05:07:31.777630+00:00",
+    "generated_at": "2026-08-29T03:05:07.028171+00:00",
     "result": null
   },
   {
@@ -14648,7 +14648,7 @@
     "home_odds": -320,
     "away_odds": 255,
     "game_id": "c12cd73c4077a0265acec205a572c2ec",
-    "generated_at": "2026-08-28T05:07:31.851668+00:00",
+    "generated_at": "2026-08-29T03:05:07.099020+00:00",
     "result": null
   },
   {
@@ -14765,7 +14765,7 @@
     "home_odds": 122,
     "away_odds": -146,
     "game_id": "59f8c98dee8ce77cc17c5b4958e4f325",
-    "generated_at": "2026-08-28T05:07:31.888785+00:00",
+    "generated_at": "2026-08-29T03:05:07.134869+00:00",
     "result": null
   },
   {
@@ -15373,7 +15373,7 @@
     "home_odds": -298,
     "away_odds": 240,
     "game_id": "525909f6be5e505d076a97eb097528eb",
-    "generated_at": "2026-08-28T05:07:31.665471+00:00",
+    "generated_at": "2026-08-29T03:05:06.920962+00:00",
     "result": null
   },
   {
@@ -15808,7 +15808,7 @@
     "home_odds": -360,
     "away_odds": 280,
     "game_id": "8154373235ce2adf76b37ecd334601fc",
-    "generated_at": "2026-08-28T05:07:31.702622+00:00",
+    "generated_at": "2026-08-29T03:05:06.956604+00:00",
     "result": null
   },
   {
@@ -15943,7 +15943,7 @@
     "home_odds": -260,
     "away_odds": 210,
     "game_id": "ad4b1c809d35ea03f513ccb45746e998",
-    "generated_at": "2026-08-28T05:07:31.646059+00:00",
+    "generated_at": "2026-08-29T03:05:06.902683+00:00",
     "result": null
   },
   {
@@ -15992,8 +15992,8 @@
     "book": "FanDuel",
     "recommendation": "Louisville Cardinals ML",
     "our_probability": 0.5,
-    "implied_probability": 0.3167,
-    "edge": 0.1833,
+    "implied_probability": 0.3146,
+    "edge": 0.1854,
     "confidence": "low",
     "missing_factors": [
       "ap_rankings",
@@ -16017,9 +16017,9 @@
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
     "home_odds": -250,
-    "away_odds": 202,
+    "away_odds": 205,
     "game_id": "4f0e1900bdc8d12bf0cc91ae291c104e",
-    "generated_at": "2026-08-28T05:07:31.796231+00:00",
+    "generated_at": "2026-08-29T03:05:07.046086+00:00",
     "result": null
   },
   {
@@ -16029,8 +16029,8 @@
     "book": "FanDuel",
     "recommendation": "Kansas Jayhawks ML",
     "our_probability": 0.57,
-    "implied_probability": 0.3296,
-    "edge": 0.2404,
+    "implied_probability": 0.3209,
+    "edge": 0.2491,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -16055,10 +16055,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 190,
-    "away_odds": -235,
+    "home_odds": 198,
+    "away_odds": -245,
     "game_id": "912c15dcb8dd09eacabdcb80673d9d72",
-    "generated_at": "2026-08-28T05:07:31.833194+00:00",
+    "generated_at": "2026-08-29T03:05:07.081475+00:00",
     "result": null
   },
   {
@@ -16097,7 +16097,7 @@
     "home_odds": 180,
     "away_odds": -220,
     "game_id": "82b83ec87fc2be5faa2e9f26ac50edef",
-    "generated_at": "2026-08-28T05:07:31.870272+00:00",
+    "generated_at": "2026-08-29T03:05:07.117089+00:00",
     "result": null
   },
   {
@@ -16235,8 +16235,8 @@
     "book": "DraftKings",
     "recommendation": "Jacksonville State Gamecocks ML",
     "our_probability": 0.43,
-    "implied_probability": 0.2998,
-    "edge": 0.1302,
+    "implied_probability": 0.3042,
+    "edge": 0.1258,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -16261,10 +16261,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -270,
-    "away_odds": 220,
+    "home_odds": -265,
+    "away_odds": 215,
     "game_id": "b9d8d9eeb4afdebe9f91de7f8253eb07",
-    "generated_at": "2026-08-23T16:10:33.047418+00:00",
+    "generated_at": "2026-08-29T03:05:06.630669+00:00",
     "result": null
   },
   {
@@ -16429,7 +16429,7 @@
     "home_odds": 122,
     "away_odds": -146,
     "game_id": "a570687d47661da4982cfd885cdb4a44",
-    "generated_at": "2026-08-28T05:07:31.814566+00:00",
+    "generated_at": "2026-08-29T03:05:07.063808+00:00",
     "result": null
   },
   {
@@ -16867,8 +16867,8 @@
     "book": "DraftKings",
     "recommendation": "Sacramento State Hornets ML",
     "our_probability": 0.43,
-    "implied_probability": 0.2522,
-    "edge": 0.1778,
+    "implied_probability": 0.2559,
+    "edge": 0.1741,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -16893,10 +16893,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -355,
-    "away_odds": 280,
+    "home_odds": -345,
+    "away_odds": 275,
     "game_id": "7fd4a16a262295143f08276821b259a4",
-    "generated_at": "2026-08-24T21:27:50.986423+00:00",
+    "generated_at": "2026-08-29T03:05:06.726539+00:00",
     "result": null
   },
   {
@@ -17191,7 +17191,7 @@
     "home_odds": -310,
     "away_odds": 250,
     "game_id": "9e750af965ce9f276f4280686d4dba35",
-    "generated_at": "2026-08-28T05:07:31.684058+00:00",
+    "generated_at": "2026-08-29T03:05:06.938645+00:00",
     "result": null
   },
   {
@@ -17630,7 +17630,7 @@
     "home_odds": -330,
     "away_odds": 260,
     "game_id": "57c73afe255c44ef3e19b52dc9557ea8",
-    "generated_at": "2026-08-28T05:07:31.721351+00:00",
+    "generated_at": "2026-08-29T03:05:06.974780+00:00",
     "result": null
   },
   {
@@ -17669,7 +17669,7 @@
     "home_odds": 104,
     "away_odds": -125,
     "game_id": "1bb9e45b6e7ed1200104ed018eff9093",
-    "generated_at": "2026-08-28T05:07:31.759126+00:00",
+    "generated_at": "2026-08-29T03:05:07.010703+00:00",
     "result": null
   },
   {
