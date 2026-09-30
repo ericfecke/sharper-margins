@@ -235,7 +235,7 @@
 <div class="header">
   <h1>SHARPER MARGINS</h1>
   <div class="meta">
-    <span id="gen-time" data-iso="2026-09-29T00:50:08.276391+00:00">Generated: 2026-09-29 00:50 UTC</span>
+    <span id="gen-time" data-iso="2026-09-30T00:04:52.984316+00:00">Generated: 2026-09-30 00:04 UTC</span>
     &nbsp;
     <button class="filter-btn" onclick="exportCSV()" style="font-size:11px;padding:3px 10px">Export CSV</button>
   </div>
@@ -244,25 +244,26 @@
 <div class="stats-bar">
   <div class="stat-item">
     <span class="stat-label">Active Signals:</span>
-    <span class="stat-value">162</span>
+    <span class="stat-value">170</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟢 20%+:</span>
-    <span class="stat-value edge-green">41</span>
+    <span class="stat-value edge-green">44</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟠 15–19%:</span>
-    <span class="stat-value edge-orange">35</span>
+    <span class="stat-value edge-orange">33</span>
   </div>
   <div class="stat-item">
     <span class="stat-label">🟡 10–14%:</span>
-    <span class="stat-value edge-yellow">86</span>
+    <span class="stat-value edge-yellow">93</span>
   </div>
 </div>
 
 <div class="filters" id="filters">
   <button class="filter-btn active" onclick="filterSport('all', this)">All Sports</button>
   <button class="filter-btn" onclick="filterSport('CFB', this)">CFB</button>
+  <button class="filter-btn" onclick="filterSport('MLB', this)">MLB</button>
   <button class="filter-btn" onclick="filterSport('NFL', this)">NFL</button>
 
   <span style="color:var(--text-muted); padding: 0 4px;">|</span>
@@ -324,6 +325,34 @@
         </div>
       </td>
     </tr>
+    <tr class="signal-row edge-green" data-sport="NFL" data-book="FanDuel" data-edge="0.3127" data-sigid="86457f91112732f21ad4bb7d37bd291c_FanDuel" onclick="toggleRow('86457f91112732f21ad4bb7d37bd291c_FanDuel')">
+      <td><span class="sport-badge">NFL</span></td>
+      <td class="game-cell">Baltimore Ravens @ Atlanta Falcons<div class="game-time">Oct 12 12:20 AM UTC</div></td>
+      <td>FanDuel</td>
+      <td data-sortval="0.3127"><strong class="edge-green">🟢 31.3%</strong></td>
+      <td>57.2%</td>
+      <td>26.0%</td>
+      <td><strong>Atlanta Falcons ML</strong></td>
+    </tr>
+    <tr id="detail-86457f91112732f21ad4bb7d37bd291c_FanDuel" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Teams evenly matched across modeled factors</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+270</code> | Away: <code>-335</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.033</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
     <tr class="signal-row edge-green" data-sport="CFB" data-book="DraftKings" data-edge="0.3035" data-sigid="932c7f6dfe06be77192fe000e9f3ac9d_DraftKings" onclick="toggleRow('932c7f6dfe06be77192fe000e9f3ac9d_DraftKings')">
       <td><span class="sport-badge">CFB</span></td>
       <td class="game-cell">Miami Hurricanes @ Clemson Tigers<div class="game-time">Oct 03 04:00 PM UTC</div></td>
@@ -349,6 +378,34 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-green" data-sport="NFL" data-book="FanDuel" data-edge="0.3019" data-sigid="cc52bba56e74f5cddbe9011046181c3d_FanDuel" onclick="toggleRow('cc52bba56e74f5cddbe9011046181c3d_FanDuel')">
+      <td><span class="sport-badge">NFL</span></td>
+      <td class="game-cell">Houston Texans @ Tennessee Titans<div class="game-time">Oct 11 05:00 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td data-sortval="0.3019"><strong class="edge-green">🟢 30.2%</strong></td>
+      <td>56.5%</td>
+      <td>26.3%</td>
+      <td><strong>Tennessee Titans ML</strong></td>
+    </tr>
+    <tr id="detail-cc52bba56e74f5cddbe9011046181c3d_FanDuel" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Divisional game — spread compressed</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+265</code> | Away: <code>-330</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.045</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: -0.020</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -716,6 +773,34 @@
         </div>
       </td>
     </tr>
+    <tr class="signal-row edge-green" data-sport="CFB" data-book="DraftKings" data-edge="0.245" data-sigid="b30387175520051e2889230030365494_DraftKings" onclick="toggleRow('b30387175520051e2889230030365494_DraftKings')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">Oregon State Beavers @ Colorado State Rams<div class="game-time">Oct 03 10:00 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.245"><strong class="edge-green">🟢 24.5%</strong></td>
+      <td>57.0%</td>
+      <td>32.5%</td>
+      <td><strong>Colorado State Rams ML</strong></td>
+    </tr>
+    <tr id="detail-b30387175520051e2889230030365494_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home field advantage (college: +7%)</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+195</code> | Away: <code>-238</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
     <tr class="signal-row edge-green" data-sport="NFL" data-book="DraftKings" data-edge="0.2416" data-sigid="ab2865e9f2d4b012de8bc6fb6de11a7c_DraftKings" onclick="toggleRow('ab2865e9f2d4b012de8bc6fb6de11a7c_DraftKings')">
       <td><span class="sport-badge">NFL</span></td>
       <td class="game-cell">Carolina Panthers @ Green Bay Packers<div class="game-time">Oct 30 12:15 AM UTC</div></td>
@@ -772,34 +857,6 @@
         </div>
       </td>
     </tr>
-    <tr class="signal-row edge-green" data-sport="CFB" data-book="DraftKings" data-edge="0.2347" data-sigid="6d39ea01c532535edf756b8086656518_DraftKings" onclick="toggleRow('6d39ea01c532535edf756b8086656518_DraftKings')">
-      <td><span class="sport-badge">CFB</span></td>
-      <td class="game-cell">Florida Gators @ Missouri Tigers<div class="game-time">Oct 03 07:30 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.2347"><strong class="edge-green">🟢 23.5%</strong></td>
-      <td>59.0%</td>
-      <td>35.5%</td>
-      <td><strong>Missouri Tigers ML</strong></td>
-    </tr>
-    <tr id="detail-6d39ea01c532535edf756b8086656518_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home field advantage (college: +7%)</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+170</code> | Away: <code>-205</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.020</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
     <tr class="signal-row edge-green" data-sport="CFB" data-book="DraftKings" data-edge="0.2336" data-sigid="6b22daf46195be6b3748584efe89dac1_DraftKings" onclick="toggleRow('6b22daf46195be6b3748584efe89dac1_DraftKings')">
       <td><span class="sport-badge">CFB</span></td>
       <td class="game-cell">Alabama Crimson Tide @ Mississippi State Bulldogs<div class="game-time">Oct 03 04:00 PM UTC</div></td>
@@ -817,34 +874,6 @@
               <h4>Analysis</h4>
               <p>Home field advantage (college: +7%)</p>
               <div class="missing-factors">Missing data: ap_rankings, scoring_margin</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+185</code> | Away: <code>-225</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-green" data-sport="CFB" data-book="DraftKings" data-edge="0.2336" data-sigid="a77fd3143159a9d16a75685528d9960b_DraftKings" onclick="toggleRow('a77fd3143159a9d16a75685528d9960b_DraftKings')">
-      <td><span class="sport-badge">CFB</span></td>
-      <td class="game-cell">Louisville Cardinals @ NC State Wolfpack<div class="game-time">Oct 03 07:30 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.2336"><strong class="edge-green">🟢 23.4%</strong></td>
-      <td>57.0%</td>
-      <td>33.6%</td>
-      <td><strong>NC State Wolfpack ML</strong></td>
-    </tr>
-    <tr id="detail-a77fd3143159a9d16a75685528d9960b_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home field advantage (college: +7%)</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
             </div>
             <div class="detail-section">
               <h4>Odds</h4>
@@ -937,6 +966,34 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-green" data-sport="NFL" data-book="FanDuel" data-edge="0.2294" data-sigid="573cc0ef39631a4f6673ec843a8bedd4_FanDuel" onclick="toggleRow('573cc0ef39631a4f6673ec843a8bedd4_FanDuel')">
+      <td><span class="sport-badge">NFL</span></td>
+      <td class="game-cell">New England Patriots @ Buffalo Bills<div class="game-time">Oct 04 05:00 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td data-sortval="0.2294"><strong class="edge-green">🟢 22.9%</strong></td>
+      <td>49.2%</td>
+      <td>26.3%</td>
+      <td><strong>New England Patriots ML</strong></td>
+    </tr>
+    <tr id="detail-573cc0ef39631a4f6673ec843a8bedd4_FanDuel" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Divisional game — spread compressed</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>-330</code> | Away: <code>+265</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.013</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: -0.020</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -1080,6 +1137,34 @@
         </div>
       </td>
     </tr>
+    <tr class="signal-row edge-green" data-sport="NFL" data-book="FanDuel" data-edge="0.2229" data-sigid="f8e7f43f73aa983c5c99c189587f0118_FanDuel" onclick="toggleRow('f8e7f43f73aa983c5c99c189587f0118_FanDuel')">
+      <td><span class="sport-badge">NFL</span></td>
+      <td class="game-cell">Detroit Lions @ Arizona Cardinals<div class="game-time">Oct 11 08:25 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td data-sortval="0.2229"><strong class="edge-green">🟢 22.3%</strong></td>
+      <td>53.8%</td>
+      <td>31.5%</td>
+      <td><strong>Arizona Cardinals ML</strong></td>
+    </tr>
+    <tr id="detail-f8e7f43f73aa983c5c99c189587f0118_FanDuel" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Teams evenly matched across modeled factors</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+205</code> | Away: <code>-250</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.003</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
     <tr class="signal-row edge-green" data-sport="NFL" data-book="DraftKings" data-edge="0.2225" data-sigid="c4647ca1201e6768501877267ca8251b_DraftKings" onclick="toggleRow('c4647ca1201e6768501877267ca8251b_DraftKings')">
       <td><span class="sport-badge">NFL</span></td>
       <td class="game-cell">Cincinnati Bengals @ Miami Dolphins<div class="game-time">Oct 11 05:00 PM UTC</div></td>
@@ -1136,6 +1221,34 @@
         </div>
       </td>
     </tr>
+    <tr class="signal-row edge-green" data-sport="CFB" data-book="DraftKings" data-edge="0.2209" data-sigid="f73081099f845f23ea7f41ef09128cdd_DraftKings" onclick="toggleRow('f73081099f845f23ea7f41ef09128cdd_DraftKings')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">Texas State Bobcats @ San Diego State Aztecs<div class="game-time">Oct 04 02:30 AM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.2209"><strong class="edge-green">🟢 22.1%</strong></td>
+      <td>59.0%</td>
+      <td>36.9%</td>
+      <td><strong>San Diego State Aztecs ML</strong></td>
+    </tr>
+    <tr id="detail-f73081099f845f23ea7f41ef09128cdd_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home field advantage (college: +7%); Away team travel penalty (2+ TZ crossing) — home benefits</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+160</code> | Away: <code>-192</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.020</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
     <tr class="signal-row edge-green" data-sport="CFB" data-book="FanDuel" data-edge="0.2164" data-sigid="c1c548c80e674e3a37dcc2551beba599_FanDuel" onclick="toggleRow('c1c548c80e674e3a37dcc2551beba599_FanDuel')">
       <td><span class="sport-badge">CFB</span></td>
       <td class="game-cell">Ohio Bobcats @ Kent State Golden Flashes<div class="game-time">Oct 03 07:30 PM UTC</div></td>
@@ -1164,34 +1277,6 @@
         </div>
       </td>
     </tr>
-    <tr class="signal-row edge-green" data-sport="NFL" data-book="FanDuel" data-edge="0.2152" data-sigid="573cc0ef39631a4f6673ec843a8bedd4_FanDuel" onclick="toggleRow('573cc0ef39631a4f6673ec843a8bedd4_FanDuel')">
-      <td><span class="sport-badge">NFL</span></td>
-      <td class="game-cell">New England Patriots @ Buffalo Bills<div class="game-time">Oct 04 05:00 PM UTC</div></td>
-      <td>FanDuel</td>
-      <td data-sortval="0.2152"><strong class="edge-green">🟢 21.5%</strong></td>
-      <td>47.5%</td>
-      <td>26.0%</td>
-      <td><strong>New England Patriots ML</strong></td>
-    </tr>
-    <tr id="detail-573cc0ef39631a4f6673ec843a8bedd4_FanDuel" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Divisional game — spread compressed</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>-335</code> | Away: <code>+270</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.005</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: -0.020</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
     <tr class="signal-row edge-green" data-sport="NFL" data-book="DraftKings" data-edge="0.215" data-sigid="5d8d85473b87f772a979ecf294acab94_DraftKings" onclick="toggleRow('5d8d85473b87f772a979ecf294acab94_DraftKings')">
       <td><span class="sport-badge">NFL</span></td>
       <td class="game-cell">Minnesota Vikings @ Green Bay Packers<div class="game-time">Nov 15 06:00 PM UTC</div></td>
@@ -1217,34 +1302,6 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.100</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.020</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-green" data-sport="CFB" data-book="DraftKings" data-edge="0.2147" data-sigid="b30387175520051e2889230030365494_DraftKings" onclick="toggleRow('b30387175520051e2889230030365494_DraftKings')">
-      <td><span class="sport-badge">CFB</span></td>
-      <td class="game-cell">Oregon State Beavers @ Colorado State Rams<div class="game-time">Oct 03 10:00 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.2147"><strong class="edge-green">🟢 21.5%</strong></td>
-      <td>57.0%</td>
-      <td>35.5%</td>
-      <td><strong>Colorado State Rams ML</strong></td>
-    </tr>
-    <tr id="detail-b30387175520051e2889230030365494_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home field advantage (college: +7%)</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+170</code> | Away: <code>-205</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -1360,34 +1417,6 @@
         </div>
       </td>
     </tr>
-    <tr class="signal-row edge-green" data-sport="CFB" data-book="DraftKings" data-edge="0.2069" data-sigid="b58c0d24e66471e6095c0a5f9afb7ce3_DraftKings" onclick="toggleRow('b58c0d24e66471e6095c0a5f9afb7ce3_DraftKings')">
-      <td><span class="sport-badge">CFB</span></td>
-      <td class="game-cell">BYU Cougars @ TCU Horned Frogs<div class="game-time">Oct 03 11:00 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.2069"><strong class="edge-green">🟢 20.7%</strong></td>
-      <td>57.0%</td>
-      <td>36.3%</td>
-      <td><strong>TCU Horned Frogs ML</strong></td>
-    </tr>
-    <tr id="detail-b58c0d24e66471e6095c0a5f9afb7ce3_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home field advantage (college: +7%)</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+164</code> | Away: <code>-198</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
     <tr class="signal-row edge-green" data-sport="NFL" data-book="DraftKings" data-edge="0.203" data-sigid="9bb63096709ba607443c454d2a813b14_DraftKings" onclick="toggleRow('9bb63096709ba607443c454d2a813b14_DraftKings')">
       <td><span class="sport-badge">NFL</span></td>
       <td class="game-cell">Tennessee Titans @ Houston Texans<div class="game-time">Jan 10 06:00 PM UTC</div></td>
@@ -1413,6 +1442,62 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.005</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: -0.020</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-green" data-sport="NFL" data-book="DraftKings" data-edge="0.2028" data-sigid="96d2373cda647873b971f268482bced0_DraftKings" onclick="toggleRow('96d2373cda647873b971f268482bced0_DraftKings')">
+      <td><span class="sport-badge">NFL</span></td>
+      <td class="game-cell">Los Angeles Chargers @ Seattle Seahawks<div class="game-time">Oct 04 08:25 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.2028"><strong class="edge-green">🟢 20.3%</strong></td>
+      <td>45.5%</td>
+      <td>25.2%</td>
+      <td><strong>Los Angeles Chargers ML</strong></td>
+    </tr>
+    <tr id="detail-96d2373cda647873b971f268482bced0_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Teams evenly matched across modeled factors</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>-355</code> | Away: <code>+280</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.005</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-green" data-sport="CFB" data-book="DraftKings" data-edge="0.2009" data-sigid="a77fd3143159a9d16a75685528d9960b_DraftKings" onclick="toggleRow('a77fd3143159a9d16a75685528d9960b_DraftKings')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">Louisville Cardinals @ NC State Wolfpack<div class="game-time">Oct 03 07:30 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.2009"><strong class="edge-green">🟢 20.1%</strong></td>
+      <td>57.0%</td>
+      <td>36.9%</td>
+      <td><strong>NC State Wolfpack ML</strong></td>
+    </tr>
+    <tr id="detail-a77fd3143159a9d16a75685528d9960b_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home field advantage (college: +7%)</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+160</code> | Away: <code>-192</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -1469,34 +1554,6 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.013</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-orange" data-sport="NFL" data-book="DraftKings" data-edge="0.1853" data-sigid="96d2373cda647873b971f268482bced0_DraftKings" onclick="toggleRow('96d2373cda647873b971f268482bced0_DraftKings')">
-      <td><span class="sport-badge">NFL</span></td>
-      <td class="game-cell">Los Angeles Chargers @ Seattle Seahawks<div class="game-time">Oct 04 08:25 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.1853"><strong class="edge-orange">🟠 18.5%</strong></td>
-      <td>43.8%</td>
-      <td>25.2%</td>
-      <td><strong>Los Angeles Chargers ML</strong></td>
-    </tr>
-    <tr id="detail-96d2373cda647873b971f268482bced0_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Teams evenly matched across modeled factors</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>-355</code> | Away: <code>+280</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.022</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -1724,6 +1781,34 @@
         </div>
       </td>
     </tr>
+    <tr class="signal-row edge-orange" data-sport="CFB" data-book="DraftKings" data-edge="0.1696" data-sigid="c1c548c80e674e3a37dcc2551beba599_DraftKings" onclick="toggleRow('c1c548c80e674e3a37dcc2551beba599_DraftKings')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">Ohio Bobcats @ Kent State Golden Flashes<div class="game-time">Oct 03 07:30 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.1696"><strong class="edge-orange">🟠 17.0%</strong></td>
+      <td>57.0%</td>
+      <td>40.0%</td>
+      <td><strong>Kent State Golden Flashes ML</strong></td>
+    </tr>
+    <tr id="detail-c1c548c80e674e3a37dcc2551beba599_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home field advantage (college: +7%)</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+140</code> | Away: <code>-166</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
     <tr class="signal-row edge-orange" data-sport="NFL" data-book="DraftKings" data-edge="0.1675" data-sigid="4527f57f5bc32742d8194af1ccf7da7e_DraftKings" onclick="toggleRow('4527f57f5bc32742d8194af1ccf7da7e_DraftKings')">
       <td><span class="sport-badge">NFL</span></td>
       <td class="game-cell">Baltimore Ravens @ Carolina Panthers<div class="game-time">Nov 22 06:00 PM UTC</div></td>
@@ -1874,34 +1959,6 @@
       <td><strong>Vanderbilt Commodores ML</strong></td>
     </tr>
     <tr id="detail-0a1027a4edb364b492a3fee67086e8bc_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home field advantage (college: +7%)</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+136</code> | Away: <code>-162</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-orange" data-sport="CFB" data-book="DraftKings" data-edge="0.1634" data-sigid="c1c548c80e674e3a37dcc2551beba599_DraftKings" onclick="toggleRow('c1c548c80e674e3a37dcc2551beba599_DraftKings')">
-      <td><span class="sport-badge">CFB</span></td>
-      <td class="game-cell">Ohio Bobcats @ Kent State Golden Flashes<div class="game-time">Oct 03 07:30 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.1634"><strong class="edge-orange">🟠 16.3%</strong></td>
-      <td>57.0%</td>
-      <td>40.7%</td>
-      <td><strong>Kent State Golden Flashes ML</strong></td>
-    </tr>
-    <tr id="detail-c1c548c80e674e3a37dcc2551beba599_DraftKings" class="detail-row" style="display:none">
       <td colspan="7">
         <div class="detail-panel">
           <div class="detail-grid">
@@ -2085,34 +2142,6 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.005</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: -0.020</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-orange" data-sport="CFB" data-book="FanDuel" data-edge="0.1565" data-sigid="f2defdeeb6cb3aa4a86b01a7a5b1ece4_FanDuel" onclick="toggleRow('f2defdeeb6cb3aa4a86b01a7a5b1ece4_FanDuel')">
-      <td><span class="sport-badge">CFB</span></td>
-      <td class="game-cell">Auburn Tigers @ Tennessee Volunteers<div class="game-time">Oct 03 07:30 PM UTC</div></td>
-      <td>FanDuel</td>
-      <td data-sortval="0.1565"><strong class="edge-orange">🟠 15.7%</strong></td>
-      <td>43.0%</td>
-      <td>27.4%</td>
-      <td><strong>Auburn Tigers ML</strong></td>
-    </tr>
-    <tr id="detail-f2defdeeb6cb3aa4a86b01a7a5b1ece4_FanDuel" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home field advantage (college: +7%)</p>
-              <div class="missing-factors">Missing data: ap_rankings, scoring_margin</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>-315</code> | Away: <code>+250</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -2424,6 +2453,34 @@
         </div>
       </td>
     </tr>
+    <tr class="signal-row edge-yellow" data-sport="NFL" data-book="DraftKings" data-edge="0.1486" data-sigid="e0cbd266dcf997089203a1b33ba0333d_DraftKings" onclick="toggleRow('e0cbd266dcf997089203a1b33ba0333d_DraftKings')">
+      <td><span class="sport-badge">NFL</span></td>
+      <td class="game-cell">Kansas City Chiefs @ Las Vegas Raiders<div class="game-time">Oct 04 08:25 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.1486"><strong class="edge-yellow">🟡 14.9%</strong></td>
+      <td>48.5%</td>
+      <td>33.6%</td>
+      <td><strong>Las Vegas Raiders ML</strong></td>
+    </tr>
+    <tr id="detail-e0cbd266dcf997089203a1b33ba0333d_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Divisional game — spread compressed</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+185</code> | Away: <code>-225</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.035</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: -0.020</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
     <tr class="signal-row edge-yellow" data-sport="NFL" data-book="DraftKings" data-edge="0.1483" data-sigid="ab5ab731ab655bd6308bc7a922275518_DraftKings" onclick="toggleRow('ab5ab731ab655bd6308bc7a922275518_DraftKings')">
       <td><span class="sport-badge">NFL</span></td>
       <td class="game-cell">Cleveland Browns @ Pittsburgh Steelers<div class="game-time">Nov 01 06:00 PM UTC</div></td>
@@ -2536,6 +2593,34 @@
         </div>
       </td>
     </tr>
+    <tr class="signal-row edge-yellow" data-sport="CFB" data-book="DraftKings" data-edge="0.1472" data-sigid="6d39ea01c532535edf756b8086656518_DraftKings" onclick="toggleRow('6d39ea01c532535edf756b8086656518_DraftKings')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">Florida Gators @ Missouri Tigers<div class="game-time">Oct 03 07:30 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.1472"><strong class="edge-yellow">🟡 14.7%</strong></td>
+      <td>50.2%</td>
+      <td>35.5%</td>
+      <td><strong>Missouri Tigers ML</strong></td>
+    </tr>
+    <tr id="detail-6d39ea01c532535edf756b8086656518_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home field advantage (college: +7%)</p>
+              <div class="missing-factors">Missing data: ap_rankings, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+170</code> | Away: <code>-205</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: -0.050</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.020</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: -0.037</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
     <tr class="signal-row edge-yellow" data-sport="NFL" data-book="DraftKings" data-edge="0.1456" data-sigid="77396e9d565860fbfd05779028223a8a_DraftKings" onclick="toggleRow('77396e9d565860fbfd05779028223a8a_DraftKings')">
       <td><span class="sport-badge">NFL</span></td>
       <td class="game-cell">Dallas Cowboys @ Los Angeles Rams<div class="game-time">Dec 20 09:25 PM UTC</div></td>
@@ -2620,31 +2705,31 @@
         </div>
       </td>
     </tr>
-    <tr class="signal-row edge-yellow" data-sport="NFL" data-book="DraftKings" data-edge="0.144" data-sigid="e0cbd266dcf997089203a1b33ba0333d_DraftKings" onclick="toggleRow('e0cbd266dcf997089203a1b33ba0333d_DraftKings')">
-      <td><span class="sport-badge">NFL</span></td>
-      <td class="game-cell">Kansas City Chiefs @ Las Vegas Raiders<div class="game-time">Oct 04 08:25 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.144"><strong class="edge-yellow">🟡 14.4%</strong></td>
-      <td>47.5%</td>
-      <td>33.1%</td>
-      <td><strong>Las Vegas Raiders ML</strong></td>
+    <tr class="signal-row edge-yellow" data-sport="CFB" data-book="FanDuel" data-edge="0.1444" data-sigid="f2defdeeb6cb3aa4a86b01a7a5b1ece4_FanDuel" onclick="toggleRow('f2defdeeb6cb3aa4a86b01a7a5b1ece4_FanDuel')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">Auburn Tigers @ Tennessee Volunteers<div class="game-time">Oct 03 07:30 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td data-sortval="0.1444"><strong class="edge-yellow">🟡 14.4%</strong></td>
+      <td>43.0%</td>
+      <td>28.6%</td>
+      <td><strong>Auburn Tigers ML</strong></td>
     </tr>
-    <tr id="detail-e0cbd266dcf997089203a1b33ba0333d_DraftKings" class="detail-row" style="display:none">
+    <tr id="detail-f2defdeeb6cb3aa4a86b01a7a5b1ece4_FanDuel" class="detail-row" style="display:none">
       <td colspan="7">
         <div class="detail-panel">
           <div class="detail-grid">
             <div class="detail-section">
               <h4>Analysis</h4>
-              <p>HOME QB OUT — significant drag applied; Divisional game — spread compressed</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
+              <p>Home field advantage (college: +7%)</p>
+              <div class="missing-factors">Missing data: ap_rankings, scoring_margin</div>
             </div>
             <div class="detail-section">
               <h4>Odds</h4>
-              <p>Home: <code>+190</code> | Away: <code>-230</code></p>
+              <p>Home: <code>-295</code> | Away: <code>+235</code></p>
               <span class="kalshi-none">&mdash; No Kalshi match</span>
             </div>
           </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.085</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.020</span><span class="factor-item">h2h: +0.000</span></div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -3152,34 +3237,6 @@
         </div>
       </td>
     </tr>
-    <tr class="signal-row edge-yellow" data-sport="CFB" data-book="DraftKings" data-edge="0.1302" data-sigid="59abc1d6262d2ea6a72c4daad4c83af2_DraftKings" onclick="toggleRow('59abc1d6262d2ea6a72c4daad4c83af2_DraftKings')">
-      <td><span class="sport-badge">CFB</span></td>
-      <td class="game-cell">Kentucky Wildcats @ South Carolina Gamecocks<div class="game-time">Oct 03 08:15 PM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.1302"><strong class="edge-yellow">🟡 13.0%</strong></td>
-      <td>43.0%</td>
-      <td>30.0%</td>
-      <td><strong>Kentucky Wildcats ML</strong></td>
-    </tr>
-    <tr id="detail-59abc1d6262d2ea6a72c4daad4c83af2_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Home field advantage (college: +7%)</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>-270</code> | Away: <code>+220</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
     <tr class="signal-row edge-yellow" data-sport="NFL" data-book="DraftKings" data-edge="0.13" data-sigid="1cb23c83ae4af84cffcdae6b31d06e83_DraftKings" onclick="toggleRow('1cb23c83ae4af84cffcdae6b31d06e83_DraftKings')">
       <td><span class="sport-badge">NFL</span></td>
       <td class="game-cell">Cleveland Browns @ New York Giants<div class="game-time">Dec 20 06:00 PM UTC</div></td>
@@ -3317,34 +3374,6 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.045</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="NFL" data-book="FanDuel" data-edge="0.1251" data-sigid="164e6eb68f31bac190381903c3cccd31_FanDuel" onclick="toggleRow('164e6eb68f31bac190381903c3cccd31_FanDuel')">
-      <td><span class="sport-badge">NFL</span></td>
-      <td class="game-cell">New York Jets @ Chicago Bears<div class="game-time">Oct 04 05:00 PM UTC</div></td>
-      <td>FanDuel</td>
-      <td data-sortval="0.1251"><strong class="edge-yellow">🟡 12.5%</strong></td>
-      <td>49.5%</td>
-      <td>37.0%</td>
-      <td><strong>New York Jets ML</strong></td>
-    </tr>
-    <tr id="detail-164e6eb68f31bac190381903c3cccd31_FanDuel" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Teams evenly matched across modeled factors</p>
-              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>-190</code> | Away: <code>+160</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.035</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -3488,6 +3517,34 @@
         </div>
       </td>
     </tr>
+    <tr class="signal-row edge-yellow" data-sport="NFL" data-book="FanDuel" data-edge="0.121" data-sigid="99a9bae4dc0dc2590496bd3102b211f2_FanDuel" onclick="toggleRow('99a9bae4dc0dc2590496bd3102b211f2_FanDuel')">
+      <td><span class="sport-badge">NFL</span></td>
+      <td class="game-cell">Green Bay Packers @ Tampa Bay Buccaneers<div class="game-time">Oct 04 05:00 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td data-sortval="0.121"><strong class="edge-yellow">🟡 12.1%</strong></td>
+      <td>48.8%</td>
+      <td>36.6%</td>
+      <td><strong>Tampa Bay Buccaneers ML</strong></td>
+    </tr>
+    <tr id="detail-99a9bae4dc0dc2590496bd3102b211f2_FanDuel" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>HOME QB OUT — significant drag applied</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+162</code> | Away: <code>-194</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.052</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
     <tr class="signal-row edge-yellow" data-sport="CFB" data-book="DraftKings" data-edge="0.1208" data-sigid="47595bd2a188e4dab8a27dce97c5b45d_DraftKings" onclick="toggleRow('47595bd2a188e4dab8a27dce97c5b45d_DraftKings')">
       <td><span class="sport-badge">CFB</span></td>
       <td class="game-cell">Houston Cougars @ Utah Utes<div class="game-time">Oct 24 04:00 PM UTC</div></td>
@@ -3541,6 +3598,34 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.045</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="NFL" data-book="FanDuel" data-edge="0.1186" data-sigid="a73a76599a4f3422803e57bd8f61b626_FanDuel" onclick="toggleRow('a73a76599a4f3422803e57bd8f61b626_FanDuel')">
+      <td><span class="sport-badge">NFL</span></td>
+      <td class="game-cell">Detroit Lions @ Carolina Panthers<div class="game-time">Oct 05 12:20 AM UTC</div></td>
+      <td>FanDuel</td>
+      <td data-sortval="0.1186"><strong class="edge-yellow">🟡 11.9%</strong></td>
+      <td>48.2%</td>
+      <td>36.4%</td>
+      <td><strong>Carolina Panthers ML</strong></td>
+    </tr>
+    <tr id="detail-a73a76599a4f3422803e57bd8f61b626_FanDuel" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Teams evenly matched across modeled factors</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+164</code> | Away: <code>-196</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.058</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -3656,6 +3741,62 @@
         </div>
       </td>
     </tr>
+    <tr class="signal-row edge-yellow" data-sport="CFB" data-book="DraftKings" data-edge="0.1154" data-sigid="afbc95d529430ef9797b428b2a9db1ab_DraftKings" onclick="toggleRow('afbc95d529430ef9797b428b2a9db1ab_DraftKings')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">Akron Zips @ Central Michigan Chippewas<div class="game-time">Oct 03 07:30 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.1154"><strong class="edge-yellow">🟡 11.5%</strong></td>
+      <td>43.0%</td>
+      <td>31.5%</td>
+      <td><strong>Akron Zips ML</strong></td>
+    </tr>
+    <tr id="detail-afbc95d529430ef9797b428b2a9db1ab_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home field advantage (college: +7%)</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>-250</code> | Away: <code>+205</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="CFB" data-book="DraftKings" data-edge="0.1154" data-sigid="1d3756ab74c013c39510958b5a632b74_DraftKings" onclick="toggleRow('1d3756ab74c013c39510958b5a632b74_DraftKings')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">Arkansas State Red Wolves @ Louisiana Ragin Cajuns<div class="game-time">Oct 04 12:00 AM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.1154"><strong class="edge-yellow">🟡 11.5%</strong></td>
+      <td>43.0%</td>
+      <td>31.5%</td>
+      <td><strong>Arkansas State Red Wolves ML</strong></td>
+    </tr>
+    <tr id="detail-1d3756ab74c013c39510958b5a632b74_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home field advantage (college: +7%)</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>-250</code> | Away: <code>+205</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
     <tr class="signal-row edge-yellow" data-sport="NFL" data-book="DraftKings" data-edge="0.115" data-sigid="d0ffa5ed13cbd7610f9176041464404a_DraftKings" onclick="toggleRow('d0ffa5ed13cbd7610f9176041464404a_DraftKings')">
       <td><span class="sport-badge">NFL</span></td>
       <td class="game-cell">Pittsburgh Steelers @ Tennessee Titans<div class="game-time">Jan 03 06:00 PM UTC</div></td>
@@ -3681,34 +3822,6 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.043</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
-    <tr class="signal-row edge-yellow" data-sport="NFL" data-book="DraftKings" data-edge="0.115" data-sigid="47dc7baa254659f3beb2ed2b38c207b6_DraftKings" onclick="toggleRow('47dc7baa254659f3beb2ed2b38c207b6_DraftKings')">
-      <td><span class="sport-badge">NFL</span></td>
-      <td class="game-cell">Philadelphia Eagles @ Chicago Bears<div class="game-time">Sep 29 12:15 AM UTC</div></td>
-      <td>DraftKings</td>
-      <td data-sortval="0.115"><strong class="edge-yellow">🟡 11.5%</strong></td>
-      <td>45.8%</td>
-      <td>34.2%</td>
-      <td><strong>Chicago Bears ML</strong></td>
-    </tr>
-    <tr id="detail-47dc7baa254659f3beb2ed2b38c207b6_DraftKings" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: away (50.00% vs 60.00%); HOME QB OUT — significant drag applied</p>
-              <div class="missing-factors">Missing data: recent_form, scoring_margin</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+180</code> | Away: <code>-218</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: -0.040</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.043</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -3793,6 +3906,34 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.090</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="CFB" data-book="FanDuel" data-edge="0.1133" data-sigid="6338f8a71aba32414791add2d358472d_FanDuel" onclick="toggleRow('6338f8a71aba32414791add2d358472d_FanDuel')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">Temple Owls @ South Florida Bulls<div class="game-time">Oct 03 11:30 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td data-sortval="0.1133"><strong class="edge-yellow">🟡 11.3%</strong></td>
+      <td>43.0%</td>
+      <td>31.7%</td>
+      <td><strong>Temple Owls ML</strong></td>
+    </tr>
+    <tr id="detail-6338f8a71aba32414791add2d358472d_FanDuel" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home field advantage (college: +7%)</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, ap_rankings, scoring_margin, recent_form, rest_data</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>-250</code> | Away: <code>+202</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr>
@@ -4132,34 +4273,6 @@
         </div>
       </td>
     </tr>
-    <tr class="signal-row edge-yellow" data-sport="NFL" data-book="FanDuel" data-edge="0.1085" data-sigid="47dc7baa254659f3beb2ed2b38c207b6_FanDuel" onclick="toggleRow('47dc7baa254659f3beb2ed2b38c207b6_FanDuel')">
-      <td><span class="sport-badge">NFL</span></td>
-      <td class="game-cell">Philadelphia Eagles @ Chicago Bears<div class="game-time">Sep 29 12:15 AM UTC</div></td>
-      <td>FanDuel</td>
-      <td data-sortval="0.1085"><strong class="edge-yellow">🟡 10.8%</strong></td>
-      <td>43.5%</td>
-      <td>32.6%</td>
-      <td><strong>Chicago Bears ML</strong></td>
-    </tr>
-    <tr id="detail-47dc7baa254659f3beb2ed2b38c207b6_FanDuel" class="detail-row" style="display:none">
-      <td colspan="7">
-        <div class="detail-panel">
-          <div class="detail-grid">
-            <div class="detail-section">
-              <h4>Analysis</h4>
-              <p>Win rate edge: away (50.00% vs 60.00%)</p>
-              <div class="missing-factors">Missing data: recent_form, scoring_margin</div>
-            </div>
-            <div class="detail-section">
-              <h4>Odds</h4>
-              <p>Home: <code>+194</code> | Away: <code>-235</code></p>
-              <span class="kalshi-none">&mdash; No Kalshi match</span>
-            </div>
-          </div>
-          <div class="factor-grid"><span class="factor-item">win_rate_diff: -0.040</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.065</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
-        </div>
-      </td>
-    </tr>
     <tr class="signal-row edge-yellow" data-sport="NFL" data-book="DraftKings" data-edge="0.1075" data-sigid="180b5fa7ea6bd0d2d9ddb9ba5ee38cc0_DraftKings" onclick="toggleRow('180b5fa7ea6bd0d2d9ddb9ba5ee38cc0_DraftKings')">
       <td><span class="sport-badge">NFL</span></td>
       <td class="game-cell">Kansas City Chiefs @ Cincinnati Bengals<div class="game-time">Dec 13 09:25 PM UTC</div></td>
@@ -4272,16 +4385,16 @@
         </div>
       </td>
     </tr>
-    <tr class="signal-row edge-yellow" data-sport="CFB" data-book="FanDuel" data-edge="0.1056" data-sigid="6338f8a71aba32414791add2d358472d_FanDuel" onclick="toggleRow('6338f8a71aba32414791add2d358472d_FanDuel')">
+    <tr class="signal-row edge-yellow" data-sport="CFB" data-book="FanDuel" data-edge="0.1056" data-sigid="7e0abfe1077b7d41d61b918ef53d247b_FanDuel" onclick="toggleRow('7e0abfe1077b7d41d61b918ef53d247b_FanDuel')">
       <td><span class="sport-badge">CFB</span></td>
-      <td class="game-cell">Temple Owls @ South Florida Bulls<div class="game-time">Oct 03 11:30 PM UTC</div></td>
+      <td class="game-cell">Eastern Michigan Eagles @ UMass Minutemen<div class="game-time">Oct 03 07:30 PM UTC</div></td>
       <td>FanDuel</td>
       <td data-sortval="0.1056"><strong class="edge-yellow">🟡 10.6%</strong></td>
       <td>43.0%</td>
       <td>32.4%</td>
-      <td><strong>Temple Owls ML</strong></td>
+      <td><strong>Eastern Michigan Eagles ML</strong></td>
     </tr>
-    <tr id="detail-6338f8a71aba32414791add2d358472d_FanDuel" class="detail-row" style="display:none">
+    <tr id="detail-7e0abfe1077b7d41d61b918ef53d247b_FanDuel" class="detail-row" style="display:none">
       <td colspan="7">
         <div class="detail-panel">
           <div class="detail-grid">
@@ -4804,6 +4917,62 @@
         </div>
       </td>
     </tr>
+    <tr class="signal-row edge-yellow" data-sport="CFB" data-book="DraftKings" data-edge="0.1005" data-sigid="59abc1d6262d2ea6a72c4daad4c83af2_DraftKings" onclick="toggleRow('59abc1d6262d2ea6a72c4daad4c83af2_DraftKings')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">Kentucky Wildcats @ South Carolina Gamecocks<div class="game-time">Oct 03 08:15 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.1005"><strong class="edge-yellow">🟡 10.1%</strong></td>
+      <td>51.7%</td>
+      <td>41.7%</td>
+      <td><strong>Kentucky Wildcats ML</strong></td>
+    </tr>
+    <tr id="detail-59abc1d6262d2ea6a72c4daad4c83af2_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home field advantage (college: +7%)</p>
+              <div class="missing-factors">Missing data: ap_rankings, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>-155</code> | Away: <code>+130</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: -0.050</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: -0.037</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="MLB" data-book="FanDuel" data-edge="0.1005" data-sigid="9e23239e0075a017225697fa3bcd88b3_FanDuel" onclick="toggleRow('9e23239e0075a017225697fa3bcd88b3_FanDuel')">
+      <td><span class="sport-badge">MLB</span></td>
+      <td class="game-cell">Philadelphia Phillies @ Atlanta Braves<div class="game-time">Sep 30 06:00 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td data-sortval="0.1005"><strong class="edge-yellow">🟡 10.1%</strong></td>
+      <td>57.6%</td>
+      <td>47.6%</td>
+      <td><strong>Atlanta Braves ML</strong></td>
+    </tr>
+    <tr id="detail-9e23239e0075a017225697fa3bcd88b3_FanDuel" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Balanced matchup — no dominant edge identified</p>
+              <div class="missing-factors">Missing data: run_differential, recent_form</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+102</code> | Away: <code>-120</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">run_differential: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">bullpen_fatigue: +0.000</span><span class="factor-item">home_field: +0.030</span><span class="factor-item">park_factor: -0.007</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
     <tr class="signal-row edge-yellow" data-sport="CFB" data-book="FanDuel" data-edge="0.1004" data-sigid="4aac00e6cc06b8905659f911419540d2_FanDuel" onclick="toggleRow('4aac00e6cc06b8905659f911419540d2_FanDuel')">
       <td><span class="sport-badge">CFB</span></td>
       <td class="game-cell">Miami Hurricanes @ Notre Dame Fighting Irish<div class="game-time">Nov 08 12:30 AM UTC</div></td>
@@ -4829,6 +4998,62 @@
             </div>
           </div>
           <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">rest_travel: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="CFB" data-book="DraftKings" data-edge="0.1004" data-sigid="b58c0d24e66471e6095c0a5f9afb7ce3_DraftKings" onclick="toggleRow('b58c0d24e66471e6095c0a5f9afb7ce3_DraftKings')">
+      <td><span class="sport-badge">CFB</span></td>
+      <td class="game-cell">BYU Cougars @ TCU Horned Frogs<div class="game-time">Oct 03 11:00 PM UTC</div></td>
+      <td>DraftKings</td>
+      <td data-sortval="0.1004"><strong class="edge-yellow">🟡 10.0%</strong></td>
+      <td>41.5%</td>
+      <td>31.5%</td>
+      <td><strong>TCU Horned Frogs ML</strong></td>
+    </tr>
+    <tr id="detail-b58c0d24e66471e6095c0a5f9afb7ce3_DraftKings" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Home field advantage (college: +7%)</p>
+              <div class="missing-factors">Missing data: ap_rankings, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>+205</code> | Away: <code>-250</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">conference_tier: +0.000</span><span class="factor-item">win_rate_diff: -0.075</span><span class="factor-item">ap_ranking: +0.000</span><span class="factor-item">home_field: +0.070</span><span class="factor-item">injuries: +0.000</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">recent_form: -0.050</span><span class="factor-item">rest_travel: -0.030</span><span class="factor-item">h2h: +0.000</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr class="signal-row edge-yellow" data-sport="NFL" data-book="FanDuel" data-edge="0.1001" data-sigid="164e6eb68f31bac190381903c3cccd31_FanDuel" onclick="toggleRow('164e6eb68f31bac190381903c3cccd31_FanDuel')">
+      <td><span class="sport-badge">NFL</span></td>
+      <td class="game-cell">New York Jets @ Chicago Bears<div class="game-time">Oct 04 05:00 PM UTC</div></td>
+      <td>FanDuel</td>
+      <td data-sortval="0.1001"><strong class="edge-yellow">🟡 10.0%</strong></td>
+      <td>48.8%</td>
+      <td>38.7%</td>
+      <td><strong>New York Jets ML</strong></td>
+    </tr>
+    <tr id="detail-164e6eb68f31bac190381903c3cccd31_FanDuel" class="detail-row" style="display:none">
+      <td colspan="7">
+        <div class="detail-panel">
+          <div class="detail-grid">
+            <div class="detail-section">
+              <h4>Analysis</h4>
+              <p>Teams evenly matched across modeled factors</p>
+              <div class="missing-factors">Missing data: home_standings, away_standings, rest_data, recent_form, scoring_margin</div>
+            </div>
+            <div class="detail-section">
+              <h4>Odds</h4>
+              <p>Home: <code>-176</code> | Away: <code>+148</code></p>
+              <span class="kalshi-none">&mdash; No Kalshi match</span>
+            </div>
+          </div>
+          <div class="factor-grid"><span class="factor-item">win_rate_diff: +0.000</span><span class="factor-item">home_field: +0.040</span><span class="factor-item">rest_bye: +0.000</span><span class="factor-item">recent_form: +0.000</span><span class="factor-item">injuries: -0.028</span><span class="factor-item">scoring_margin: +0.000</span><span class="factor-item">weather: +0.000</span><span class="factor-item">divisional: +0.000</span><span class="factor-item">h2h: +0.000</span></div>
         </div>
       </td>
     </tr></tbody>
