@@ -18977,7 +18977,7 @@
     "home_odds": 280,
     "away_odds": -355,
     "game_id": "c4647ca1201e6768501877267ca8251b",
-    "generated_at": "2026-10-10T00:29:51.608972+00:00",
+    "generated_at": "2026-10-10T19:36:08.456056+00:00",
     "result": null
   },
   {
@@ -18986,15 +18986,11 @@
     "commence_time": "2026-10-11T17:00:00Z",
     "book": "DraftKings",
     "recommendation": "Tennessee Titans ML",
-    "our_probability": 0.5725,
-    "implied_probability": 0.2559,
-    "edge": 0.3166,
+    "our_probability": 0.525,
+    "implied_probability": 0.2522,
+    "edge": 0.2728,
     "confidence": "low",
     "missing_factors": [
-      "home_standings",
-      "away_standings",
-      "rest_data",
-      "recent_form",
       "scoring_margin"
     ],
     "sme_reasoning": "Divisional game \u2014 spread compressed",
@@ -19003,7 +18999,7 @@
       "home_field": 0.04,
       "rest_bye": 0.0,
       "recent_form": 0.0,
-      "injuries": 0.0525,
+      "injuries": 0.005,
       "scoring_margin": 0.0,
       "weather": 0.0,
       "divisional": -0.02,
@@ -19012,10 +19008,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 275,
-    "away_odds": -345,
+    "home_odds": 280,
+    "away_odds": -355,
     "game_id": "cc52bba56e74f5cddbe9011046181c3d",
-    "generated_at": "2026-10-06T01:40:19.880309+00:00",
+    "generated_at": "2026-10-10T19:36:08.502471+00:00",
     "result": null
   },
   {
@@ -34080,9 +34076,9 @@
     "commence_time": "2026-10-11T20:25:00Z",
     "book": "DraftKings",
     "recommendation": "Arizona Cardinals ML",
-    "our_probability": 0.478,
-    "implied_probability": 0.3092,
-    "edge": 0.1688,
+    "our_probability": 0.458,
+    "implied_probability": 0.3146,
+    "edge": 0.1434,
     "confidence": "low",
     "missing_factors": [
       "scoring_margin"
@@ -34093,7 +34089,7 @@
       "home_field": 0.04,
       "rest_bye": 0.008,
       "recent_form": -0.0375,
-      "injuries": 0.0075,
+      "injuries": -0.0125,
       "scoring_margin": 0.0,
       "weather": 0.0,
       "divisional": 0.0,
@@ -34102,10 +34098,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 210,
-    "away_odds": -258,
+    "home_odds": 205,
+    "away_odds": -250,
     "game_id": "f8e7f43f73aa983c5c99c189587f0118",
-    "generated_at": "2026-10-10T00:29:51.770821+00:00",
+    "generated_at": "2026-10-10T19:36:08.571990+00:00",
     "result": null
   },
   {
@@ -34368,7 +34364,7 @@
     "home_odds": -198,
     "away_odds": 164,
     "game_id": "164cc0396837d5ff433215ffd3279283",
-    "generated_at": "2026-10-10T00:30:06.442936+00:00",
+    "generated_at": "2026-10-10T19:36:18.840234+00:00",
     "result": null
   },
   {
@@ -34440,7 +34436,7 @@
     "home_odds": 130,
     "away_odds": -155,
     "game_id": "fd33c09c84ab4c2fe6955d59f8dc5dd2",
-    "generated_at": "2026-10-10T00:30:06.487329+00:00",
+    "generated_at": "2026-10-10T19:36:18.886831+00:00",
     "result": null
   },
   {
@@ -34512,7 +34508,7 @@
     "home_odds": -310,
     "away_odds": 250,
     "game_id": "af2f084075391e55ba2a596e7846bb40",
-    "generated_at": "2026-10-10T00:30:06.509642+00:00",
+    "generated_at": "2026-10-10T19:36:18.910102+00:00",
     "result": null
   },
   {
@@ -34548,7 +34544,7 @@
     "home_odds": -196,
     "away_odds": 164,
     "game_id": "6fff70f4bf196dba25060a5775a03b54",
-    "generated_at": "2026-10-10T00:30:06.531661+00:00",
+    "generated_at": "2026-10-10T19:36:18.933449+00:00",
     "result": null
   },
   {
@@ -34620,7 +34616,7 @@
     "home_odds": -230,
     "away_odds": 190,
     "game_id": "49fc89a9696a9a20b658732b34ce61c4",
-    "generated_at": "2026-10-10T00:30:06.587100+00:00",
+    "generated_at": "2026-10-10T19:36:18.980392+00:00",
     "result": null
   },
   {
@@ -34656,7 +34652,7 @@
     "home_odds": 250,
     "away_odds": -310,
     "game_id": "64df299b882ea19ad5f8cb0ed5516a6f",
-    "generated_at": "2026-10-10T00:30:06.609229+00:00",
+    "generated_at": "2026-10-10T19:36:19.003983+00:00",
     "result": null
   },
   {
@@ -34666,8 +34662,8 @@
     "book": "DraftKings",
     "recommendation": "Dallas Mavericks ML",
     "our_probability": 0.53,
-    "implied_probability": 0.4004,
-    "edge": 0.1296,
+    "implied_probability": 0.4066,
+    "edge": 0.1234,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -34689,10 +34685,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 140,
-    "away_odds": -166,
+    "home_odds": 136,
+    "away_odds": -162,
     "game_id": "b9778d0e3a26167eb49901dcae7eeb98",
-    "generated_at": "2026-10-09T01:00:12.591012+00:00",
+    "generated_at": "2026-10-10T19:36:19.026942+00:00",
     "result": null
   },
   {
@@ -34728,7 +34724,7 @@
     "home_odds": -325,
     "away_odds": 260,
     "game_id": "cac1461f5983a88fac612685395aa897",
-    "generated_at": "2026-10-10T00:30:06.631167+00:00",
+    "generated_at": "2026-10-10T19:36:19.050265+00:00",
     "result": null
   },
   {
@@ -34764,7 +34760,7 @@
     "home_odds": 150,
     "away_odds": -180,
     "game_id": "3167a4072c65c9314c71d0fe49be8e28",
-    "generated_at": "2026-10-10T00:30:06.653195+00:00",
+    "generated_at": "2026-10-10T19:36:19.073816+00:00",
     "result": null
   },
   {
@@ -34800,7 +34796,7 @@
     "home_odds": -345,
     "away_odds": 275,
     "game_id": "6bfadbd22ed8a054cf82ec1b12b78243",
-    "generated_at": "2026-10-10T00:30:06.674964+00:00",
+    "generated_at": "2026-10-10T19:36:19.097453+00:00",
     "result": null
   },
   {
@@ -34836,7 +34832,7 @@
     "home_odds": 136,
     "away_odds": -162,
     "game_id": "9aa9f220709533d70d11f85fae886771",
-    "generated_at": "2026-10-10T00:30:06.696958+00:00",
+    "generated_at": "2026-10-10T19:36:19.120789+00:00",
     "result": null
   },
   {
@@ -34908,7 +34904,7 @@
     "home_odds": -258,
     "away_odds": 210,
     "game_id": "13d9ca3bcb664829c603755d31401002",
-    "generated_at": "2026-10-10T00:30:06.719010+00:00",
+    "generated_at": "2026-10-10T19:36:19.144008+00:00",
     "result": null
   },
   {
@@ -34980,7 +34976,7 @@
     "home_odds": 130,
     "away_odds": -155,
     "game_id": "2b7218aa25cf98318a40e6f2469a5c5d",
-    "generated_at": "2026-10-10T00:30:06.740608+00:00",
+    "generated_at": "2026-10-10T19:36:19.172530+00:00",
     "result": null
   },
   {
@@ -35448,7 +35444,7 @@
     "home_odds": -196,
     "away_odds": 164,
     "game_id": "6b024bad1abb54f597225e4ab9b39d89",
-    "generated_at": "2026-10-10T00:29:51.691446+00:00",
+    "generated_at": "2026-10-10T19:36:08.525639+00:00",
     "result": null
   },
   {
@@ -35458,8 +35454,8 @@
     "book": "FanDuel",
     "recommendation": "New York Giants ML",
     "our_probability": 0.67,
-    "implied_probability": 0.3752,
-    "edge": 0.2948,
+    "implied_probability": 0.3699,
+    "edge": 0.3001,
     "confidence": "low",
     "missing_factors": [
       "scoring_margin"
@@ -35479,10 +35475,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": -186,
-    "away_odds": 156,
+    "home_odds": -190,
+    "away_odds": 160,
     "game_id": "fbffd0b7722fd81d68d5d62472dc80e8",
-    "generated_at": "2026-10-10T00:29:51.741542+00:00",
+    "generated_at": "2026-10-10T19:36:08.548660+00:00",
     "result": null
   },
   {
@@ -35823,12 +35819,12 @@
   {
     "sport": "CFB",
     "game": "Eastern Michigan Eagles @ Akron Zips",
-    "commence_time": "2026-10-10T19:30:00Z",
+    "commence_time": "2026-10-10T19:32:41Z",
     "book": "FanDuel",
     "recommendation": "Akron Zips ML",
     "our_probability": 0.57,
-    "implied_probability": 0.2988,
-    "edge": 0.2712,
+    "implied_probability": 0.3256,
+    "edge": 0.2444,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -35853,10 +35849,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 220,
-    "away_odds": -275,
+    "home_odds": 190,
+    "away_odds": -250,
     "game_id": "d5c5d566d388f445ead9c2dc63caaed1",
-    "generated_at": "2026-10-09T01:00:11.043693+00:00",
+    "generated_at": "2026-10-10T19:36:17.554485+00:00",
     "result": null
   },
   {
@@ -36168,7 +36164,7 @@
     "home_odds": 120,
     "away_odds": -142,
     "game_id": "234d9123fdc010716a5a844efaf7ab43",
-    "generated_at": "2026-10-10T00:30:04.843036+00:00",
+    "generated_at": "2026-10-10T19:36:17.681371+00:00",
     "result": null
   },
   {
@@ -36510,7 +36506,7 @@
     "home_odds": 114,
     "away_odds": -137,
     "game_id": "92f26a40bba178c47bbade8c9af0ada3",
-    "generated_at": "2026-10-08T00:43:40.660475+00:00",
+    "generated_at": "2026-10-10T19:36:17.507848+00:00",
     "result": null
   },
   {
@@ -36520,8 +36516,8 @@
     "book": "FanDuel",
     "recommendation": "Vanderbilt Commodores ML",
     "our_probability": 0.4925,
-    "implied_probability": 0.2585,
-    "edge": 0.234,
+    "implied_probability": 0.2516,
+    "edge": 0.2409,
     "confidence": "low",
     "missing_factors": [
       "ap_rankings",
@@ -36542,10 +36538,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 270,
-    "away_odds": -345,
+    "home_odds": 280,
+    "away_odds": -360,
     "game_id": "d9b77825d169fdd683f8efa7c1948a8e",
-    "generated_at": "2026-10-06T01:40:31.683804+00:00",
+    "generated_at": "2026-10-10T19:36:17.531172+00:00",
     "result": null
   },
   {
@@ -36594,8 +36590,8 @@
     "book": "DraftKings",
     "recommendation": "Northern Illinois Huskies ML",
     "our_probability": 0.59,
-    "implied_probability": 0.2742,
-    "edge": 0.3158,
+    "implied_probability": 0.282,
+    "edge": 0.308,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -36620,10 +36616,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 250,
-    "away_odds": -310,
+    "home_odds": 240,
+    "away_odds": -298,
     "game_id": "b009edde78bdd184c039f774c1795f95",
-    "generated_at": "2026-10-09T01:00:11.292350+00:00",
+    "generated_at": "2026-10-10T19:36:17.627463+00:00",
     "result": null
   },
   {
@@ -36662,7 +36658,7 @@
     "home_odds": 250,
     "away_odds": -310,
     "game_id": "2876b41c9c5327639fda141d7027eadb",
-    "generated_at": "2026-10-10T00:30:04.819641+00:00",
+    "generated_at": "2026-10-10T19:36:17.652638+00:00",
     "result": null
   },
   {
@@ -36711,8 +36707,8 @@
     "book": "DraftKings",
     "recommendation": "Fresno State Bulldogs ML",
     "our_probability": 0.562,
-    "implied_probability": 0.3146,
-    "edge": 0.2474,
+    "implied_probability": 0.2742,
+    "edge": 0.2878,
     "confidence": "low",
     "missing_factors": [
       "ap_rankings",
@@ -36733,10 +36729,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 205,
-    "away_odds": -250,
+    "home_odds": 250,
+    "away_odds": -310,
     "game_id": "c4db3412210ed8e1045807c73f69b377",
-    "generated_at": "2026-10-09T01:00:11.433690+00:00",
+    "generated_at": "2026-10-10T19:36:17.704636+00:00",
     "result": null
   },
   {
@@ -36889,7 +36885,7 @@
     "home_odds": 118,
     "away_odds": -138,
     "game_id": "855f58fad5f0f14b239f4f63df27998b",
-    "generated_at": "2026-10-10T00:29:51.871010+00:00",
+    "generated_at": "2026-10-10T19:36:08.642839+00:00",
     "result": null
   },
   {
@@ -36898,9 +36894,9 @@
     "commence_time": "2026-10-18T17:00:00Z",
     "book": "FanDuel",
     "recommendation": "Atlanta Falcons ML",
-    "our_probability": 0.5825,
+    "our_probability": 0.605,
     "implied_probability": 0.4573,
-    "edge": 0.1252,
+    "edge": 0.1477,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -36915,7 +36911,7 @@
       "home_field": 0.04,
       "rest_bye": 0.0,
       "recent_form": 0.0,
-      "injuries": 0.0425,
+      "injuries": 0.065,
       "scoring_margin": 0.0,
       "weather": 0.0,
       "divisional": 0.0,
@@ -36927,7 +36923,7 @@
     "home_odds": 110,
     "away_odds": -130,
     "game_id": "7c312fdf24fb35f58b0e07c2932cc997",
-    "generated_at": "2026-10-10T00:29:51.892822+00:00",
+    "generated_at": "2026-10-10T19:36:08.666501+00:00",
     "result": null
   },
   {
@@ -36936,9 +36932,9 @@
     "commence_time": "2026-10-18T17:00:00Z",
     "book": "FanDuel",
     "recommendation": "Tennessee Titans ML",
-    "our_probability": 0.4825,
+    "our_probability": 0.5175,
     "implied_probability": 0.2787,
-    "edge": 0.2038,
+    "edge": 0.2388,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -36953,10 +36949,10 @@
       "home_field": 0.04,
       "rest_bye": 0.0,
       "recent_form": 0.0,
-      "injuries": -0.0425,
+      "injuries": -0.0375,
       "scoring_margin": 0.0,
       "weather": 0.0,
-      "divisional": 0.02,
+      "divisional": -0.02,
       "h2h": 0.0
     },
     "kalshi_probability": null,
@@ -36965,7 +36961,7 @@
     "home_odds": -300,
     "away_odds": 245,
     "game_id": "84aa9e190e625d7e9cd67e1f157a45b4",
-    "generated_at": "2026-10-10T00:29:51.962147+00:00",
+    "generated_at": "2026-10-10T19:36:08.716946+00:00",
     "result": null
   },
   {
@@ -37003,7 +36999,7 @@
     "home_odds": -340,
     "away_odds": 270,
     "game_id": "0b0b582b32b09ab6ff6664ffae0c9653",
-    "generated_at": "2026-10-10T00:29:52.082963+00:00",
+    "generated_at": "2026-10-10T19:36:08.740168+00:00",
     "result": null
   },
   {
@@ -37012,9 +37008,9 @@
     "commence_time": "2026-10-18T20:25:00Z",
     "book": "FanDuel",
     "recommendation": "Las Vegas Raiders ML",
-    "our_probability": 0.5375,
+    "our_probability": 0.5575,
     "implied_probability": 0.3146,
-    "edge": 0.2229,
+    "edge": 0.2429,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -37029,7 +37025,7 @@
       "home_field": 0.04,
       "rest_bye": 0.0,
       "recent_form": 0.0,
-      "injuries": -0.0025,
+      "injuries": 0.0175,
       "scoring_margin": 0.0,
       "weather": 0.0,
       "divisional": 0.0,
@@ -37041,7 +37037,7 @@
     "home_odds": 205,
     "away_odds": -250,
     "game_id": "45b2690b350ed45145c7a716b18e8e66",
-    "generated_at": "2026-10-10T00:29:52.200169+00:00",
+    "generated_at": "2026-10-10T19:36:08.786585+00:00",
     "result": null
   },
   {
@@ -37129,8 +37125,8 @@
     "book": "FanDuel",
     "recommendation": "Georgia Tech Yellow Jackets ML",
     "our_probability": 0.57,
-    "implied_probability": 0.3087,
-    "edge": 0.2613,
+    "implied_probability": 0.3518,
+    "edge": 0.2182,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -37155,10 +37151,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 210,
-    "away_odds": -260,
+    "home_odds": 172,
+    "away_odds": -210,
     "game_id": "43457c08aa50a7e0038aa06eb3437680",
-    "generated_at": "2026-10-09T01:00:11.079478+00:00",
+    "generated_at": "2026-10-10T19:36:17.484811+00:00",
     "result": null
   },
   {
@@ -37388,9 +37384,9 @@
     "commence_time": "2026-10-11T20:25:00Z",
     "book": "FanDuel",
     "recommendation": "San Francisco 49ers ML",
-    "our_probability": 0.515,
+    "our_probability": 0.5,
     "implied_probability": 0.3903,
-    "edge": 0.1247,
+    "edge": 0.1097,
     "confidence": "low",
     "missing_factors": [
       "scoring_margin"
@@ -37401,7 +37397,7 @@
       "home_field": 0.04,
       "rest_bye": 0.0,
       "recent_form": -0.0375,
-      "injuries": 0.0025,
+      "injuries": 0.0175,
       "scoring_margin": 0.0,
       "weather": 0.0,
       "divisional": 0.02,
@@ -37413,7 +37409,7 @@
     "home_odds": -174,
     "away_odds": 146,
     "game_id": "8e5d515b10d8a5ffb324640ed60bcc55",
-    "generated_at": "2026-10-10T00:29:51.802182+00:00",
+    "generated_at": "2026-10-10T19:36:08.595266+00:00",
     "result": null
   },
   {
@@ -37422,9 +37418,9 @@
     "commence_time": "2026-10-13T00:15:00Z",
     "book": "FanDuel",
     "recommendation": "Buffalo Bills ML",
-    "our_probability": 0.5275,
+    "our_probability": 0.5075,
     "implied_probability": 0.3845,
-    "edge": 0.143,
+    "edge": 0.123,
     "confidence": "low",
     "missing_factors": [
       "scoring_margin"
@@ -37435,7 +37431,7 @@
       "home_field": 0.04,
       "rest_bye": 0.0,
       "recent_form": -0.0375,
-      "injuries": 0.01,
+      "injuries": 0.03,
       "scoring_margin": 0.0,
       "weather": 0.0,
       "divisional": 0.0,
@@ -37447,7 +37443,7 @@
     "home_odds": -178,
     "away_odds": 150,
     "game_id": "e6d00eedd87d367e510314bd8cab8f6f",
-    "generated_at": "2026-10-10T00:29:51.843582+00:00",
+    "generated_at": "2026-10-10T19:36:08.618609+00:00",
     "result": null
   },
   {
@@ -37485,7 +37481,7 @@
     "home_odds": 160,
     "away_odds": -190,
     "game_id": "e86227938fd3cf008fc5648fb5128344",
-    "generated_at": "2026-10-10T00:29:51.931435+00:00",
+    "generated_at": "2026-10-10T19:36:08.693406+00:00",
     "result": null
   },
   {
@@ -37494,9 +37490,9 @@
     "commence_time": "2026-10-18T17:00:00Z",
     "book": "FanDuel",
     "recommendation": "New York Giants ML",
-    "our_probability": 0.5825,
+    "our_probability": 0.585,
     "implied_probability": 0.4802,
-    "edge": 0.1023,
+    "edge": 0.1048,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -37511,7 +37507,7 @@
       "home_field": 0.04,
       "rest_bye": 0.0,
       "recent_form": 0.0,
-      "injuries": 0.0425,
+      "injuries": 0.045,
       "scoring_margin": 0.0,
       "weather": 0.0,
       "divisional": 0.0,
@@ -37523,7 +37519,7 @@
     "home_odds": 100,
     "away_odds": -118,
     "game_id": "1cf74afd313e9fd300e1462012b174cb",
-    "generated_at": "2026-10-08T00:43:32.845454+00:00",
+    "generated_at": "2026-10-10T19:36:08.763248+00:00",
     "result": null
   },
   {
@@ -37677,9 +37673,9 @@
     "commence_time": "2026-10-11T17:00:00Z",
     "book": "DraftKings",
     "recommendation": "Cleveland Browns ML",
-    "our_probability": 0.5985,
+    "our_probability": 0.606,
     "implied_probability": 0.4486,
-    "edge": 0.1499,
+    "edge": 0.1574,
     "confidence": "low",
     "missing_factors": [
       "scoring_margin"
@@ -37690,7 +37686,7 @@
       "home_field": 0.04,
       "rest_bye": -0.016,
       "recent_form": -0.05,
-      "injuries": 0.0075,
+      "injuries": 0.0,
       "scoring_margin": 0.0,
       "weather": 0.0,
       "divisional": 0.0,
@@ -37702,7 +37698,7 @@
     "home_odds": -135,
     "away_odds": 114,
     "game_id": "9db4ed15fe34fca1fb62f040cd244591",
-    "generated_at": "2026-10-09T00:59:59.645810+00:00",
+    "generated_at": "2026-10-10T19:36:08.478997+00:00",
     "result": null
   },
   {
@@ -38010,8 +38006,8 @@
     "book": "FanDuel",
     "recommendation": "UNLV Rebels ML",
     "our_probability": 0.59,
-    "implied_probability": 0.4373,
-    "edge": 0.1527,
+    "implied_probability": 0.4517,
+    "edge": 0.1383,
     "confidence": "low",
     "missing_factors": [
       "home_standings",
@@ -38036,10 +38032,10 @@
     "kalshi_probability": null,
     "kalshi_match": false,
     "kalshi_alignment": "no_match",
-    "home_odds": 118,
-    "away_odds": -144,
+    "home_odds": 112,
+    "away_odds": -134,
     "game_id": "4f3a6620c44a51f7b649892be381e0eb",
-    "generated_at": "2026-10-10T00:30:04.774725+00:00",
+    "generated_at": "2026-10-10T19:36:17.603749+00:00",
     "result": null
   },
   {
@@ -38114,7 +38110,117 @@
     "home_odds": -345,
     "away_odds": 275,
     "game_id": "60431a347feac3f1c7ed925b8b769ec5",
-    "generated_at": "2026-10-10T00:30:06.465276+00:00",
+    "generated_at": "2026-10-10T19:36:18.863720+00:00",
+    "result": null
+  },
+  {
+    "sport": "CFB",
+    "game": "Old Dominion Monarchs @ Appalachian State Mountaineers",
+    "commence_time": "2026-10-10T17:02:19Z",
+    "book": "FanDuel",
+    "recommendation": "Appalachian State Mountaineers ML",
+    "our_probability": 0.57,
+    "implied_probability": 0.3569,
+    "edge": 0.2131,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "ap_rankings",
+      "scoring_margin",
+      "recent_form",
+      "rest_data"
+    ],
+    "sme_reasoning": "Home field advantage (college: +7%)",
+    "factor_deltas": {
+      "conference_tier": 0.0,
+      "win_rate_diff": 0.0,
+      "ap_ranking": 0.0,
+      "home_field": 0.07,
+      "injuries": 0.0,
+      "scoring_margin": 0.0,
+      "recent_form": 0.0,
+      "rest_travel": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 164,
+    "away_odds": -215,
+    "game_id": "310dd8851a99203930a45881b0156d36",
+    "generated_at": "2026-10-10T19:36:17.460523+00:00",
+    "result": null
+  },
+  {
+    "sport": "CFB",
+    "game": "LSU Tigers @ Kentucky Wildcats",
+    "commence_time": "2026-10-10T23:00:00Z",
+    "book": "FanDuel",
+    "recommendation": "Kentucky Wildcats ML",
+    "our_probability": 0.57,
+    "implied_probability": 0.2553,
+    "edge": 0.3147,
+    "confidence": "low",
+    "missing_factors": [
+      "ap_rankings",
+      "scoring_margin"
+    ],
+    "sme_reasoning": "Home field advantage (college: +7%)",
+    "factor_deltas": {
+      "conference_tier": 0.0,
+      "win_rate_diff": 0.0,
+      "ap_ranking": 0.0,
+      "home_field": 0.07,
+      "injuries": 0.0,
+      "scoring_margin": 0.0,
+      "recent_form": 0.0,
+      "rest_travel": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": 275,
+    "away_odds": -350,
+    "game_id": "bdfaffbf5873812f3e04de2cbd273aa6",
+    "generated_at": "2026-10-10T19:36:17.577768+00:00",
+    "result": null
+  },
+  {
+    "sport": "NBA",
+    "game": "Denver Nuggets @ Oklahoma City Thunder",
+    "commence_time": "2026-10-23T01:40:00Z",
+    "book": "FanDuel",
+    "recommendation": "Denver Nuggets ML",
+    "our_probability": 0.47,
+    "implied_probability": 0.2825,
+    "edge": 0.1875,
+    "confidence": "low",
+    "missing_factors": [
+      "home_standings",
+      "away_standings",
+      "rest_data",
+      "recent_form",
+      "scoring_stats"
+    ],
+    "sme_reasoning": "Home court advantage applied",
+    "factor_deltas": {
+      "win_rate_diff": 0.0,
+      "home_court": 0.03,
+      "rest": 0.0,
+      "recent_form": 0.0,
+      "injuries": 0.0,
+      "net_rating": 0.0,
+      "h2h": 0.0
+    },
+    "kalshi_probability": null,
+    "kalshi_match": false,
+    "kalshi_alignment": "no_match",
+    "home_odds": -295,
+    "away_odds": 240,
+    "game_id": "223b2883b9b05a67329ef246384b85f1",
+    "generated_at": "2026-10-10T19:36:18.956661+00:00",
     "result": null
   }
 ]
